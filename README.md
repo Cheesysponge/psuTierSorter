@@ -4,6 +4,7 @@ Some code that takes in formatted powersupply data and find the cheapest ones fo
 
 # Important
 This code has a scraper for PCPartpicker but that will require a Zenrows API key (which has 1.1k free requests). I do not include the data from PCPP because scraping their website is against their TOS
+
 This does not come with the PSU tierlist data, if you would like access to it, go here: https://docs.google.com/spreadsheets/d/1akCHL7Vhzk_EhrpIGkz8zTEvYfLDcaSpZRB6Xt6JWkc/edit?gid=1973454078#gid=1973454078
 
 

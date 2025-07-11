@@ -9,7 +9,7 @@ This does not come with the PSU tierlist data, if you would like access to it, g
 
 
 # Functionality
-Without this extra data, this still has the latest data (from 7/9/2025) of which is the cheapest PSU for each tier
+Without this extra data, this still has the latest data (from 7/10/2025) of which is the cheapest PSU for each tier
 
 You can run the **cheapest.py** file and it will take in a wattage input and then give you the cheapest from each tier, C* to A+
 

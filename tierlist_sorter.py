@@ -37,7 +37,7 @@ def normalize_model_name(*args):
     combined = re.sub(r"[^a-z0-9]+", " ", combined)  # keep only alphanumerics
     return combined.strip()
 
-with open("spec_tierlist732025.csv", "r", newline="", encoding="utf-8") as csvfile:
+with open("spec_tierlist.csv", "r", newline="", encoding="utf-8") as csvfile:
     csv_reader = csv.reader(csvfile)
     header = next(csv_reader)  # Skip bad header row
 
@@ -58,6 +58,8 @@ with open("spec_tierlist732025.csv", "r", newline="", encoding="utf-8") as csvfi
         efficiency_code = row[12].strip()
         size = row[8].strip()
         year = row[6].strip()
+        info = row[18].strip()
+
 
         # Skip incomplete or malformed entries
         if not wattages or not tier or not brand:
@@ -80,7 +82,8 @@ with open("spec_tierlist732025.csv", "r", newline="", encoding="utf-8") as csvfi
             "efficiency": efficiency,
             "size": size,
             "series2": series2,
-            "year": year
+            "year": year,
+            "info": info
         })
 
 def normalize_name(name):
@@ -140,7 +143,7 @@ def match_psu(scraped_psu, psus_rated, threshold=60):
                     if(entry["brand"] == "Vetroo"):
                         if(entry["series2"] == "2023 (ATX 3.0)"):
                             continue
-                    matches.append((entry["model"], entry["tier"], score))
+                    matches.append((entry["model"], entry["tier"], score, entry["info"]))
 
 
     # if(scraped_psu["name"] == "Thermaltake Toughpower GX2"):
@@ -152,7 +155,7 @@ for psu in scraped:
     #print(f"🧩 Matching: {psu['name']} ({psu['wattage']}W)")
     results = match_psu(psu, psus_rated)
     #print(f"💲 Price: ${psu['price']}" if psu.get("price") else "💲 Price: N/A")
-    best_match = ["No Match", "N/A", "0"]
+    best_match = ["No Match", "N/A", "0", "N/A"]
     if results:
         best_match = results[0]
         #print(f"✅ Best match: {best_match[0]} | Tier: {best_match[1]} | Similarity: {best_match[2]}")
@@ -166,6 +169,7 @@ for psu in scraped:
         "Efficiency": psu["efficiency"],
         "Matched Tier Model": best_match[0] if best_match else "No Match",
         "Tier": best_match[1] if best_match else "N/A",
+        "Matched Tier Model Info": best_match[3] if len(best_match)>2 else "No Match Info",
         "Similarity": best_match[2] if best_match else 0
     })
     #print("-" * 50)

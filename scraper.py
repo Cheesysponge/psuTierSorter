@@ -3,11 +3,13 @@ import requests
 from bs4 import BeautifulSoup
 import csv
 import re
-from rapidfuzz import fuzz
 import sys
 from zenrows import ZenRowsClient
+from playground import API_KEY
 
-client = ZenRowsClient("notMyKey")
+
+
+client = ZenRowsClient(API_KEY)
 url = "https://pcpartpicker.com/products/power-supply/#X=101,98698&sort=price&A=450000000000,2200000000000&e=6,5,4,3,2,1&m=700,148,1,88,780,52,54,55,868,7,8,80,149,337,76,169,102,282,50,66,11,150,611,225,85,61,216,929,57,802,14,448,106,101,17,451,426,722,18,65,983,58,445,810,421,742,97,763,741,430,331,62,132,719,787,824,27,28,168,920,940,94,29,806,95,229,793,64,439,162,714,680,455,51,747,71,754,133,354,488,63,370,48,91,72,441,776,993,113,56,155,118,116,239,886,981,49,619,92,39,87,670,93,934,60"
 params = {
     "js_render": "true",                   # enable JavaScript rendering

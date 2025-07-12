@@ -141,6 +141,8 @@ def match_psu(scraped_psu, psus_rated, threshold=60):
                     if("swap" in entry["model"]):
                         #print(entry["year"] in scraped_psu["name"])
                         score+=10
+                    if("n amer" in entry["model"]):
+                        score+=15
                     if(entry["brand"] == "Vetroo"):
                         if(entry["series2"] == "2023 (ATX 3.0)"):
                             continue

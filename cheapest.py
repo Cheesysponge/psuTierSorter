@@ -7,7 +7,7 @@ def find_cheapest_for_price(desired_wattage):
 
 
     # Tier range you're interested in
-    target_tiers = ["C*", "C-", "C", "C+", "B*", "B-", "B", "B+", "A*", "A-", "A", "A+"]
+    target_tiers = ["C-", "C", "C+","B-", "B", "B+","A-", "A", "A+"]
 
     # Dictionary to hold the cheapest PSU for each tier
     cheapest_by_tier = {}
@@ -59,7 +59,7 @@ def find_cheapest_for_price(desired_wattage):
         writer = csv.DictWriter(f, fieldnames=cheapests[0].keys())
         writer.writeheader()
         writer.writerows(cheapests)
-alone = True
+alone = False
 if alone:
     try:
         w = int(input("🔧 Enter the **minimum** PSU wattage (e.g., 650): ").strip())

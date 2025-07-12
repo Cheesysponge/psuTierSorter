@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
   );
 });
 
-fetch('/cheapest.csv')
+fetch('cheapest.csv')
         .then(response => response.text())
         .then(csvText => createTableFromCSV(csvText))
         .catch(error => console.error('Error loading CSV:', error));

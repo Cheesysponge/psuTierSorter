@@ -1,13 +1,10 @@
 Tier,Image,Name,Price,Matched Model,Efficiency,Wattage,Extra Notes/Information
-C*,https://m.media-amazon.com/images/I/41tTcSFPOyS.jpg,Apevia Galaxy,54.99,apevia galaxy standard,80+ Gold,650,Not enough info
 C-,https://m.media-amazon.com/images/I/41lzr2jX8RL.jpg,Montech APX,45.99,montech apx,80+,550,
 C,//cdna.pcpartpicker.com/static/forever/images/product/3148f884b77b2d7abee3a3e0ad72cf73.256p.jpg,MSI MAG A650BN,49.99,msi mag a bn,80+ Bronze,650,Capacitors and fans appear to be variable based on region/batch.
-C+,//cdna.pcpartpicker.com/static/forever/images/product/76460ae84caf54fbc17dbb87fa05a3dd.256p.jpg,ADATA XPG PYLON,67.72,adata xpg pylon,80+ Bronze,550,650W is technically rated Cybenetics Silver
-B*,//cdna.pcpartpicker.com/static/forever/images/product/c3f4e6f17f3c57992c4cfc1813e07d0e.256p.jpg,ASRock Challenger CL-750G,69.99,asrock challenger atx 3 1,80+ Gold,750,750/850W have 600W 12V-2x6. Only 2 PCIE connectors.
+C+,//cdna.pcpartpicker.com/static/forever/images/product/76460ae84caf54fbc17dbb87fa05a3dd.256p.jpg,ADATA XPG PYLON,67.95,adata xpg pylon,80+ Bronze,550,650W is technically rated Cybenetics Silver
 B-,//cdna.pcpartpicker.com/static/forever/images/product/bda3fc099d5ee134c08ecccb4ba841d2.256p.jpg,ADATA XPG KYBER,79.98,adata xpg kyber,80+ Gold,750,
 B,//cdna.pcpartpicker.com/static/forever/images/product/d8f4d13ba49891eb3929bdddc3d87b4b.256p.jpg,MSI MAG A750GL PCIE5,79.98,msi mag a gl pcie5,80+ Gold,750,Solid electrical performance; let down by poorly tuned protections; mediocre transient response; and a low quality fan.
 B+,https://m.media-amazon.com/images/I/41Fqc0InKFL.jpg,Vetroo 50315153244479,89.99,vetroo gv g5 2024 atx 3 1,80+ Gold,850,Advertised as ATX 3.1. Platform has poor transient response in 200% ATX 3.1 test; weak 3.3V load regulation; and high-set OCP on minor rails.
-A*,https://m.media-amazon.com/images/I/41nIHCPN5hL.jpg,Rosewill CMG1000G5,99.99,rosewill cmg g5,80+ Gold,1000,
 A-,https://m.media-amazon.com/images/I/41ehLaPDbXL.jpg,Montech CENTURY II,84.9,montech century ii gold atx 3 1,80+ Gold,850,OCP is set high on 3.3V and 5VSB; voltage regulation exceeds 3% on 5VSB; mediocre excursion response in the 200% test. Inrush current is high.
-A,//cdna.pcpartpicker.com/static/forever/images/product/2ca5468038b7443022cee1bb7474a477.256p.jpg,be quiet! Pure Power 12 M,94.9,be quiet pure power 12 m,80+ Gold,750,Not to be confused with the non-modular Pure Power 12.
-A+,//cdna.pcpartpicker.com/static/forever/images/product/f9f65f8de59f21fde47414034b68536c.256p.jpg,Thermaltake Toughpower GF A3 Snow,98.79,thermaltake toughpower snow,80+ Gold,850,
+A,//cdna.pcpartpicker.com/static/forever/images/product/fb99406bb7791688169b588444541639.256p.jpg,ADATA XPG Core Reactor II VE,79.98,adata xpg core reactor ii ve,80+ Gold,650,Costdown Core Reactor II
+A+,//cdna.pcpartpicker.com/static/forever/images/product/3ef3786cf13096d367d314e5498fffc2.256p.jpg,Thermaltake Toughpower GF A3 - TT Premium Edition,103.99,thermaltake toughpower premium 2021,80+ Gold,850,

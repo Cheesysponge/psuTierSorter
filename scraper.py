@@ -32,7 +32,7 @@ soup = BeautifulSoup(response.text, "html.parser")
 
 products = soup.select("tr.tr__product")  # each power supply product row
 scraped = [
-    {"name": "test", "wattage": 69420, "efficiency": "N", "price": 69.420, "size":"SFX"}
+    {"name": "test", "wattage": 69420, "efficiency": "N", "price": 69.420, "size":"SFX", "image": "https://m.media-amazon.com/images/I/41tTcSFPOyS.jpg" }
 ]
 
 for p in products:
@@ -42,6 +42,7 @@ for p in products:
     efficiency = p.select_one(".td__spec--2")
     wattage = p.select_one(".td__spec--3")
     size = p.select_one(".td__spec--1")
+    image = p.find("img")
     bar = '#' * progress + '-' * (total - progress)
     sys.stdout.write(f'\rProgress: |{bar}| {progress}/{total}')
     sys.stdout.flush()
@@ -53,10 +54,12 @@ for p in products:
         if wattage:
             wattage = int(wattage.get_text(strip=True)[7:-1])
         if efficiency:
-            efficiency = efficiency.get_text(strip=True)
+            efficiency = (efficiency.get_text(strip=True))
         if size:
             size = size.get_text(strip=True)
-        scraped.append({"name": name, "wattage": wattage, "efficiency": efficiency, "price": price, "size": size})
+        if image:
+            image = image.get('src')
+        scraped.append({"name": name, "wattage": wattage, "efficiency": efficiency, "price": price, "size": size, "image":image})
         # print("🔌 Name:", name)
         # print("💲 Price: $", price if price else "N/A")
         # print("⚡ Wattage:", wattage, "W" if wattage else "N/A")
@@ -72,4 +75,3 @@ with open("psus_scraped.csv", "w", newline="", encoding="utf-8") as f:
     writer.writeheader()
     writer.writerows(scraped)
 print("Finished writing")
-

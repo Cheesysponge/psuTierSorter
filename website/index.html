@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PSU Finder</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="images/logo.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <div class="logo">
+          <a href="index.html">
+            <img src="images/logo.png" alt="logo" />
+          </a>
+        </div>
+
+        <div class="main-menu">
+          <ul>
+            <li>
+              <a href="index.html">Finder</a>
+            </li>
+            <li>
+              <a href="#">About Us</a>
+            </li>
+            <li>
+              <a href="#">Blog</a>
+            </li>
+            <li>
+              <a class="btn" href="#"> <i class="fas fa-user"></i> Log In </a>
+            </li>
+          </ul>
+        </div>
+        <!-- Hamburger Button -->
+        <button class="hamburger-button">
+          <div class="hamburger-line"></div>
+          <div class="hamburger-line"></div>
+          <div class="hamburger-line"></div>
+        </button>
+        <div class="mobile-menu">
+          <ul>
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <a href="#">About Us</a>
+            </li>
+            <li>
+              <a href="#">Blog</a>
+            </li>
+            <li>
+              <a class="btn" href="#"> <i class="fas fa-user"></i> Log In </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <h1 class="hero-heading text-xxl">
+            PSU Finding tool (AKA PSU Finder 9000)
+          </h1>
+          <p class="hero-text">
+            A tool that matches PSUs to their tier & price
+          </p><!--
+          <div class="hero-buttons">
+            <a href="#" class="btn btn-primary">Get Started</a>
+             <a href="#" class="btn"
+              ><i class="fas fa-laptop"></i> Book a Demo</a
+            >
+          </div> -->
+        </div> 
+      </div>
+    </section>
+    <!-- Video Section -->
+    <section class="video bg-black">
+      <div class="container-sm">
+        <h2 class="video-heading text-xl text-center">
+          Cheapest Powersupply for Each tier above 450W
+        </h2>
+        <div id="tableContainer"></div>
+      </div>
+    </section>
+    <!-- Testimonials -->
+    <!-- <section class="testimonials bg-dark">
+      <div class="container">
+        <h3 class="testimonials-heading text-xl">
+          Don't just take our word for it, see the success stories from
+          businesses just like yours.
+        </h3>
+        <div class="testimonials-grid">
+          <div class="card">
+            <p>
+              “Our business has seen a significant increase in productivity
+              since we started using the Growth app.”
+            </p>
+
+            <p>Katherine Smith</p>
+            <p>Capodopera</p>
+          </div>
+
+          <div class="card">
+            <p>
+              “As a small business owner, it's important to have a tool that can
+              help me keep track of everything. The Growth app has been a
+              lifesaver for me, allowing me to manage my contacts, schedule
+              appointments, and track progress all in one place..”
+            </p>
+
+            <p>Johnathan Lee</p>
+            <p>Red Bolt</p>
+          </div>
+
+          <div class="card">
+            <p>
+              “The dashboards and reporting feature has provided valuable
+              insights into our performance and helped us make data-driven
+              decisions. It's a game changer for us.”
+            </p>
+
+            <p>David Wilson</p>
+            <p>Slide</p>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- Pricing -->
+    <section class="pricing">
+      <div class="container-sm">
+        <h3 class="pricing-heading text-xl text-center">Tier Meaning</h3>
+        <p class="pricing-subheading text-md text-center">
+          A reference for what each tier means and is for.
+        </p>
+        <div class="pricing-grid">
+          <!-- Pricing Card 1 -->
+          <div class="card bg-light">
+            <div class="pricing-card-header">
+              <h4 class="pricing-heading text-xl">A*,B*,C*</h4>
+              <p class="pricing-card-subheading">
+                Speculative A, B, and C tiers
+              </p>
+              <p class="pricing-card-price">
+                <span class="text-xl">DO NOT USE!</span>
+              </p>
+            </div>
+            <div class="pricing-card-body">
+              <ul>
+                <li>
+                  <i class="fas fa-check"></i>Not enough testing
+                </li>
+                <li><i class="fas fa-check"></i>Explicitly not recommended</li>
+                <li>
+                  <i class="fas fa-check"></i>No guarantee of Quality
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Pricing Card 2 -->
+          <div class="card bg-black">
+            <div class="pricing-card-header">
+              <h4 class="pricing-card-heading text-xl">A-,A,A+</h4>
+              <p class="pricing-card-subheading">
+                High Quality Units.
+              </p>
+              <p class="pricing-card-price">
+                <span class="text-xl">High End</span>
+              </p>
+            </div>
+            <div class="pricing-card-body">
+              <ul>
+                <li><i class="fas fa-check"></i>Minimum 5 year warranty</li>
+                <li><i class="fas fa-check"></i>Undergone high quality testing</li>
+                <li><i class="fas fa-check"></i>Ex: 3090, 4070ti, 5080, 7900xt, etc</li>
+              </ul>
+            </div>
+          </div>
+
+                    <div class="card bg-black">
+            <div class="pricing-card-header">
+              <h4 class="pricing-card-heading text-xl">B-,B,B+</h4>
+              <p class="pricing-card-subheading">
+                Decent quality PSU
+              </p>
+              <p class="pricing-card-price">
+                <span class="text-xl">Most Systems</span>
+              </p>
+            </div>
+            <div class="pricing-card-body">
+              <ul>
+                <li><i class="fas fa-check"></i>Minimum 3 year warranty(not if -)</li>
+                <li><i class="fas fa-check"></i>Decent third party reviews </li>
+                <li><i class="fas fa-check"></i>Ex: 4060 ti-5070, 9060xt-9070xt, etc</li>
+              </ul>
+            </div>
+          </div>
+                    <div class="card bg-light">
+            <div class="pricing-card-header">
+              <h4 class="pricing-card-heading text-xl">C-,C,C+</h4>
+              <p class="pricing-card-subheading">
+                For people on a tight budget/older PC
+              </p>
+              <p class="pricing-card-price">
+                <span class="text-xl">Budget/Older</span>
+              </p>
+            </div>
+            <div class="pricing-card-body">
+              <ul>
+                <li><i class="fas fa-check"></i>Minimum 3 year warranty(not if -)</li>
+                <li><i class="fas fa-check"></i>Minimum quality worth using </li>
+                <li><i class="fas fa-check"></i>Ex: 2070-4060, rx 5700xt, 5700xt etc</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+        <p class="pricing-footer text-center">
+          (Tier info from <a href="https://docs.google.com/spreadsheets/d/1akCHL7Vhzk_EhrpIGkz8zTEvYfLDcaSpZRB6Xt6JWkc/edit?gid=931697732#gid=931697732"> SPLs PSU tierlist</a>)
+        </p>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq bg-light">
+      <div class="container-sm">
+        <h3 class="text-xl text-center">Frequently Asked Questions</h3>
+        <!-- <ul class="faq-menu">
+          <li class="active">All</li>
+          <li>Getting Started</li>
+          <li>Pricing</li>
+        </ul> -->
+        <div class="faq-content">
+          <div class="faq-group">
+            <div class="faq-group-header">
+              <h4 class="text-md">
+                How do you make money?
+              </h4>
+              <i class="fas fa-minus"></i>
+            </div>
+            <div class="faq-group-body open">
+              <p>
+                Currently I have no revenue streams, but plan to I to implement affiliate links as well as donations :|
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-group">
+            <div class="faq-group-header">
+              <h4 class="text-md">
+                Can I trust the recommendations?
+              </h4>
+              <i class="fas fa-plus"></i>
+            </div>
+            <div class="faq-group-body">
+              <p>
+                The finder scrapes hundreds of powersupplies and compares them to thousands on SPLs PSU tierlist. This is a difficult process and many powersupplies have different variants with the exact same name so I recommend taking these results with a grain of salt.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-group">
+            <div class="faq-group-header">
+              <h4 class="text-md">
+                Where did you get the tier ratings from and are you allowed to use them?
+              </h4>
+              <i class="fas fa-plus"></i>
+            </div>
+            <div class="faq-group-body">
+              <p>
+                The tier ratings are from <a href="https://docs.google.com/spreadsheets/d/1akCHL7Vhzk_EhrpIGkz8zTEvYfLDcaSpZRB6Xt6JWkc/edit?gid=931697732#gid=931697732"> SPLs PSU tierlist</a> more info about what these rankings mean are found over there.
+                <br>
+                I have been explicit given permission from SPL himself, with him saying "If you can find a way to aggregate the data without requiring edit access, sure."
+              </p>
+            </div>
+          </div>
+
+          <!-- <div class="faq-group">
+            <div class="faq-group-header">
+              <h4 class="text-md">
+                Can I collaborate with my team in real-time using all tools?
+              </h4>
+              <i class="fas fa-plus"></i>
+            </div>
+            <div class="faq-group-body">
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Obcaecati doloremque assumenda aut dolorem recusandae quibusdam
+                aliquid. Repellat animi quam vitae.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-group">
+            <div class="faq-group-header">
+              <h4 class="text-md">Is the app available on all devices?</h4>
+              <i class="fas fa-plus"></i>
+            </div>
+            <div class="faq-group-body">
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Obcaecati doloremque assumenda aut dolorem recusandae quibusdam
+                aliquid. Repellat animi quam vitae.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-group">
+            <div class="faq-group-header">
+              <h4 class="text-md">
+                How does the app help me stay compliant when working with
+                freelancers and contractors?
+              </h4>
+              <i class="fas fa-plus"></i>
+            </div>
+            <div class="faq-group-body">
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Obcaecati doloremque assumenda aut dolorem recusandae quibusdam
+                aliquid. Repellat animi quam vitae.
+              </p>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-black">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <a href="index.html">
+              <img src="images/logo.png" alt="logo" />
+            </a>
+            <!-- <div class="card">
+              <h4>Subscribe to Newsletter</h4>
+              <p class="text-sm">
+                Subscribe now to receive tips on how to take your business to
+                the next level.
+              </p>
+              <form>
+                <input type="email" id="email" placeholder="Enter your email" />
+                <button type="submit" class="btn btn-primary btn-block">
+                  Subscribe
+                </button>
+              </form>
+            </div> -->
+
+          </div>
+          <div>
+            <h4>Company</h4>
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Our Process</a></li>
+              <li><a href="#">Join Our Team</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Resources</h4>
+            <ul>
+              <li><a href="#">News</a></li>
+              <li><a href="#">Research</a></li>
+              <li><a href="#">Recent Projects</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Contact</h4>
+            <ul>
+              <li>
+                <a href="#">contact@dgbuilds.org</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+
+    <script src="main.js"></script>
+  </body>
+</html>

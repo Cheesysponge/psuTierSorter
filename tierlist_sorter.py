@@ -1,7 +1,7 @@
 from rapidfuzz import fuzz
 import re
 import csv
-import cheapest
+from cheapest import find_cheapest_for_price
 
 scraped = []
 with open("psus_scraped.csv", newline="", encoding="utf-8") as f:
@@ -11,9 +11,10 @@ with open("psus_scraped.csv", newline="", encoding="utf-8") as f:
         scraped.append({
             "name": row["name"].strip(),
             "wattage": int(row["wattage"].strip()),
-            "efficiency": row["efficiency"].strip(),
+            "efficiency": row["efficiency"].strip().replace("Efficiency Rating", ""),
             "price": float(row["price"].strip()),
-            "size": row["size"].strip()
+            "size": row["size"].strip(),
+            "image": row["image"].strip()
             })
 
 
@@ -170,7 +171,8 @@ for psu in scraped:
         "Matched Tier Model": best_match[0] if best_match else "No Match",
         "Tier": best_match[1] if best_match else "N/A",
         "Matched Tier Model Info": best_match[3] if len(best_match)>2 else "No Match Info",
-        "Similarity": best_match[2] if best_match else 0
+        "Similarity": best_match[2] if best_match else 0,
+        "Image URL": psu["image"]
     })
     #print("-" * 50)
 
@@ -179,4 +181,4 @@ with open("psu_stored.csv", "w", newline="", encoding="utf-8") as f:
     writer.writeheader()
     writer.writerows(matched_psus)
 
-cheapest.find_cheapest_for_price(450)
+find_cheapest_for_price(450)

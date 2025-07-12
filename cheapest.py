@@ -1,6 +1,7 @@
 import csv
 
-
+images = False
+cheapests = []
 def find_cheapest_for_price(desired_wattage):
     # Ask user for desired minimum wattage
 
@@ -33,13 +34,13 @@ def find_cheapest_for_price(desired_wattage):
             current = cheapest_by_tier.get(tier)
             if current is None or price < current["Price"]:
                 cheapest_by_tier[tier] = {
+                    "Image": row["Image URL"],
                     "Name": row["Scraped Name"],
                     "Price": price,
                     "Matched Model": row["Matched Tier Model"],
                     "Efficiency": row["Efficiency"],
                     "Wattage": wattage,
-                    "info": row["Matched Tier Model Info"],
-
+                    "Extra Notes/Information": row["Matched Tier Model Info"].replace(",",';'),
                 }
 
     # Print sorted by tier
@@ -48,9 +49,16 @@ def find_cheapest_for_price(desired_wattage):
     print(f"\n⚠️  I really am not 100% confident in these results because many PSUs have different, very similar variants ⚠️\n")
 
     for tier in sorted(cheapest_by_tier, key=lambda t: tier_order[t]):
-        psu = cheapest_by_tier[tier]
-        print(f"🟩 Tier {tier}: 💰${psu['Price']} — {psu['Name']} ⚡{psu['Wattage']}W 🔌{psu['Efficiency']}. 🧠 We think it is a: ({psu['Matched Model']})", f"⚠️ Extra Notes(of the matched PSU): {psu['info']}" if psu['info'] else "" )
-
+        psu = {}
+        psu["Tier"] = tier
+        psu.update(cheapest_by_tier[tier])
+        
+        cheapests.append(psu)
+        print(f"🟩 Tier {tier}: 💰${psu['Price']} — {psu['Name']} ⚡{psu['Wattage']}W 🔌{psu['Efficiency']}. 🧠 We think it is a: ({psu['Matched Model']})", f"⚠️ Extra Notes(of the matched PSU): {psu['Extra Notes/Information']}" if psu['Extra Notes/Information'] else "", f"{psu['image']}" if images else "" )
+    with open("website/cheapest.csv", "w", newline="", encoding="utf-8") as f:
+        writer = csv.DictWriter(f, fieldnames=cheapests[0].keys())
+        writer.writeheader()
+        writer.writerows(cheapests)
 alone = True
 if alone:
     try:

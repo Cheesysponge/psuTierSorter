@@ -1,0 +1,2 @@
+zenrows==1.4.0
+rapidfuzz==3.13.0

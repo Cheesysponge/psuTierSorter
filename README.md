@@ -8,11 +8,16 @@ This code has a scraper for PCPartpicker but that will require a Zenrows API key
 This does not come with the PSU tierlist data, if you would like access to it, go here: https://docs.google.com/spreadsheets/d/1akCHL7Vhzk_EhrpIGkz8zTEvYfLDcaSpZRB6Xt6JWkc/edit?gid=1973454078#gid=1973454078
 
 
-# Functionality
-Without this extra data, this still has the latest data (from 7/10/2025) of which is the cheapest PSU for each tier
+# Python Functionality
+Without this extra data, this still has the latest data (from 7/11/2025) of which is the cheapest PSU for each tier
 
-You can run the **cheapest.py** file and it will take in a wattage input and then give you the cheapest from each tier, C* to A+
+You can run the **cheapest.py** file and it will take in a wattage input and then give you the cheapest from each tier, C* to A+.
 
+It will print this out into the console as well as storing it in cheapest.csv
+
+# Website 
+
+The PSU Finding Tool website stores a cached version of the cheapest PSUs for each tier for easy access(It scans the cheapest.csv file).
 
 # ⚠️ Warning ⚠️
 This code is trying to do something that is very difficult and it is _far_ from perfect. 

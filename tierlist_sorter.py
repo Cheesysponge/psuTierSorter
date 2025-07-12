@@ -44,14 +44,17 @@ with open("spec_tierlist.csv", "r", newline="", encoding="utf-8") as csvfile:
 
     current_brand = ""
     current_series = ""
+    current_series1 = ""
+    current_series2 = ""
+
 
     for row in csv_reader:
         if len(row) < 12:
             continue
 
         # Extract fields
-        brand = row[0].strip() or current_brand
-        series = row[1].strip() or current_series
+        brand = row[0].strip()
+        series = row[1].strip()
         series1 = row[2].strip()
         series2 = row[3].strip()
         wattages = row[4].strip()
@@ -63,26 +66,39 @@ with open("spec_tierlist.csv", "r", newline="", encoding="utf-8") as csvfile:
 
 
         # Skip incomplete or malformed entries
-        if not wattages or not tier or not brand:
+        if not wattages or not tier or (not brand and not current_brand):
             continue
 
-        current_brand = brand
-        current_series = series
+
+        if(brand != ""):
+            current_brand = brand
+        if(series != ""):
+            current_series = series
+            current_series1= ""
+            current_series2= ""
+        if(series1 != ""):
+            current_series1 = series1
+            current_series2= ""
+        if(series2 != ""):
+            current_series2 = series2
+
+
 
         # Normalize efficiency rating from code
         efficiency = efficiency_dict.get(efficiency_code, "error")
 
         # Combine brand + series fields into matchable name
-        model = normalize_model_name(brand, series, series1, series2)
-
+        model = normalize_model_name(current_brand, current_series, current_series1, current_series2)
         psus_rated.append({
-            "brand": brand,
+            "brand": current_brand,
             "model": model,
             "wattages": wattages,
             "tier": tier,
             "efficiency": efficiency,
             "size": size,
-            "series2": series2,
+            "series": current_series,
+            "series1": current_series1,
+            "series2": current_series2,
             "year": year,
             "info": info
         })
@@ -131,18 +147,18 @@ def match_psu(scraped_psu, psus_rated, threshold=60):
             # Optionally filter by wattage
             if wattage_match(scraped_psu["wattage"], entry["wattages"]):
                 if(entry["efficiency"] in scraped_psu["efficiency"] and entry["size"] in scraped_psu["size"]):
-                    score+=len(normalize_name(entry["model"]))/5-10
+                    score+=len(normalize_name(entry["model"]))/5-4
                     if(entry["year"] in scraped_psu["name"]):
-                        #print(entry["year"] in scraped_psu["name"])
                         score+=20
                     if("original" in entry["model"]):
-                        #print(entry["year"] in scraped_psu["name"])
                         score-=20
                     if("swap" in entry["model"]):
-                        #print(entry["year"] in scraped_psu["name"])
                         score+=10
-                    if("n amer" in entry["model"]):
-                        score+=15
+                    if(normalize_name(entry["series1"]) in scraped_psu["normalized"]):
+                        score+=10
+
+                    if entry["series2"] == "II VE":
+                        score-=0.8
                     if(entry["brand"] == "Vetroo"):
                         if(entry["series2"] == "2023 (ATX 3.0)"):
                             continue

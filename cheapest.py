@@ -59,7 +59,7 @@ def find_cheapest_for_price(desired_wattage):
         writer = csv.DictWriter(f, fieldnames=cheapests[0].keys())
         writer.writeheader()
         writer.writerows(cheapests)
-alone = True
+alone = False
 if alone:
     try:
         w = int(input("🔧 Enter the **minimum** PSU wattage (e.g., 650): ").strip())

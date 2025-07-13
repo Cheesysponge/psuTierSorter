@@ -44,10 +44,21 @@ document.addEventListener('DOMContentLoaded', () => {
   );
 });
 
-fetch('./cheapest.csv')
-        .then(response => response.text())
+function loadCSV(filename, clickedButton) {
+    // Highlight the active button
+    document.querySelectorAll('.csv-button').forEach(btn => btn.classList.remove('active'));
+    clickedButton.classList.add('active');
+
+    // Fetch and display CSV
+    fetch(`./${filename}`)
+        .then(response => {
+            if (!response.ok) throw new Error(`Failed to load ${filename}`);
+            return response.text();
+        })
         .then(csvText => createTableFromCSV(csvText))
         .catch(error => console.error('Error loading CSV:', error));
+}
+
 
     function createTableFromCSV(csvText) {
         const parsed = Papa.parse(csvText.trim(), { header: false });
@@ -92,3 +103,10 @@ fetch('./cheapest.csv')
         container.innerHTML = '';
         container.appendChild(table);
     }
+loadCSV('cheapest450.csv'); // load default on page load
+window.addEventListener('DOMContentLoaded', () => {
+    const defaultButton = document.querySelector('.csv-button');
+    if (defaultButton) {
+        loadCSV('cheapest450.csv', defaultButton);
+    }
+});

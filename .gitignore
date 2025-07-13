@@ -2,5 +2,6 @@
 psus_scraped.csv
 playground.py
 spec_tierlist.csv
+scraper.py
 venv/
 __pycache__/

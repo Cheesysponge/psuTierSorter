@@ -6,7 +6,7 @@
 
 :root {
   --primary-color: #A599B5;
-  --light-color: #ACBDBA;
+  --light-color: #acbdba;
   --dark-color: #2E2F2F;
 }
 
@@ -282,8 +282,9 @@ img {
 
 /* Buttons */
 .btn {
+  margin: 10px;
   display: inline-block;
-  padding: 13px 20px;
+  padding: 10px 20px;
   background: var(--light-color);
   color: #333;
   font-weight: 600;
@@ -506,4 +507,23 @@ th, td {
     border: 1px solid #ddd;
     padding: 8px;
     text-align: center; 
+}
+.csv-button {
+  margin: 5px 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+
+  border-radius: 8px;
+  transition: background-color 0.2s ease;
+}
+
+.csv-button:hover {
+  background-color: #acbdba;
+}
+
+.csv-button.active {
+  background-color: #6c75a5;
+  color: white;
+  border-color: rgb(34, 68, 131);
 }

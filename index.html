@@ -74,7 +74,7 @@
       <div class="container">
         <div class="hero-content">
           <h1 class="hero-heading text-xxl">
-            PSU Finding tool (AKA PSU Finder 9000)
+            PSU Finding tool
           </h1>
           <p class="hero-text">
             A tool that matches PSUs to their tier & price
@@ -92,7 +92,15 @@
     <section class="video bg-black">
       <div class="container-sm">
         <h2 class="video-heading text-xl text-center">
-          Cheapest Power Supply for Each tier above 450W
+          Cheapest Power Supply for Each tier above
+
+                <div style="text-align:center; margin: 1rem;">
+                  <button class="btn btn-primary btn-block csv-button" onclick="loadCSV('cheapest500.csv', this)"> 500W</button>
+                  <button class="btn btn-primary btn-block csv-button" onclick="loadCSV('cheapest600.csv', this)">600W</button>
+                  <button class="btn btn-primary btn-block csv-button" onclick="loadCSV('cheapest700.csv', this)">700W</button>
+                  <button class="btn btn-primary btn-block csv-button" onclick="loadCSV('cheapest800.csv', this)">800W</button>
+                  <button class="btn btn-primary btn-block csv-button" onclick="loadCSV('cheapest900.csv', this)">900W</button>
+                </div>
         </h2>
         <div id="tableContainer"></div>
       </div>

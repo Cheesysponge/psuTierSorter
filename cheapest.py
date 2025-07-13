@@ -1,9 +1,9 @@
 import csv
 
 images = False
-cheapests = []
 def find_cheapest_for_price(desired_wattage):
     # Ask user for desired minimum wattage
+    cheapests = []
 
 
     # Tier range you're interested in
@@ -55,15 +55,16 @@ def find_cheapest_for_price(desired_wattage):
         
         cheapests.append(psu)
         print(f"🟩 Tier {tier}: 💰${psu['Price']} — {psu['Name']} ⚡{psu['Wattage']}W 🔌{psu['Efficiency']}. 🧠 We think it is a: ({psu['Matched Model']})", f"⚠️ Extra Notes(of the matched PSU): {psu['Extra Notes/Information']}" if psu['Extra Notes/Information'] else "", f"{psu['image']}" if images else "" )
-    with open("cheapest.csv", "w", newline="", encoding="utf-8") as f:
+    with open("cheapest" + str(desired_wattage) + ".csv", "w", newline="", encoding="utf-8") as f:
         writer = csv.DictWriter(f, fieldnames=cheapests[0].keys())
         writer.writeheader()
         writer.writerows(cheapests)
+    cheapests = []
+    
 alone = False
 if alone:
     try:
         w = int(input("🔧 Enter the **minimum** PSU wattage (e.g., 650): ").strip())
-        find_cheapest_for_price(w)
 
     except ValueError:
         print("❌ Invalid wattage. Please enter a number like 650.")

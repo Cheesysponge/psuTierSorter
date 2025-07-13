@@ -199,4 +199,5 @@ with open("psu_stored.csv", "w", newline="", encoding="utf-8") as f:
     writer.writeheader()
     writer.writerows(matched_psus)
 
-find_cheapest_for_price(450)
+for i in range(500, 901, 100):
+    find_cheapest_for_price(i)

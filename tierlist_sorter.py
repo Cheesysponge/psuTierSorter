@@ -1,7 +1,6 @@
 from rapidfuzz import fuzz
 import re
 import csv
-from cheapest import find_cheapest_for_price
 
 scraped = []
 with open("psus_scraped.csv", newline="", encoding="utf-8") as f:
@@ -14,7 +13,8 @@ with open("psus_scraped.csv", newline="", encoding="utf-8") as f:
             "efficiency": row["efficiency"].strip().replace("Efficiency Rating", ""),
             "price": float(row["price"].strip()),
             "size": row["size"].strip(),
-            "image": row["image"].strip()
+            "image": row["image"].strip(),
+            "modularity": row["modularity"].strip().replace("Modular", "")
             })
 
 
@@ -190,7 +190,9 @@ for psu in scraped:
         "Tier": best_match[1] if best_match else "N/A",
         "Matched Tier Model Info": best_match[3] if len(best_match)>2 else "No Match Info",
         "Similarity": best_match[2] if best_match else 0,
-        "Image URL": psu["image"]
+        "Image URL": psu["image"],
+        "modularity": psu["modularity"]
+
     })
     #print("-" * 50)
 
@@ -199,5 +201,3 @@ with open("psu_stored.csv", "w", newline="", encoding="utf-8") as f:
     writer.writeheader()
     writer.writerows(matched_psus)
 
-for i in range(500, 901, 100):
-    find_cheapest_for_price(i)

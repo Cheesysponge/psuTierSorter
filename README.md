@@ -10,15 +10,13 @@ I have explicit permission from the creator to use his data for this project.
 
 
 # Python Functionality
-Without this extra data, this still has the latest data (from 7/12/2025) of which is the cheapest PSU for each tier
+Without this extra data, this still has the latest data (from 7/13/2025) of which is the cheapest PSU for each tier
 
-You can run the **cheapest.py** file and it will take in a wattage input and then give you the cheapest from each tier, C* to A+.
-
-It will print this out into the console as well as storing it in cheapest.csv
+All of the information is stored in psu_stored.csv so if you would like to process it, you may do that. Most of the functionality of the python is to match the PSUs to the one on the tierlist
 
 # Website 
 
-The PSU Finding Tool website stores a cached version of the cheapest PSUs for each tier for easy access(It scans the cheapest.csv file).
+The PSU Finding Tool website stores a cached version of the cheapest PSUs for each tier for easy access(It scans the psu_stored.csv file).
 
 # ⚠️ Warning ⚠️
 This code is trying to do something that is very difficult and it is _far_ from perfect. 

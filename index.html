@@ -92,17 +92,22 @@
     <section class="video bg-black">
       <div class="container-sm">
         <h2 class="video-heading text-xl text-center">
-          Cheapest Power Supply for Each tier above
+          Cheapest PSU for each tier above 
 
                 <div style="text-align:center; margin: 1rem;">
-                  <button class="btn btn-primary btn-block csv-button" onclick="loadCSV('cheapest500.csv', this)"> 500W</button>
+                  <input type="number" id="minWattage" value="600" />
+                  <h9 >  Watts </h9>
+                  <button class="btn btn-primary text-center" onclick="loadAndFilter()">Click to Refresh</button>
+
+                  <!-- <button class="btn btn-primary btn-block csv-button" onclick="loadCSV('cheapest500.csv', this)"> 500W</button>
                   <button class="btn btn-primary btn-block csv-button" onclick="loadCSV('cheapest600.csv', this)">600W</button>
                   <button class="btn btn-primary btn-block csv-button" onclick="loadCSV('cheapest700.csv', this)">700W</button>
                   <button class="btn btn-primary btn-block csv-button" onclick="loadCSV('cheapest800.csv', this)">800W</button>
-                  <button class="btn btn-primary btn-block csv-button" onclick="loadCSV('cheapest900.csv', this)">900W</button>
+                  <button class="btn btn-primary btn-block csv-button" onclick="loadCSV('cheapest900.csv', this)">900W</button> -->
                 </div>
         </h2>
-        <div id="tableContainer"></div>
+        <div class="video-heading text-center" id="tableContainer"></div>
+
       </div>
     </section>
     <!-- Testimonials -->

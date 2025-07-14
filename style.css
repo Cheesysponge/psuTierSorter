@@ -28,7 +28,7 @@ ul {
 }
 
 img {
-  max-width: 100%;
+  max-width: 100px;
 }
 
 /* Navbar */
@@ -267,7 +267,7 @@ img {
 }
 
 .container-sm {
-  max-width: 800px;
+  max-width: 80vw;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -498,9 +498,16 @@ img {
 }
 
 table {
-    border-collapse: collapse;
-    width: 80%; 
-    margin: 20px auto;  
+  display: inline-table; /* Important: allows centering inline */
+  border-collapse: collapse;
+  min-width: 800px; /* Or however wide you want */
+  margin: 20px 0;
+  width: auto;
+}
+#tableContainer {
+  width: 100%;
+  overflow-x: auto;
+  text-align: center; /* Center the table inside the container */
 }
 
 th, td {
@@ -526,4 +533,21 @@ th, td {
   background-color: #6c75a5;
   color: white;
   border-color: rgb(34, 68, 131);
+}
+
+
+#minWattage {
+  width: 100px;          /* fixed width */
+  padding: 6px 10px;     /* space inside */
+  font-size: 16px;       /* text size */
+  border: 2px solid #6c75a5; /* blue border */
+  border-radius: 6px;    /* rounded corners */
+  outline: none;         /* remove default outline */
+  transition: border-color 0.3s ease;
+  margin-bottom: 10px;
+}
+
+#minWattage:focus {
+  border-color: #6c75a5; /* darker blue on focus */
+  box-shadow: 0 0 5px #6c75a5; /* subtle glow */
 }

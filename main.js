@@ -232,3 +232,7 @@ data.forEach(row => {
 window.addEventListener('DOMContentLoaded', () => {
   loadAndFilter();
 });
+
+document.getElementById('minWattage').addEventListener('input', () => {
+  loadAndFilter()
+});

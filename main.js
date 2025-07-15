@@ -190,24 +190,41 @@ function createTableFromData(data) {
   table.appendChild(headerRow);
 
   // Data rows
-  data.forEach(row => {
-    const tr = document.createElement('tr');
-    columns.forEach(col => {
-      const td = document.createElement('td');
-      if (col.key === 'Image URL' && row[col.key]) {
-        const img = document.createElement('img');
-        let url = row[col.key].trim();
-        if (url.startsWith('//')) url = 'https:' + url;
-        img.src = url;
-        img.alt = row['Scraped Name'] || 'Image';
-        td.appendChild(img);
+data.forEach(row => {
+  const tr = document.createElement('tr');
+  columns.forEach(col => {
+    const td = document.createElement('td');
+
+    if (col.key === 'Image URL' && row[col.key]) {
+      const img = document.createElement('img');
+      let url = row[col.key].trim();
+      if (url.startsWith('//')) url = 'https:' + url;
+      img.src = url;
+      img.alt = row['Scraped Name'] || 'Image';
+      td.appendChild(img);
+
+    } else if (col.key === 'Scraped Name') {
+      const link = (row['Product URL'] || '').trim();  // change 'Product URL' if needed
+      if (link) {
+        const a = document.createElement('a');
+        a.href = link;
+        a.textContent = row[col.key];
+        a.target = '_blank';  // open in new tab
+        td.appendChild(a);
       } else {
-        td.textContent = row[col.key] || '';
+        td.textContent = row[col.key];
       }
-      tr.appendChild(td);
-    });
-    table.appendChild(tr);
+
+    } else {
+      td.textContent = row[col.key] || '';
+    }
+
+    tr.appendChild(td);
   });
+  table.appendChild(tr);
+});
+
+
 
   container.appendChild(table);
 }

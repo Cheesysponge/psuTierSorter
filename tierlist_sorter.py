@@ -191,7 +191,8 @@ for psu in scraped:
         "Matched Tier Model Info": best_match[3] if len(best_match)>2 else "No Match Info",
         "Similarity": best_match[2] if best_match else 0,
         "Image URL": psu["image"],
-        "modularity": psu["modularity"]
+        "modularity": psu["modularity"],
+        "Product URL": ""
 
     })
     #print("-" * 50)

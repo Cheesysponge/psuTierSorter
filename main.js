@@ -113,11 +113,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 const wantedTiers = ["C-", "C", "C+", "B-", "B", "B+", "A-", "A", "A+"];
-
+const noCacheURL = `${'psu_stored.csv'}?t=${Date.now()}`;
 function loadAndFilter() {
   const minWattage = parseInt(document.getElementById('minWattage').value, 10) || 0;
   
-  fetch('psu_stored.csv')
+  fetch(noCacheURL)
     .then(response => {
       if (!response.ok) throw new Error('Failed to load CSV');
       return response.text();

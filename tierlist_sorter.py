@@ -138,27 +138,27 @@ def wattage_match(scraped_watt, tier_wattage_string, tolerance=50):
 
 matched_psus = []
 affiliate_links = {
-        "Montech APX": {
-            850: "",
-            800: "",
-            750: "",
-            700: "",            
-            650: "https://amzn.to/44uiYX3",
-            600: "",
-            550: "https://amzn.to/46IWt22",
-        },
-        "Apevia Prestige": {
-            850: "",
-            800: "",
-            750: "",
-            700: "",
-            600: "https://amzn.to/452Enqv",
-        },
-        "Montech CENTURY II": {
-            1200: "https://amzn.to/4kAqt3D", 
-            1050: "https://amzn.to/40jkc4X", 
-            850: "https://amzn.to/46bIjGE",
-        }
+        # "Montech APX": {
+        #     850: "",
+        #     800: "",
+        #     750: "",
+        #     700: "",            
+        #     650: "https://amzn.to/44uiYX3",
+        #     600: "",
+        #     550: "https://amzn.to/46IWt22",
+        # },
+        # "Apevia Prestige": {
+        #     850: "",
+        #     800: "",
+        #     750: "",
+        #     700: "",
+        #     600: "https://amzn.to/452Enqv",
+        # },
+        # "Montech CENTURY II": {
+        #     1200: "https://amzn.to/4kAqt3D", 
+        #     1050: "https://amzn.to/40jkc4X", 
+        #     850: "https://amzn.to/46bIjGE",
+        # }
      }
     
 def match_psu(scraped_psu, psus_rated, threshold=60):
@@ -179,11 +179,14 @@ def match_psu(scraped_psu, psus_rated, threshold=60):
                         score+=10
                     if(normalize_name(entry["series1"]) in scraped_psu["normalized"]):
                         score+=10
-                    if entry["series2"] == "II VE":
+                    if entry["series2"] == "II VE" and not ("ve" in model_str):
                         score-=0.8
                     if(entry["brand"] == "Vetroo"):
                         if(entry["series2"] == "2023 (ATX 3.0)"):
                             continue
+                    if(scraped_psu["name"] =="Thermaltake Toughpower GF A3 - TT Premium Edition" and "gf a3 n amer" in model_str):
+                        score+=20
+                        print(model_str,score)
                     if(psu["name"] == "Silverstone ST85F-GS-V2" and model_str == "silverstone triton rx"):
                         score -=0.3
                     matches.append((entry["model"], entry["tier"], score, entry["info"]))

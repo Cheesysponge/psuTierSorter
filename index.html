@@ -17,7 +17,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="website/style.css" />
     <link rel="shortcut icon" href="images/logo.ico" type="image/x-icon" />
   </head>
   <body>
@@ -97,6 +97,27 @@
                 <div style="text-align:center; margin: 1rem;">
                   <input type="number" id="minWattage" value="600" />
                   <h9 >  Watts </h9>
+                  <br>
+                  <label>
+                  <input type="checkbox" id="bestToggle">
+                    Sort from A+ to C-               
+                  </label>
+                  <label>
+                  <input type="checkbox" id="modularToggle">
+                    Fully Modular Only               
+                  </label>
+                  <label>
+                    <input type="checkbox" id="sfxToggle">
+                    SFX Only
+                  </label>
+                  <label>
+                  <input type="checkbox" id="dToggle">
+                    Include D tier               
+                  </label>
+                  <label>
+                  <input type="checkbox" id="importantToggle">
+                    Only Include Important Info               
+                  </label>
                   <!-- <button class="btn btn-primary text-center" onclick="loadAndFilter()">Click to Refresh</button> -->
 
                   <!-- <button class="btn btn-primary btn-block csv-button" onclick="loadCSV('cheapest500.csv', this)"> 500W</button>
@@ -405,6 +426,6 @@
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
 
-    <script src="main.js"></script>
+    <script src="website/main.js"></script>
   </body>
 </html>

@@ -12,7 +12,7 @@ with open("psus_scraped.csv", newline="", encoding="utf-8") as f:
             "wattage": int(row["wattage"].strip()),
             "efficiency": row["efficiency"].strip().replace("Efficiency Rating", ""),
             "price": float(row["price"].strip()),
-            "size": row["size"].strip(),
+            "size": row["size"].strip().replace("Type", ""),
             "image": row["image"].strip(),
             "modularity": row["modularity"].strip().replace("Modular", "")
             })
@@ -217,7 +217,9 @@ for psu in scraped:
         "Similarity": best_match[2] if best_match else 0,
         "Image URL": psu["image"],
         "modularity": psu["modularity"],
-        "Product URL": (affiliate_links[psu["name"]])[psu["wattage"]] if psu["name"] in affiliate_links else ""
+        "Product URL": (affiliate_links[psu["name"]])[psu["wattage"]] if psu["name"] in affiliate_links else "",
+        "size": psu["size"],
+
     })
     #print("-" * 50)
 

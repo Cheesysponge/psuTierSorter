@@ -119,6 +119,7 @@ document.getElementById('sfxToggle').addEventListener('change', loadAndFilter);
 document.getElementById('bestToggle').addEventListener('change', loadAndFilter);
 document.getElementById('dToggle').addEventListener('change', loadAndFilter);
 document.getElementById('importantToggle').addEventListener('change', loadAndFilter);
+document.getElementById('whiteToggle').addEventListener('change', loadAndFilter);
 
 function loadAndFilter() {
   wantedTiers = ["C-", "C", "C+", "B-", "B", "B+", "A-", "A", "A+"]
@@ -127,6 +128,8 @@ function loadAndFilter() {
   const sfxOnly = document.getElementById('sfxToggle').checked;
   const bestSort = document.getElementById('bestToggle').checked;
   const includeD = document.getElementById('dToggle').checked;
+  const whitesOnly = document.getElementById('whiteToggle').checked;
+
   if(includeD){
     wantedTiers = ["D", "C-", "C", "C+", "B-", "B", "B+", "A-", "A", "A+"]
   }
@@ -152,13 +155,17 @@ function loadAndFilter() {
   
         const isModular = modularField.includes('full'); // matches "modular" or "semi-modular"
         const isSFX = row['size'].includes('SFX');
+        const isWhite = row['color'].includes('White');
+
         return (
           watt >= minWattage &&
           !isNaN(price) &&
           price > 0 &&
           wantedTiers.includes(tier) &&
           (!modularOnly || isModular) &&
-          (!sfxOnly || isSFX)
+          (!sfxOnly || isSFX) &&
+          (!whitesOnly || isWhite)
+
 
         );
       });
@@ -208,6 +215,7 @@ function createTableFromData(data) {
     { key: 'Efficiency', label: '80+ Rating' },
     { key: 'size', label: 'Size' },
     { key: 'modularity', label: 'Modularity' },
+    { key: 'color', label: 'Color' },
     { key: 'Matched Tier Model', label: 'Matched Tierlist Model' },
     { key: 'Matched Tier Model Info', label: 'Notes Based on Matched Model' }
 
@@ -220,7 +228,7 @@ function createTableFromData(data) {
     { key: 'Wattage', label: 'Wattage' },
     { key: 'Efficiency', label: '80+ Rating' },
     { key: 'modularity', label: 'Modularity' },
-
+    { key: 'color', label: 'Color' },
 
   ];
   }

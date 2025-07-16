@@ -34,7 +34,7 @@ soup = BeautifulSoup(response.text, "html.parser")
 
 products = soup.select("tr.tr__product")  # each power supply product row
 scraped = [
-    {"name": "test", "wattage": 69420, "efficiency": "N", "price": 69.420, "size":"SFX", "image": "https://m.media-amazon.com/images/I/41tTcSFPOyS.jpg", "modularity": "Full" }
+    {"name": "test", "wattage": 69420, "efficiency": "N", "price": 69.420, "size":"SFX", "image": "https://m.media-amazon.com/images/I/41tTcSFPOyS.jpg", "modularity": "Full", "color": "creamy" }
 ]
 
 for p in products:
@@ -44,8 +44,13 @@ for p in products:
     efficiency = p.select_one(".td__spec--2")
     wattage = p.select_one(".td__spec--3")
     modularity = p.select_one(".td__spec--4")
+    color = p.select_one(".td__spec--5")
+
     size = p.select_one(".td__spec--1")
     image = p.find("img")
+
+    #url = p.find("a")
+
     bar = '#' * progress + '-' * (total - progress)
     sys.stdout.write(f'\rProgress: |{bar}| {progress}/{total}')
     sys.stdout.flush()
@@ -64,7 +69,9 @@ for p in products:
             modularity = modularity.get_text(strip=True)
         if image:
             image = image.get('src')
-        scraped.append({"name": name, "wattage": wattage, "efficiency": efficiency, "price": price, "size": size, "image":image, "modularity": modularity})
+        if color:
+            color = color.get_text(strip=True)
+        scraped.append({"name": name, "wattage": wattage, "efficiency": efficiency, "price": price, "size": size, "image":image, "modularity": modularity, "color": color})
         # print("🔌 Name:", name)
         # print("💲 Price: $", price if price else "N/A")
         # print("⚡ Wattage:", wattage, "W" if wattage else "N/A")
@@ -101,6 +108,8 @@ if(pageTwo):
         modularity = p.select_one(".td__spec--4")
         size = p.select_one(".td__spec--1")
         image = p.find("img")
+        color = p.select_one(".td__spec--5")
+
         bar = '#' * progress + '-' * (total - progress)
         sys.stdout.write(f'\rProgress: |{bar}| {progress}/{total}')
         sys.stdout.flush()
@@ -117,9 +126,11 @@ if(pageTwo):
                 size = size.get_text(strip=True)
             if modularity:
                 modularity = modularity.get_text(strip=True)
+            if color:
+                color = color.get_text(strip=True)
             if image:
                 image = image.get('src')
-            scraped.append({"name": name, "wattage": wattage, "efficiency": efficiency, "price": price, "size": size, "image":image, "modularity": modularity})
+            scraped.append({"name": name, "wattage": wattage, "efficiency": efficiency, "price": price, "size": size, "image":image, "modularity": modularity, "color": color})
 
 print()
 print("finished collecting data")

@@ -14,7 +14,8 @@ with open("psus_scraped.csv", newline="", encoding="utf-8") as f:
             "price": float(row["price"].strip()),
             "size": row["size"].strip().replace("Type", ""),
             "image": row["image"].strip(),
-            "modularity": row["modularity"].strip().replace("Modular", "")
+            "modularity": row["modularity"].strip().replace("Modular", ""),
+            "color": row["color"].strip().replace("Color", "")
             })
 
 
@@ -186,7 +187,6 @@ def match_psu(scraped_psu, psus_rated, threshold=60):
                             continue
                     if(scraped_psu["name"] =="Thermaltake Toughpower GF A3 - TT Premium Edition" and "gf a3 n amer" in model_str):
                         score+=20
-                        print(model_str,score)
                     if(psu["name"] == "Silverstone ST85F-GS-V2" and model_str == "silverstone triton rx"):
                         score -=0.3
                     matches.append((entry["model"], entry["tier"], score, entry["info"]))
@@ -222,6 +222,7 @@ for psu in scraped:
         "modularity": psu["modularity"],
         "Product URL": (affiliate_links[psu["name"]])[psu["wattage"]] if psu["name"] in affiliate_links else "",
         "size": psu["size"],
+        "color": psu["color"],
 
     })
     #print("-" * 50)

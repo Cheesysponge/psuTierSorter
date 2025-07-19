@@ -220,7 +220,7 @@ function createTableFromData(data) {
     { key: 'Matched Tier Model Info', label: 'Notes Based on Matched Model' }
 
   ];
-  if(importantToggle){
+  if(!importantToggle){
       columns = [
     { key: 'Tier', label: 'Tier' },
     { key: 'Scraped Name', label: 'Name' },

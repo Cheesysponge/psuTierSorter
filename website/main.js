@@ -227,9 +227,7 @@ function createTableFromData(data) {
     { key: 'Price', label: 'Price' },
     { key: 'Wattage', label: 'Wattage' },
     { key: 'Efficiency', label: '80+ Rating' },
-    { key: 'modularity', label: 'Modularity' },
-    { key: 'color', label: 'Color' },
-
+    { key: 'modularity', label: 'Modularity' }
   ];
   }
 

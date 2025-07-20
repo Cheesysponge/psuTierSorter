@@ -161,7 +161,43 @@ affiliate_links = {
         #     850: "https://amzn.to/46bIjGE",
         # }
      }
-    
+def addAffiliate(name, wattages, links):
+    affiliate_links[name] = {
+        1250: "",
+        1200: "",
+        1150: "",
+        1100: "",
+        1050: "",
+        1000: "",
+        950: "",
+        900: "",
+        850: "",
+        800: "",
+        750: "",
+        700: "",            
+        650: "",
+        600: "",
+        550: "",
+    }
+    for w in range(len(wattages)):
+        affiliate_links[name][wattages[w]] = links[w]
+#?tag=psutierlist01-20
+addAffiliate("ASRock Phantom Gaming PG-750G",[750],["https://amzn.to/45hVC7K"])
+addAffiliate("ASRock Phantom Gaming PG-850G",[850],["https://amzn.to/4kpwDDI"])
+addAffiliate("ASRock Phantom Gaming PG-1000G",[1000],["https://amzn.to/43njvIn"])
+addAffiliate("Apevia Prestige",[600,800],["https://amzn.to/42LWXCJ","https://amzn.to/3QxDWwB"])
+addAffiliate("Montech APX",[550,650,750],["https://amzn.to/4nDKJE0","https://amzn.to/4lGy6pZ","https://amzn.to/44DJmNa"])
+addAffiliate("Montech CENTURY II",[850,1050,1200],["https://amzn.to/4kthp0f","https://amzn.to/460hlS7","https://amzn.to/44k5kpr"])
+addAffiliate("Corsair CX650M (2021)",[650],["https://amzn.to/40PDVst"])
+addAffiliate("Corsair CX750M (2021)",[750],["https://amzn.to/40RC0nd"])
+addAffiliate("NZXT C850 (2024)",[850],["https://amzn.to/4hoJLrR"])
+addAffiliate("Vetroo 50315153244479",[850],["https://www.amazon.com/Vetroo-Modular-Operation-10-Year-Warranty/dp/B0DP2KLT8P?tag=psutierlist01-20"])
+addAffiliate("Vetroo 50315153277247",[850],["https://www.amazon.com/Vetroo-Modular-Operation-10-Year-Warranty/dp/B0DP2LBPPY?tag=psutierlist01-20"])
+addAffiliate("Vetroo GV1000",[1000],["https://www.amazon.com/Vetroo-Modular-Operation-10-Year-Warranty/dp/B0BRN2YG7F?tag=psutierlist01-20"])
+addAffiliate("EVGA 850 GQ",[850],["https://www.amazon.com/EVGA-Modular-Warranty-Supply-210-GQ-0850-V1/dp/B017HA3SO0?tag=psutierlist01-20"])
+addAffiliate("SeaSonic CORE GX ATX 3 (2024)", [650,850],"")
+
+
 def match_psu(scraped_psu, psus_rated, threshold=60):
     matches = []
     for entry in psus_rated:
@@ -226,7 +262,6 @@ for psu in scraped:
 
     })
     #print("-" * 50)
-
 with open("psu_stored.csv", "w", newline="", encoding="utf-8") as f:
     writer = csv.DictWriter(f, fieldnames=matched_psus[0].keys())
     writer.writeheader()

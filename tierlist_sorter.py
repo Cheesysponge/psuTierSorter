@@ -1,6 +1,8 @@
 from rapidfuzz import fuzz
 import re
 import csv
+from urllib.parse import urlparse, urlunparse, parse_qs, urlencode
+
 
 scraped = []
 with open("psus_scraped.csv", newline="", encoding="utf-8") as f:
@@ -139,28 +141,38 @@ def wattage_match(scraped_watt, tier_wattage_string, tolerance=50):
 
 matched_psus = []
 affiliate_links = {
-        # "Montech APX": {
-        #     850: "",
-        #     800: "",
-        #     750: "",
-        #     700: "",            
-        #     650: "https://amzn.to/44uiYX3",
-        #     600: "",
-        #     550: "https://amzn.to/46IWt22",
-        # },
-        # "Apevia Prestige": {
-        #     850: "",
-        #     800: "",
-        #     750: "",
-        #     700: "",
-        #     600: "https://amzn.to/452Enqv",
-        # },
-        # "Montech CENTURY II": {
-        #     1200: "https://amzn.to/4kAqt3D", 
-        #     1050: "https://amzn.to/40jkc4X", 
-        #     850: "https://amzn.to/46bIjGE",
-        # }
      }
+def clean_newegg_affiliate_links(text):
+    pattern = re.compile(r'https?://(?:www\.)?newegg\.com/[^ ]*?/p/([A-Z0-9\-]+)', re.IGNORECASE)
+
+    def replacer(match):
+        product_id = match.group(1)
+        clean_link = (
+            f"https://www.newegg.com/p/{product_id}"
+            f"?ranMID=44583"
+            f"&ranEAID=3667186"
+            f"&ranSiteID=ECUJk1uD7V8-0BE80SJVi_.Nk3SX_KOP6w"
+            f"&ASUBID=Cheesefinder"
+        )
+        return clean_link
+    return pattern.sub(replacer, text)
+def clean_amazon_link(url):
+    parsed = urlparse(url)
+
+ 
+    clean_query = {"tag": "psutierlist01-20"}
+
+    clean_url = urlunparse((
+        parsed.scheme,
+        parsed.netloc,
+        parsed.path,
+        '',
+        urlencode(clean_query),
+        ''
+    ))
+
+    return clean_url
+
 def addAffiliate(name, wattages, links):
     affiliate_links[name] = {
         1250: "",
@@ -180,6 +192,11 @@ def addAffiliate(name, wattages, links):
         550: "",
     }
     for w in range(len(wattages)):
+        if "newegg" in links[w]:
+            links[w] = clean_newegg_affiliate_links(links[w])
+            #print(links[w])
+        elif "amazon" in links[w]:
+            links[w] = clean_amazon_link(links[w])
         affiliate_links[name][wattages[w]] = links[w]
 #?tag=psutierlist01-20
 addAffiliate("ASRock Phantom Gaming PG-750G",[750],["https://amzn.to/45hVC7K"])
@@ -191,11 +208,14 @@ addAffiliate("Montech CENTURY II",[850,1050,1200],["https://amzn.to/4kthp0f","ht
 addAffiliate("Corsair CX650M (2021)",[650],["https://amzn.to/40PDVst"])
 addAffiliate("Corsair CX750M (2021)",[750],["https://amzn.to/40RC0nd"])
 addAffiliate("NZXT C850 (2024)",[850],["https://amzn.to/4hoJLrR"])
-addAffiliate("Vetroo 50315153244479",[850],["https://www.amazon.com/Vetroo-Modular-Operation-10-Year-Warranty/dp/B0DP2KLT8P?tag=psutierlist01-20"])
-addAffiliate("Vetroo 50315153277247",[850],["https://www.amazon.com/Vetroo-Modular-Operation-10-Year-Warranty/dp/B0DP2LBPPY?tag=psutierlist01-20"])
-addAffiliate("Vetroo GV1000",[1000],["https://www.amazon.com/Vetroo-Modular-Operation-10-Year-Warranty/dp/B0BRN2YG7F?tag=psutierlist01-20"])
-addAffiliate("EVGA 850 GQ",[850],["https://www.amazon.com/EVGA-Modular-Warranty-Supply-210-GQ-0850-V1/dp/B017HA3SO0?tag=psutierlist01-20"])
-addAffiliate("SeaSonic CORE GX ATX 3 (2024)", [650,850],"")
+addAffiliate("Vetroo 50315153244479",[850],["https://www.amazon.com/Vetroo-Modular-Operation-10-Year-Warranty/dp/B0DP2KLT8P"])
+addAffiliate("Vetroo 50315153277247",[850],["https://www.amazon.com/Vetroo-Modular-Operation-10-Year-Warranty/dp/B0DP2LBPPY"])
+addAffiliate("Vetroo GV1000",[1000],["https://www.amazon.com/Vetroo-Modular-Operation-10-Year-Warranty/dp/B0BRN2YG7F"])
+addAffiliate("EVGA 850 GQ",[850],["https://www.newegg.com/w/p/N82E16817438061"])
+addAffiliate("SeaSonic CORE GX ATX 3 (2024)", [650,850],["https://www.newegg.com/w/p/N82E16817151276","https://www.newegg.com/w/p/N82E16817151278"])
+addAffiliate("SAMA GT",[650],["https://amzn.to/3CPjOm9"])
+addAffiliate("MSI MPG A850GS PCIE5",[850],["https://amzn.to/4hvgKea"])
+addAffiliate("ADATA XPG CYBERCORE",[1000],["https://www.walmart.com/ip/XPG-CYBERCORE-ATX-Modular-PSU-1000W-80-Plus-Platinum-26-Connectors-Intex-ATX-12V/724286138"])
 
 
 def match_psu(scraped_psu, psus_rated, threshold=60):

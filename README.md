@@ -10,7 +10,7 @@ I have explicit permission from the creator to use his data for this project.
 
 
 # Python Functionality
-Without this extra data, this still has the latest data (from 7/15/2025) of which is the cheapest PSU for each tier
+Without this extra data, this still has the latest(approximately) data of which is the cheapest PSU for each tier
 
 All of the information is stored in psu_stored.csv so if you would like to process it, you may do that. Most of the functionality of the python is to match the PSUs to the one on the tierlist
 

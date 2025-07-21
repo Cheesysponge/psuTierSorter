@@ -221,7 +221,8 @@ addAffiliate("MSI MPG A850GS PCIE5",[850],["https://amzn.to/4hvgKea"])
 addAffiliate("ADATA XPG CYBERCORE",[1000],["https://www.walmart.com/ip/XPG-CYBERCORE-ATX-Modular-PSU-1000W-80-Plus-Platinum-26-Connectors-Intex-ATX-12V/724286138"])
 addAffiliate("Silverstone Essential",[550, 750],["https://amzn.to/4aW68Cl", "https://amzn.to/3EtFRzc"])
 addAffiliate("Lian Li SP750",[750],["https://amzn.to/3WVfuc5"])
-
+addAffiliate("Cooler Master MWE Gold 850 - V2", [850], ["https://www.amazon.com/dp/B08M9M6DB9"])
+addAffiliate("be quiet! Pure Power 12 M", [750,1200],["https://amzn.to/42Ft9r6","https://amzn.to/40XuKHM"])
 def match_psu(scraped_psu, psus_rated, threshold=60):
     matches = []
     for entry in psus_rated:

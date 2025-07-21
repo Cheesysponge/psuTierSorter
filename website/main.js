@@ -217,7 +217,8 @@ function createTableFromData(data) {
     { key: 'modularity', label: 'Modularity' },
     { key: 'color', label: 'Color' },
     { key: 'Matched Tier Model', label: 'Matched Tierlist Model' },
-    { key: 'Matched Tier Model Info', label: 'Notes Based on Matched Model' }
+    { key: 'Matched Tier Model Info', label: 'Notes Based on Matched Model' },
+    { key: 'atxver', label: 'ATX Ver' }
 
   ];
   if(!importantToggle){

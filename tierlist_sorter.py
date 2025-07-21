@@ -66,6 +66,8 @@ with open("spec_tierlist.csv", "r", newline="", encoding="utf-8") as csvfile:
         size = row[8].strip()
         year = row[6].strip()
         info = row[18].strip()
+        atxver = row[9].strip()
+
 
 
         # Skip incomplete or malformed entries
@@ -84,7 +86,7 @@ with open("spec_tierlist.csv", "r", newline="", encoding="utf-8") as csvfile:
             current_series2= ""
         if(series2 != ""):
             current_series2 = series2
-
+        
 
 
         # Normalize efficiency rating from code
@@ -103,7 +105,8 @@ with open("spec_tierlist.csv", "r", newline="", encoding="utf-8") as csvfile:
             "series1": current_series1,
             "series2": current_series2,
             "year": year,
-            "info": info
+            "info": info,
+            "atxver": atxver 
         })
 
 def normalize_name(name):
@@ -216,7 +219,8 @@ addAffiliate("SeaSonic CORE GX ATX 3 (2024)", [650,850],["https://www.newegg.com
 addAffiliate("SAMA GT",[650],["https://amzn.to/3CPjOm9"])
 addAffiliate("MSI MPG A850GS PCIE5",[850],["https://amzn.to/4hvgKea"])
 addAffiliate("ADATA XPG CYBERCORE",[1000],["https://www.walmart.com/ip/XPG-CYBERCORE-ATX-Modular-PSU-1000W-80-Plus-Platinum-26-Connectors-Intex-ATX-12V/724286138"])
-
+addAffiliate("Silverstone Essential",[550, 750],["https://amzn.to/4aW68Cl", "https://amzn.to/3EtFRzc"])
+addAffiliate("Lian Li SP750",[750],["https://amzn.to/3WVfuc5"])
 
 def match_psu(scraped_psu, psus_rated, threshold=60):
     matches = []
@@ -245,7 +249,7 @@ def match_psu(scraped_psu, psus_rated, threshold=60):
                         score+=20
                     if(psu["name"] == "Silverstone ST85F-GS-V2" and model_str == "silverstone triton rx"):
                         score -=0.3
-                    matches.append((entry["model"], entry["tier"], score, entry["info"]))
+                    matches.append((entry["model"], entry["tier"], score,entry["atxver"],entry["info"]))
 
 
     # if(scraped_psu["name"] == "Thermaltake Toughpower GX2"):
@@ -272,13 +276,15 @@ for psu in scraped:
         "Efficiency": psu["efficiency"],
         "Matched Tier Model": best_match[0] if best_match else "No Match",
         "Tier": best_match[1] if best_match else "N/A",
-        "Matched Tier Model Info": best_match[3] if len(best_match)>2 else "No Match Info",
+        "Matched Tier Model Info": best_match[4] if len(best_match)>4 else "No Match Info",
         "Similarity": best_match[2] if best_match else 0,
         "Image URL": psu["image"],
         "modularity": psu["modularity"],
         "Product URL": (affiliate_links[psu["name"]])[psu["wattage"]] if psu["name"] in affiliate_links else "",
         "size": psu["size"],
         "color": psu["color"],
+        "atxver": best_match[3] if len(best_match)>2 else "ATX 6.9",
+
 
     })
     #print("-" * 50)

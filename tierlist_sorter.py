@@ -178,22 +178,9 @@ def clean_amazon_link(url):
 
 def addAffiliate(name, wattages, links):
     affiliate_links[name] = {
-        1250: "",
-        1200: "",
-        1150: "",
-        1100: "",
-        1050: "",
-        1000: "",
-        950: "",
-        900: "",
-        850: "",
-        800: "",
-        750: "",
-        700: "",            
-        650: "",
-        600: "",
-        550: "",
     }
+    for i in range(200,2100,50):
+        affiliate_links[name][i] = ""
     for w in range(len(wattages)):
         if "newegg" in links[w]:
             links[w] = clean_newegg_affiliate_links(links[w])

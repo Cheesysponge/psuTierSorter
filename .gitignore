@@ -1,5 +1,6 @@
 # Ignore a specific file
 psus_scraped.csv
+ca.psus_scraped.csv
 playground.py
 spec_tierlist.csv
 scraper.py

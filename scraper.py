@@ -75,14 +75,7 @@ for i in range(1,5):
             if color:
                 color = color.get_text(strip=True)
             scraped.append({"name": name, "wattage": wattage, "efficiency": efficiency, "price": price, "size": size, "image":image, "modularity": modularity, "color": color})
-            # print("🔌 Name:", name)
-            # print("💲 Price: $", price if price else "N/A")
-            # print("⚡ Wattage:", wattage, "W" if wattage else "N/A")
-            # print("80+ Efficiency:", efficiency if efficiency else "N/A")
-            # print("📦:", size if size else "N/A")
 
-
-        # print("-" * 40)
 
 print()
 print("finished collecting data")

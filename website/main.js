@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
-const noCacheURL = `${'psu_stored.csv'}?t=${Date.now()}`;
+noCacheURL = `${'psu_stored.csv'}?t=${Date.now()}`;
 document.getElementById('modularToggle').addEventListener('change', loadAndFilter);
 document.getElementById('sfxToggle').addEventListener('change', loadAndFilter);
 document.getElementById('bestToggle').addEventListener('change', loadAndFilter);
@@ -221,3 +221,16 @@ document.getElementById('minWattage').addEventListener('input', () => {
   loadAndFilter()
 });
 
+function getSelectedOption() {
+  const dropdown = document.getElementById("myDropdown");
+  const selectedValue = dropdown.value;
+  const selectedText = dropdown.options[dropdown.selectedIndex].text;
+  if(selectedValue == "ca"){
+    noCacheURL = `${'ca.psu_stored.csv'}?t=${Date.now()}`
+  }
+  else if(selectedValue == "usa"){
+    noCacheURL = `${'psu_stored.csv'}?t=${Date.now()}`;
+  }
+  loadAndFilter()
+
+}

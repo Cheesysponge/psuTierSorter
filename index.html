@@ -106,12 +106,17 @@
     <!-- Video Section -->
     <section class="video bg-black">
       <div class="container-sm">
+        
         <h2 class="video-heading text-xl text-center">
           Cheapest PSU for Each Tier Above 
 
                 <div style="text-align:center; margin: 1rem;">
                   <input type="number" id="minWattage" value="600" />
-                  <h9 >  Watts </h9>
+                  <h9 >  Watts in  
+                  <select id="myDropdown" onchange="getSelectedOption()" class="custom-dropdown">
+                    <option value="usa">The United States of America</option>
+                    <option value="ca">Canada</option>
+                  </select></h9>
                   <br>
                   <label>
                   <input type="checkbox" id="bestToggle">
@@ -137,13 +142,7 @@
                   <input type="checkbox" id="whiteToggle">
                     White(ish) Only               
                   </label>
-                  <!-- <button class="btn btn-primary text-center" onclick="loadAndFilter()">Click to Refresh</button> -->
 
-                  <!-- <button class="btn btn-primary btn-block csv-button" onclick="loadCSV('cheapest500.csv', this)"> 500W</button>
-                  <button class="btn btn-primary btn-block csv-button" onclick="loadCSV('cheapest600.csv', this)">600W</button>
-                  <button class="btn btn-primary btn-block csv-button" onclick="loadCSV('cheapest700.csv', this)">700W</button>
-                  <button class="btn btn-primary btn-block csv-button" onclick="loadCSV('cheapest800.csv', this)">800W</button>
-                  <button class="btn btn-primary btn-block csv-button" onclick="loadCSV('cheapest900.csv', this)">900W</button> -->
                 </div>
         </h2>
         <div class="video-heading text-center" id="tableContainer"></div>
@@ -151,51 +150,7 @@
 
       </div>
     </section>
-    <!-- Testimonials -->
-    <!-- <section class="testimonials bg-dark">
-      <div class="container">
-        <h3 class="testimonials-heading text-xl">
-          Don't just take our word for it, see the success stories from
-          businesses just like yours.
-        </h3>
-        <div class="testimonials-grid">
-          <div class="card">
-            <p>
-              “Our business has seen a significant increase in productivity
-              since we started using the Growth app.”
-            </p>
-
-            <p>Katherine Smith</p>
-            <p>Capodopera</p>
-          </div>
-
-          <div class="card">
-            <p>
-              “As a small business owner, it's important to have a tool that can
-              help me keep track of everything. The Growth app has been a
-              lifesaver for me, allowing me to manage my contacts, schedule
-              appointments, and track progress all in one place..”
-            </p>
-
-            <p>Johnathan Lee</p>
-            <p>Red Bolt</p>
-          </div>
-
-          <div class="card">
-            <p>
-              “The dashboards and reporting feature has provided valuable
-              insights into our performance and helped us make data-driven
-              decisions. It's a game changer for us.”
-            </p>
-
-            <p>David Wilson</p>
-            <p>Slide</p>
-          </div>
-        </div>
-      </div>
-    </section> -->
-
-    <!-- Pricing -->
+    
     <section class="pricing">
       <div class="container-sm">
         <h3 class="pricing-heading text-xl text-center">Tier Meaning</h3>
@@ -344,52 +299,6 @@
             </div>
           </div>
 
-          <!-- <div class="faq-group">
-            <div class="faq-group-header">
-              <h4 class="text-md">
-                Can I collaborate with my team in real-time using all tools?
-              </h4>
-              <i class="fas fa-plus"></i>
-            </div>
-            <div class="faq-group-body">
-              <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Obcaecati doloremque assumenda aut dolorem recusandae quibusdam
-                aliquid. Repellat animi quam vitae.
-              </p>
-            </div>
-          </div>
-
-          <div class="faq-group">
-            <div class="faq-group-header">
-              <h4 class="text-md">Is the app available on all devices?</h4>
-              <i class="fas fa-plus"></i>
-            </div>
-            <div class="faq-group-body">
-              <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Obcaecati doloremque assumenda aut dolorem recusandae quibusdam
-                aliquid. Repellat animi quam vitae.
-              </p>
-            </div>
-          </div>
-
-          <div class="faq-group">
-            <div class="faq-group-header">
-              <h4 class="text-md">
-                How does the app help me stay compliant when working with
-                freelancers and contractors?
-              </h4>
-              <i class="fas fa-plus"></i>
-            </div>
-            <div class="faq-group-body">
-              <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Obcaecati doloremque assumenda aut dolorem recusandae quibusdam
-                aliquid. Repellat animi quam vitae.
-              </p>
-            </div>
-          </div> -->
         </div>
       </div>
     </section>

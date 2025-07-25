@@ -2,10 +2,12 @@ from rapidfuzz import fuzz
 import re
 import csv
 from urllib.parse import urlparse, urlunparse, parse_qs, urlencode
-
+region = input("Enter region, enter nothing for USA\n")
+if(region != ""):
+    region+="."
 
 scraped = []
-with open("psus_scraped.csv", newline="", encoding="utf-8") as f:
+with open(region+"psus_scraped.csv", newline="", encoding="utf-8") as f:
     reader = csv.DictReader(f)
 
     for row in reader:
@@ -181,13 +183,14 @@ def addAffiliate(name, wattages, links):
     }
     for i in range(200,2100,50):
         affiliate_links[name][i] = ""
-    for w in range(len(wattages)):
-        if "newegg" in links[w]:
-            links[w] = clean_newegg_affiliate_links(links[w])
-            #print(links[w])
-        elif "amazon" in links[w]:
-            links[w] = clean_amazon_link(links[w])
-        affiliate_links[name][wattages[w]] = links[w]
+    if(region == ""):
+        for w in range(len(wattages)):
+            if "newegg" in links[w]:
+                links[w] = clean_newegg_affiliate_links(links[w])
+                #print(links[w])
+            elif "amazon" in links[w]:
+                links[w] = clean_amazon_link(links[w])
+            affiliate_links[name][wattages[w]] = links[w]
 #?tag=psutierlist01-20
 addAffiliate("ASRock Phantom Gaming PG-750G",[750],["https://amzn.to/45hVC7K"])
 addAffiliate("ASRock Phantom Gaming PG-850G",[850],["https://amzn.to/4kpwDDI"])
@@ -276,7 +279,7 @@ for psu in scraped:
 
     })
     #print("-" * 50)
-with open("psu_stored.csv", "w", newline="", encoding="utf-8") as f:
+with open(region+"psu_stored.csv", "w", newline="", encoding="utf-8") as f:
     writer = csv.DictWriter(f, fieldnames=matched_psus[0].keys())
     writer.writeheader()
     writer.writerows(matched_psus)

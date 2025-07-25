@@ -538,8 +538,8 @@ th, td {
 
 #minWattage {
   width: 100px;          /* fixed width */
-  padding: 6px 10px;     /* space inside */
-  font-size: 16px;       /* text size */
+  padding: 12px 15px;
+  font-size: 1rem;
   border: 2px solid #6c75a5; /* blue border */
   border-radius: 6px;    /* rounded corners */
   outline: none;         /* remove default outline */
@@ -554,4 +554,24 @@ th, td {
 label{
   font-size: small;
   margin: 10px;
+}
+
+.custom-dropdown {
+  /* width: 250px; */
+  padding: 12px 15px;
+  font-size: 1rem;
+  border: 2px solid var(--primary-color);
+  border-radius: 10px;
+  background-color: #fff;
+  color: var(--dark-color);
+  font-family: 'Poppins', sans-serif;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  /* appearance: none;  */
+
+}
+
+.custom-dropdown:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 5px var(--primary-color);
+  outline: none;
 }

@@ -6,12 +6,12 @@ region = input("Enter region, enter nothing for USA\n")
 if(region != ""):
     region+="."
 
-scraped = []
-with open(region+"psus_scraped.csv", newline="", encoding="utf-8") as f:
+located = []
+with open(region+"psus_located.csv", newline="", encoding="utf-8") as f:
     reader = csv.DictReader(f)
 
     for row in reader:
-        scraped.append({
+        located.append({
             "name": row["name"].strip(),
             "wattage": int(row["wattage"].strip()),
             "efficiency": row["efficiency"].strip().replace("Efficiency Rating", ""),
@@ -123,12 +123,12 @@ def normalize_name(name):
     name = re.sub(r"50315153277247", " ", name)# Screw vetroooooooooooooo
     return name.strip()
 
-for item in scraped:
+for item in located:
     item["normalized"] = normalize_name(item["name"])
 
 
 
-def wattage_match(scraped_watt, tier_wattage_string, tolerance=50):
+def wattage_match(located_watt, tier_wattage_string, tolerance=50):
     # Normalize to ASCII hyphen
     wattage_str = tier_wattage_string.replace("–", "-")
 
@@ -137,11 +137,11 @@ def wattage_match(scraped_watt, tier_wattage_string, tolerance=50):
     if range_match:
         low = int(range_match.group(1))
         high = int(range_match.group(2))
-        return low - tolerance <= scraped_watt <= high + tolerance
+        return low - tolerance <= located_watt <= high + tolerance
 
     # Handle sets like 600/700/800W
     watts = [int(w) for w in re.findall(r"\d{3,4}", wattage_str)]
-    return any(abs(scraped_watt - w) <= tolerance for w in watts)
+    return any(abs(located_watt - w) <= tolerance for w in watts)
 
 
 matched_psus = []
@@ -213,42 +213,42 @@ addAffiliate("Silverstone Essential",[550, 750],["https://amzn.to/4aW68Cl", "htt
 addAffiliate("Lian Li SP750",[750],["https://amzn.to/3WVfuc5"])
 addAffiliate("Cooler Master MWE Gold 850 - V2", [850], ["https://www.amazon.com/dp/B08M9M6DB9"])
 addAffiliate("be quiet! Pure Power 12 M", [750,1200],["https://amzn.to/42Ft9r6","https://amzn.to/40XuKHM"])
-def match_psu(scraped_psu, psus_rated, threshold=60):
+def match_psu(located_psu, psus_rated, threshold=60):
     matches = []
     for entry in psus_rated:
         model_str = normalize_name(entry["model"])
-        score = fuzz.token_set_ratio(scraped_psu["normalized"], normalize_name(entry["model"]))
+        score = fuzz.token_set_ratio(located_psu["normalized"], normalize_name(entry["model"]))
         if score >= threshold: 
             # Optionally filter by wattage
-            if wattage_match(scraped_psu["wattage"], entry["wattages"]):
-                if(entry["efficiency"] in scraped_psu["efficiency"] and entry["size"] in scraped_psu["size"]):
+            if wattage_match(located_psu["wattage"], entry["wattages"]):
+                if(entry["efficiency"] in located_psu["efficiency"] and entry["size"] in located_psu["size"]):
                     score+=len(normalize_name(entry["model"]))/5-4
-                    if(entry["year"] in scraped_psu["name"]):
+                    if(entry["year"] in located_psu["name"]):
                         score+=20
                     if("original" in entry["model"]):
                         score-=20
                     if("swap" in entry["model"]):
                         score+=10
-                    if(normalize_name(entry["series1"]) in scraped_psu["normalized"]):
+                    if(normalize_name(entry["series1"]) in located_psu["normalized"]):
                         score+=10
                     if entry["series2"] == "II VE" and not ("ve" in model_str):
                         score-=0.8
                     if(entry["brand"] == "Vetroo"):
                         if(entry["series2"] == "2023 (ATX 3.0)"):
                             continue
-                    if(scraped_psu["name"] =="Thermaltake Toughpower GF A3 - TT Premium Edition" and "gf a3 n amer" in model_str):
+                    if(located_psu["name"] =="Thermaltake Toughpower GF A3 - TT Premium Edition" and "gf a3 n amer" in model_str):
                         score+=20
                     if(psu["name"] == "Silverstone ST85F-GS-V2" and model_str == "silverstone triton rx"):
                         score -=0.3
                     matches.append((entry["model"], entry["tier"], score,entry["atxver"],entry["info"]))
 
 
-    # if(scraped_psu["name"] == "Thermaltake Toughpower GX2"):
+    # if(located_psu["name"] == "Thermaltake Toughpower GX2"):
     #     print(matches)
 
     return sorted(matches, key=lambda x: -x[2])  # highest score first
 
-for psu in scraped:
+for psu in located:
     #print(f"🧩 Matching: {psu['name']} ({psu['wattage']}W)")
     results = match_psu(psu, psus_rated)
     #print(f"💲 Price: ${psu['price']}" if psu.get("price") else "💲 Price: N/A")
@@ -261,7 +261,7 @@ for psu in scraped:
         #print("❌ No confident match found.")
     
     matched_psus.append({
-        "Scraped Name": psu["name"],
+        "located Name": psu["name"],
         "Wattage": psu["wattage"],
         "Price": psu["price"],
         "Efficiency": psu["efficiency"],

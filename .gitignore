@@ -1,8 +1,11 @@
 # Ignore a specific file
-psus_scraped.csv
-ca.psus_scraped.csv
+psus_located.csv
+ca.psus_located.csv
+au.psus_located.csv
+de.psus_located.csv
+uk.psus_located.csv
 playground.py
 spec_tierlist.csv
-scraper.py
+locator.py
 venv/
 __pycache__/

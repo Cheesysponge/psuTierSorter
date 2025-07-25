@@ -46,6 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 noCacheURL = `${'psu_stored.csv'}?t=${Date.now()}`;
+currencySymbol = "$";
 document.getElementById('modularToggle').addEventListener('change', loadAndFilter);
 document.getElementById('sfxToggle').addEventListener('change', loadAndFilter);
 document.getElementById('bestToggle').addEventListener('change', loadAndFilter);
@@ -140,7 +141,7 @@ function createTableFromData(data) {
   // Columns in requested order
   columns = [
     { key: 'Tier', label: 'Tier' },
-    { key: 'Scraped Name', label: 'Name' },
+    { key: 'located Name', label: 'Name' },
     { key: 'Image URL', label: 'Image' },
     { key: 'Price', label: 'Price' },
     { key: 'Wattage', label: 'Wattage' },
@@ -156,7 +157,7 @@ function createTableFromData(data) {
   if(!importantToggle){
       columns = [
     { key: 'Tier', label: 'Tier' },
-    { key: 'Scraped Name', label: 'Name' },
+    { key: 'located Name', label: 'Name' },
     { key: 'Price', label: 'Price' },
     { key: 'Wattage', label: 'Wattage' },
     { key: 'Efficiency', label: '80+ Rating' },
@@ -184,10 +185,10 @@ data.forEach(row => {
       let url = row[col.key].trim();
       if (url.startsWith('//')) url = 'https:' + url;
       img.src = url;
-      img.alt = row['Scraped Name'] || 'Image';
+      img.alt = row['located Name'] || 'Image';
       td.appendChild(img);
 
-    } else if (col.key === 'Scraped Name') {
+    } else if (col.key === 'located Name') {
       const link = (row['Product URL'] || '').trim();  // change 'Product URL' if needed
       if (link) {
         const a = document.createElement('a');
@@ -199,7 +200,12 @@ data.forEach(row => {
         td.textContent = row[col.key];
       }
 
-    } else {
+    }
+    else if (col.key === 'Price') {
+  const price = parseFloat(row[col.key]);
+  td.textContent = isNaN(price) ? '' : `${currencySymbol}${price.toFixed(2)}`;
+  }
+   else {
       td.textContent = row[col.key] || '';
     }
 
@@ -224,12 +230,14 @@ document.getElementById('minWattage').addEventListener('input', () => {
 function getSelectedOption() {
   const dropdown = document.getElementById("myDropdown");
   const selectedValue = dropdown.value;
-  const selectedText = dropdown.options[dropdown.selectedIndex].text;
-  if(selectedValue == "ca"){
-    noCacheURL = `${'ca.psu_stored.csv'}?t=${Date.now()}`
-  }
-  else if(selectedValue == "usa"){
+const selectedText = dropdown.options[dropdown.selectedIndex].text;
+  const match = selectedText.match(/\(([^)]+)\)/);
+  currencySymbol = match ? match[1].split(' ')[0] : '$';
+  if(selectedValue == "usa"){
     noCacheURL = `${'psu_stored.csv'}?t=${Date.now()}`;
+  }
+  else{
+    noCacheURL = `${selectedValue+'.psu_stored.csv'}?t=${Date.now()}`
   }
   loadAndFilter()
 

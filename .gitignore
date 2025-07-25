@@ -9,3 +9,4 @@ spec_tierlist.csv
 locator.py
 venv/
 __pycache__/
+.vscode/

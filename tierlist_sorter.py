@@ -69,6 +69,8 @@ with open("spec_tierlist.csv", "r", newline="", encoding="utf-8") as csvfile:
         year = row[6].strip()
         info = row[18].strip()
         atxver = row[9].strip()
+        modularity = row[11].strip()
+
 
 
 
@@ -108,7 +110,8 @@ with open("spec_tierlist.csv", "r", newline="", encoding="utf-8") as csvfile:
             "series2": current_series2,
             "year": year,
             "info": info,
-            "atxver": atxver 
+            "atxver": atxver,
+            "modularity": modularity
         })
 
 def normalize_name(name):
@@ -213,7 +216,7 @@ addAffiliate("Silverstone Essential",[550, 750],["https://amzn.to/4aW68Cl", "htt
 addAffiliate("Lian Li SP750",[750],["https://amzn.to/3WVfuc5"])
 addAffiliate("Cooler Master MWE Gold 850 - V2", [850], ["https://www.amazon.com/dp/B08M9M6DB9"])
 addAffiliate("be quiet! Pure Power 12 M", [750,1200],["https://amzn.to/42Ft9r6","https://amzn.to/40XuKHM"])
-def match_psu(located_psu, psus_rated, threshold=60):
+def match_psu(located_psu, psus_rated, threshold=65):
     matches = []
     for entry in psus_rated:
         model_str = normalize_name(entry["model"])
@@ -223,6 +226,9 @@ def match_psu(located_psu, psus_rated, threshold=60):
             if wattage_match(located_psu["wattage"], entry["wattages"]):
                 if(entry["efficiency"] in located_psu["efficiency"] and entry["size"] in located_psu["size"]):
                     score+=len(normalize_name(entry["model"]))/5-4
+                    if(entry["modularity"] != located_psu["modularity"]):
+                        score-=70
+
                     if(entry["year"] in located_psu["name"]):
                         score+=20
                     if("original" in entry["model"]):

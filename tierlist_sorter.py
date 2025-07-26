@@ -211,11 +211,15 @@ addAffiliate("EVGA 850 GQ",[850],["https://www.newegg.com/w/p/N82E16817438061"])
 addAffiliate("SeaSonic CORE GX ATX 3 (2024)", [650,850],["https://www.newegg.com/w/p/N82E16817151276","https://www.newegg.com/w/p/N82E16817151278"])
 addAffiliate("SAMA GT",[650],["https://amzn.to/3CPjOm9"])
 addAffiliate("MSI MPG A850GS PCIE5",[850],["https://amzn.to/4hvgKea"])
-addAffiliate("ADATA XPG CYBERCORE",[1000],["https://www.walmart.com/ip/XPG-CYBERCORE-ATX-Modular-PSU-1000W-80-Plus-Platinum-26-Connectors-Intex-ATX-12V/724286138"])
+addAffiliate("ADATA XPG CYBERCORE",[1000,1300],["https://www.walmart.com/ip/XPG-CYBERCORE-ATX-Modular-PSU-1000W-80-Plus-Platinum-26-Connectors-Intex-ATX-12V/724286138", "https://www.walmart.com/ip/XPG-CYBERCORE-ATX-Modular-PSU-1300W-80-Plus-Platinum-26-Connectors-Intex-ATX-12V/988283739"])
 addAffiliate("Silverstone Essential",[550, 750],["https://amzn.to/4aW68Cl", "https://amzn.to/3EtFRzc"])
 addAffiliate("Lian Li SP750",[750],["https://amzn.to/3WVfuc5"])
 addAffiliate("Cooler Master MWE Gold 850 - V2", [850], ["https://www.amazon.com/dp/B08M9M6DB9"])
 addAffiliate("be quiet! Pure Power 12 M", [750,1200],["https://amzn.to/42Ft9r6","https://amzn.to/40XuKHM"])
+addAffiliate("ADATA XPG Core Reactor II VE",[650],["https://amzn.to/40LnPjC"])
+addAffiliate("MSI MAG A650GL",[650],["https://amzn.to/4aRp6Ko"])
+addAffiliate("Thermaltake Toughpower GF A3 - TT Premium Edition",[750,850],["https://amzn.to/4jRN6RU","https://www.amazon.com/Thermaltake-Toughpower-Crossfile-Connector-PS-TPD-0650FNFAGU-L/dp/B0C1JKHPNH"])
+
 def match_psu(located_psu, psus_rated, threshold=65):
     matches = []
     for entry in psus_rated:

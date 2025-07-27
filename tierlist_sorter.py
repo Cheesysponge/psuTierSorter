@@ -246,7 +246,7 @@ def match_psu(located_psu, psus_rated, threshold=65):
                     if(entry["brand"] == "Vetroo"):
                         if(entry["series2"] == "2023 (ATX 3.0)"):
                             continue
-                    if(located_psu["name"] =="Thermaltake Toughpower GF A3 - TT Premium Edition" and "gf a3 n amer" in model_str):
+                    if(located_psu["name"] =="Thermaltake Toughpower GF A3 - TT Premium Edition" and "gf a3 n amer" in model_str and (region == "" or region == "ca.")):
                         score+=20
                     if(psu["name"] == "Silverstone ST85F-GS-V2" and model_str == "silverstone triton rx"):
                         score -=0.3

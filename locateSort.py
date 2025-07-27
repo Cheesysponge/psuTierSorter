@@ -6,7 +6,7 @@ def locateAndSort(region, n):
     global count
     locateRegion(region, n)
     sortRegion(region)
-    count += (n-2)*5
+    count += (n-1)*5
 
 locateAndSort("",4)
 locateAndSort("au",3)

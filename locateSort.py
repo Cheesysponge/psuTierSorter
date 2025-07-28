@@ -10,7 +10,7 @@ def locateAndSort(region, n):
 
 locateAndSort("",4)
 locateAndSort("au",3)
-locateAndSort("de",3)
+locateAndSort("de",4)
 locateAndSort("uk",3)
 locateAndSort("ca",3)
 print("Used", count, "tokens")

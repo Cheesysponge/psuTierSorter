@@ -3,7 +3,10 @@ import re
 import csv
 from urllib.parse import urlparse, urlunparse, parse_qs, urlencode
 def sortRegion(region):
-    print("Started Sorting Region:", region)
+    name = region
+    if(region == ""):
+        name = "us"
+    print("Started Sorting", name.upper())
     if(region != ""):
         region+="."
 
@@ -220,6 +223,13 @@ def sortRegion(region):
     addAffiliate("ADATA XPG Core Reactor II VE",[650],["https://amzn.to/40LnPjC"])
     addAffiliate("MSI MAG A650GL",[650],["https://amzn.to/4aRp6Ko"])
     addAffiliate("Thermaltake Toughpower GF A3 - TT Premium Edition",[750,850],["https://amzn.to/4jRN6RU","https://www.amazon.com/Thermaltake-Toughpower-Crossfile-Connector-PS-TPD-0650FNFAGU-L/dp/B0C1JKHPNH"])
+    addAffiliate("MSI MAG A750GL PCIE5",[750],["https://amzn.to/3CSNbny"])
+    addAffiliate("MSI MAG A850GL PCIE5",[850],["https://amzn.to/41adrmM"])
+    addAffiliate("ADATA XPG Core Reactor II",[650,750,850],["https://amzn.to/4gt83PY", "https://amzn.to/45leXDE", "https://amzn.to/3QnXNhH"])
+    addAffiliate("MSI MAG A650BN",[650],["https://amzn.to/4k52YRc"])
+    addAffiliate("MSI MAG A550BN",[550],["https://amzn.to/42Qkqmg"])
+
+
 
     def match_psu(located_psu, psus_rated, threshold=65):
         matches = []
@@ -294,5 +304,5 @@ def sortRegion(region):
         writer = csv.DictWriter(f, fieldnames=matched_psus[0].keys())
         writer.writeheader()
         writer.writerows(matched_psus)
-    print("Finished Sorting")
+    print("Finished Sorting", name)
 

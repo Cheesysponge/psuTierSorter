@@ -8,9 +8,9 @@ def locateAndSort(region, n):
     sortRegion(region)
     count += (n-1)*5
 
-locateAndSort("",4)
+locateAndSort("",5)
 locateAndSort("au",3)
 locateAndSort("de",4)
 locateAndSort("uk",3)
-locateAndSort("ca",3)
+locateAndSort("ca",4)
 print("Used", count, "tokens")

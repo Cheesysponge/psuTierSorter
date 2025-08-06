@@ -20,7 +20,8 @@ body {
 
 a {
   text-decoration: none;
-  color: #6c75a5;
+  color: #e7ebff;
+  font-weight: bold;
 }
 
 ul {
@@ -569,9 +570,47 @@ label{
   /* appearance: none;  */
 
 }
+#cheapestCountInput {
+  width: 50px;          /* fixed width */
+  padding: 2px 10px;
+  font-size: 1rem;
+  border: 2px solid #6c75a5; /* blue border */
+  border-radius: 6px;    /* rounded corners */
+  outline: none;         /* remove default outline */
+  transition: border-color 0.3s ease;
+  margin-bottom: 10px;
+}
 
+#cheapestCountInput:focus {
+  border-color: #6c75a5; /* darker blue on focus */
+  box-shadow: 0 0 5px #6c75a5; /* subtle glow */
+}
 .custom-dropdown:focus {
   border-color: var(--primary-color);
   box-shadow: 0 0 5px var(--primary-color);
   outline: none;
 }
+
+/* === Tier Gradient for White Text === */
+
+/* D Tiers - Dark Orange to Green Gradient Segment */
+/* D Tiers - Deep Orange to Amber */
+.tier-Dm { background-color: #7b2e00; color: white; }  /* D- */
+.tier-D  { background-color: #a84300; color: white; }  /* D  */
+.tier-Dp { background-color: #d65a00; color: white; }  /* D+ */
+
+/* C Tiers - Amber to Mustard */
+.tier-Cm { background-color: #e07c00; color: white; }  /* C- */
+.tier-C  { background-color: #e89f00; color: white; }  /* C  */
+.tier-Cp { background-color: #f2c200; color: white; }  /* C+ */
+
+/* B Tiers - Mustard to Olive Green */
+.tier-Bm { background-color: #c4d400; color: white; }  /* B- */
+.tier-B  { background-color: #8fcf00; color: white; }  /* B  */
+.tier-Bp { background-color: #5ac800; color: white; }  /* B+ */
+
+/* A Tiers - Vibrant Greens */
+.tier-Am { background-color: #2fc100; color: white; }  /* A- */
+.tier-A  { background-color: #00b84f; color: white; }  /* A  */
+.tier-Ap { background-color: #00a86b; color: white; }  /* A+ */
+

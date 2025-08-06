@@ -53,6 +53,8 @@ document.getElementById('bestToggle').addEventListener('change', loadAndFilter);
 document.getElementById('dToggle').addEventListener('change', loadAndFilter);
 document.getElementById('importantToggle').addEventListener('change', loadAndFilter);
 document.getElementById('whiteToggle').addEventListener('change', loadAndFilter);
+document.getElementById('sortByPriceToggle').addEventListener('change', loadAndFilter);
+document.getElementById('cheapestCountInput').addEventListener('change', loadAndFilter);
 
 function loadAndFilter() {
   wantedTiers = ["C-", "C", "C+", "B-", "B", "B+", "A-", "A", "A+"]
@@ -102,21 +104,52 @@ function loadAndFilter() {
 
         );
       });
+      const sortByPrice = document.getElementById('sortByPriceToggle').checked;
 
       // Find cheapest per tier
-      const cheapestByTier = {};
+      const countInput = document.getElementById("cheapestCountInput");
+      const cheapestCount = Math.max(1, parseInt(countInput?.value || "1"));
+
+      // Group filtered rows by tier
+      const groupedByTier = {};
       filtered.forEach(row => {
         const tier = row['Tier'];
-        const price = parseFloat(row['Price']);
-        if (!cheapestByTier[tier] || price < parseFloat(cheapestByTier[tier].Price)) {
-          cheapestByTier[tier] = row;
+        let tierClass = '';
+
+        if (tier.startsWith('A')) tierClass = 'tier-A';
+        else if (tier.startsWith('B')) tierClass = 'tier-B';
+        else if (tier.startsWith('C')) tierClass = 'tier-C';
+        else if (tier.startsWith('D')) tierClass = 'tier-D';
+
+        if (tier.endsWith('+')) tierClass += 'p';
+        else if (tier.endsWith('-')) tierClass += 'm';
+
+        const tr = document.createElement('tr');
+        tr.className = tierClass;
+
+        if (!groupedByTier[tier]) {
+          groupedByTier[tier] = [];
+        }
+        groupedByTier[tier].push(row);
+      });
+
+      // Sort each tier group by price, then take top X
+      let sortedCheapest = [];
+      wantedTiers.forEach(tier => {
+        const group = groupedByTier[tier];
+        if (group) {
+          const top = group
+            .sort((a, b) => parseFloat(a.Price) - parseFloat(b.Price))
+            .slice(0, cheapestCount);
+          sortedCheapest = sortedCheapest.concat(top);
         }
       });
 
-      // Sort tiers in the specified order
-      const sortedCheapest = wantedTiers
-        .map(tier => cheapestByTier[tier])
-        .filter(row => row !== undefined);
+      // Optional global sort
+      if (sortByPrice) {
+        sortedCheapest.sort((a, b) => parseFloat(a.Price) - parseFloat(b.Price));
+      }
+
 
       createTableFromData(sortedCheapest);
     })
@@ -177,6 +210,20 @@ function createTableFromData(data) {
   // Data rows
 data.forEach(row => {
   const tr = document.createElement('tr');
+
+  // Add tier class here
+  let tierClass = '';
+  const tier = row['Tier'];
+  if (tier.startsWith('A')) tierClass = 'tier-A';
+  else if (tier.startsWith('B')) tierClass = 'tier-B';
+  else if (tier.startsWith('C')) tierClass = 'tier-C';
+  else if (tier.startsWith('D')) tierClass = 'tier-D';
+
+  if (tier.endsWith('+')) tierClass += 'p';
+  else if (tier.endsWith('-')) tierClass += 'm';
+
+  tr.className = tierClass;
+
   columns.forEach(col => {
     const td = document.createElement('td');
 
@@ -189,28 +236,27 @@ data.forEach(row => {
       td.appendChild(img);
 
     } else if (col.key === 'located Name') {
-      const link = (row['Product URL'] || '').trim();  // change 'Product URL' if needed
+      const link = (row['Product URL'] || '').trim();
       if (link) {
         const a = document.createElement('a');
         a.href = link;
         a.textContent = row[col.key];
-        a.target = '_blank';  // open in new tab
+        a.target = '_blank';
         td.appendChild(a);
       } else {
         td.textContent = row[col.key];
       }
 
-    }
-    else if (col.key === 'Price') {
-  const price = parseFloat(row[col.key]);
-  td.textContent = isNaN(price) ? '' : `${currencySymbol}${price.toFixed(2)}`;
-  }
-   else {
+    } else if (col.key === 'Price') {
+      const price = parseFloat(row[col.key]);
+      td.textContent = isNaN(price) ? '' : `${currencySymbol}${price.toFixed(2)}`;
+    } else {
       td.textContent = row[col.key] || '';
     }
 
     tr.appendChild(td);
   });
+
   table.appendChild(tr);
 });
 

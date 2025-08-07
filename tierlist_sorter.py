@@ -261,6 +261,8 @@ def sortRegion(region):
                             score+=20
                         if(psu["name"] == "Silverstone ST85F-GS-V2" and model_str == "silverstone triton rx"):
                             score -=0.3
+                        if(psu["name"] == "ADATA XPG CYBERCORE" and model_str == "adata xpg cybercore ii"):
+                            score -=3
                         matches.append((entry["model"], entry["tier"], score,entry["atxver"],entry["info"]))
 
 
@@ -296,8 +298,6 @@ def sortRegion(region):
             "size": psu["size"],
             "color": psu["color"],
             "atxver": best_match[3] if len(best_match)>2 else "ATX 6.9",
-
-
         })
         #print("-" * 50)
     with open(region+"psu_stored.csv", "w", newline="", encoding="utf-8") as f:

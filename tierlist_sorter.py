@@ -253,7 +253,9 @@ def sortRegion(region):
                         if(normalize_name(entry["series1"]) in located_psu["normalized"]):
                             score+=10
                         if entry["series2"] == "II VE" and not ("ve" in model_str):
-                            score-=0.8
+                            score-=3
+                        if(located_psu["name"] == "ADATA XPG Core Reactor II" and model_str == "adata xpg core reactor ii ve"):
+                            score-=.7
                         if(entry["brand"] == "Vetroo"):
                             if(entry["series2"] == "2023 (ATX 3.0)"):
                                 continue
@@ -264,11 +266,13 @@ def sortRegion(region):
                         if(psu["name"] == "ADATA XPG CYBERCORE" and model_str == "adata xpg cybercore ii"):
                             score -=3
                         matches.append((entry["model"], entry["tier"], score,entry["atxver"],entry["info"]))
+                        
 
 
         # if(located_psu["name"] == "Thermaltake Toughpower GX2"):
         #     print(matches)
-
+        # if(located_psu["name"] == "ADATA XPG Core Reactor II"):
+        #     print(matches)
         return sorted(matches, key=lambda x: -x[2])  # highest score first
 
     for psu in located:

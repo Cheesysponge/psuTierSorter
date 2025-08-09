@@ -228,7 +228,7 @@ def sortRegion(region):
     addAffiliate("ADATA XPG Core Reactor II",[650,750,850],["https://amzn.to/4gt83PY", "https://amzn.to/45leXDE", "https://amzn.to/3QnXNhH"])
     addAffiliate("MSI MAG A650BN",[650],["https://amzn.to/4k52YRc"])
     addAffiliate("MSI MAG A550BN",[550],["https://amzn.to/42Qkqmg"])
-
+    addAffiliate("Thermaltake Smart BM3",[650],["https://amzn.to/410Hooi"])
 
 
     def match_psu(located_psu, psus_rated, threshold=65):

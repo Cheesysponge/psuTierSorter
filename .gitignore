@@ -10,3 +10,4 @@ locator.py
 venv/
 __pycache__/
 .vscode/
+psus_rated.csv

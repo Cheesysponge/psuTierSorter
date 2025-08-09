@@ -229,6 +229,9 @@ def sortRegion(region):
     addAffiliate("MSI MAG A650BN",[650],["https://amzn.to/4k52YRc"])
     addAffiliate("MSI MAG A550BN",[550],["https://amzn.to/42Qkqmg"])
     addAffiliate("Thermaltake Smart BM3",[650],["https://amzn.to/410Hooi"])
+    addAffiliate("Lian Li EDGE GOLD",[750,1200],["https://www.newegg.com/p/1HU-01PP-00012","https://amzn.to/4k2YXwH"])
+    addAffiliate("Lian Li EDGE",[1300],["https://amzn.to/40Q16mf"])
+
 
 
     def match_psu(located_psu, psus_rated, threshold=65):
@@ -239,8 +242,9 @@ def sortRegion(region):
             if score >= threshold: 
                 # Optionally filter by wattage
                 if wattage_match(located_psu["wattage"], entry["wattages"]):
-                    if(entry["efficiency"] in located_psu["efficiency"] and entry["size"] in located_psu["size"]):
+                    if(entry["efficiency"] in located_psu["efficiency"] and (entry["size"] in located_psu["size"] or (entry["size"] == "Other" or (entry["size"] == "SFX-L")))):
                         score+=len(normalize_name(entry["model"]))/5-4
+
                         if(entry["modularity"] != located_psu["modularity"]):
                             score-=70
 
@@ -272,6 +276,8 @@ def sortRegion(region):
         # if(located_psu["name"] == "Thermaltake Toughpower GX2"):
         #     print(matches)
         # if(located_psu["name"] == "ADATA XPG Core Reactor II"):
+        #     print(matches)
+        # if(located_psu["name"] == "Lian Li EDGE GOLD"):
         #     print(matches)
         return sorted(matches, key=lambda x: -x[2])  # highest score first
 

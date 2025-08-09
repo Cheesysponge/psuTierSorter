@@ -88,7 +88,7 @@ function loadAndFilter() {
         const tier = row['Tier'];
         const modularField = (row['modularity']).toLowerCase(); // adjust if needed
   
-        const isModular = modularField.includes('full'); // matches "modular" or "semi-modular"
+        const isModular = modularField.includes('full') || modularField.includes('semi'); // matches "modular" or "semi-modular"
         const isSFX = row['size'].includes('SFX');
         const isWhite = row['color'].includes('White');
 
@@ -194,7 +194,8 @@ function createTableFromData(data) {
     { key: 'Price', label: 'Price' },
     { key: 'Wattage', label: 'Wattage' },
     { key: 'Efficiency', label: '80+ Rating' },
-    { key: 'modularity', label: 'Modularity' }
+    { key: 'modularity', label: 'Modularity' },
+    { key: 'atxver', label: 'ATX ver.' },
   ];
   }
 

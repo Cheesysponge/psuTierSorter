@@ -269,6 +269,10 @@ def sortRegion(region):
                             score -=0.3
                         if(psu["name"] == "ADATA XPG CYBERCORE" and model_str == "adata xpg cybercore ii"):
                             score -=3
+                        if(model_str=="silverstone strider st pts" and psu["name"] == "Silverstone Strider Platinum S"):
+                            score += 50
+                        if("v2" in model_str and "V2" in psu["name"]):
+                            score+=10
                         matches.append((entry["model"], entry["tier"], score,entry["atxver"],entry["info"]))
                         
 

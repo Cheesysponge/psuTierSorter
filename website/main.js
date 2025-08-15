@@ -55,7 +55,6 @@ document.getElementById('importantToggle').addEventListener('change', loadAndFil
 document.getElementById('whiteToggle').addEventListener('change', loadAndFilter);
 document.getElementById('sortByPriceToggle').addEventListener('change', loadAndFilter);
 document.getElementById('cheapestCountInput').addEventListener('change', loadAndFilter);
-document.getElementById('searchBar').addEventListener('input', loadAndFilter);
 
 function loadAndFilter() {
   wantedTiers = ["C-", "C", "C+", "B-", "B", "B+", "A-", "A", "A+"]
@@ -65,8 +64,6 @@ function loadAndFilter() {
   const bestSort = document.getElementById('bestToggle').checked;
   const includeD = document.getElementById('dToggle').checked;
   const whitesOnly = document.getElementById('whiteToggle').checked;
-  const searchQuery = document.getElementById('searchBar').value.trim().toLowerCase();
-
 
   if(includeD){
     wantedTiers = ["D", "C-", "C", "C+", "B-", "B", "B+", "A-", "A", "A+"]
@@ -89,17 +86,11 @@ function loadAndFilter() {
         const watt = Number(row['Wattage']);
         const price = parseFloat(row['Price']);
         const tier = row['Tier'];
-        const modularField = (row['modularity']).toLowerCase();
-        const isModular = modularField.includes('full') || modularField.includes('semi');
+        const modularField = (row['modularity']).toLowerCase(); // adjust if needed
+  
+        const isModular = modularField.includes('full') || modularField.includes('semi'); // matches "modular" or "semi-modular"
         const isSFX = row['size'].includes('SFX');
         const isWhite = row['color'].includes('White');
-
-        // Search match — checks if any relevant field contains the query
-        const matchesSearch =
-          searchQuery === '' ||
-          Object.values(row).some(val =>
-            String(val).toLowerCase().includes(searchQuery)
-          );
 
         return (
           watt >= minWattage &&
@@ -108,11 +99,11 @@ function loadAndFilter() {
           wantedTiers.includes(tier) &&
           (!modularOnly || isModular) &&
           (!sfxOnly || isSFX) &&
-          (!whitesOnly || isWhite) &&
-          matchesSearch
+          (!whitesOnly || isWhite)
+
+
         );
       });
-
       const sortByPrice = document.getElementById('sortByPriceToggle').checked;
 
       // Find cheapest per tier

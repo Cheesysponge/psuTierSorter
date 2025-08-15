@@ -102,7 +102,7 @@
           Cheapest PSU for Each Tier Above 
 
                 <div style="text-align:center; margin: 1rem;">
-                  <input type="number" id="minWattage" value="600" step="50">
+                  <input type="number" id="minWattage" value="300" step="50">
                   <h9 >  Watts in  
                   <select id="myDropdown" onchange="getSelectedOption()" class="custom-dropdown">
                     <option value="usa">The United States of America ($ USD)</option>
@@ -129,7 +129,6 @@
                   <label>
                     Show top 
                     <input type="number" id="cheapestCountInput" value="10" min="1" max="99"> 
-                    cheapest per tier
                   </label>
 
                 </div>
@@ -345,6 +344,6 @@
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
 
-    <script src="website/search.js"></script>
+    <script src="website/search.js?t=1"></script>
   </body>
 </html>

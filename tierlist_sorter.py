@@ -232,7 +232,7 @@ def sortRegion(region):
     addAffiliate("Lian Li EDGE GOLD",[750,1200],["https://www.newegg.com/p/1HU-01PP-00012","https://amzn.to/4k2YXwH"])
     addAffiliate("Lian Li EDGE",[1300],["https://amzn.to/40Q16mf"])
     addAffiliate("ASRock Steel Legend SL-650G",[650],["https://amzn.to/4aSFni9"])
-
+    addAffiliate("Cougar VTE",[600],["https://amzn.to/3V7XTMw"])
 
 
     def match_psu(located_psu, psus_rated, threshold=65):

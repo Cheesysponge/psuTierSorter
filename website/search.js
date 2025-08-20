@@ -54,7 +54,7 @@ document.getElementById('cheapestCountInput').addEventListener('change', loadAnd
 document.getElementById('searchBar').addEventListener('input', loadAndFilter);
 
 function loadAndFilter() {
-  wantedTiers = ["N/A","F","E","D+","D","D+","C*","C-", "C", "C+","B*", "B-", "B", "B+","A*", "A-", "A", "A+"]
+  wantedTiers = ["N/A","F","E","D+","D","D+","C-*","C*","C+*","C-", "C", "C+","B-*","B*","B+*", "B-", "B", "B+","A-*","A*","A+*", "A-", "A", "A+"]
   const minWattage = parseInt(document.getElementById('minWattage').value, 10) || 0;
   const sfxOnly = document.getElementById('sfxToggle').checked;
   const whitesOnly = document.getElementById('whiteToggle').checked;

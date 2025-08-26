@@ -244,12 +244,12 @@ def sortRegion(region):
                 # Optionally filter by wattage
                 if wattage_match(located_psu["wattage"], entry["wattages"]):
                     if(entry["efficiency"] in located_psu["efficiency"] and (entry["size"] in located_psu["size"] or (entry["size"] == "Other" or (entry["size"] == "SFX-L")))):
-                        score+=len(normalize_name(entry["model"]))/5-4
+                        score+=len(normalize_name(entry["model"]))/20-4+(int(entry["year"])-2000)/5
 
                         if(entry["modularity"] != located_psu["modularity"]):
                             score-=70
 
-                        if(entry["year"] in located_psu["name"]):
+                        if(str(entry["year"]) in located_psu["name"]):
                             score+=20
                         if("original" in entry["model"]):
                             score-=20
@@ -261,9 +261,9 @@ def sortRegion(region):
                             score-=3
                         if(located_psu["name"] == "ADATA XPG Core Reactor II" and model_str == "adata xpg core reactor ii ve"):
                             score-=.7
-                        if(entry["brand"] == "Vetroo"):
-                            if(entry["series2"] == "2023 (ATX 3.0)"):
-                                continue
+                        # if(entry["brand"] == "Vetroo"):
+                        #     if(entry["series2"] == "2023 (ATX 3.0)"):
+                        #         continue
                         if(located_psu["name"] =="Thermaltake Toughpower GF A3 - TT Premium Edition" and "gf a3 n amer" in model_str and (region == "" or region == "ca.")):
                             score+=20
                         if(psu["name"] == "Silverstone ST85F-GS-V2" and model_str == "silverstone triton rx"):
@@ -274,16 +274,22 @@ def sortRegion(region):
                             score += 50
                         if("v2" in model_str and "V2" in psu["name"]):
                             score+=10
+                        if(located_psu["name"] == "Corsair CX (2023)" and score > 100):
+                            if(entry["year"] == "2024"):
+                                score+=10
+                        if(("Corsair RM750" == psu['name'] or  "Corsair RM850" == psu['name']) and entry["series"] == 'RM'):
+                            score+=50
+                        if(located_psu["name"] == "EVGA 600 GD"):
+                            if(int(entry["year"]) > 2019):
+                                score-=10
                         matches.append((entry["model"], entry["tier"], score,entry["atxver"],entry["info"]))
                         
 
 
-        # if(located_psu["name"] == "Thermaltake Toughpower GX2"):
-        #     print(matches)
-        # if(located_psu["name"] == "ADATA XPG Core Reactor II"):
-        #     print(matches)
-        # if(located_psu["name"] == "Lian Li EDGE GOLD"):
-        #     print(matches)
+        # if(located_psu["name"] == "Corsair RM750"):
+        #     matches= sorted(matches, key=lambda x: -x[2])
+        #     print(matches[0:10])
+
         return sorted(matches, key=lambda x: -x[2])  # highest score first
 
     for psu in located:

@@ -633,3 +633,50 @@ label{
 .tier-A  { background-color: #00b84f; color: white; }  /* A  */
 .tier-Ap { background-color: #00a86b; color: white; }  /* A+ */
 
+td.tier-cell {
+      position: relative;
+      cursor: help;
+    }
+    td.tier-cell::after {
+      content: attr(data-model);
+      position: absolute;
+      left: 50%;
+      bottom: 115%;
+      transform: translateX(-50%);
+      background: #111;
+      color: #fff;
+      font-size: 0.85rem;
+      line-height: 1.2;
+      padding: 6px 8px;
+      border-radius: 6px;
+      box-shadow: 0 6px 16px rgba(0,0,0,.25);
+      max-width: 8000px;
+      white-space: normal;
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+      transition: opacity .18s ease, transform .18s ease, visibility 0s linear .18s;
+      z-index: 3;
+    }
+    td.tier-cell::before {
+      content: "";
+      position: absolute;
+      left: 50%;
+      bottom: 105%;
+      transform: translateX(-50%);
+      border: 6px solid transparent;
+      border-top-color: #111;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity .18s ease, visibility 0s linear .18s;
+      z-index: 3;
+    }
+    td.tier-cell:hover::after,
+    td.tier-cell:hover::before,
+    td.tier-cell:focus-visible::after,
+    td.tier-cell:focus-visible::before {
+      opacity: 1;
+      visibility: visible;
+      transform: translateX(-50%) translateY(-2px);
+      transition-delay: 0s;
+    }

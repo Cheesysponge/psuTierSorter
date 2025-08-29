@@ -255,6 +255,15 @@ data.forEach(row => {
     } else {
       td.textContent = row[col.key] || '';
     }
+    if (col.key === 'Tier') {
+      const modelText = (row['Matched Tier Model'] || '').toString().trim();
+      if (modelText) {
+        td.classList.add('tier-cell');        // for CSS tooltip
+        td.dataset.model = modelText;         // drives tooltip text
+        td.setAttribute('aria-label', `Matched model: ${modelText}`);
+        td.setAttribute('tabindex', '0');     // keyboard focusable
+      }
+      }
 
     tr.appendChild(td);
   });

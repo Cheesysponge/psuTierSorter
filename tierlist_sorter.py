@@ -234,6 +234,7 @@ def sortRegion(region):
     addAffiliate("ASRock Steel Legend SL-650G",[650],["https://amzn.to/4aSFni9"])
     addAffiliate("Cougar VTE",[600],["https://amzn.to/3V7XTMw"])
     addAffiliate("NZXT C (2019)",[650],["https://amzn.to/4p0k1pU"])
+    addAffiliate("Rosewill VSB",[650],["https://newegg.io/nce069d932"])
 
 
     def match_psu(located_psu, psus_rated, threshold=65):

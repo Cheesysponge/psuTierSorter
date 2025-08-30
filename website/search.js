@@ -239,6 +239,13 @@ data.forEach(row => {
 
     } else if (col.key === 'located Name') {
       const link = (row['Product URL'] || '').trim();
+      const modelText = (row['Matched Tier Model Info'] || '').toString().trim();
+      if (modelText) {
+        td.classList.add('tier-cell');        // for CSS tooltip
+        td.dataset.model = modelText;         // drives tooltip text
+        td.setAttribute('aria-label', `Matched model: ${modelText}`);
+        td.setAttribute('tabindex', '0');     // keyboard focusable
+      }
       if (link) {
         const a = document.createElement('a');
         a.href = link;

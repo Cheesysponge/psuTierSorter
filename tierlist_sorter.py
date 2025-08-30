@@ -238,7 +238,7 @@ def sortRegion(region):
     addAffiliate("EVGA SuperNOVA 650 GA",[650],["https://amzn.to/3HWiY9M"])
 
 
-    def match_psu(located_psu, psus_rated, threshold=65):
+    def match_psu(located_psu, psus_rated, threshold=60):
         matches = []
         for entry in psus_rated:
             model_str = normalize_name(entry["model"])
@@ -289,7 +289,7 @@ def sortRegion(region):
                         
 
 
-        # if(located_psu["name"] == "Corsair RM750"):
+        # if(located_psu["name"] == "Vetroo GV1000"):
         #     matches= sorted(matches, key=lambda x: -x[2])
         #     print(matches[0:10])
 

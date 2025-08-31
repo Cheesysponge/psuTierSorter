@@ -653,10 +653,10 @@ td.tier-cell {
       max-width: 280px;
       white-space: normal;
       opacity: 0;
-      visibility: hidden;
+      /* visibility: hidden; */
       pointer-events: none;
       transition: opacity .18s ease, transform .18s ease, visibility 0s linear .18s;
-      z-index: 3;
+      z-index: 3000;
     }
     td.tier-cell::before {
       content: "";
@@ -669,7 +669,7 @@ td.tier-cell {
       opacity: 0;
       visibility: hidden;
       transition: opacity .18s ease, visibility 0s linear .18s;
-      z-index: 3;
+      z-index: 3000;
     }
     td.tier-cell:hover::after,
     td.tier-cell:hover::before,
@@ -680,3 +680,164 @@ td.tier-cell {
       transform: translateX(-50%) translateY(-2px);
       transition-delay: 0s;
     }
+.deal{
+  color:#2c5f5f;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 600px) {
+  #tableContainer table thead { display: table-header-group; } /* keep header */
+  #tableContainer table tr > *:nth-child(n+5) { display: none; } /* hide cols 5+ */
+  #tableContainer table { width: 100%; min-width: 0; display: table; }
+}
+
+
+
+/* ---------- Responsive Table Base ---------- */
+#tableContainer {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  text-align: center;
+}
+
+/* Override the global table rule for YOUR generated table only */
+.psu-table {
+  display: table;         /* override inline-table */
+  width: 100%;
+  min-width: auto;        /* let it shrink on small screens */
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 0.95rem;
+}
+
+.psu-table th,
+.psu-table td {
+  border: 1px solid #ddd;
+  padding: 8px 10px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.psu-table img {
+  max-width: 80px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Keep the header sticky on wider viewports */
+@media (min-width: 601px) {
+  .psu-table thead th {
+    position: sticky;
+    top: 0;
+    background: #fff;
+    z-index: 1;
+  }
+}
+
+/* Tablet: allow horizontal scroll but trim low-priority columns if you add classes (see JS patch) */
+@media (max-width: 900px) {
+  .psu-table img { max-width: 60px; }
+  /* Optional if you add column classes:
+  .psu-table .col-image-url,
+  .psu-table .col-color,
+  .psu-table .col-modularity,
+  .psu-table .col-atxver,
+  .psu-table .col-matched-tier-model,
+  .psu-table .col-matched-tier-model-info { display: none; }
+  */
+}
+
+/* Phone: stacked "card" layout */
+@media (max-width: 600px) {
+  .psu-table { border-collapse: separate; border-spacing: 0 10px; }
+  .psu-table thead { display: none; }
+  .psu-table, .psu-table tbody, .psu-table tr, .psu-table td { display: block; width: 100%; }
+  .psu-table tr {
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    box-shadow: 0 1px 2px rgba(0,0,0,.04);
+    padding: 0; margin: 10px 0;
+    overflow: hidden;
+  }
+  .psu-table td {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;         /* easier to read labels/value */
+    padding: 10px 12px;
+    border: none;             /* we separate cells by border-bottom instead */
+    border-bottom: 1px solid #f1f5f9;
+  }
+  .psu-table td:last-child { border-bottom: none; }
+
+  /* Show field label before the value using data-label from JS patch */
+  .psu-table td::before {
+    content: attr(data-label);
+    font-weight: 600;
+    margin-right: 12px;
+    flex: 1 1 50%;
+    color: #2E2F2F;
+  }
+  .psu-table td > *:not(img) {
+    max-width: 50%;
+    margin-left: auto;
+    text-align: right;
+  }
+
+  /* Tooltips still appear above cells */
+  .psu-table td.tier-cell { position: relative; }
+
+  /* Optional: hide lower-priority fields on phones if you add column classes */
+  /* Keep Remove (if present), Tier, Name, Price, Wattage visible; hide the rest. */
+  .psu-table .col-efficiency,
+  .psu-table .col-modularity,
+  .psu-table .col-atxver,
+  .psu-table .col-size,
+  .psu-table .col-color,
+  .psu-table .col-matched-tier-model,
+  .psu-table .col-matched-tier-model-info,
+  .psu-table .col-image-url { display: none; }
+}
+
+/* Better touch targets */
+@media (pointer: coarse) {
+  .remove-btn { min-width: 36px; min-height: 36px; }
+}
+
+/* ---------- Filters wrap nicely on mobile ---------- */
+#filters {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;            /* NEW: wrap on small screens */
+}
+
+#minWattage,
+#cheapestCountInput,
+.custom-dropdown {
+  max-width: 100%;
+}
+
+/* On very narrow screens, let the generic table rule relax */
+@media (max-width: 600px) {
+  table { min-width: 0 !important; width: 100% !important; }
+}
+
+/* Optional: smaller images globally on tiny screens */
+@media (max-width: 600px) {
+  img { max-width: 70px; }
+}

@@ -207,6 +207,7 @@ def sortRegion(region):
     addAffiliate("Montech CENTURY II",[850,1050,1200],["https://amzn.to/4kthp0f","https://amzn.to/460hlS7","https://amzn.to/44k5kpr"])
     addAffiliate("Corsair CX650M (2021)",[650],["https://amzn.to/40PDVst"])
     addAffiliate("Corsair CX750M (2021)",[750],["https://amzn.to/40RC0nd"])
+    addAffiliate("Corsair RM750x SHIFT",[750],["https://amzn.to/3JENMwh"])
     addAffiliate("NZXT C850 (2024)",[850],["https://amzn.to/4hoJLrR"])
     addAffiliate("Vetroo 50315153244479",[850],["https://www.amazon.com/Vetroo-Modular-Operation-10-Year-Warranty/dp/B0DP2KLT8P"])
     addAffiliate("Vetroo 50315153277247",[850],["https://www.amazon.com/Vetroo-Modular-Operation-10-Year-Warranty/dp/B0DP2LBPPY"])
@@ -236,7 +237,7 @@ def sortRegion(region):
     addAffiliate("NZXT C (2019)",[650],["https://amzn.to/4p0k1pU"])
     addAffiliate("Rosewill VSB",[650],["https://newegg.io/nce069d932"])
     addAffiliate("EVGA SuperNOVA 650 GA",[650],["https://amzn.to/3HWiY9M"])
-
+    addAffiliate("Cooler Master MWE Gold 750 V3",[750],["https://newegg.io/nca32e1200"])
 
     def match_psu(located_psu, psus_rated, threshold=60):
         matches = []

@@ -1,5 +1,4 @@
 from tierlist_sorter import sortRegion
-from locator import locateRegion
 import time
 
 start = time.time()

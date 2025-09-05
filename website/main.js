@@ -51,7 +51,6 @@ noCacheURL = `${'psu_stored.csv'}?t=${Date.now()}`;
 currencySymbol = "$";
 document.getElementById('modularToggle').addEventListener('change', loadAndFilter);
 document.getElementById('sfxToggle').addEventListener('change', loadAndFilter);
-document.getElementById('bestToggle').addEventListener('change', loadAndFilter);
 document.getElementById('dToggle').addEventListener('change', loadAndFilter);
 document.getElementById('importantToggle').addEventListener('change', loadAndFilter);
 document.getElementById('whiteToggle').addEventListener('change', loadAndFilter);
@@ -63,15 +62,11 @@ function loadAndFilter() {
   const minWattage = parseInt(document.getElementById('minWattage').value, 10) || 0;
   const modularOnly = document.getElementById('modularToggle').checked;
   const sfxOnly = document.getElementById('sfxToggle').checked;
-  const bestSort = document.getElementById('bestToggle').checked;
   const includeD = document.getElementById('dToggle').checked;
   const whitesOnly = document.getElementById('whiteToggle').checked;
 
   if(includeD){
     wantedTiers = ["D", "C-", "C", "C+", "B-", "B", "B+", "A-", "A", "A+"]
-  }
-  if(bestSort){
-    wantedTiers.reverse();
   }
 
   fetch(noCacheURL)
@@ -106,7 +101,7 @@ function loadAndFilter() {
 
         );
       });
-      const sortByPrice = document.getElementById('sortByPriceToggle').checked;
+      const sortByPrice = !document.getElementById('sortByPriceToggle').checked;
 
       // Find cheapest per tier
       const countInput = document.getElementById("cheapestCountInput");
@@ -150,6 +145,47 @@ function loadAndFilter() {
       // Optional global sort
       if (sortByPrice) {
         sortedCheapest.sort((a, b) => parseFloat(a.Price) - parseFloat(b.Price));
+      }
+      if (sortByPrice) {
+        // sort globally by price (ascending)
+        sortedCheapest.sort((a, b) => {
+          const pa = parseFloat(String(a['Price']).replace(/[^0-9.\-]/g, ''));
+          const pb = parseFloat(String(b['Price']).replace(/[^0-9.\-]/g, ''));
+          return pa - pb;
+        });
+
+        // helpers local to this block
+        const num = (v) => {
+          const n = parseFloat(String(v ?? '').replace(/[^0-9.\-]/g, ''));
+          return Number.isFinite(n) ? n : NaN;
+        };
+        const tierOrder = ["D","C-","C","C+","B-","B","B+","A-","A","A+"]; // lowest -> highest
+        const tierScore = (t) => {
+          const i = tierOrder.indexOf((t || '').trim());
+          return i === -1 ? -Infinity : i; // unknown tiers count as worst
+        };
+
+        // prune dominated items: (price >= prevPrice + 2) AND (tier lower) => exclude
+        const pruned = [];
+        for (const item of sortedCheapest) {
+          const price = num(item['Price']);
+          const tier  = (item['Tier'] || '').trim();
+
+          if (!Number.isFinite(price)) continue;
+          if (pruned.length === 0) { pruned.push(item); continue; }
+
+          const prev = pruned[pruned.length - 1];
+          const prevPrice = num(prev['Price']);
+          const prevTier  = (prev['Tier'] || '').trim();
+
+          const priceWorse = price >= prevPrice + 2;                 // "at least $2"
+          const tierWorse  = tierScore(tier) < tierScore(prevTier);  // lower/worse tier
+
+          if (priceWorse && tierWorse) continue; // dominated → drop
+          pruned.push(item);
+        }
+
+        sortedCheapest = pruned;
       }
 
 
@@ -306,7 +342,6 @@ const selectedText = dropdown.options[dropdown.selectedIndex].text;
   loadAndFilter()
 
 }
-
 
 
 

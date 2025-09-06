@@ -235,7 +235,7 @@ def sortRegion(region):
     addAffiliate("ASRock Steel Legend SL-650G",[650],["https://amzn.to/4aSFni9"])
     addAffiliate("Cougar VTE",[600],["https://amzn.to/3V7XTMw"])
     addAffiliate("NZXT C (2019)",[650],["https://amzn.to/4p0k1pU"])
-    addAffiliate("Rosewill VSB",[650],["https://newegg.io/nce069d932"])
+    addAffiliate("Rosewill VSB",[650],["https://a.co/d/1X0ZW7c"])
     addAffiliate("EVGA SuperNOVA 650 GA",[650],["https://amzn.to/3HWiY9M"])
     addAffiliate("Cooler Master MWE Gold 750 V3",[750],["https://newegg.io/nca32e1200"])
 

@@ -178,7 +178,7 @@ function loadAndFilter() {
           const prevPrice = num(prev['Price']);
           const prevTier  = (prev['Tier'] || '').trim();
 
-          const priceWorse = price >= prevPrice + 2;                 // "at least $2"
+          const priceWorse = price >= prevPrice + 0;                 // "at least $2"
           const tierWorse  = tierScore(tier) < tierScore(prevTier);  // lower/worse tier
 
           if (priceWorse && tierWorse) continue; // dominated → drop

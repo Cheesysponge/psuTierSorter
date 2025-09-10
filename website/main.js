@@ -51,7 +51,7 @@ noCacheURL = `${'psu_stored.csv'}?t=${Date.now()}`;
 currencySymbol = "$";
 document.getElementById('modularToggle').addEventListener('change', loadAndFilter);
 document.getElementById('sfxToggle').addEventListener('change', loadAndFilter);
-document.getElementById('dToggle').addEventListener('change', loadAndFilter);
+document.getElementById('atxToggle').addEventListener('change', loadAndFilter);
 document.getElementById('importantToggle').addEventListener('change', loadAndFilter);
 document.getElementById('whiteToggle').addEventListener('change', loadAndFilter);
 document.getElementById('sortByPriceToggle').addEventListener('change', loadAndFilter);
@@ -62,12 +62,12 @@ function loadAndFilter() {
   const minWattage = parseInt(document.getElementById('minWattage').value, 10) || 0;
   const modularOnly = document.getElementById('modularToggle').checked;
   const sfxOnly = document.getElementById('sfxToggle').checked;
-  const includeD = document.getElementById('dToggle').checked;
+  const atx3 = document.getElementById('atxToggle').checked;
   const whitesOnly = document.getElementById('whiteToggle').checked;
 
-  if(includeD){
-    wantedTiers = ["D", "C-", "C", "C+", "B-", "B", "B+", "A-", "A", "A+"]
-  }
+  // if(includeD){
+  //   wantedTiers = ["D", "C-", "C", "C+", "B-", "B", "B+", "A-", "A", "A+"]
+  // }
 
   fetch(noCacheURL)
     .then(response => {
@@ -84,11 +84,11 @@ function loadAndFilter() {
         const price = parseFloat(row['Price']);
         const tier = row['Tier'];
         const modularField = (row['modularity']).toLowerCase(); // adjust if needed
-  
+        const atxver = (row['atxver']).toLowerCase();
         const isModular = modularField.includes('full') || modularField.includes('semi'); // matches "modular" or "semi-modular"
         const isSFX = row['size'].includes('SFX');
         const isWhite = row['color'].includes('White');
-
+        const is3 = atxver.includes('3.x');
         return (
           watt >= minWattage &&
           !isNaN(price) &&
@@ -96,6 +96,7 @@ function loadAndFilter() {
           wantedTiers.includes(tier) &&
           (!modularOnly || isModular) &&
           (!sfxOnly || isSFX) &&
+          (!atx3 || is3) &&
           (!whitesOnly || isWhite)
 
 

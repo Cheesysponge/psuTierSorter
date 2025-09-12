@@ -58,7 +58,7 @@ document.getElementById('sortByPriceToggle').addEventListener('change', loadAndF
 document.getElementById('cheapestCountInput').addEventListener('change', loadAndFilter);
 
 function loadAndFilter() {
-  wantedTiers = ["C-", "C", "C+", "B-", "B", "B+", "A-", "A", "A+"]
+  wantedTiers = ["D","C-", "C", "C+", "B-", "B", "B+", "A-", "A", "A+"]
   const minWattage = parseInt(document.getElementById('minWattage').value, 10) || 0;
   const modularOnly = document.getElementById('modularToggle').checked;
   const sfxOnly = document.getElementById('sfxToggle').checked;

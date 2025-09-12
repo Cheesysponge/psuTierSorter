@@ -238,6 +238,8 @@ def sortRegion(region):
     addAffiliate("Rosewill VSB",[650],["https://a.co/d/1X0ZW7c"])
     addAffiliate("EVGA SuperNOVA 650 GA",[650],["https://amzn.to/3HWiY9M"])
     addAffiliate("Cooler Master MWE Gold 750 V3",[750],["https://newegg.io/nca32e1200"])
+    addAffiliate("Cooler Master MWE GOLD 750 V2 FULL MODULAR",[750],["https://newegg.io/nca9ecf220"])
+    addAffiliate("Asus TUF Gaming B",[550],["https://amzn.to/3Ij8nWA"])
 
     def match_psu(located_psu, psus_rated, threshold=60):
         matches = []
@@ -252,7 +254,8 @@ def sortRegion(region):
 
                         if(entry["modularity"] != located_psu["modularity"]):
                             score-=70
-
+                        if(entry["brand"].lower() in located_psu["normalized"]):
+                            score+=10
                         if(str(entry["year"]) in located_psu["name"]):
                             score+=20
                         if("original" in entry["model"]):

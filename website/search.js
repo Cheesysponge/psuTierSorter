@@ -52,15 +52,22 @@ document.getElementById('importantToggle').addEventListener('change', loadAndFil
 document.getElementById('whiteToggle').addEventListener('change', loadAndFilter);
 document.getElementById('cheapestCountInput').addEventListener('change', loadAndFilter);
 document.getElementById('searchBar').addEventListener('input', loadAndFilter);
+document.getElementById('crap').addEventListener('input', loadAndFilter);
+
 
 function loadAndFilter() {
   wantedTiers = ["N/A","F","E","D+","D","D+","C-*","C*","C+*","C-", "C", "C+","B-*","B*","B+*", "B-", "B", "B+","A-*","A*","A+*", "A-", "A", "A+"]
   const minWattage = parseInt(document.getElementById('minWattage').value, 10) || 0;
   const sfxOnly = document.getElementById('sfxToggle').checked;
   const whitesOnly = document.getElementById('whiteToggle').checked;
+  const excludeCrap = document.getElementById('crap').checked;
+
   const searchQuery = document.getElementById('searchBar').value.trim().toLowerCase();
 
+  if(excludeCrap){
+      wantedTiers = ["C-", "C", "C+","B-", "B", "B+", "A-", "A", "A+"]
 
+  }
 
   fetch(noCacheURL)
     .then(response => {

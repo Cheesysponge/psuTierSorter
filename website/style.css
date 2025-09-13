@@ -841,3 +841,87 @@ td.tier-cell {
 @media (max-width: 600px) {
   img { max-width: 70px; }
 }
+
+.tier-range {
+    --track-h: 8px;
+    --track-bg: #eee;
+    --fill-bg: #7c3aed;
+    --thumb-size: 22px;
+    --thumb-ring: 3px;
+    --tick-size: 6px;
+
+    position: relative;
+    width: 100%;
+    max-width: 640px;
+    margin: 12px 0 8px;
+    user-select: none;
+    touch-action: none;
+  }
+  .tr-track {
+    position: relative;
+    height: var(--track-h);
+    background: var(--track-bg);
+    border-radius: 999px;
+  }
+  .tr-fill {
+    position: absolute;
+    height: 100%;
+    left: 0; top: 0;
+    width: 0%;
+    background: var(--fill-bg);
+    border-radius: 999px;
+    pointer-events: none;
+  }
+  .tr-thumb {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: var(--thumb-size);
+    height: var(--thumb-size);
+    background: #fff;
+    border-radius: 50%;
+    box-shadow:
+      0 1px 2px rgba(0,0,0,.15),
+      0 0 0 var(--thumb-ring) var(--fill-bg);
+  }
+  .tr-thumb:focus-visible {
+    outline: 3px solid #94a3b8;
+    outline-offset: 2px;
+  }
+  /* Make the active thumb sit on top when overlapping */
+  .tr-thumb.active { z-index: 2; }
+
+  .tr-ticks {
+    position: relative;
+    height: 14px;
+    margin-top: 6px;
+  }
+  .tr-tick {
+    position: absolute;
+    top: 0;
+    width: 0;
+    height: var(--tick-size);
+    border-left: 2px solid #d4d4d8;
+    transform: translateX(-1px);
+  }
+  .tr-label {
+    margin-top: 10px;
+    font: 600 14px/1.2 ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial;
+    color: #e7ebff;
+  }
+  .tr-sub {
+    font: 12px/1.2 ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial;
+    color: #6b7280;
+    margin-left: 6px;
+    font-weight: 500;
+  }
+  .tier-range-wrapper {
+    margin-top: 15px;
+    text-align: center;
+  }
+
+  .tier-range {
+    max-width: 600px;               /* control slider width */
+    width: 80%;                     /* responsive shrink */
+    margin: 0 auto;
+  }

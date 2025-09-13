@@ -226,7 +226,7 @@ def sortRegion(region):
     addAffiliate("Thermaltake Toughpower GF A3 - TT Premium Edition",[750,850],["https://amzn.to/4jRN6RU","https://www.amazon.com/Thermaltake-Toughpower-Crossfile-Connector-PS-TPD-0650FNFAGU-L/dp/B0C1JKHPNH"])
     addAffiliate("MSI MAG A750GL PCIE5",[750],["https://amzn.to/3CSNbny"])
     addAffiliate("MSI MAG A850GL PCIE5",[850],["https://amzn.to/41adrmM"])
-    addAffiliate("ADATA XPG Core Reactor II",[650,750,850],["https://amzn.to/4gt83PY", "https://amzn.to/45leXDE", "https://amzn.to/3QnXNhH"])
+    addAffiliate("ADATA XPG Core Reactor II",[650,750,850],["https://amzn.to/4gt83PY", "https://a.co/d/bNxXnhF", "https://amzn.to/3QnXNhH"])
     addAffiliate("MSI MAG A650BN",[650],["https://amzn.to/4k52YRc"])
     addAffiliate("MSI MAG A550BN",[550],["https://amzn.to/42Qkqmg"])
     addAffiliate("Thermaltake Smart BM3",[650],["https://amzn.to/410Hooi"])

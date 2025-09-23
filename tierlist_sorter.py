@@ -240,6 +240,7 @@ def sortRegion(region):
     addAffiliate("Cooler Master MWE Gold 750 V3",[750],["https://newegg.io/nca32e1200"])
     addAffiliate("Cooler Master MWE GOLD 750 V2 FULL MODULAR",[750],["https://newegg.io/nca9ecf220"])
     addAffiliate("Asus TUF Gaming B",[550],["https://amzn.to/3Ij8nWA"])
+    addAffiliate("Rosewill VMG",[750,850],["https://www.amazon.com/e/dp/B0FFQC5VGM","https://www.amazon.com/e/dp/B0FFQN6344"])
 
     def match_psu(located_psu, psus_rated, threshold=60):
         matches = []

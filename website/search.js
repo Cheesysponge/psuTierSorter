@@ -88,7 +88,7 @@ function loadAndFilter() {
   const minWattage = parseInt(document.getElementById('minWattage').value, 10) || 0;
   const sfxOnly = document.getElementById('sfxToggle').checked;
   const whitesOnly = document.getElementById('whiteToggle').checked;
-  const excludeCrap = document.getElementById('crap').checked;
+  const excludeCrap = !document.getElementById('crap').checked;
   const searchQuery = document.getElementById('searchBar').value.trim().toLowerCase();
 
   // 1) Take the tier range from the dual slider (fallback: full range)

@@ -230,7 +230,7 @@ def sortRegion(region):
     addAffiliate("MSI MAG A650BN",[650],["https://amzn.to/4k52YRc"])
     addAffiliate("MSI MAG A550BN",[550],["https://amzn.to/42Qkqmg"])
     addAffiliate("Thermaltake Smart BM3",[650],["https://amzn.to/410Hooi"])
-    addAffiliate("Lian Li EDGE GOLD",[750,1200],["https://www.newegg.com/p/1HU-01PP-00012","https://amzn.to/4k2YXwH"])
+    addAffiliate("Lian Li EDGE GOLD",[750,1200],["https://newegg.io/nc1f2569ed","https://amzn.to/4k2YXwH"])
     addAffiliate("Lian Li EDGE",[1300],["https://amzn.to/40Q16mf"])
     addAffiliate("ASRock Steel Legend SL-650G",[650],["https://amzn.to/4aSFni9"])
     addAffiliate("Cougar VTE",[600],["https://amzn.to/3V7XTMw"])

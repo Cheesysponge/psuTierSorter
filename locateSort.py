@@ -10,10 +10,10 @@ def locateAndSort(region, n):
     sortRegion(region)
     count += (n-1)*5
 
-locateAndSort("",7)
+locateAndSort("",6)
 locateAndSort("au",3)
-locateAndSort("de",3)
-locateAndSort("uk",3)
+locateAndSort("de",4)
+locateAndSort("uk",4)
 locateAndSort("ca",3)
 
 

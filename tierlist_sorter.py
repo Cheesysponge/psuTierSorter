@@ -45,6 +45,7 @@ def sortRegion(region):
         # Join non-empty components, clean, normalize
         combined = " ".join(arg for arg in args if arg).lower()
         combined = re.sub(r"[^a-z0-9]+", " ", combined)  # keep only alphanumerics
+        combined = re.sub(r"ultra durable", "", combined) # repetetive :|
         return combined.strip()
 
     with open("spec_tierlist.csv", "r", newline="", encoding="utf-8") as csvfile:
@@ -251,7 +252,7 @@ def sortRegion(region):
                 # Optionally filter by wattage
                 if wattage_match(located_psu["wattage"], entry["wattages"]):
                     if(entry["efficiency"] in located_psu["efficiency"] and (entry["size"] in located_psu["size"] or (entry["size"] == "Other" or (entry["size"] == "SFX-L")))):
-                        score+=len(normalize_name(entry["model"]))/20-4+(int(entry["year"])-2000)/5
+                        score+=len(normalize_name(entry["model"]))/20-4+(int(entry["year"])-2000)/4
 
                         if(entry["modularity"] != located_psu["modularity"]):
                             score-=70
@@ -290,11 +291,17 @@ def sortRegion(region):
                         if(located_psu["name"] == "EVGA 600 GD"):
                             if(int(entry["year"]) > 2019):
                                 score-=10
+                        if(located_psu["name"] == "Gigabyte UD850GM" and entry["series1"] == "UD-GM"):
+                            score+=10
+                        if(located_psu["name"] == "Gigabyte UD750GM" and entry["series1"] == "UD-GM"):
+                            score+=10
+                        if(located_psu["name"] == "Thermaltake Smart" and entry["series1"] == "White Label"):
+                            score+=20
                         matches.append((entry["model"], entry["tier"], score,entry["atxver"],entry["info"]))
                         
 
 
-        # if(located_psu["name"] == "Vetroo GV1000"):
+        # if(located_psu["name"] == "Gigabyte UD850GM"):
         #     matches= sorted(matches, key=lambda x: -x[2])
         #     print(matches[0:10])
 

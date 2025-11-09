@@ -200,6 +200,7 @@ def sortRegion(region):
                     links[w] = clean_amazon_link(links[w])
                 affiliate_links[name][wattages[w]] = links[w]
     #?tag=psutierlist01-20
+    
     addAffiliate("ASRock Phantom Gaming PG-750G",[750],["https://amzn.to/45hVC7K"])
     addAffiliate("ASRock Phantom Gaming PG-850G",[850],["https://amzn.to/4kpwDDI"])
     addAffiliate("ASRock Phantom Gaming PG-1000G",[1000],["https://amzn.to/43njvIn"])
@@ -244,6 +245,9 @@ def sortRegion(region):
     addAffiliate("Rosewill VMG",[750,850],["https://amzn.to/4orknoZ","https://amzn.to/4olgaTD"])
     addAffiliate("be quiet! Pure Power 13 M",[750],["https://newegg.io/ncb3031ae8"])
     addAffiliate("SAMA P1200",[1200],["https://newegg.io/nc8529ff56"])
+    addAffiliate("MSI MAG A650GLS PCIE5",[650],["https://newegg.io/nce66dd095"])
+    addAffiliate("MSI MAG A750GLS PCIE5",[750],["https://newegg.io/nc907add33"])
+
     def match_psu(located_psu, psus_rated, threshold=60):
         matches = []
         for entry in psus_rated:

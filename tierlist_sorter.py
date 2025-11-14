@@ -237,7 +237,7 @@ def sortRegion(region):
     addAffiliate("ASRock Steel Legend SL-650G",[650],["https://amzn.to/4aSFni9"])
     addAffiliate("Cougar VTE",[600],["https://amzn.to/3V7XTMw"])
     addAffiliate("NZXT C (2019)",[650],["https://amzn.to/4p0k1pU"])
-    addAffiliate("Rosewill VSB",[650,750],["https://a.co/d/1X0ZW7c","https://a.co/d/iCmG0MS"])
+    addAffiliate("Rosewill VSB",[650,750,850],["https://a.co/d/1X0ZW7c","https://a.co/d/iCmG0MS","https://a.co/d/5KHEND4"])
     addAffiliate("EVGA SuperNOVA 650 GA",[650],["https://amzn.to/3HWiY9M"])
     addAffiliate("Cooler Master MWE Gold 750 V3",[750],["https://newegg.io/nca32e1200"])
     addAffiliate("Cooler Master MWE GOLD 750 V2 FULL MODULAR",[750],["https://newegg.io/nca9ecf220"])
@@ -247,6 +247,8 @@ def sortRegion(region):
     addAffiliate("SAMA P1200",[1200],["https://newegg.io/nc8529ff56"])
     addAffiliate("MSI MAG A650GLS PCIE5",[650],["https://newegg.io/nce66dd095"])
     addAffiliate("MSI MAG A750GLS PCIE5",[750],["https://newegg.io/nc907add33"])
+    addAffiliate("ADATA XPG CORE Reactor 850",[850],["https://a.co/d/a2qs4rY"])
+
 
     def match_psu(located_psu, psus_rated, threshold=60):
         matches = []
@@ -302,11 +304,14 @@ def sortRegion(region):
                             score+=10
                         if(located_psu["name"] == "Thermaltake Smart" and entry["series1"] == "White Label"):
                             score+=20
+                        if(located_psu["name"] == "ADATA XPG CORE Reactor 850"):
+                            if("ii" in entry["model"]):
+                                score-=3
                         matches.append((entry["model"], entry["tier"], score,entry["atxver"],entry["info"]))
                         
 
 
-        # if(located_psu["name"] == "Gigabyte UD850GM"):
+        # if(located_psu["name"] == "ADATA XPG CORE Reactor 850"):
         #     matches= sorted(matches, key=lambda x: -x[2])
         #     print(matches[0:10])
 

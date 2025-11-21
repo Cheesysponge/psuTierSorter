@@ -217,7 +217,7 @@ def sortRegion(region):
     addAffiliate("EVGA 850 GQ",[850],["https://www.newegg.com/w/p/N82E16817438061"])
     addAffiliate("SeaSonic CORE GX ATX 3 (2024)", [650,850],["https://www.newegg.com/w/p/N82E16817151276","https://www.newegg.com/w/p/N82E16817151278"])
     addAffiliate("SAMA GT",[650],["https://amzn.to/3CPjOm9"])
-    addAffiliate("MSI MPG A850GS PCIE5",[850],["https://amzn.to/4hvgKea"])
+    addAffiliate("MSI MPG A850GS PCIE5",[850],["https://newegg.io/nc2ed2fded"])
     addAffiliate("ADATA XPG CYBERCORE",[1000,1300],["https://www.walmart.com/ip/XPG-CYBERCORE-ATX-Modular-PSU-1000W-80-Plus-Platinum-26-Connectors-Intex-ATX-12V/724286138", "https://www.walmart.com/ip/XPG-CYBERCORE-ATX-Modular-PSU-1300W-80-Plus-Platinum-26-Connectors-Intex-ATX-12V/988283739"])
     addAffiliate("Silverstone Essential",[550, 750],["https://amzn.to/4aW68Cl", "https://amzn.to/3EtFRzc"])
     addAffiliate("Lian Li SP750",[750],["https://amzn.to/3WVfuc5"])
@@ -248,7 +248,7 @@ def sortRegion(region):
     addAffiliate("MSI MAG A650GLS PCIE5",[650],["https://newegg.io/nce66dd095"])
     addAffiliate("MSI MAG A750GLS PCIE5",[750],["https://newegg.io/nc907add33"])
     addAffiliate("ADATA XPG CORE Reactor 850",[850],["https://a.co/d/a2qs4rY"])
-
+    addAffiliate("Thermaltake Toughpower GF2 ARGB",[650],["https://amzn.to/489w8JB"])
 
     def match_psu(located_psu, psus_rated, threshold=60):
         matches = []

@@ -249,6 +249,7 @@ def sortRegion(region):
     addAffiliate("MSI MAG A750GLS PCIE5",[750],["https://newegg.io/nc907add33"])
     addAffiliate("ADATA XPG CORE Reactor 850",[850],["https://a.co/d/a2qs4rY"])
     addAffiliate("Thermaltake Toughpower GF2 ARGB",[650],["https://amzn.to/489w8JB"])
+    addAffiliate("Asus ROG Strix Aura Edition",[750],["https://newegg.io/nca8554bff"])
 
     def match_psu(located_psu, psus_rated, threshold=60):
         matches = []

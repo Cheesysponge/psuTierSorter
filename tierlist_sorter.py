@@ -250,7 +250,7 @@ def sortRegion(region):
     addAffiliate("ADATA XPG CORE Reactor 850",[850],["https://a.co/d/a2qs4rY"])
     addAffiliate("Thermaltake Toughpower GF2 ARGB",[650],["https://newegg.io/nce6195c56"])
     addAffiliate("Asus ROG Strix Aura Edition",[750],["https://newegg.io/nca8554bff"])
-
+    addAffiliate("NZXT C750 Core",[750],["https://nzxt.com/products/c750-gold-core"])
     def match_psu(located_psu, psus_rated, threshold=60):
         matches = []
         for entry in psus_rated:

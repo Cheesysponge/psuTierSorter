@@ -6,6 +6,8 @@ de.psus_located.csv
 uk.psus_located.csv
 playground.py
 spec_tierlist.csv
+spec_tierlist_old.csv
+
 locator.py
 venv/
 __pycache__/

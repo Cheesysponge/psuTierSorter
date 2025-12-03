@@ -250,8 +250,15 @@ def sortRegion(region):
     addAffiliate("ADATA XPG CORE Reactor 850",[850],["https://a.co/d/a2qs4rY"])
     addAffiliate("Thermaltake Toughpower GF2 ARGB",[650],["https://newegg.io/nce6195c56"])
     addAffiliate("Asus ROG Strix Aura Edition",[750],["https://newegg.io/nca8554bff"])
-    addAffiliate("NZXT C750 Core",[750],["https://nzxt.com/products/c750-gold-core"])
-    def match_psu(located_psu, psus_rated, threshold=60):
+    addAffiliate("NZXT C750 Core",[750],["https://a.co/d/2HJFPNL"])
+    addAffiliate("NZXT C850 Core",[850],["https://amzn.to/4owh1QD"])
+    addAffiliate("NZXT C750 (2022)",[750],["https://newegg.io/nc15ea99ca"])
+    addAffiliate("SAMA G650",[650],["https://newegg.io/nc49836bff"])
+    addAffiliate("SAMA G750",[750],["https://newegg.io/nc70e665c8"])
+    addAffiliate("SAMA G850",[850],["https://newegg.io/nc68f5c9b7"])
+    addAffiliate("SAMA G1000",[1000],["https://newegg.io/nc3e5de35d"])
+
+    def match_psu(located_psu, psus_rated, threshold=57):
         matches = []
         for entry in psus_rated:
             model_str = normalize_name(entry["model"])
@@ -260,7 +267,7 @@ def sortRegion(region):
                 # Optionally filter by wattage
                 if wattage_match(located_psu["wattage"], entry["wattages"]):
                     if(entry["efficiency"] in located_psu["efficiency"] and (entry["size"] in located_psu["size"] or (entry["size"] == "Other" or (entry["size"] == "SFX-L")))):
-                        score+=len(normalize_name(entry["model"]))/20-4+(int(entry["year"])-2000)/4
+                        score+=len(normalize_name(entry["model"]))/20-4+(int(entry["year"])-2000)/2
 
                         if(entry["modularity"] != located_psu["modularity"]):
                             score-=70
@@ -312,7 +319,7 @@ def sortRegion(region):
                         
 
 
-        # if(located_psu["name"] == "ADATA XPG CORE Reactor 850"):
+        # if(located_psu["name"] == "NZXT C1000 (2024)"):
         #     matches= sorted(matches, key=lambda x: -x[2])
         #     print(matches[0:10])
 

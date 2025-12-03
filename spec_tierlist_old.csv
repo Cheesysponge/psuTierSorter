@@ -1,0 +1,1337 @@
+Brand,Series,,,Wattages,Tier,Year,,Size,ATX Ver.,Input Range,Modularity,Efficiency,Topology,,,ODM,Platform Code,Notes
+,,,,,,,,,,,,,Prim.,Sec.,,,,
+,,,,,,,,,,,,,Conv.,Rect.,Reg.,,,
+1st Player,ACK,,Bronze,650/750W,C-,2025,,ATX,ATX 3.x,230V,No,B,DF,SR,DC-DC,Helly,Unknown,"5 year warranty, OCP is set way higher than necessary on the minor rails."
+,,,Gold,750/850W,B*,2025,,ATX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,Helly,ATX-0500GB upd. to ATX 3.1?,
+,,,Silver,750/850W,C-,2025,,ATX,ATX 3.x,230V,No,S,DF,SR,DC-DC,Helly,Unknown,"Insane 7 year warranty given the component quality, OCP is set way higher than necessary on the minor rails, very poor 200% excursion response."
+,,,Standard,550/650/750W,E,2025,,ATX,ATX 2.x,230V,No,W,DF,PR,GR,Helly,Unknown,"OCP is not claimed on any rail (although it most likely exists for the minor rails only), very low +12V line output relative to total capacity."
+,Armour (AR Gold),,,550-750W,B,2021,,ATX,ATX 2.x,Full,No,G,LLC,SR,DC-DC,Helly,ATX-0500GQ,
+,Black Sir,,,500-600W,E,2016,,ATX,ATX 2.x,230V,No,N,DF,PR,GR,Helly,ATX-0200,
+,DK Premium,,,500-600W,C-,2016,,ATX,ATX 2.x,Full,No,B,DF,SR,DMA,Helly,ATX-0600,
+,,,,700-800W,C-,2016,,ATX,ATX 2.x,Full,No,B,DF,SR,DMA,Helly,ATX-0600,
+,FK,,,400W,F,2015,,ATX,ATX 2.x,230V,No,N,DF,PR,GR,Helly,ATX-0200,PPFC - no 80 Plus or Cybenetics rating
+,,,,500-750W,E,2015,,ATX,ATX 2.x,230V,No,N,DF,PR,GR,Helly,ATX-0200,APFC - no 80 Plus or Cybenetics rating
+,NGDP,,Gold,750/850/1000W,A-,2024,,ATX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,Helly,ATX-0800GB,
+,,,Platinum ATX 3.0,1000W/1300W,A-,2023,,ATX,ATX 3.x,Full,Full,P,LLC,SR,DC-DC,Helly,EPS-0100,Fan is of questionable quality. Yate Loon DBB. Loose 12V transient response.
+,,,Platinum ATX 3.1,1000W/1300W,A,2024,,ATX,ATX 3.x,Full,Full,P,LLC,SR,DC-DC,Helly,EPS-0100,FDB fan; Hong Hua
+,PRO,,,500-700W,E,2016,,ATX,ATX 2.x,230V,No,W,DF,PR,GR,Helly,,
+,SFX,,Gold,650W,B,2022,,SFX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,Helly,SFX-0200,
+,,,,850W,E,2022,,SFX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,Helly,SFX-0200,"Shares the same layout as the Lian Li SP850, which, due to its capacity and layout, had a potential fire risk under 100VAC input."
+,,,Platinum,750W,B,2022,,SFX,ATX 2.x,Full,Full,P,LLC,SR,DC-DC,Helly,SFX-0200,
+,Steampunk,,Gold,650/750W,B,2019,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,Helly,ATX-0100GB,
+,,,,850W,B,2021,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,Helly,ATX-0500GB,
+,,,Silver,650/750W,C*,2023,,ATX,ATX 2.x,Full,Full,S,LLC,SR,DC-DC,Helly,ATX-0500GQ costdown?,"No internal shots exist, not recommended for purchase until further notice. OCP isn't claimed, but almost certainly exists. LED fan, 3 year warranty."
+,,,,,,,,,,,,,,,,,,
+"Abko
+(Abkoncore)",CR Platinum,,,1200W,B,2015,,ATX,ATX 2.x,Full,Full,P,LLC,SR,DC-DC,Andyson,R8,
+,Coremax Bronze,,,500/600/700W,C,2024,,ATX,ATX 2.x,230V,No,B,DF,PR,DC-DC,PREE,,OEM is Guangzhou PREE Electronic Technology Co. Ltd.
+,MT (Mighty),,,500/600/700W,E,2021,,ATX,ATX 2.x,230V,No,W,DF,PR,GR,Andyson,Z8,
+,Tenergy (TN),,Gold,650/750/850W,B,2020,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,Andyson,K8,
+,,,Bronze,500/600/700W,C,2020,,ATX,ATX 2.x,Full,No,B,DF,SSR,DC-DC,Andyson,Q8,Qualified for 80+ Silver in testing
+,Settler,II,,600/700/800W,C,2023,,ATX,ATX 2.x,230V,No,B,DF,SSR,DC-DC,HKC,ATX-41,Cybenetics Silver
+,,Hybrid Bronze,-,700/800W,C,2023,,ATX,ATX 3.x,230V,No,B,DF,SR,DC-DC,Changhu,SP-302,ODM is Dongguan Changhu Electronics Co. Ltd.
+,,,Modular,1000W,C,2024,,ATX,ATX 3.x,230V,Semi,B,DF,SR,DC-DC,Changhu,Unknown,ODM is Dongguan Changhu Electronics Co. Ltd.
+,Ultimate GX ATX 3.0,,,850W,A*,2024,,ATX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,Zhong Yuan,GX-850,"Needs additional protections testing, but the platform showed extremely good performance in Cybenetics testing."
+,,,,,,,,,,,,,,,,,,
+Acer,AC,,Bronze,550-750W,C-*,2024,,ATX,ATX 2.x,230V,Full,B,DF,SSR,DC-DC,Soeyi,,"750W has 12VHPWR, unknown quality fan (likely sleeve bearing), 85C bulk cap, no claimed OTP. No performance testing, only teardowns."
+,,,Gold,1000W,E,2024,,ATX,ATX 2.x,230V,Full,G,DF,SSR,DC-DC,Soeyi,WT-CM6800U-DTD,"12VHPWR cable, unknown quality fan (likely sleeve bearing), no claimed OTP. Only teardowns proving platform."
+,Predator,,GX,850W,B-*,2024,,SFX,ATX 3.x,Full,Full,G,ACRF,SR,DC-DC,FSP*,Dagger Pro ATX 3.0*,"EU only, guess is based on top shots and identical clearresult entries. 2 year mandatory EU warranty."
+,,,,,,,,,,,,,,,,,,
+ADATA XPG,Core Reactor,,II,650/750/850W,A+,2023,,ATX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,CWT,CSE-S,ATX 3.0 refresh
+,,,,1000/1200W,A+,2023,,ATX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,CWT,CSZ,
+,,,II VE,650/750/850W,A,2024,,ATX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,CWT,CSE-S,Costdown Core Reactor II
+,,,-,650/750/850W,A+,2019,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,CWT,CSE-S,
+,Core Shift,,II,750W,B,2020,,ATX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,CWT,GPX 3.0,"Mid quality fan; Same Martech ""FDB"" fan on the MSI A-GL series."
+,,,,850W,C+,2020,,ATX,ATX 3.x,230V,Full,G,LLC,SR,DC-DC,CWT,GPX 3.0,"Read note regarding input range. Mid quality fan; Same Martech ""FDB"" fan on the MSI A-GL series."
+,,,-,650W,B,2020,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,CWT,GPX,"Despite markings on the DC-DC daughterboard indicating CWT GPU, internal shots confirm CWT GPX."
+,,,,750W,B-,2020,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,CWT,GPX,"Despite markings on the DC-DC daughterboard indicating CWT GPU, internal shots confirm CWT GPX."
+,,,,850W,C+,2020,,ATX,ATX 2.x,230V,Full,G,LLC,SR,DC-DC,CWT,GPX,"Read note regarding input range. Despite markings on the DC-DC daughterboard indicating CWT GPU, internal shots confirm CWT GPX."
+,Cybercore,,II,1000/1300W,A+,2023,,ATX,ATX 3.x,Full,Full,P,LLC,SR,DC-DC,CWT,Upgraded CTT,Semi-digital
+,,,-,1000/1300W,A+,2022,,ATX,ATX 2.x,Full,Full,P,LLC,SR,DC-DC,CWT,Upgraded CTT,Semi-digital
+,Fusion,,,1600W,A+,2023,,ATX,ATX 3.x,Full,Full,T,LLC,SR,DC-DC,Delta,Custom (GPS-1600AP),Totem pole PFC
+,Kyber,,,650W,B-,2023,,ATX,ATX 2.x,Full,No,G,LLC,SR,DC-DC,CWT,GPW,
+,,,,750/850W,B-,2023,,ATX,ATX 3.x,Full,No,G,LLC,SR,DC-DC,CWT,GPW,
+,Probe,,,600/700W,E,2023,,ATX,ATX 2.x,Full,No,B,DF,PR,GR,CWT,GPM,
+,Pylon,,,450/550/650W,C+,2020,,ATX,ATX 2.x,Full,No,B,DF,PR,DC-DC,CWT,CSB-A,650W is technically rated Cybenetics Silver
+,,,,750W,C+,2020,,ATX,ATX 2.x,Full,No,B,DF,SSR,DC-DC,CWT,CSB-A,750W is technically rated Cybenetics Silver
+,,,,,,,,,,,,,,,,,,
+Aerocool,AE,,,550/650/750W,E,2023,,ATX,ATX 2.x,230V,No,W,DF,PR,GR,SANR,,Overall very low build quality
+,Aero,Bronze,Non-Modular,500-750W,C-,2020,,ATX,ATX 2.x,230V,No,B,DF,SSR,DC-DC,SANR,,
+,,,Modular,550-850W,C-,2021,,ATX,ATX 2.x,230V,Full,B,DF,SSR,DC-DC,SANR,,
+,,White,,500-700W,E,2020,,ATX,ATX 2.x,230V,No,W,DF,PR,GR,SANR,,
+,Cylon,,,500/600/700W,F,2022,,ATX,ATX 2.x,230V,No,W,DF,PR,GR,SANR,,"""Full Range"" version is equally as bad according to the claimed specs."
+,Higgs,,,650/750/850W,F,2016,,ATX,ATX 2.x,230V,Semi,N,DF,PR,GR,SANR,,"Claims APFC, ""90+"" badge, extremely low 12V output relative to total, as is per usual for terrible PSUs"
+,Integrator Gold,,,750-1000W,B-,2023,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,SANR,S-MZ,
+,KCAS,Bronze,Non-Mod.,400-700W,E,2016,,ATX,ATX 2.x,230V,No,B,DF,PR,GR,Andyson,Z8,
+,,,Modular,650/750W,E,2016,,ATX,ATX 2.x,230V,Semi,B,DF,PR,GR,HEC,STX,Double-sourced between HEC and Andyson
+,,,,,E,2016,,ATX,ATX 2.x,230V,Semi,B,DF,PR,GR,Andyson,Z8,
+,,,,850/1000W,E,2016,,ATX,ATX 2.x,230V,Semi,B,DF,PR,DC-DC,HEC,EVGA BQ 850W,
+,,,,1200W,C,2016,,ATX,ATX 2.x,230V,Semi,B,DF,SSR,DC-DC,Andyson,C8,
+,,Plus Bronze,Non-Mod.,400-800W,C,2015,,ATX,ATX 2.x,230V,No,B,DF,SSR,DC-DC,Andyson,A8 costdown,
+,,,Modular,650/750W,C,2015,,ATX,ATX 2.x,230V,Semi,B,DF,SSR,DC-DC,Andyson,A8 costdown,
+,,Gold,Non-Mod.,550-850W,C,2015,,ATX,ATX 2.x,Full,No,G,DF,SSR,DC-DC,Andyson,Q8,
+,,,Modular,650/750/850W,C,2015,,ATX,ATX 2.x,Full,Semi,G,DF,SSR,DC-DC,Andyson,Q8,
+,,Plus Gold,,550-850W,C*,2015,,ATX,ATX 2.x,Full,No,G,DF,SSR,DC-DC,Andyson,Q8?,"Similar to the regular KCAS Gold internally, basically inconclusive"
+,,,,1000/1200W,C*,2015,,ATX,ATX 2.x,Full,Semi,G,DF,SSR,DC-DC,Andyson,Similar to old K8,"Looks similar to the Strike-X 1100W based on rear shots, basically inconclusive though"
+,LUX,Standard,,550-1000W,E,2020,,ATX,ATX 2.x,230V,No,B,DF,PR,GR,SANR,S-AZ,"1000W model might be DC-DC, unable to confirm without a proper teardown"
+,,RGB,,550-1000W,E,2020,,ATX,ATX 2.x,230V,No,B,DF,PR,GR,SANR,S-AZ,
+,,M,,550-1000W,E,2021,,ATX,ATX 2.x,230V,Semi,B,DF,PR,GR,SANR,S-AZ,
+,,RGB Mod.,,550-1000W,E,2021,,ATX,ATX 2.x,230V,Semi,B,DF,PR,GR,SANR,S-AZ,
+,,"Pro
+Pro RGB Modular",,550-750W,E,2023,,ATX,ATX 2.x,230V,No,B,DF,PR,GR,SANR,,Pro and Pro RGB Modular are the same internally.
+,,,,850W,C*,2023,,ATX,ATX 3.x,Full,Semi,B,DF,SR,DC-DC,SANR,,
+,,,,1000W,C*,2023,,ATX,ATX 3.x,Full,Semi,G,DF,SR,DC-DC,SANR,,
+,Mirage Gold,,Non-Mod.,650/750/850W,C,2022,,ATX,ATX 2.x,Full,No,G,DF,SR,DC-DC,SANR,S-D high-wattage,No OTP claimed
+,,,Modular,650/750/850W,C,2022,,ATX,ATX 2.x,Full,Full,G,DF,SR,DC-DC,SANR,S-D high-wattage,
+,Project 7 (P7),,,650-850W,A-,2017,,ATX,ATX 2.x,Full,Full,P,LLC,SR,DC-DC,Andyson,Upgraded H8,
+,United Power,,,500/600W,E,2021,,ATX,ATX 2.x,230V,No,W,DF,PR,GR,SANR,,
+,VP,,,450-750W,E,2022,,ATX,ATX 2.x,230V,No,B,DF,PR,GR,SANR,,
+,VX Plus,,-,350-800W,F,2023,,ATX,ATX 2.x,230V,No,N,DF,PR,GR,SANR,,"PPFC on 650W models and below. ""Specifications are subject to change at any time without notice."""
+,,,RGB,350-800W,F,2023,,ATX,ATX 2.x,230V,No,N,DF,PR,GR,SANR,,"PPFC on 650W models and below. ""Specifications are subject to change at any time without notice."""
+,,,,,,,,,,,,,,,,,,
+Andyson,BX,,,550-850W,C,2019,,ATX,ATX 2.x,Full,No,B,DF,SSR,DC-DC,Andyson,Q8,Updated M5+
+,E5+,,,300-500W,F,2017,,ATX,ATX 2.x,230V,No,N,DF,PR,GR,Andyson,E5+,PPFC
+,GX,,,500/600/800W,C+,2018,,ATX,ATX 2.x,Full,Semi,G,LLC,SR,DC-DC,Andyson,F8,Updated H6
+,H6,,,500-800W,C+,2017,,ATX,ATX 2.x,Full,Semi,G,LLC,SR,DC-DC,Andyson,F8,
+,M5+,,,450W,E,2017,,ATX,ATX 2.x,Full,No,B,DF,PR,GR,Andyson,M5,
+,,,,550/650W,C,2017,,ATX,ATX 2.x,Full,No,B,DF,SSR,DC-DC,Andyson,Q8,No transient response testing found.
+,N,,,500/700W,B,2015,,ATX,ATX 2.x,Full,Semi,T,LLC,SR,DC-DC,Andyson,N8,
+,PX,,,1200W,B,2017,,ATX,ATX 2.x,Full,Full,P,LLC,SR,DC-DC,Andyson,Modified R8,Updated R series
+,R,,,850W,B,2015,,ATX,ATX 2.x,Full,Full,P,LLC,SR,DC-DC,Andyson,H8,
+,,,,1200W,B,2015,,ATX,ATX 2.x,Full,Full,P,LLC,SR,DC-DC,Andyson,R8,
+,TX,,,700W,B,2019,,ATX,ATX 2.x,Full,Semi,T,LLC,SR,DC-DC,Andyson,N8,Updated N series
+,Venus,,,600W,E,2017,,ATX,ATX 2.x,230V,No,N,DF,PR,GR,Andyson,M5 costdown,
+,,,,,,,,,,,,,,,,,,
+Antec/Atom,Atom,Bronze (B),,550/650W,E,2020,,ATX,ATX 2.x,230V,No,B,DF,PR,GR,Andyson,M5,
+,,Gold (G),Fully Modular,550/650/750W,C+*,2020,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,Andyson?,,"No OTP claimed, 135mm fan"
+,,,Semi-Modular,650/750/850W,C+*,2020,,ATX,ATX 2.X,230V,Semi,G,LLC,SR,DC-DC,Andyson?,,120mm fan.
+,,V Series (Teal & Light Blue Label),,350-750W,F,2019,,ATX,ATX 2.x,230V,No,N,DF,PR,GR,Andyson,E5+,"No 80 Plus or Cybenetics rating, OCP is not claimed on any rail, poor 12V output relative to total capacity, poor quality fan, etc. Basically e-waste."
+,Cuprum Strike (CSK),,Bronze,450/550/650W,E,2020,,ATX,ATX 2.x,Full,No,B,DF,PR,GR,Hui Cheng,~Zalman Megamax V2,Also known as CSK[w]H. Not printed on the logos.
+,,,"""DC""",550/650/750W,C-,2025,,ATX,ATX 2.x,Full,No,B,DF,SR,DC-DC,XWY,A11 (HKC ATX-41B clone),DC-DC variant of the CSK Bronze; only 750W has 300W 12VHPWR.
+,,,H Bronze,750W,E,2020,,ATX,ATX 2.x,Full,Semi,B,DF,PR,GR,Hui Cheng,~Zalman Megamax V2,
+,,,Pro ATX 3.1,850/1000W,C,2024,,ATX,ATX 3.x,230V,Semi,B,DF,SSR,DC-DC,Andyson,P37,Sleeve bearing fan. 12V-2x6 is fixed.
+,"Earthwatts Gold
+(EAG)",,Asia,550/650/750W,E,2019,,ATX,ATX 2.x,Full,Semi,G,ACRF,SR,GR,FSP,Aurum 92+,"Most likely for the Asian market; sightings in China and India. Ketchup and mustard cables, different fan grille, label, and box."
+,,,EVO,550/650W,C,2018,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,HKC,ATX-06,Appears to be targeted primarily at the Eastern market.
+,,,Pro,550/650/750W,A-,2018,,ATX,ATX 2.x,Full,Semi,G,LLC,SR,DC-DC,Seasonic,Focus Gold,Cost-down SSR-FM platform. White 750W is available.
+,GSK ATX 3.1,,,750/850W,B+,2024,,ATX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,XWY,A04 (HKC ATX-23B clone),"Questionable fan choice, claimed as FDB, model was noted as rifle in a review of another PSU."
+,"Neo Eco
+(NE)","Classic
+(NE-C)",v1,550/650W,E,2017,,ATX,ATX 2.x,Full,No,B,DF,PR,GR,CWT,GPK,
+,,,v2,550/650W,E,2020,,ATX,ATX 2.x,Full,No,B,DF,PR,GR,Andyson,X8,"X8 might be a clone of CWT's GPK platform, but is similar to the M5 platform (not very good.)"
+,,"Classic Mod.
+(NE-M)",v1,550/650W,E,2017,,ATX,ATX 2.x,Full,Semi,B,DF,PR,GR,CWT,GPK,
+,,,v2,550/650W,E,2020,,ATX,ATX 2.x,Full,Semi,B,DF,PR,GR,Andyson,X8,"X8 might be a clone of CWT's GPK platform, but is similar to the M5 platform (not very good.)"
+,,"Gold
+(NE-G)",Modular,650/750/850W,B,2021,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,Helly,ATX-0500GQ,
+,,,Modular ATX 3.0,850/1000/1300W,A,2023,,ATX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,Helly,EPS-0100,
+,,,Green Label,850W,B*,2021,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,Helly,ATX-0100GB,Possibly exclusive to the Phillipine market; green label
+,,Gold Zen,,500/600/700W,C,2019,,ATX,ATX 2.x,Full,No,G,LLC,SR,DC-DC,Andyson,PAD07,Sleeve-bearing fan.
+,,Platinum,,650/750/850W,B*,2020,,ATX,ATX 2.x,Full,Full,P,LLC,SR,DC-DC,HKC,ATX-23,
+,High Current Gamer (HCG),,Bronze,850W,C*,2018,,ATX,ATX 2.x,Full,Full,B,DF,SSR,DC-DC,Andyson,D8/Q8,
+,,,Gold,650/750/850W,A-,2018,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,Seasonic,Focus Gold,2 850W samples died in testing during OPP/OCP evaluation.
+,,,Pro Platinum,850/1000/1200W,A,2024,,ATX,ATX 3.x,Full,Full,P,LLC,SR,DC-DC,Seasonic,Vertex PX,
+,,,Extreme,850/1000W,A,2018,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,Seasonic,Focus Gold,
+,SF-X,,,850W,B-*,2024,,SFX,ATX 3.x,Full,Full,G,ACRF,SR,DC-DC,FSP,Dagger Pro ATX 3.0,7 year warranty compared to FSP's 10 year warranty for their Dagger Pro ATX 3.0.
+,Signature,,Platinum,1000/1300W,A-,2020,,ATX,ATX 2.x,Full,Full,P,LLC,SR,DC-DC,Seasonic,Prime Platinum,
+,,,Titanium,1000W,A-,2020,,ATX,ATX 2.x,Full,Full,T,LLC,SR,DC-DC,Seasonic,Prime Titanium,
+,VP Plus,,-,500-700W,E,2018,,ATX,ATX 2.x,Full,No,W,DF,PR,GR,Andyson,M5+,
+,,,230V,500-700W,E,2018,,ATX,ATX 2.x,230V,No,W,DF,PR,GR,Andyson,M5+,
+,VPF,,,550/650W,C-,2015,,ATX,ATX 2.x,Full,No,B,DF,PR,DC-DC,Delta,,"No inrush protection. Sold in the US as Earthwatts Green. 650W utilizes 105C secondary caps, 550W 85C."
+,,,,,,,,,,,,,,,,,,
+Apevia,Prestige,,Standard,600-1000W,C,2019,,ATX,ATX 2.x,Full,No,G,DF,PR,DC-DC,Guang Hai,GH356,Be wary that more variants of the Prestige are made! Same platform as Xigmatek Hydra M.
+,,,,600/700/800W,C*,2019,,ATX,ATX 2.x,Full,No,G,DF,PR,DC-DC,Andyson?,Q8 variant?,"Not conclusive on platform, but rear shots confirm at least dual-sourcing, the extent of which is unknown. Most likely limited to North America."
+,,,ATX 3.0,850/1000W,C+*,2023,,ATX,ATX 3.x,Full,No,G,DF,SSR,DC-DC,Guang Hai?,,"No OTP claimed, no performance or protections data"
+,Galaxy,,Standard,650/850/1000W,C*,2020,,ATX,ATX 2.x,Full,Semi,G,DF,SSR,DC-DC,Guang Hai?,,Not enough info
+,,,,650/850/1000W,C*,2025,,ATX,ATX 2.x,Full,Semi,G,DF,SSR,DC-DC,Andyson,A8,"Internal shots confirms the variant as being made by Andyson. Most likely, Andyson supplies units for the North American market."
+,,,ATX 3.0,650/850/1000W,C+*,2023,,ATX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,Guang Hai?,,Not enough info
+,,,,1200W,C+*,2023,,ATX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,Guang Hai?,,"No OTP claimed, no performance or protections data"
+,Premier,,Standard,650/850/1000W,C*,2020,,ATX,ATX 2.x,Full,Semi,G,DF,SSR,DC-DC,Guang Hai?,,Not enough info
+,,,ATX 3.0,650/850/1000W,C*,2023,,ATX,ATX 3.x,Full,Semi,G,DF,SSR,DC-DC,Guang Hai?,,Not enough info
+,,,,1200W,C+*,2023,,ATX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,Guang Hai?,,"No OTP claimed, no performance or protections data"
+,Mystic ATX 3.0,,,1000W,C+*,2023,,ATX,ATX 3.x,Full,Full,P,LLC,SR,DC-DC,Guang Hai?,,"No OTP claimed, no performance or protections data"
+,,,,1200W,C+*,2023,,ATX,ATX 3.x,Full,Full,P,LLC,SR,DC-DC,Guang Hai?,,"No OTP claimed, no performance or protections data"
+,Signature,,,900/1050W,E,2017,,ATX,ATX 2.x,Full,No,B,DF,PR,GR,Guang Hai?,,Group regulated; effective capacity is 10% lower than advertised based on +12V current rating
+,Jupiter,,,600/800/1000W,E,2020,,ATX,ATX 2.x,Full,No,B,DF,PR,GR,Guang Hai?,,"Very low build quality, basically e-waste"
+,Essence,,,600/700W,F,2020,,ATX,ATX 2.x,Full,No,N,DF,PR,GR,Guang Hai?,,PPFC; e-waste
+,Spirit,,,600/700W,F,2020,,ATX,ATX 2.x,Full,No,N,DF,PR,GR,Guang Hai?,,PPFC; e-waste
+,Beast,,,550/650/700W,F,2016,,ATX,ATX 2.x,Full,No,N,DF,PR,GR,Guang Hai?,,PPFC; e-waste
+,Venus,,,500W,F,2016,,ATX,ATX 2.x,Full,No,N,DF,PR,GR,Guang Hai?,,PPFC; e-waste
+,Captain,,,550W,F,2016,,ATX,ATX 2.x,Full,No,N,DF,PR,GR,Guang Hai?,,PPFC; e-waste
+,Raptor,,,500W,F,2016,,ATX,ATX 2.x,Full,No,N,DF,PR,GR,Guang Hai?,,PPFC; e-waste
+,ITX,,,300-500W,F,2023,,Other,ATX 2.x,Full,No,N,DF,PR,GR,Guang Hai?,,PPFC; e-waste
+,TFX,,,300-500W,F,2020,,Other,ATX 2.x,Full,No,N,DF,PR,GR,Guang Hai?,,PPFC; e-waste
+,SFX,,,300-600W,F,2020,,SFX,ATX 2.x,Full,No,N,DF,PR,GR,Guang Hai?,,PPFC; e-waste
+,,,,,,,,,,,,,,,,,,
+Apexgaming,All PSUs,,,,E,,,,,,,,,,,Solytech,,"Very low overall performance and poor quality control leading to extremely inconsistent results, even on their high-end models. Lower-end models are untested and should also be avoided unless professional reviews are released."
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+"Aresgame
+(Pystar)",All PSUs,,,,E,,,,,,,,,,,Jiumeng,,Fraudulent business practices like fake 80+ certifications and review manipulation. Testing from multiple sources has shown performance to be significantly lower than average. Significant platform downgrades with the same model number and no difference in branding prevent review data from being useful for making recommendations. Tier E should be considered an upper bound for recommendations; certain models such as the AGV qualify for tier F.
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+ASRock,Challenger,"Bronze
+(CL-B)",-,550/650W,C-*,2024,,ATX,ATX 2.x,Full,No,B,DF,PR,DC-DC,HEC,,No 12VHPWR/12V-2x6. Platform bears a striking resemblance to System Power 10 with some slight differences. May also be missing a MOV.
+,,,PCIe 5.1,750W,C-*,2024,,ATX,ATX 2.x,Full,No,B,DF,PR,DC-DC,HEC,,"Does not claim ATX 3.x compliance, but 750W claims PCIE 5.1 ready w/ 450W 12V-2x6."
+,,"Gold
+(CL-G)",-,650W,C+*,2024,,ATX,ATX 2.x,Full,No,G,LLC,SR,DC-DC,HEC,,"Not much information, sleeve bearing fans are used."
+,,,ATX 3.1,750/850W,C+*,2024,,ATX,ATX 3.x,Full,No,G,LLC,SR,DC-DC,HEC,,"750/850W have 600W 12V-2x6. Only 2 PCIE connectors. Not much information, sleeve bearing fans are used."
+,Phantom Gaming (PG-G),,,750/850/1000W,A,2024,,ATX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,FSP,Hydro PTM Pro ATX 3.0,"12V-2x6 connector (GPU side) has thermistors to act as an ""OTP"" against melting. Stellar ripple suppression, especially on the minor rails."
+,,,,1300/1600W,A,2024,,ATX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,FSP,Hydro PTM Pro ATX 3.0,"FSP-57AZB. 12V-2x6 connector (GPU side) has thermistors to act as an ""OTP""."
+,Steel Legend (SL-G),,,650-1000W,B+,2024,,ATX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,HEC,Custom,"1000W model has poor transient response on 12V under 200% spike, other models mediocre. 850/1000W avail. in white."
+,,,,1200W,A,2025,,ATX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,HEC,Custom,OCP is set way higher than necessary on the 12V and 5VSB rails. Good noise profile given its capacity.
+,Taichi (TC-T),,,1300W/1650W,A+,2024,,ATX,ATX 3.x,Full,Full,T,LLC,SR,DC-DC,FSP,FSP-57ALB (Mega Ti),"Optional ""5V Boost"" button which increases +5V by 200mV; bridgeless PFC. 12V-2x6 connector has thermistors to act as an ""OTP""."
+,,,,,,,,,,,,,,,,,,
+ASUS,Prime,,Gold,750/850W,B+,2024,,ATX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,CWT,GPX ATX 3.0,
+,ROG,Loki,Platinum,750-1200W,A,2022,,SFX-L,ATX 3.x,Full,Full,P,LLC,SR,DC-DC,Great Wall,Custom,Not to be confused with the Xigmatek Loki
+,,,Titanium,1200W,A*,2023,,SFX-L,ATX 3.x,Full,Full,T,LLC,SR,DC-DC,Great Wall,Custom,No protections data.
+,,THOR,Platinum,850W,A,2018,,ATX,ATX 2.x,Full,Full,P,LLC,SR,DC-DC,Seasonic,Focus Platinum,
+,,,,1200W,A-,2018,,ATX,ATX 2.x,Full,Full,P,LLC,SR,DC-DC,Seasonic,Prime Platinum,
+,,,Platinum II,850W,A,2023,,ATX,ATX 3.x,Full,Full,P,LLC,SR,DC-DC,Seasonic,Focus Platinum ATX 3.0,
+,,,,1000/1200W,A,2023,,ATX,ATX 3.x,Full,Full,P,LLC,SR,DC-DC,Seasonic,Prime Ultra Platinum ATX 3.0,
+,,,Platinum III,1000/1200W,A,2025,,ATX,ATX 3.x,Full,Full,P,LLC,SR,DC-DC,Seasonic,Custom,"Fan profile is extremely relaxed, OCP is set way too high on the minor rails, no FFP despite being an extremely expensive platform."
+,,,Titanium,1600W,A*,2022,,ATX,ATX 3.x,Full,Full,T,LLC,SR,DC-DC,Wentai,Aidan T1616,"Totem pole PFC, digital operation aside from 5VSB. No protections data. ROG text on the corner of the fan grille. Dual 8 pin to 12+4."
+,,,Titanium III,1600W,A*,2024,,ATX,ATX 3.x,Full,Full,T,LLC,SR,DC-DC,Wentai,,"Totem pole PFC, ROG logo imprinted on fan grille. 2x 12V-2x6. OTP not tested, SCP not tested but supervisor IC supports it."
+,,Strix,Aura Gold,750-1200W,A-,2022,,ATX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,CWT,Custom,OPP is set way higher than necessary and isn't reduced even under high operating temperatures. Very poor 200% excursion response.
+,,,Gold,550-850W,A,2020,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,Seasonic,Focus Gold,650W has poor 3.3V transient response
+,,,Platinum,850W,A,2024,,ATX,ATX 3.x,Full,Full,P,LLC,SR,DC-DC,Great Wall,Custom,"5VSB OCP set high, poor 3.3V transient response in the 200% excursion"
+,,,,1000W,A,2024,,ATX,ATX 3.x,Full,Full,P,LLC,SR,DC-DC,Great Wall,Custom,Much better performance than the 1200W model and fewer issues despite using the same platform. 5VSB OCP set high.
+,,,,1200W,B+,2024,,ATX,ATX 3.x,Full,Full,P,LLC,SR,DC-DC,Great Wall,Custom,"Multitude of minor issues leading to low overall performance, does not meet requirements for tier A in Aris' testing. Possible bad sample?"
+,TUF,,Gold,750-1200W,B,2023,,ATX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,Great Wall,Hunters Fire,12VHPWR to dual PCIE cable as well as a native 12VHPWR cable.
+,,,Bronze,450-750W,B,2022,,ATX,ATX 2.x,Full,No,B,LLC,SR,DC-DC,Great Wall,Modified GW-ATXBL,Mediocre transient response and low quality caps.
+,,,,,,,,,,,,,,,,,,
+AZZA,PSAZ,ARGB Bronze,New,550/650/750W,C-,2024,,ATX,ATX 2.x,Full,No,B,DF,SR,DMA,Helly,ATX-0600B,"2 year warranty. 540W, 648W, & 744W on 12V respectively."
+,,,New (230V),550/650/750W,C-,2024,,ATX,ATX 2.x,230V,No,B,DF,SR,DMA,Helly,ATX-0600B,Cost-down full input new PSAZ Bronze w/ ARGB fan.
+,,,Old,550/650W,E,2020,,ATX,ATX 2.x,Full,No,B,DF,PR,GR,Andyson,M5,2 year warranty. 492W & 576W on 12V respectively.
+,,Bronze,New,550/650/750W,C-,2024,,ATX,ATX 2.x,Full,No,B,DF,SSR,DMA,Helly,AD-0800K,"2 year warranty. PSAZ Bronze w/ ARGB fan. 550W: 540W on 12V, 650W: 648W on 12V, 750W: 744W on 12V."
+,,,New (230V),550/650/750W,C-,2024,,ATX,ATX 2.x,230V,No,B,DF,SSR,DMA,Helly,AD-0800K,Cost-down full input new PSAZ Bronze.
+,,,Old,650W,E,2020,,ATX,ATX 2.x,Full,No,B,DF,PR,GR,Andyson,M5,2 year warranty. PSAZ Bronze w/ARGB fan. 650W: 576W on 12v.
+,,Gold,-,750/850W,C+,2021,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,Helly,ATX-0500GQ,"2 year warranty (likely due to a poor quality sleeve bearing fan); No OTP claimed, but platform is otherwise reasonably capable."
+,,,ATX 3.0,750W,C+,2021,,ATX,ATX 3.x,Full,No,G,LLC,SR,DC-DC,Helly,ATX-0500GQ,2 year warranty (likely due to a poor quality sleeve bearing fan); platform is otherwise reasonably capable.
+,,,,850W,C+,2021,,ATX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,Helly,ATX-0500GQ,2 year warranty (likely due to a poor quality sleeve bearing fan); platform is otherwise reasonably capable.
+,,,ATX 3.1,1000W,B-,2024,,ATX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,Helly,ATX-0800GB,"Ball bearing fan. No warranty period mentioned, detier to B-."
+,,Platinum ATX 3.1,,1000W,B-*,2024,,ATX,ATX 3.x,Full,Full,P,LLC,SR,DC-DC,Helly,EPS-0100,"Limited internal shots, unable to identify what changes, if any, were made to the platform. No warranty period mentioned, detier to B-."
+,,,,,,,,,,,,,,,,,,
+be quiet!,Dark Power,-,12,750/850/1000W,A,2021,,ATX,ATX 2.x,Full,Full,T,LLC,SR,DC-DC,FSP,Custom,
+,,,13,750/850/1000W,A,2023,,ATX,ATX 3.x,Full,Full,T,LLC,SR,DC-DC,FSP,Custom,"Bridgeless PFC, OCP needs tuning on all rails"
+,,Pro,11,550/650/750W,A+,2015,,ATX,ATX 2.x,Full,Full,P,LLC,SR,DC-DC,FSP,Custom,
+,,,,850-1200W,A+,2015,,ATX,ATX 2.x,Full,Full,P,LLC,SR,DC-DC,FSP,Custom,
+,,,12,1200/1500W,A+,2020,,ATX,ATX 2.x,Full,Full,T,LLC,SR,DC-DC,CWT,Modified CTT,"Interleaved PFC; digital operation for primary, APFC and 12V; minor rails are analog."
+,,,13,1300/1600W,A+,2023,,ATX,ATX 3.x,Full,Full,T,LLC,SR,DC-DC,CWT,CST,"Interleaved PFC; digital operation for primary, APFC and 12V; minor rails are analog."
+,Power Zone 2,,,750/850/1000W,B+,2025,,ATX,ATX 3.x,Full,Full,P,LLC,SR,DC-DC,FSP,Custom,First be quiet! PSU with semi-passive operation.
+,Pure Power,,10,400-700W,B-,2016,,ATX,ATX 2.x,Full,No,S,ACRF,SR,DC-DC,FSP,Heavily modified Raider,"Non modular variant of the Pure Power 10 CM, virtually identical."
+,,,10 CM,400-700W,B-,2016,,ATX,ATX 2.x,Full,Semi,S,ACRF,SR,DC-DC,FSP,Heavily modified Raider,"Weak 3.3V transient response, mediocre electrical performance, and claimed rifle bearing but yet to be proven."
+,,,11,300/350W,D-,2018,,ATX,ATX 2.x,Full,No,B,DF,PR,GR,FSP,EPN,
+,,,,400-700W,B,2018,,ATX,ATX 2.x,Full,No,G,ACRF,SR,DC-DC,FSP,Heavily modified Raider,
+,,,11 CM,400-700W,B,2018,,ATX,ATX 2.x,Full,Semi,G,ACRF,SR,DC-DC,FSP,Heavily modified Raider,
+,,,11 FM,550/650/750W,B+,2018,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,CWT,Custom,
+,,,,850/1000W,A,2018,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,HEC,Custom,
+,,,12,550-1000W,B*,2023,,ATX,ATX 3.x,Full,No,G,LLC,SR,DC-DC,CWT,Custom,"85C bulk caps, rifle bearing fan, non-modular."
+,,,12 M,550-1200W,A,2023,,ATX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,HEC,Custom,Not to be confused with the non-modular Pure Power 12.
+,,,13 M,550/650W,B+,2025,,ATX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,FSP,Custom,"85C bulk caps, excellent noise profile."
+,,,,750/850W,A,2025,,ATX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,FSP,Custom,Excellent noise profile.
+,,,,1000W,A-,2025,,ATX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,FSP,Custom,Poor excursion response in the 200% excursion test; platform is being pushed close to its limits. Excellent noise profile.
+,SFX-L Power,,,500/600W,B,2017,,SFX-L,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,High Power,Custom,Custom be quiet! rifle bearing fan.
+,SFX Power 3,,,300/450W,C,2021,,SFX,ATX 2.x,Full,No,B,DF,SR,DC-DC,FSP,FSP-50SAC,
+,Straight Power,11,Gold,450/550/650W,A,2018,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,FSP,Custom,
+,,,,750-1000W,A,2018,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,FSP,Custom,
+,,,Platinum,550/650/750W,A,2018,,ATX,ATX 2.x,Full,Full,P,LLC,SR,DC-DC,FSP,Custom,
+,,,,850-1200W,A,2018,,ATX,ATX 2.x,Full,Full,P,LLC,SR,DC-DC,FSP,Hydro PTM Pro high-wattage,
+,,12,,750-1000W,A*,2024,,ATX,ATX 3.x,Full,Full,P,LLC,SR,DC-DC,FSP,Custom,"160mm length; no Cybenetics entry. Needs transient response testing, OTP listed as pass but no results showed."
+,,,,1200/1500W,A+*,2023,,ATX,ATX 3.x,Full,Full,P,LLC,SR,DC-DC,FSP,Custom,180mm length; needs transient response testing.
+,System Power,9,-,400-700W,C-,2018,,ATX,ATX 2.x,230V,No,B,DF,PR,DC-DC,HEC,CM Masterwatt-ish,
+,,,CM,400-700W,C-,2018,,ATX,ATX 2.x,230V,Semi,B,DF,PR,DC-DC,HEC,CM Masterwatt-ish,
+,,10,Bronze,450-750W,E,2022,,ATX,ATX 2.x,230V,No,B,DF,PR,DC-DC,HEC,,"Terrible ripple suppression, especially on 12V (well over 100mV under full load), OCP is not set properly, low efficiency, low quality fan."
+,,,Gold,850W,C+,2022,,ATX,ATX 2.x,230V,No,G,LLC,SR,DC-DC,HEC,,
+,,,U,550-750W,E,2023,,ATX,ATX 2.x,Full,No,B,DF,PR,DC-DC,HEC,,"Looks exactly the same as the regular System Power 10 internally. Unless later testing proves the above issues are not present, detier to E."
+,,B9,,300/350W,E,2018,,ATX,ATX 2.x,230V,No,B,DF,PR,GR,HEC?,,
+,,,,450/600W,C*,2018,,ATX,ATX 2.x,230V,No,B,DF,PR,DC-DC,HEC?,,
+,,U9,,400/500/600W,C,2019,,ATX,ATX 2.x,Full,No,B,DF,PR,DC-DC,CWT,GPN,
+,,,,700W,C,2019,,ATX,ATX 2.x,Full,No,B,DF,SSR,DC-DC,CWT,GPN,
+,,,,,,,,,,,,,,,,,,
+Bitfenix,BFG,,Gold,550/650W,B,2023,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,CWT,GPX,
+,,,Gold ATX 3.0,750/850W,B+*,2023,,ATX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,CWT,GPX ATX 3.0,Guess based on internal shots provided on product page. Reviews will need to confirm platform.
+,,,,1000/1200W,A*,2023,,ATX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,CWT,CSZ,Guess based on internal shots provided on product page. Reviews will need to confirm platform.
+,BPA,,,400/500/600W,E,2015,,ATX,ATX 2.x,230V,No,W,DF,PR,GR,CWT,GPM,
+,BPA-U,,,400/500/600W,E,2015,,ATX,ATX 2.x,Full,No,W,DF,PR,GR,CWT,GPM,
+,Formula,,Gold,450-750W,A,2017,,ATX,ATX 2.x,Full,No,G,LLC,SR,DC-DC,CWT,Modified GPS,"Design modified for multiple 12V rails: 3 on ≤550W, 4 on ≥650W"
+,,,Bronze,400-700W,C,2016,,ATX,ATX 2.x,Full,No,B,DF,SSR,DC-DC,CWT,Modified CSB,
+,Whisper M,,,450-850W,A,2016,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,CWT,GPU,
+,,,,,,,,,,,,,,,,,,
+Chieftec/Chieftronic,A-80,,CTG-80P (Old),450/500W,E,2010,,ATX,ATX 2.x,230V,No,N,DF,PR,GR,High Power,NO-703,"""85% 230V only"", ketchup and mustard cables. Outdated and no official 80+ certification, only on the tier list since it's still on their website."
+,,,,550W,E,2010,,ATX,ATX 2.x,230V,No,N,DF,PR,GR,High Power,,
+,,,,650W,E,2010,,ATX,ATX 2.x,230V,No,N,DF,PR,GR,High Power,NO-761,
+,,,CTG-C (New),550/650/750W,E,2012,,ATX,ATX 2.x,230V,Semi,N,DF,PR,DMA,High Power,NO-720A,
+,A-90,,GDP-C,550/650/750W,C-,2015,,ATX,ATX 2.x,230V,Semi,N,DF,SR,DC-DC,CWT,GPN,"""90% 230V only"", claims meeting 80+ Gold without certifying. No direct transient response testing but platform is well reviewed."
+,Atmos,,CPX-FC,750/850W,A-,2023,,ATX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,Andyson,PAD35,Platform is well reviewed although no direct transient response data.
+,Compact (SFX),,CSN-C,450/550/650W,C-,2016,,SFX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,CWT,CSN,"Platform is somewhat mediocre, no direct transient response testing available and not the best choice of capacitors."
+,Core,,BBS-S,500/600/700W,C+,2016,,ATX,ATX 2.x,Full,No,G,LLC,SR,DC-DC,CWT,GPS,
+,Eco,,GPE-S,400-700W,F,2016,,ATX,ATX 2.x,230V,No,N,DF,PR,GR,CWT,GPE?,"""85% 230V only"", ketchup and mustard cables, not independently regulated. Doesn't have OCP according to this review."
+,Element,,ELP-S,350-700W,F,2017,,ATX,ATX 2.x,230V,No,B,DF,PR,GR,CWT,GPM,Doesn't claim OCP.
+,Eon,,ZPU-S,400-700W,E,2023,,ATX,ATX 2.x,230V,No,W,DF,PR,GR,Andyson,Z8,Voltage regulation is out of ATX specifications on the minor rails; also not independently regulated.
+,I-Arena (OEM/SI),,GPA-S,550-700W,F,2011,,ATX,ATX 2.x,230V,No,N,DF,PR,GR,CWT,GPA?,"Fake 85% efficiency label, black on yellow label; it's also old. Not certain on topology but not recommendable regardless. See review here. No OCP."
+,,,GPA-S8,350-500W,F,2011,,ATX,ATX 2.x,230V,No,N,DF,PR,GR,CWT,GPA?,Yellow on black label; no 80+ certification and aging. Not certain on topology but not recommendable regardless. See review here. No OCP.
+,,,GPB-S,350-500W,F,2020,,ATX,ATX 2.x,230V,No,N,DF,PR,GR,CWT,GPB,Blue label. No OCP.
+,,,GPC-S,400-700W,F,2016,,ATX,ATX 2.x,230V,No,N,DF,PR,GR,CWT,GPC?,"Fake 80+ 230V only certification label, ketchup and mustard cables, not independently regulated. White label."
+,Navitas,,GPM-C,650/750/850W,E,2012,,ATX,ATX 2.x,Full,Semi,G,DF,SSR,DC-DC,CWT,PUQ,Electrical performance is decent (although no transient response data) but simply not recommendable due to age.
+,,,,1000W,C*,2013,,ATX,ATX 2.x,Full,Semi,G,LLC,SSR,DC-DC,CWT,CSH-VG,No transient response data available.
+,,,,1250W,E,2011,,ATX,ATX 2.x,Full,Semi,G,LLC,SSR,DC-DC,CWT,PUO,Only basic voltage regulation found here. Not recommendable due to age; only kept for legacy purposes (still on website.)
+,,,PPS-FC,1350/1450W,C*,2018,,ATX,ATX 2.x,Full,Semi,G,LLC,SSR,DC-DC,CWT,PUO,No performance data available.
+,Photon,Bronze,CTG-C-RGB,650/750W,E,2019,,ATX,ATX 2.x,230V,Semi,N,DF,PR,GR,High Power,NO-761,Not to be mistaken with the Proton (BDF-S/-C) Bronze.
+,,Gold,GDP-C-RGB,650/750W,F,2019,,ATX,ATX 2.x,230V,Semi,N,DF,SR,DC-DC,CWT,GPN,Protections don't kick in nearly in time before the voltage on the minor rails falls out of spec under ~108% overload.
+,Polaris,-,PPS-FC,550/650/750W,B-,2019,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,High Power,NO-817,"Both EPS connectors share a cable, poor regulation and transient response on minor rails; only a 2 year warranty."
+,,,,850/1050/1250W,B-,2021,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,High Power,NO-815,Decent electrical performance but OTP is either not present or set too high (>200°C ) which is useless. See testing here. 2 year warranty.
+,,ATX 3.0,PPS-FC-A3,850/1050/1250W,B-,2024,,ATX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,High Power,NO-815,Fundamentally a Polaris ATX 3.0 refresh. Load regulation is somewhat subpar on the 1050W model.
+,,Pro,PPX-FC-A3,1300W,A*,2023,,ATX,ATX 3.x,Full,Full,P,LLC,SR,DC-DC,High Power,NO-826,Little to no electrical performance data + nothing regarding protections; however platform is well reviewed.
+,Proton,,BDF-S,400/500/600W,C-,2017,,ATX,ATX 2.x,Full,No,B,DF,SR,DC-DC,High Power,NO-799,"Sleeve bearing fan, during OPP testing at around 30% of the 500W model do the minor rail falls out of ATX specification."
+,,,BDF-C,650/750W,C-,2011,,ATX,ATX 2.x,Full,Full,B,DF,PR,DC-DC,High Power,NO-790,"Receives a ""-"" subtier due to its age. Only kept for legacy purposes as it is still listed on Chieftec's website."
+,,,,850/1000W,C-,2014,,ATX,ATX 2.x,Full,Full,B,DF,SR,DC-DC,High Power,NO-768,"OPP is functional but offers only a 7% increase over the nominal value, beyond which the rails fall out of ATX spec for the 1000W model."
+,PowerPlay (GPU-FC),,Gold,550/650/750W,A+,2020,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,CWT,GPR,
+,,,Platinum,850/1050/1200W,A+,2020,,ATX,ATX 2.x,Full,Full,P,LLC,SR,DC-DC,CWT,CST,Semi-digital
+,PowerUp,,,750/850W,B-,2021,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,CWT,GPX,"A few samples of the base platform died when subjected to sub-90VAC stress tests per JonnyGuru. Proceed with caution under 120VAC, especially in areas prone to brownouts."
+,,,,550/650W,B,2021,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,CWT,GPX,
+,Silicon,,,650/750W,C-,2018,,ATX,ATX 2.x,Full,Full,B,DF,PR,DC-DC,High Power,NO-790,
+,,,,850/1000W,C-,2018,,ATX,ATX 2.x,Full,Full,B,DF,SR,DC-DC,High Power,NO-768,
+,Smart,,GPS-A8,350-500W,E,2014,,ATX,ATX 2.x,230V,No,N,DF,PR,GR,CWT,GPA,
+,,,,550-700W,E,2014,,ATX,ATX 2.x,230V,No,,DF,PR,GR,CWT,GPM,
+,,,GPS-C,450-750W,C,2016,,ATX,ATX 2.x,Full,No,G,LLC,SR,DC-DC,CWT,GPS,
+,,,BFX-BS,350/450W,C-,2021,,SFX,ATX 2.x,Full,No,B,DF,PR,DC-DC,CWT,GPH-M,
+,,,SFX-BS,350/450W,E,2014,,SFX,ATX 2.x,230V,No,W,DF,PR,GR,High Power,NO-754,
+,,,SFX-GDC,500W,C,2015,,SFX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,High Power,NO-770,
+,SteelPower,,BDK-FC,550/650/750W,C,2021,,ATX,ATX 2.x,Full,Full,B,LLC,SR,DC-DC,CWT,GPQ,
+,Task,,TPS-S,400-700W,E,2017,,ATX,ATX 2.x,Full,No,B,DF,PR,GR,CWT,GPM,
+,Value,,APB-B8,400-700W,E,2016,,ATX,ATX 2.x,230V,No,W,DF,PR,GR,CWT,GPA,
+,Vega,Non-Modular,PPG-S,750/850W,B+,2024,,ATX,ATX 3.x,Full,No,G,LLC,SR,DC-DC,High Power,NO-832D,
+,,Modular (M),PPG-C,750/850W,B+,2024,,ATX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,High Power,NO-832D,
+,Vita,,BPX-S,750/850W,C-,2024,,ATX,ATX 2.x,Full,No,B,DF,SSR,DC-DC,Andyson,P37,
+,,,,,,,,,,,,,,,,,,
+Cooler Master,B V2,,,400-700W,E,2015,,ATX,ATX 2.x,230V,No,N,DF,PR,GR,CWT,GPM,Not 100% sure on platform
+,Elite,,V3,300-600W,E,2019,,ATX,ATX 2.x,230V,No,N,DF,PR,GR,Hui Cheng,,
+,,,V4,300-600W,E,2021,,ATX,ATX 2.x,230V,No,W,DF,PR,GR,Hui Cheng,Elite V3 (upd. to 80+ White),
+,Elite NEX 230V,,,400-800W,E,2023,,ATX,ATX 2.x,230V,No,W,DF,PR,GR,CWT,GPM,
+,G,,Gold,500-800W,B-,2021,,ATX,ATX 2.x,Full,No,G,LLC,SR,DC-DC,XHY,2008,
+,,,Gold V2,550/650/750W,B,2024,,ATX,ATX 3.x,Full,No,G,LLC,SR,DC-DC,Gospower,G1208 mod. upd. to ATX 3.1,Platform is essentially a modified MWE Bronze V3.
+,GX,"Bronze (MPX, 2020)",,450-650W,B+,2020,,ATX,ATX 2.x,Full,No,B,LLC,SR,DC-DC,Gospower,G1208,
+,,Gold,Non-Mod.,550-850W,B+,2020,,ATX,ATX 2.x,Full,Semi,G,LLC,SR,DC-DC,XHY,1908,
+,,,Full Mod.,550-850W,B+,2020,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,XHY,1908,
+,,,,1050/1200W,B+,2021,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,XHY,2012,
+,,,V2 Full Mod.,1050/1250W,B+,2023,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,XHY,2012 upd. to ATX 3.0,
+,,,ATX 3.0,1050/1250W,B+,2023,,ATX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,XHY,2012 upd. to ATX 3.0,
+,,,ATX 3.1,750-1250W,B+,2023,,ATX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,XHY,2012 upd. to ATX 3.1,
+,,CM Storm Edition,,650/750W,C,2016,,ATX,ATX 2.x,Full,No,B,DF,SSR,DC-DC,CWT,GPN,
+,GX II Gold ATX 3.0,,,650-1250W,B+,2023,,ATX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,Lite-on,Custom,Very similar to the GX III that superseded it.
+,GX III Gold ATX 3.1,,,650-1250W,B+,2023,,ATX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,Lite-on,Custom,"GX III ATX 3.0, but upd. to ATX 3.1. 1050W/1250W use Hong Hua FDB fan; 650-850W use Yate Loon rifle-bearing. Has purple heatsinks for glam."
+,Hyper White,,,400/500/600W,E,2019,,ATX,ATX 2.x,Full,No,W,DF,PR,GR,Hui Cheng,Similar to Elite V4,Basically Elite V4 but full range
+,M2000 Platinum,,,2000W,A,2022,,ATX,ATX 2.x,230V,Full,P,LLC,SR,DC-DC,Enhance,,Same platform as SilverStone HELA 2050 Platinum.
+,Masterwatt,Bronze,,450-750W,C,2017,,ATX,ATX 2.x,Full,Semi,B,DF,SR,DC-DC,HEC,,
+,,TUF Gaming,,450-750W,C,2018,,ATX,ATX 2.x,Full,Semi,B,DF,SR,DC-DC,HEC,,Identical internally to the MasterWatt Bronze. Only difference is the exterior appearance.
+,,Lite / Lite Full Modular,,400-700W,F,2016,,ATX,ATX 2.x,Full,No,W,DF,PR,GR,Enhance,,Complete e-waste. Extremely poor build and component quality all around.
+,,Maker,,1200/1500W,B+,2016,,ATX,ATX 2.x,Full,Full,T,LLC,SR,DC-DC,Enhance,Custom,
+,,Maker MiJ,,1200W,A,2017,,ATX,ATX 2.x,Full,Full,T,LLC,SR,DC-DC,Murata,Custom,Extremely high build quality; made in Japan; decent performance.
+,MWE,,White,400-550W,D-,2019,,ATX,ATX 2.x,Full,No,W,DF,PR,GR,CWT,GPB,
+,,,230V White,400-550W,D-,2019,,ATX,ATX 2.x,230V,No,W,DF,PR,GR,CWT,GPB,
+,,,Bronze,450/500/550W,D-,2019,,ATX,ATX 2.x,Full,No,B,DF,PR,GR,HEC,,
+,,,,600/650W,C,2019,,ATX,ATX 2.x,Full,No,B,DF,SSR,DC-DC,HEC,,
+,,,230V Bronze,450/500/550W,D-,2019,,ATX,ATX 2.x,230V,No,B,DF,PR,GR,HEC,,
+,,,,600/650W,C,2019,,ATX,ATX 2.x,230V,No,B,DF,SSR,DC-DC,HEC,,
+,,,Gold Non Mod.,550-850W,B,2019,,ATX,ATX 2.x,Full,No,G,LLC,SR,DC-DC,XHY,1408,
+,,,Gold Modular,550-850W,B,2019,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,XHY,1408,
+,MWE V2,,White,450-750W,B,2021,,ATX,ATX 2.x,Full,No,W,LLC,SR,DC-DC,Gospower,G1208,
+,,,230V White,450-750W,C,2021,,ATX,ATX 2.x,230V,No,W,LLC,SR,DC-DC,Gospower,G1208,
+,,,Bronze,450-750W,B,2021,,ATX,ATX 2.x,Full,No,B,LLC,SR,DC-DC,Gospower,G1208,
+,,,230V Bronze,450-750W,C,2021,,ATX,ATX 2.x,230V,No,B,LLC,SR,DC-DC,Gospower,G1208,
+,,,Gold Non Mod.,550-850W,B+,2021,,ATX,ATX 2.x,Full,No,G,LLC,SR,DC-DC,XHY,1908,
+,,,Gold Full Mod.,550-850W,B+,2021,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,XHY,1908,
+,,,,1050/1250W,B+,2021,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,XHY,2012,
+,,,Gold ATX 3.0,550-850W,B+,2023,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,XHY,1908 upd. to ATX 3.0,
+,,,,1050/1250W,B+,2023,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,XHY,2012 upd. to ATX 3.0,
+,,,Gold ATX 3.1,550-850W,B+,2024,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,XHY,1908 upd. to ATX 3.1,
+,,,,1050/1250W,B+,2024,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,XHY,2012 upd. to ATX 3.1,
+,MWE V3 ATX 3.1,,230V Bronze,550/650W,C,2024,,ATX,ATX 2.x,230V,No,B,LLC,SR,DC-DC,Gospower,G1208 upd. to ATX 3.1,"Basically G1208 updated to ATX 3.1, no 12VHPWR."
+,,,,750W,C-,2024,,ATX,ATX 2.x,230V,No,B,LLC,SR,DC-DC,Gospower,G1208 upd. to ATX 3.1,Basically G1208 updated to ATX 3.1; broke during 5V SCP. Possible bad sample? No 12VHPWR.
+,,,Bronze,550/650/750W,B,2024,,ATX,ATX 3.x,Full,No,B,LLC,SR,DC-DC,Gospower,G1208 upd. to ATX 3.1,Basically G1208 updated to ATX 3.1
+,,,Gold Modular,750/850W,B+,2024,,ATX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,Lite-on,Custom (modified GX III),"GX III w/ upgraded fan (Hong Hua FDB, Yate Loon DBB); no inrush protection (MOV and bypass relay). Ball bearing fans possibly region-specific."
+,,,Gold Non-Mod.,550/650W,B,2024,,ATX,ATX 2.x,Full,No,G,LLC,SR,DC-DC,Gospower,G1208 mod. upd. to ATX 3.1,"Modified MWE Bronze V3, same as G Gold V2."
+,,,,750/850W,B,2024,,ATX,ATX 3.x,Full,No,G,LLC,SR,DC-DC,Gospower,G1208 mod. upd. to ATX 3.1,"Modified MWE Bronze V3, same as G Gold V2."
+,Reactor Gold,,,750/850W,B+,2019,,ATX,ATX 2.x,Full,No,G,LLC,SR,DC-DC,XHY,1408,Same as MWE Gold non-modular
+,"V-Series
+""Vanguard""",Gold,V1 (2018),550/650W,B+,2018,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,Chicony,Custom,"Review sample had 18AWG cables, CM claimed retail units would ship with 16AWG as advertised."
+,,,,750/850W,B+,2018,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,Chicony,"Custom, but different from ^",
+,,,V2,550-850W,A+,2020,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,Gospower,G1242,"White model available, same internals."
+,,,"i Multi (""Digital"")",550-850W,A+,2023,,ATX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,Chicony,Custom,"""Semi-digital"" - offers digital fan control and monitoring via MasterPlus software; actual components are analog."
+,,,SFX,650/750/850W,A,2020,,SFX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,Gospower,G1278,
+,,,SFX ATX 3.0,750/850W,A,2023,,SFX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,Gospower,G1555 (1278 upd. to ATX 3.0),Basically G1278 updated to ATX 3.0
+,,,SFX ATX 3.1,750/850W,A,2024,,SFX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,Gospower,G1555 rev. 2,Still essentially G1278 with further updates to ATX 3.1
+,,Platinum,Standard,850-1300W,A,2019,,ATX,ATX 2.x,Full,Full,P,LLC,SR,DC-DC,Delta,GM,Single/multi-rail switchable.
+,,,30th Anniversary,1300W,A,2023,,ATX,ATX 2.x,Full,Full,P,LLC,SR,DC-DC,Delta,GM,"No internal changes, but 1300W only."
+,,,V2,1100/1300/1600W,A-,2024,,ATX,ATX 3.x,Full,Full,P,LLC,SR,DC-DC,Gospower,G1398 (Custom),"One review showed ripple on the 12V rail at 62mV for the 1600W, other samples were within 50mV. 5VSB OCP is set high."
+,,,SFX ATX 3.0,1100W,B+,2022,,SFX,ATX 3.x,Full,Full,P,LLC,SR,DC-DC,Sysgration,Custom,
+,,,,1300W,B-,2022,,SFX,ATX 3.x,230V,Full,P,LLC,SR,DC-DC,Sysgration,Custom,230V input only
+,X Silent,Edge Plat.,North America,850W,A+,2024,,ATX,ATX 3.x,Full,Full,P,LLC,SR,DC-DC,Cooler Master,Custom,Rated for 850W under 115VAC and advertised as 850W in North America.
+,,,Global,1100W,A+,2024,,ATX,ATX 3.x,Full,Full,P,LLC,SR,DC-DC,Cooler Master,Custom,"Rated for 1100W under 230VAC, but can still be used under 115VAC for 850W."
+,,MAX Platinum,,1300W,A+,2024,,ATX,ATX 3.x,Full,Full,P,LLC,SR,DC-DC,Cooler Master,Custom,Same platform as the Edge Platinum but with active cooling; full 1300W rating regardless of input range.
+,XG,Platinum,,650/750/850W,A+,2021,,ATX,ATX 2.x,Full,Full,P,LLC,SR,DC-DC,XHY,2011XG (Custom),"Same as the Plus Platinum without the screen, ARGB fan, or digital control."
+,,Plus Platinum,,650/750/850W,A+,2021,,ATX,ATX 2.x,Full,Full,P,LLC,SR,DC-DC,XHY,2011XG (Custom),"Built-in screen, ARGB fan, and digital fan control and monitoring via MasterPlus software."
+,,,,,,,,,,,,,,,,,,
+Corsair,AX,,,850/1000W,A+,2018,,ATX,ATX 2.x,Full,Full,T,LLC,SR,DC-DC,Seasonic,Modified Prime Titanium,Grey label
+,AX-i,,,1600W,A+,2018,,ATX,ATX 2.x,Full,Full,T,LLC,SR,DC-DC,Flextronics,Custom,"Grey label; totem pole PFC, fully digital aside from 5VSB."
+,CS (Black Label),,,750W,B-,2021,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,HEC,TPK,SI model for Chinese market
+,CV (Black Label),,,450/550W,D,2019,,ATX,ATX 2.x,Full,No,B,DF,PR,GR,HEC,VS upd. to Bronze,
+,,,,650/750W,C,2019,,ATX,ATX 2.x,Full,No,B,DF,PR,DC-DC,HEC,Custom,
+,CX-m,2013 (Green Label),,430/500/600W,E,2013,,ATX,ATX 2.x,Full,Semi,B,DF,PR,GR,CWT,DSA III,"Green ""CX"" lettering on black label. 85C caps all around, 30C rated operating temp, avoid."
+,,,,750/850W,C-,2013,,ATX,ATX 2.x,Full,Semi,B,DF,SR,DC-DC,CWT,PUQ-B,"Green ""CX"" lettering on black label. Detiered to C- due to age."
+,,2017 (Gray Label),,450/550/650W,C+,2017,,ATX,ATX 2.x,Full,Semi,B,DF,SR,DC-DC,CWT,Custom,Grey label
+,,,,750/850W,C+,2017,,ATX,ATX 2.x,Full,Semi,B,DF,SR,DC-DC,CWT,PUQ-B,
+,,2021 (Black Label),,550/650/750W,C+,2021,,ATX,ATX 2.x,Full,Semi,B,DF,SSR,DC-DC,CWT,CSB-A,
+,,"2025 (Black Label, ATX 3.1)",,650/750W,B-,2025,,ATX,ATX 3.x,Full,Full,B,LLC,PR,DC-DC,HEC,Custom,"Poor ripple suppression on the minor rails. Uses semi-digital PFC, 7 year warranty. Can get loud (in excess of 40dbA) under heavy load."
+,"CX
+(Non-Modular)",2013 (Green Label),,430/500/600W,E,2013,,ATX,ATX 2.x,Full,No,B,DF,PR,GR,CWT,DSA III,"Green ""CX"" lettering on black label. 85C caps all around, 30C rated operating temp, avoid."
+,,,,750W,C-,2013,,ATX,ATX 2.x,Full,No,B,DF,SR,DC-DC,CWT,PUQ-B,"Green ""CX"" lettering on black label. Detiered to C- due to age."
+,,2016 (Gray Label),,450-750W,B,2016,,ATX,ATX 2.x,Full,No,B,LLC,SR,DC-DC,CWT,Custom,"Black ""CX"" lettering on gray label; Double-sourced between GW & CWT; technically qualified for 80+ Silver but badged as Bronze."
+,,,,,B,2016,,ATX,ATX 2.x,Full,No,B,LLC,SR,DC-DC,Great Wall,modified GW-ATXBL,
+,,2023 (Black Label),,450/550W,D,2024,,ATX,ATX 2.x,Full,No,B,DF,PR,GR,HEC,VS upd. to Bronze,"White ""CX"" lettering on black label; Identical to the CV aside from exterior design."
+,,,,650/750W,C,2024,,ATX,ATX 2.x,Full,No,B,DF,PR,DC-DC,HEC,Custom,
+,CX-F RGB,,,550/650/750W,B,2020,,ATX,ATX 2.x,Full,Full,B,LLC,SR,DC-DC,HEC,Custom,Technically 80+ Silver without RGB on
+,HX,,2017,750/850/1000W,A+,2018,,ATX,ATX 2.x,Full,Full,P,LLC,SR,DC-DC,CWT,Custom,Gray label. Per-connector 40A OCP when multi rail is enabled
+,,,,1200W,A+,2018,,ATX,ATX 2.x,Full,Full,P,LLC,SR,DC-DC,CWT,Custom,
+,,,2022,750/850W,A*,2022,,ATX,ATX 2.x,Full,Full,P,LLC,SR,DC-DC,CWT,Custom,"Never officially released. A few hundred were sold on Newegg for a while. Tier is speculative, as it will likely never be reviewed."
+,HX-i,,2013,750/850/1000W,A,2013,,ATX,ATX 2.x,Full,Full,P,LLC,SR,DC-DC,CWT,Custom,Blue label
+,,,,1200W,A,2013,,ATX,ATX 2.x,Full,Full,P,LLC,SR,DC-DC,CWT,Custom,
+,,,2022,1000W,A+,2022,,ATX,ATX 2.x,Full,Full,P,LLC,SR,DC-DC,CWT,CTT heavily mod.,"Black label, triangle fan grille. Digital monitoring and semi-passive operation controlled via USB-C connector in software."
+,,,,1500W,A+,2022,,ATX,ATX 2.x,Full,Full,P,LLC,SR,DC-DC,CWT,CTT heavily mod.,
+,,,2023,1000W,A+,2023,,ATX,ATX 3.x,Full,Full,P,LLC,SR,DC-DC,CWT,CTT heavily mod.,Refresh with included 12V-2x6 cable and listed ATX 3.1 compliance. Actual design appears to be the same internally.
+,,,,1200W,A+,2023,,ATX,ATX 3.x,Full,Full,P,LLC,SR,DC-DC,CWT,CTT heavily mod.,
+,,,,1500W,A+,2023,,ATX,ATX 3.x,Full,Full,P,LLC,SR,DC-DC,CWT,CTT heavily mod.,
+,,,2025,1000W,A,2025,,ATX,ATX 3.x,Full,Full,P,LLC,SR,DC-DC,CWT,CTT heavily mod.,
+,,,,1200W,A+,2025,,ATX,ATX 3.x,Full,Full,P,LLC,SR,DC-DC,CWT,CTT heavily mod.,"Minor changes on the primary side, overall very similar; merely a refresh. Embossed cables instead of flat cables from older generations. (Fancy)"
+,,,,1500W,A,2025,,ATX,ATX 3.x,Full,Full,P,LLC,SR,DC-DC,CWT,CTT heavily mod.,
+,RM-e,,2022,750/850/1000W,B+,2022,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,HEC,Custom,"750/850W: 140mm, 1000/1200W: 150mm. 2023 version includes 12VHPWR cable. Early reports of coil whine and premature failures/DOAs, but supposedly fixed."
+,,,"2023 (""Gen 5"")",750-1200W,B+,2023,,ATX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,HEC,Custom,
+,,,"2025 (""ATX 3.1"")",650-1000W,B+,2025,,ATX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,HEC,Custom,650W has 300W 12V-2x6 cable. Poor 3.3v transient response. All use Hong Hua rifle-bearing fans. Y-shaped fan grille perforations.
+,RM-i,,,650W,A+,2015,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,CWT,Custom,Grey label; RM-x v1 with digital monitoring features
+,,,,750/850/1000W,A+,2015,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,CWT,Custom,
+,RM-i Special Edition,,,1000W,A+,2016,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,CWT,Custom; same as ^,"10th anniversary, only 100 units, white casing, white LEDs inside"
+,RM-x,2015,Black,550/650W,A,2015,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,CWT,Custom,"v1, 160mm long"
+,,,,750/850W,A,2015,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,CWT,Custom,
+,,,,1000W,A,2015,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,CWT,Custom,"v1, 180mm long. Production continued far past other 2015 RM-x units as the 2018 revision has no 1kW variant."
+,,,White,750/850W,A,2015,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,CWT,Custom,"v1, 180mm long, individually sleeved cables; custom Corsair rifle bearing fan."
+,,2018 / v2,Black,550-850W,A,2018,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,CWT,Custom,"v2, 160mm long, doesn't have 1000W version; custom Corsair rifle bearing fan."
+,,,White,750/850W,A,2018,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,CWT,Custom,"v2, 160mm long; custom Corsair rifle bearing fan."
+,,2021,,650/750/850W,A+,2021,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,CWT,Custom,"160mm length, Sunon Magnetic Levitation (Maglev) bearing fan."
+,,,,1000W,A+,2021,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,CWT,Custom,"180mm length, Sunon Magnetic Levitation (Maglev) bearing fan."
+,,2024 (ATX 3.1),,750/850/1000W,A+,2024,,ATX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,CWT,Custom,160mm length
+,,Shift,,750-1200W,A+,2023,,ATX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,CWT,Custom,Modular inputs on side of PSU rather than the rear. Use caution and check case clearances.
+,RM,2019 (Gray Label),,650/750/850W,B+,2019,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,CWT,Custom,Grey label; costdown RM-x. Out-of-spec 3.3V transients. Hong Hua rifle bearing fan. Meets all other tier A requirements.
+,,2021,Black,650/750/850W,B+,2021,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,CWT,Custom,Triangular fan grille perforations. Hong Hua rifle bearing fan. Performance is assumed to be the same as 2019 version.
+,,,White,750/850W,B+,2021,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,CWT,Custom,Triangular fan grille perforations. Hong Hua rifle bearing fan. Performance is assumed to be the same as 2019 version.
+,,2023 (Black Label),,650W,B+,2023,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,HEC,Custom,"140mm long. Same design as the 2023 RMe, without an included 12VHPWR cable."
+,SF,Gold,,450/600W,A,2016,,SFX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,Great Wall,Custom,Flat cables
+,,Platinum 2019,,450/600/750W,A,2019,,SFX,ATX 2.x,Full,Full,P,LLC,SR,DC-DC,Great Wall,Modified SF Gold platform,"Braided cables, some units manufactured between Oct. 2019 to Mar. 2020 (lot codes 194448xx to 201148xx) recalled for potential failures."
+,,Platinum 2024 (ATX 3.1),,750/850/1000W,A+,2024,,SFX,ATX 3.x,Full,Full,P,LLC,SR,DC-DC,Great Wall,Custom,"Class-leading performance, excellent build quality, relatively quiet for the capacity."
+,SF-L,,,850/1000W,A,2023,,SFX-L,ATX 3.x,Full,Full,P,LLC,SR,DC-DC,Great Wall,Custom,
+,TX (Black Label),,,750-1200W,B,2024,,ATX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,Great Wall,modified GW-ATXBL,Black label; China only
+,TX-m,2017 (Gray Label),,550-850W,A,2017,,ATX,ATX 2.x,Full,Semi,G,LLC,SR,DC-DC,Great Wall,modified GW-ATXBL,Gray label
+,,2021 (Black Label),,550/650/750W,A,2021,,ATX,ATX 2.x,Full,Semi,G,LLC,SR,DC-DC,Great Wall,Custom,Gray label
+,Vengeance,,Bronze,400/500W,C,2016,,ATX,ATX 2.x,Full,No,B,DF,SR,DC-DC,CWT,Custom,Gray label
+,,,,550/650W,C,2016,,ATX,ATX 2.x,Full,Semi,B,DF,SR,DC-DC,CWT,Custom,Gray label
+,,,Silver,650/750W,B,2018,,ATX,ATX 2.x,Full,Semi,S,LLC,SR,DC-DC,HEC,Custom,Gray label; toggleable per-cable OCP.
+,VS,Gray Label,,400/500/600W,D,2016,,ATX,ATX 2.x,Full,No,W,DF,PR,GR,HEC,,Grey label
+,,,,450/550/650W,E,2017,,ATX,ATX 2.x,Full,No,W,DF,PR,GR,HEC,,"Grey label; OCP doesn't work properly, allowing the voltages to fall out of spec, very poor ripple suppression on 5V, failed transient testing on 3.3V"
+,,Black Label,,500/600W,D,2020,,ATX,ATX 2.x,Full,No,W,DF,PR,GR,HEC,,
+,WS Platinum,,,3000W,A*,2025,,ATX,ATX 3.x,230V,Full,P,LLC,SR,DC-DC,Great Wall,GW-EPS3000BL 94+,230V only input due to being extremely high capacity. Quad 12V-2x6.
+,,,,,,,,,,,,,,,,,,
+Cougar,Atlas,,2023,600/650/750W,C-,2023,,ATX,ATX 2.x,Full,No,B,DF,SSR,DC-DC,XHY,2107,Mediocre quality capacitors.
+,,,2024,450-750W,C*,2024,,ATX,ATX 2.x,Full,No,B,DF,PR,DC-DC,CE Link,,
+,Auric,,,650/750W,B*,2021,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,HEC,,Limited info
+,BXM,,,700/850W,C,2020,,ATX,ATX 2.x,Full,Semi,B,DF,SR,DC-DC,HEC,,
+,GEC,,,550-850W,C*,2022,,ATX,ATX 2.x,230V,No,G,LLC,SR,DC-DC,XHY,2008 costdown,Limited info
+,GES,,,550/650/750W,B*,2021,,ATX,ATX 2.x,Full,No,G,LLC,SR,DC-DC,XHY,,Limited info
+,GEM,,,1050/1200W,B*,2022,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,CE Link,TT PF1 H.W. (PCFG-A-FA?),Limited info
+,GEX,-,,1050W,B,2021,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,XHY,1709,
+,,,,650/750/850W,B,2021,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,XHY,1908,
+,,X2 (ATX 3.0),,850/1000W,B+,2023,,ATX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,XHY,2205,
+,,2024 (ATX 2.x),,650/750/850W,B*,2024,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,Unknown,,
+,,Pro (ATX 3.1),,650/750/850W,B*,2024,,ATX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,XHY,,
+,GLE,,,1000/1200W,B*,2024,,ATX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,CE Link,,
+,,,,650/750/850W,B*,2024,,ATX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,CE Link?,,
+,GST,,,650/750/850W,B*,2024,,ATX,ATX 3.x,Full,No,G,LLC,SR,DC-DC,Unknown,,
+,GX-F,-,,550/650/750W,A,2018,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,HEC,TPK,
+,,Aurum,,550/650/750W,A-,2018,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,HEC,TPK,Costdown GX-F
+,GX-S (2016),,,450-750W,C,2016,,ATX,ATX 2.x,Full,No,G,LLC,SR,DC-DC,High Power,Astro Lite HPM,
+,LX,,,600W,C,2016,,ATX,ATX 2.x,Full,Full,B,DF,SR,DC-DC,HEC,,
+,LLC,,,750W,B+,2019,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,HEC,TPK,Appears to be limited to the Chinese market.
+,Polar,,X2 (ATX 3.0),1050/1200W,A,2023,,ATX,ATX 3.x,Full,Full,P,LLC,SR,DC-DC,XHY,1709 upd. to ATX 3.0/3.1,
+,,,-,1050/1200W,A,2022,,ATX,ATX 2.x,Full,Full,P,LLC,SR,DC-DC,XHY,1709,
+,STE,,,400/500/600W,E,2019,,ATX,ATX 2.x,230V,No,W,DF,PR,GR,HEC,,
+,STX,,,350-750W,E,2016,,ATX,ATX 2.x,230V,No,W,DF,PR,GR,HEC,,
+,VTC,,,400/500/600W,E,2019,,ATX,ATX 2.x,Full,No,W,DF,PR,GR,HEC,,
+,VTE,-,,400/500/600W,C-,2017,,ATX,ATX 2.x,Full,No,B,DF,PR,DC-DC,HEC,,
+,,X2,,600-750W,C-,2021,,ATX,ATX 2.x,Full,No,B,DF,PR,DC-DC,CE Link,,
+,,X2 ver.2,,600-750W,C,2022,,ATX,ATX 2.x,Full,No,B,DF,SSR,DC-DC,XHY,2107,
+,VTK,,,550W,E,2021,,ATX,ATX 2.x,Full,No,B,DF,PR,GR,Unknown,,
+,VTX,,,400-700/450W,E,2016,,ATX,ATX 2.x,Full,No,B,DF,PR,GR,HEC,,
+,XTC,,,400-650/750W,E,2021,,ATX,ATX 2.x,230V,No,W,DF,PR,GR,CE Link,,
+,,,,,,,,,,,,,,,,,,
+DarkFlash,GS Bronze,,,550/650/750W,C,2021,,ATX,ATX 2.x,Full,Full,B,DF,SR,DC-DC,Guang Hai,GH356,"Platform is certified for Gold, might have only hit Bronze due to modular interface"
+,Perfectmost (PMT),,,650/750/850W,B-,2024,,ATX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,Zhong Yuan,ZY009,"850W model demonstrates very poor excursion response in the 160% excursion test. Also, OCP, OPP, and OVP are set high on all rails."
+,Upmost (UPT),,,1250W,B,2024,,ATX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,Zhong Yuan,ZY004,>50mv ripple suppression on 12V.
+,,,,750/850W,A*,2024,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,Zhong Yuan,GX-850/GX-1000,"Needs additional protections testing, but the platform showed extremely good performance in Cybenetics testing."
+,Warcraft (WA),,,600/700/800W,E,2023,,ATX,ATX 2.x,230V,No,N,DF,PR,GR,Guang Hai?,,"OEM and platform is unconfirmed, unit is basically e-waste though."
+,,,,,,,,,,,,,,,,,,
+DeepCool (GamerStorm),Aurora,DA,,500/600/700W,E,2015,,ATX,ATX 2.x,Full,No,B,DF,PR,GR,CWT,GPM,
+,,DA-M,,500/600W,E,2021,,ATX,ATX 2.x,Full,No,B,DF,PR,GR,CWT,GPM,
+,Explorer,DE,,530W,F,2017,,ATX,ATX 2.x,230V,No,N,DF,PR,GR,Unknown,,"Extremely low 12V line output relative to total claimed capacity, basically only a 350W PSU; no 80+ or Cybenetics rating."
+,Nova,DN,,450-650W,E,2015,,ATX,ATX 2.x,230V,No,W,DF,PR,GR,CWT,GPT,Net graded to Tier E due to it being group regulated.
+,"Gamer
+Storm",DQ-M,-,650/750/850W,A-,2018,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,CWT,GPU,"One EPS cable shares the same 12V rail with a PCIe cable, low hold up time, transient on the 3.3V rail/OPP needs tuning."
+,,,V2L,850W,B-,2020,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,CWT,GPX,A few samples of the base platform died when subjected to sub-90VAC stress tests per JonnyGuru. Not suggested for use under 120VAC if you live in an area with frequent brownouts. Miserably fails in all of Aris' 3.3V transient response testing. Low quality MOSFETs used.
+,,,,750W,B,2020,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,CWT,GPX,
+,,,,650W,B,2020,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,CWT,GPX,
+,,,V3L,750/850/1000W,A*,2022,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,XHY,2106,OTP isn't tested
+,PF,,,700/750W,E,2023,,ATX,ATX 2.x,230V,No,W,DF,SR,DMA,Helly,ATX-0600,"Doesn't claim necessary protections, unknown components such as the capacitors."
+,,,,350-650W,E,2022,,ATX,ATX 2.x,230V,No,W,DF,PR,GR,Helly,ATX-0200,"Doesn't claim necessary protections, unknown components such as the capacitors."
+,PK-D,,,450-850W,C,2022,,ATX,ATX 2.x,Full,No,B,DF,PR,DC-DC,CWT,GPG,Internals appear to be variable based on region/batch.
+,PL-D,,,550W,C-,2024,,ATX,ATX 3.x,Full,No,B,DF,SR,DC-DC,Helly,ATX-0700T,"Subpar component quality, with highly set protections and OOS 3.3V transient response. Not quite ATX 3.X due to failing low load efficiency."
+,,,,650W,C-,2024,,ATX,ATX 3.x,Full,No,B,DF,SR,DC-DC,Helly,ATX-0700T,"Subpar component quality, with poorly tuned protections, 5V OCP incorrectly set allows for >135mV of ripple. OOS 3.3V transient response."
+,,,,750/800W,C-,2024,,ATX,ATX 3.x,Full,No,B,DF,SR,DC-DC,Helly,ATX-0700T,"Subpar component quality, with highly set protections and OOS 3.3V transient response."
+,PM-D,,,500-850W,B-,2021,,ATX,ATX 2.x,Full,No,G,LLC,SR,DC-DC,CWT,GPW,Protections are found to be working in GPW based units in similar or identical configurations.
+,PN-D,,,550-850W,B-,2024,,ATX,ATX 3.x,Full,No,G,LLC,SR,DC-DC,CWT,GPW,Can come in white variants. Protections need tuning. ATX 3.0 refresh of the PM-D.
+,PN-M,,,650-850W,B,2024,,ATX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,CWT,GPX ATX 3.0,"Can come in white variants. Mediocre fan, no SCP on -12V rail."
+,,,,1000/1200W,B-,2024,,ATX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,CWT,CSZ costdown,"OCP is set way too high on the minor rails, which led to failure of the unit during Aris' testing. Detier to B- unless verified fixed."
+,PQ-G,,,750/850W,C+,2024,,ATX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,Helly,ATX-0500GB,Sleeve bearing fan.
+,,,,1000/1200W,A-,2024,,ATX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,Helly,ATX-0800GB,"Protections need tuning, 5VSB regulation doesn't quite qualify for A tier."
+,PQ-M,,-,650-1000W,A,2021,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,Seasonic,Focus GX,
+,,,V2,750/850/1000W,A-,2025,,ATX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,Seasonic,Focus GX ATX 3.1,"Very high inrush current, poorly tuned protections on the minor rails; otherwise decent electrical performance."
+,PX,,G,850/1000/1200W,A+,2023,,ATX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,CWT,CSZ,850W model can come in white.
+,,,P,1000/1300W,A+,2023,,ATX,ATX 3.x,Full,Full,P,LLC,SR,DC-DC,CWT,CTT,Semi-digital. Outstanding performance per Aris' review.
+,,,,,,,,,,,,,,,,,,
+Endorfy,Elementum E2,,(OEM/SI),350/450W,E,2018,,ATX,ATX 2.x,230V,No,W,DF,PR,GR,CWT,GPB,
+,,,Retail,550W,E,2018,,ATX,ATX 2.x,230V,No,W,DF,PR,GR,CWT,GPB,
+,Supremo Gold,,L2,550/650W,E,2016,,ATX,ATX 2.x,Full,No,G,LLC,SR,DC-DC,SAMA,Forza Gold,Supremo Gold made for non-modularity. No OCP to be found in testing nor claimed.
+,,,M2,550W,E,2016,,ATX,ATX 2.x,Full,Semi,G,LLC,SR,DC-DC,SAMA,Forza Gold,"Supremo Gold made for semi-modularity, necessary protections aren't claimed."
+,,,FM2,650/750W,E,2017,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,SAMA,Forza Gold,"Supremo Gold made for full-modularity, necessary protections aren't claimed."
+,,,FM5,650-1000W,C,2023,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,SAMA,920MC,"Platform visually appears identical to the 916MC platform used in the SAMA XF, which died during OCP testing per LTT Labs. Proceed with caution."
+,,,FM6,850/1000W,B-,2025,,ATX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,SAMA,920MC upd. to ATX 3.1,The OCP and OPP triggering points are set way too high on all rails.
+,,,,,,,,,,,,,,,,,,
+Enermax,CyberBron,,-,500/600/700W,E,2020,,ATX,ATX 2.x,Full,No,B,DF,PR,GR,CWT,GPM,
+,,,III,750/850W,C,2025,,ATX,ATX 2.x,Full,No,B,DF,SR,DC-DC,Jiumeng,JM-670,"ATX 3.1 is claimed, but the unit fails to meet the spec due to poor ATX 3.1 excursion response. Treat as ATX 2.x."
+,CyberG II,,,650W,C+*,2025,,ATX,ATX 2.x,Full,No,G,LLC,SR,DC-DC,RSY,,
+,,,,750/850W,C+*,2025,,ATX,ATX 3.x,Full,No,G,LLC,SR,DC-DC,RSY,A0154,"OCP is set way too high on all rails, especially the minor rails. Need further testing before tiering. Sleeve bearing fan."
+,Digifanless,,,550W,B+,2015,,ATX,ATX 2.x,Full,Full,P,LLC,SR,DC-DC,CWT,Custom (Enermax designed),"Claims necessary protections but weren't evaluated in Aris' testing, OTP was kicked in during voltage regulation testing."
+,MarbleBron,,-,550-850W,C-,2020,,ATX,ATX 2.x,Full,Semi,B,DF,PR,DC-DC,SANR,S-D,850W uses ARGB fan + housing and comes in black and white models. 3 year warranty.
+,,,II,650/750/850W,C*,2025,,ATX,ATX 3.x,Full,Semi,B,DF,SR,DC-DC,Jiumeng,JM-670?,Not tiered until third-party internal shots are available. Most likely a semi-modular CyberBron III.
+,MaxPro II,,,400-700W,E,2019,,ATX,ATX 2.x,230V,No,W,DF,PR,GR,SANR,,Limited information.
+,MaxTytan,,,750/800W,A-,2017,,ATX,ATX 2.x,Full,Full,T,LLC,SR,DC-DC,CWT,CST,Overall performance is not that great despite a capable platform. Platform just needs to be tuned better.
+,,,,1050/1250W,A-,2018,,ATX,ATX 2.x,Full,Full,T,LLC,SR,DC-DC,CWT,CST,
+,PlatiGemini,,,1200W,A,2024,,ATX,ATX 3.x,Full,Full,P,LLC,SR,DC-DC,RSY,Custom,OCP originally set way too high; fixed in later reviews from July 2024. Excellent electrical performance. ATX 3.1 and ATX12VO compatible.
+,Platimax D.F.,,,500/600W,E,2013,,ATX,ATX 2.x,Full,Full,P,LLC,SR,DC-DC,Fortech,CM-GP600P,"No OCP on 12V, OCP on the minor rails and OPP are both set way too high to be effective, no OTP, poor build quality."
+,,,,750-1200W,B+,2017,,ATX,ATX 2.x,Full,Full,P,LLC,SR,DC-DC,CWT,CST,"Solid electrical performance, however let down by poorly modulated protections and mediocre ripple performance."
+,RevoBron,,-,500/600/700W,C-,2018,,ATX,ATX 2.x,Full,Semi,B,DF,SSR,DC-DC,CWT,CSB,"Single EPS cable, failing or near failing 3.3V transient response, hold-up time not within ATX specifications."
+,,,ED2,500/600/700W,C-,2020,,ATX,ATX 2.x,Full,Semi,B,DF,SSR,DC-DC,CWT,CSB,"Same internals as the Revobron, simply a 2.0 refresh."
+,Revolution,,III,650-1000W,A*,2025,,ATX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,RSY,A0155,"Internal shots are promising, but further testing is needed before tiering."
+,,,Duo,600/700W,C*,2016,,ATX,ATX 2.x,Full,No,G,LLC,SR,DC-DC,Yue Lin,,"Two fans, one at the top and one at the rear. Decent amount of unknown parts, no transient response testing to be found."
+,,,SFX,650W,C+,2017,,SFX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,CWT,CSN,"Decent electrical performance let down by poor transient response, a sleeve bearing fan, and other miscellaneous problems."
+,,,ATX 3.0,1000/1200W,A,2023,,ATX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,CWT,CSZ,"No performance data, however platform is well reviewed with protections working in similar configs."
+,,,X'T,430-730W,E,2014,,ATX,ATX 2.x,Full,Semi,G,DF,SR,DC-DC,CWT,DSAIV,Doesn't claim necessary protections (IC doesn't support over current either). Somewhat outdated.
+,,,X'T II,450-750W,C+,2016,,ATX,ATX 2.x,Full,Semi,G,LLC,SR,DC-DC,CWT,GPS,Single EPS cable. Great electrical performance but OTP is not claimed.
+,,,D.F. 12,750/850W,A-,2024,,ATX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,RSY,XM01,122mm depth (extremely compact.)
+,,,D.F. 2,850/1050/1200W,A,2023,,ATX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,SANR,S-MZ,ATX 3.0 compliant; uses dual 8-pin to 12VHPWR.
+,,,D.F. X,850/1050/1200W,B,2023,,ATX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,SANR,S-MZ,"Transient response doesn't quite make it A tier, no direct protections testing."
+,,,,1350/1650W,B,2023,,ATX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,SANR,S-1700M A-J,
+,,,D.F.,650W,A-,2019,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,CWT,GPU,"Ripple on 12V was shown at 52mV, all other requirements for tier A proper are met."
+,,,,750/850W,A,2019,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,CWT,GPU,
+,,,,,,,,,,,,,,,,,,
+EVGA,B Series,B2,,750/850W,C,2014,,ATX,ATX 2.x,Full,Semi,B,LLC,SR,DC-DC,Super Flower,Golden Green,
+,,B3,,450/550/650W,C-,2018,,ATX,ATX 2.x,Full,Semi,B,LLC,SR,DC-DC,Super Flower,Leadex Super Bronze Pro,OCP on 12V doesnt exist. OPP is set too high. Sleeve bearing fan.
+,,,,750/850W,C-,2017,,ATX,ATX 2.x,Full,Semi,B,LLC,SR,DC-DC,Super Flower,Leadex Super Bronze Pro,Died after OPP testing. OTP claimed but not tested. Sleeve bearing fan. Failed 3.3V transient testing
+,,B5,,550-850W,B,2022,,ATX,ATX 2.x,Full,Full,B,LLC,SR,DC-DC,HEC,Costdown GT,Inconclusive
+,,BR,,450-700W,C-,2022,,ATX,ATX 2.x,Full,No,B,DF,PR,DC-DC,HEC,,"No OCP on 12V. High RMA rate due to MLCC cracks, similar to other HEC-built EVGA PSUs"
+,,BT,,450W,D,2018,,ATX,ATX 2.x,Full,No,B,DF,PR,GR,RSY,,"Platform is an old Super Flower design, but is actually produced by RSY."
+,,BP,,460-710W,C,2020,,ATX,ATX 2.x,Full,No,B,DF,SSR,DC-DC,Andyson,Q8,
+,,BQ,,500/600/700W,C,2018,,ATX,ATX 2.x,Full,Semi,B,DF,SSR,DC-DC,Andyson,Q8,
+,,,,650/750W,C,2018,,ATX,ATX 2.x,Full,Semi,B,DF,PR,DC-DC,HEC,,
+,,,,850W,E,2016,,ATX,ATX 2.x,Full,Semi,B,DF,PR,DC-DC,HEC,,OCP either doesn't exist or is severely misconfigured per Aris' review. Very loud (50dBA under full load!)
+,,BV,,450/500/600W,E,2018,,ATX,ATX 2.x,Full,No,B,DF,PR,GR,HEC,,
+,G Series,GE,,500-800W,B+,2023,,ATX,ATX 2.x,Full,No,G,LLC,SR,DC-DC,High Power,NO-817,
+,,GD,2017 - V1,550/650W,B,2017,,ATX,ATX 2.x,Full,No,G,ACRF,SR,DC-DC,FSP,Raider II high-wattage,See notes under Series name for how to identify each version.
+,,,2019 - R1/V1,500/600/700W,C,2019,,ATX,ATX 2.x,Full,No,G,DF,SR,DC-DC,FSP,Raider II (Hydro GE)-ish,
+,,,2019 - B1,500/600/700W,B-,2019,,ATX,ATX 2.x,Full,No,G,LLC,SR,DC-DC,Andyson,PAD07,
+,,,2022 - R3,500/600/700W,B+,2022,,ATX,ATX 2.x,Full,No,G,LLC,SR,DC-DC,High Power,NO-817A,
+,,,2022 - BC,500/600/700W,B+,2022,,ATX,ATX 2.x,Full,No,G,LLC,SR,DC-DC,High Power,NO-817A,
+,N1,,,400-750W,F,2021,,ATX,ATX 2.x,Full,No,N,DF,PR,GR,HEC,,"Malfunctioning safety protections, fire hazard (blows up), PPFC on 400W model."
+,M1 (Mining),,,1300W,C,2021,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,Andyson,R8,
+,SuperNOVA,FTW,,850/1000W,B+,2023,,ATX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,High Power,NO-826,Tier A performance (albeit barely) but only a 3 year warranty since EVGA might go under.
+,,G+ (G1+),,650/750W,B-,2018,,ATX,ATX 2.x,Full,Full,G,ACRF,SR,DC-DC,FSP,Raider II high-wattage-ish,PWR_OK signal doesn't function correctly. Poor transient response on the minor rails.
+,,,,850/1000W,B,2018,,ATX,ATX 2.x,Full,Full,G,ACRF,SR,DC-DC,FSP,G1/G1+ high-wattage,
+,,,,1300-2000W,A*,2021,,ATX,ATX 2.x,230V,Full,G,LLC,SR,DC-DC,FSP,Modified FSP1650-57AZB?,"Not completely certain on platform, info is based on rear shots only. Potentially modified to reach 2kW."
+,,GA,,550-850W,B,2021,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,Andyson,PAD01,"Double ball bearing fan and good build quality, but protections need tuning. Low overall performance."
+,,GQ,,650/750W,C,2016,,ATX,ATX 2.x,Full,Full,G,ACRF,SR,DC-DC,FSP,Raider II high-wattage,
+,,,,850/1000W,B,2016,,ATX,ATX 2.x,Full,Full,G,ACRF,SR,DC-DC,FSP,G1/G1+ high-wattage,
+,,GM,,450/550/650W,B,2019,,SFX,ATX 2.x,Full,Full,G,ACRF,SR,DC-DC,FSP,Custom,"Decent overall performance despite being ACRF on the primary side, double ball bearing fan."
+,,,,750/850W,B,2021,,SFX,ATX 2.x,Full,Full,G,ACRF,SR,DC-DC,FSP,Custom,"Decent overall performance despite being ACRF on the primary side, FDB fan instead of DBB as in the lower wattage GM models."
+,,G2,,550-850W,A,2014,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,Super Flower,Leadex Gold,Old but gold (no pun intended.)
+,,,,1000/1300W,A,2013,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,Super Flower,Leadex Gold GT,
+,,,,1600W,A,2014,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,Super Flower,Leadex Gold GTX,
+,,G2L,,750/850W,A,2016,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,Super Flower,Leadex Gold,"Same internals as the original G2, but with white LEDs (yes, really.)"
+,,G3,,550-1000W,A-,2017,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,Super Flower,Leadex III Gold,
+,,G5,,650-1000W,B+,2019,,ATX,ATX 2.x,Full,Full,G,ACRF,SR,DC-DC,FSP,Upgraded G1+ high-wattage,
+,,G6,,850/1000W,A+,2021,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,Seasonic,Custom (Focus GX heavily mod.),
+,,,,650/750W,A,2021,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,Seasonic,Custom (Focus GX heavily mod.),
+,,G7,,650-1000W,A+,2022,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,FSP,Hydro PTM X Pro,
+,,GT,,550-1000W,B-,2020,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,HEC,Modified TPK,"High RMA rate due to MLCC cracks, similar to other HEC-built EVGA PSUs. Showed up on B-Stock in huge quantities for dirt cheap c. 2022."
+,,,,1300W,B*,2021,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,HEC,,
+,,P+,,1300/1600W,B+,2022,,ATX,ATX 2.x,Full,Full,P,ACRF,SR,DC-DC,FSP,Upgraded G1+ high-wattage,Poor transient response on 3.3V.
+,,P2,,650/750/850W,A,2016,,ATX,ATX 2.x,Full,Full,P,LLC,SR,DC-DC,Super Flower,Leadex Platinum,
+,,,,1000/1200W,A,2014,,ATX,ATX 2.x,Full,Full,P,LLC,SR,DC-DC,Super Flower,Leadex Platinum GT,
+,,,,1600W,A,2015,,ATX,ATX 2.x,Full,Full,P,LLC,SR,DC-DC,Super Flower,Leadex Platinum GTX,
+,,P3,,1000/1200W,B+*,2021,,ATX,ATX 2.x,Full,Full,P,LLC,SR,DC-DC,HEC,Similar to RM-e 1000W?,"Limited information, internal shots are not detailed enough to confirm the degree of similarity."
+,,P5,,650-1000W,B+,2021,,ATX,ATX 2.x,Full,Full,P,ACRF,SR,DC-DC,FSP,Upgraded G1+ high-wattage,Further upgrades over the G5 for Platinum efficiency.
+,,P6,,850/1000W,A+,2021,,ATX,ATX 2.x,Full,Full,P,LLC,SR,DC-DC,Seasonic,Custom (Focus GX heavily mod.),
+,,,,650/750W,A,2021,,ATX,ATX 2.x,Full,Full,P,LLC,SR,DC-DC,Seasonic,Custom (Focus GX heavily mod.),
+,,PQ,,750/850/1000W,B,2018,,ATX,ATX 2.x,Full,Semi,P,ACRF,SR,DC-DC,FSP,G1/G1+ high-wattage,
+,,T2,,750/850/1000W,A+,2016,,ATX,ATX 2.x,Full,Full,T,LLC,SR,DC-DC,Super Flower,Leadex Titanium GT,
+,,,,1600W,A+,2016,,ATX,ATX 2.x,Full,Full,T,LLC,SR,DC-DC,Super Flower,Leadex Titanium GTX,
+,,XC,,850/1000W,B*,2023,,ATX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,High Power?,,"No info, but only a 3 year warranty just like the FTW, since EVGA might go under."
+,W Series,W1,,500/600/700W,F,2016,,ATX,ATX 2.x,Full,No,W,DF,PR,GR,HEC,Costdown EVGA B1,Malfunctioning safety protections that cause the unit to experience catastrophic failure and blow up. Fire hazard.
+,,W2,,500/600/700W,E,2020,,ATX,ATX 2.x,230V,No,W,DF,PR,GR,HEC,,
+,,W3,,500/600/700W,E,2021,,ATX,ATX 2.x,Full,No,W,DF,PR,GR,Andyson,Costdown Z8,
+,,,,,,,,,,,,,,,,,,
+Fractal Design,Anode,,SFX,450W,C,2021,,SFX,ATX 2.x,Full,No,B,DF,SR,DC-DC,FSP,FSP450-50SAC,
+,,,Bronze,550/650/750W,C,2022,,ATX,ATX 2.x,Full,Semi,B,DF,SSR,DC-DC,High Power,NO-823F,
+,ION,Platinum,Plus,560-860W,A,2019,,ATX,ATX 2.x,Full,Full,P,LLC,SR,DC-DC,High Power,NO-818,
+,,,Plus 2,560-860W,A,2021,,ATX,ATX 2.x,Full,Full,P,LLC,SR,DC-DC,High Power,NO-818,
+,,Gold,,550-850W,A-,2021,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,High Power,NO-818,Cost-down Ion Platinum.
+,,SFX,,500/650W,A,2019,,SFX-L,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,Seasonic,Focus SGX,
+,,,,,,,,,,,,,,,,,,
+FSP (Fortron/Sparkle),Aurum,Platinum (PT),,850/1000/1200W,B+,2014,,ATX,ATX 2.x,Full,Full,P,LLC,SR,DC-DC,FSP,Aurum Platinum,Solid electrical performance (A tier) but nothing regarding protections has been tested. B+ until further notice.
+,,S,,400-700W,E,2013,,ATX,ATX 2.x,Full,No,G,ACRF,SR,GR,FSP,,Not enough extensive testing.
+,Dagger,,-,500/600W,B-,2017,,SFX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,FSP,,"Out of ATX spec ripple on 3.3V rail, fails 80+ Gold efficiency spec."
+,,,Pro,550-850W,F,2021,,SFX,ATX 2.x,Full,Full,G,ACRF,SR,DC-DC,FSP,,"Malfunctioning OCP on +12V line (voltage out of spec), poor transient response on minor rails, failed to meet 80+ Gold rating."
+,,,Pro ATX 3.0,850W,B-*,2023,,SFX,ATX 3.x,Full,Full,G,ACRF,SR,DC-DC,FSP,Dagger Pro 3.0,Updated Pro? Will need proper review for proper tiering. White variants available. See here.
+,Hexa,Plus (+),,400/500W,F,2014,,ATX,ATX 2.x,230V,No,N,DF,PR,GR,FSP,,"Initial batches of the unit were shipped without the OCP chip, supposedly newer batches have this new fuse chip but yet confirmed."
+,,85+,,350-650W,C*,2017,,ATX,ATX 2.x,Full,No,N,DF,SSR,DC-DC,FSP,Hexa 85+,Not enough extensive testing.
+,,85+ Pro,,350-850W,C*,2019,,ATX,ATX 2.x,Full,No,B,DF,SSR,DC-DC,FSP,,85+ refresh? No internal shots or performance data available as of now.
+,Hydro,G,-,650/750/850W,B,2015,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,FSP,Hydro G,PWR_OK signal testing failed; mediocre load regulation and transient response on the minor rails.
+,,,Pro,850/1000W,A,2019,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,FSP,Modified Hydro G?,
+,,,,650/750W,A-,2019,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,FSP,Modified Hydro G Pro,
+,,,Pro ATX 3.0,850/1000/1200W,A,2022,,ATX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,FSP,Hydro G ATX 3.0,
+,,GD,,450/550/650W,C,2017,,ATX,ATX 2.x,Full,No,G,DF,SSR,DC-DC,FSP,Raider II,
+,,GE,,450-850W,C,2016,,ATX,ATX 2.x,Full,Full,G,DF,SSR,DC-DC,FSP,Raider II,
+,,GSM,Lite Pro,550/650/750W,C*,2020,,ATX,ATX 2.x,Full,Semi,G,LLC,SR,DC-DC,FSP,GSM,Ball bearing fan. Not enough conclusive data.
+,,,Pro,550/650/750W,C*,2020,,ATX,ATX 2.x,Full,Semi,G,LLC,SR,DC-DC,FSP,GSM,China exclusive? Appears to be identical to the Lite Pro.
+,,GT Pro,-,850/1000W,A,2022,,ATX,ATX 2.x,Full,Semi,G,LLC,SR,DC-DC,FSP,Hydro G Pro,Fundamentally a Hydro G refresh. OTP isn't tested but platform is well reviewed with OTP working in similar configurations.
+,,,ATX 3.0,850/1000W,A,2022,,ATX,ATX 3.x,Full,Semi,G,LLC,SR,DC-DC,FSP,Hydro G ATX 3.0,
+,,K,-,500/600/700W,E,2015,,ATX,ATX 2.x,230V,No,B,DF,PR,GR,FSP,Hydro Bronze,
+,,,Pro,500-850W,C*,2018,,ATX,ATX 2.x,230V,No,B,DF,SSR,DC-DC,FSP,,No performance data.
+,,,Pro (ATX 3.0),750/850W,C*,2021,,ATX,ATX 3.x,230V,No,B,DF,SSR,DC-DC,FSP,K Pro-like?,"No performance data, most likely the K Pro made for ATX 3.0 compliancy."
+,,M (Modular) PRO,,500-800W,C,2018,,ATX,ATX 2.x,230V,Semi,B,DF,SSR,DC-DC,FSP,,"Identical to the Hydro Pro, simply the semi modular variant."
+,,MX,,550/650/750W,C,2016,,ATX,ATX 2.x,230V,Full,B,DF,SR,DC-DC,FSP,Raider II-ish,
+,,PRO,,500-800W,C,2018,,ATX,ATX 2.x,230V,No,B,DF,SSR,DC-DC,FSP,,
+,,PTM,-,550/650/750W,A-,2018,,ATX,ATX 2.x,Full,Full,P,LLC,SR,DC-DC,FSP,Hydro PTM,"Fails EMI testing, 2 EPS connectors on one cable, minor rails are either failing or near failing with regards to transient response."
+,,,Plus (+),850/1200W,B*,2018,,ATX,ATX 2.x,Full,Full,P,LLC,SR,DC-DC,FSP,Hydro PTM high-wattage?,2 year warranty; made to be liquid-cooled as part of a custom loop. No performance data.
+,,PTM Pro,-,550/650/750W,B*,2020,,ATX,ATX 2.x,Full,Full,P,LLC,SR,DC-DC,FSP,Hydro PTM Pro,No performance data.
+,,,,850/1000/1200W,A-,2020,,ATX,ATX 2.x,Full,Full,P,LLC,SR,DC-DC,FSP,Hydro PTM Pro high-wattage,"One EPS cable with two connections, transient response on the minor rails are very subpar, OCP needs tuning per Aris' testing."
+,,,ATX 3.0,850/1000/1200W,A+,2022,,ATX,ATX 3.x,Full,Full,P,LLC,SR,DC-DC,FSP,PTM Pro ATX 3.0,
+,,,ATX 3.1,1350W,A,2023,,ATX,ATX 3.x,Full,Full,P,LLC,SR,DC-DC,FSP,PTM Pro ATX 3.1,
+,,,,1650W,A+,2023,,ATX,ATX 3.x,230V,Full,P,LLC,SR,DC-DC,FSP,PTM Pro ATX 3.1,"Highly likely a similar platform to the PTM Pro ATX 3.0, OTP works in similar configurations (PTM Pro). Superb electrical performance."
+,,PTM X Pro,-,850/1000W,A,2021,,ATX,ATX 2.x,Full,Full,P,LLC,SR,DC-DC,FSP,,"The base platform of the EVGA G7, which is well reviewed with protections working in similar configurations."
+,,,ATX 3.0,850-1200W,A+,2023,,ATX,ATX 3.x,Full,Full,P,LLC,SR,DC-DC,FSP,,Identical to the PTM X Pro made for ATX 3.0 compliancy.
+,,S,,650/750W,B*,2016,,ATX,ATX 2.x,Full,No,S,ACRF,SR,DC-DC,FSP,Raider II,"Not enough conclusive data to tier it, only basic voltage regulation testing."
+,,Ti Pro,,850/1000W,A+,2023,,ATX,ATX 3.x,Full,Full,T,LLC,SR,DC-DC,FSP,,"Insane performer, extremely quiet, however the 850W model is discontinued."
+,,X,,450/550/650W,B,2016,,ATX,ATX 2.x,Full,No,G,LLC,SR,DC-DC,FSP,,
+,,YD,,550/650W,C*,2016,,ATX,ATX 2.x,230V,No,B,DF,PR,DC-DC,FSP,,Possibly Korean exclusive.
+,HV Pro,,,550/650W,C-,2020,,ATX,ATX 2.x,230V,No,W,DF,PR,DC-DC,FSP,Raider II,No performance data although the platform is decently reviewed.
+,Hyper,80+ Pro,,450-750W,C*,2019,,ATX,ATX 2.x,230V,No,W,ACRF,SSR,DC-DC,FSP,,Not enough conclusive data to effectively tier.
+,,K,,500/600/700W,F,2015,,ATX,ATX 2.x,230V,No,W,DF,PR,GR,FSP,Hydro Bronze,"Lacks protections, not independently regulated."
+,,M85+,,550/650W,C,2017,,ATX,ATX 2.x,Full,Semi,B,DF,SSR,DC-DC,FSP,Raider II,Not enough conclusive data but platform is well reviewed.
+,,S,,500/600/700W,F,2015,,ATX,ATX 2.x,230V,No,W,DF,PR,GR,FSP,Hydro Bronze,"Doesn't claim certain protections, old outdated platform."
+,Mega Ti,,,1350/1650W,A,2025,,ATX,ATX 3.x,Full,Full,T,LLC,SR,DC-DC,FSP,Mega Ti,"Identical to the ASRock Taichi, however until further testing exists, it will not receive a ""+"" grade. See teardown here."
+,Raider II,,,450/550W,C-,2016,,ATX,ATX 2.x,Full,No,S,DF,SR,DC-DC,FSP,Raider II,
+,,,,650/750W,C-,2016,,ATX,ATX 2.x,Full,No,S,ACRF,SR,DC-DC,FSP,Raider II high-wattage,
+,SFX Pro,,,350/450W,C,2021,,SFX,ATX 2.x,Full,No,B,DF,SR,DC-DC,FSP,FSP450-50SAC,
+,Vita,,BD,550/650W,C*,2024,,ATX,ATX 2.x,230V,No,B,DF,SR,DC-DC,FSP,,No 12VHPWR. Could be cost-down GD. Sleeve bearing fan.
+,,,,750/850W,C*,2024,,ATX,ATX 3.x,230V,No,B,DF,SR,DC-DC,FSP,,Has 12VHPWR. Claims ATX 3.1 compliance. See here. Could be cost-down GD. Sleeve bearing fan.
+,,,GD,550/650W,C*,2023,,ATX,ATX 2.x,Full,No,G,,SR,DC-DC,FSP,,No 12VHPWR.
+,,,,750/850W,C*,2023,,ATX,ATX 3.x,Full,No,G,,SR,DC-DC,FSP,,Has 12VHPWR. Claims ATX 3.1 compliance. See here.
+,,,GM,650W,B+,2024,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,FSP,,"Strong electrical performance, but with less expensive components and a rifle bearing fan."
+,,,,750/850/1000W,B+,2024,,ATX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,FSP,,
+,,,,,,,,,,,,,,,,,,
+G.Skill,MB,,Bronze (MB-B),650W,E,2021,,ATX,ATX 2.x,Full,No,B,DF,PR,GR,CWT,GPM,
+,,,Gold (MB-G),750/850W,B-,2021,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,CWT,GPX,Not suggested for use under 120VAC if you live in an area with frequent brownouts (see note under input range.)
+,PS-G,,,750/850W,B*,2015,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,CWT?,,No info
+,PS-P,,,850/1250W,B*,2015,,ATX,ATX 2.x,Full,Full,P,LLC,SR,DC-DC,CWT?,,
+,,,,,,,,,,,,,,,,,,
+Galax,Omega,,GLX,850W,B*,2024,,ATX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,HKC,ATX-23B,No transient response testing found.
+,,,,1000/1200W,B*,2024,,ATX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,HKC,ATX-27B,
+,,,GLS,500/650W,C,2023,,ATX,ATX 2.x,Full,No,B,DF,SSR,DC-DC,HKC,ATX-41B,Sleeve bearing fan. No transient response testing found.
+,Hall of Fame,,,850/1000/1300W,A,2023,,ATX,ATX 3.x,Full,Full,P,LLC,SR,DC-DC,Helly,EPS-0100,
+,,,,,,,,,,,,,,,,,,
+Gamdias,Astrape,E1,,550W,E,2018,,ATX,ATX 2.x,Full,No,N,DF,PR,GR,Andyson,M5,
+,,M1,Bronze,650/750W,E,2018,,ATX,ATX 2.x,Full,No,B,DF,PR,GR,Andyson,M5,
+,,,White,550/650W,E,2018,,ATX,ATX 2.x,Full,No,W,DF,PR,GR,Andyson,M5,
+,,P1-G,,650/750W,C+,2018,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,Andyson,F8,No OTP claimed.
+,Cyclops,M1-B,,550/650/750W,E,2025,,ATX,ATX 2.x,Full,No,B,DF,PR,GR,Maxpower,,"Group regulated, more or less e-waste."
+,,X1,,1200W,B,2018,,ATX,ATX 2.x,Full,Full,P,LLC,SR,DC-DC,Andyson,R8,
+,Helios,E1,,500/600W,F,2021,,ATX,ATX 2.x,230V,No,N,DF,PR,GR,Unknown,,"PPFC, extremely poor build quality and component quality; e-waste."
+,,M1-B,,450/550W,E,2023,,ATX,ATX 2.x,Full,No,B,DF,PR,GR,SANR,,
+,,,,650/750W,E,2023,,ATX,ATX 2.x,Full,No,B,DF,PR,GR,Andyson,M5,
+,,,,850W,C,2023,,ATX,ATX 2.x,Full,No,B,DF,SSR,DC-DC,SANR,S-D high-wattage,
+,,P1-G,(OEM/SI),600/650W,B-,2022,,ATX,ATX 2.x,Full,No,G,LLC,SR,DC-DC,Andyson,PAD07,Traditional thin circular fan grille.
+,,,,600/650/750W,B+,2022,,ATX,ATX 2.x,Full,No,G,LLC,SR,DC-DC,High Power,NO-817A,Uses hexagonal (in a circular shape) and oblong fan grilles.
+,,,(Retail),1000/1300W,A*,2023,,ATX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,High Power,NO-826B,
+,,P1A-G,,650/750W,B+*,2023,,ATX,ATX 2.x,Full,No,G,LLC,SR,DC-DC,High Power,NO-817A,
+,,,,850W,B+*,2023,,ATX,ATX 2.x,Full,No,G,LLC,SR,DC-DC,High Power,NO-815,
+,,P2-G,,750W,B+,2024,,ATX,ATX 3.x,Full,No,G,LLC,SR,DC-DC,High Power,NO-817,
+,,,,850/1000W,B+,2024,,ATX,ATX 3.x,Full,No,G,LLC,SR,DC-DC,High Power,NO-832D,
+,,,,1300W,A,2024,,ATX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,High Power,NO-826B,P1-G refreshed for ATX 3.1
+,,M2,,550/650W,C,2024,,ATX,ATX 2.x,Full,No,B,DF,SR,DC-DC,High Power,HP1-M2BR-F12S,
+,,,,750W,C,2024,,ATX,ATX 2.x,Full,No,S,DF,SR,DC-DC,High Power,HP1-N2BR-F12S,
+,,,,850W,C,2024,,ATX,ATX 3.x,Full,No,S,DF,SR,DC-DC,High Power,HP1-N2BR-F12S,
+,Kratos,E1,,500/600W,F,2020,,ATX,ATX 2.x,230V,No,N,DF,PR,GR,Unknown,,"PPFC, extremely poor build quality and component quality; e-waste."
+,,M1,,550-750W,E,2020,,ATX,ATX 2.x,Full,No,B,DF,PR,GR,Andyson,M5,
+,,P1A-G,,650/750W,C,2021,,ATX,ATX 2.x,Full,No,G,LLC,SR,DC-DC,Andyson,PAD07,Sleeve bearing fan.
+,,P1-G,,650/750W,C,2020,,ATX,ATX 2.x,Full,No,G,LLC,SR,DC-DC,Andyson,,
+,,P2,,750-1200W,B*,2024,,ATX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,SANR,S-850MZ,
+,,,,,,,,,,,,,,,,,,
+Gamemax,All PSUs,,,,E,,,,,,,,,,,,,"Predatory/scam consumer practices, including providing rewards for 5-star reviews, and random platform swaps to significantly worse platforms with no difference in model number, branding, or marketing."
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+Gigabyte,Aorus Elite,,AE-PM PG5,850/1000W,A*,2024,,ATX,ATX 3.x,Full,Full,P,LLC,SR,DC-DC,MEIC,MN-P1KO-2171,"No performance or protections testing. Version 1.0 is ATX 3.0, Version 1.1 is ATX 3.1 to replace 12VHPWR with 12V-2x6."
+,Aorus,P-W,AP-GM,750/850W,B+,2018,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,MEIC,GP-AP850GM,"Packaging is listed as AP-W, but model name is AP-GM."
+,,,AP-PM,1200W,A*,2022,,ATX,ATX 2.x,Full,Full,P,LLC,SR,DC-DC,MEIC,GP-AP1200PM,"Packaging is listed as AP-W, but model name is AP-PM."
+,BH,,,700W,E,2016,,ATX,ATX 2.x,Full,Semi,B,DF,PR,GR,CWT,GPK,
+,P-B,,,450/550W,E,2020,,ATX,ATX 2.x,Full,No,B,DF,PR,GR,MEIC,MN-P450-2119,
+,,,,650W,C,2020,,ATX,ATX 2.x,Full,No,B,DF,SR,DC-DC,MEIC,MN-P083-BE03,
+,PB,,,500W,E,2016,,ATX,ATX 2.x,Full,No,B,DF,PR,GR,MEIC,MN-PXXX-6016,
+,P-BS,,,750W,C*,2024,,ATX,ATX 2.x,230V,No,B,DF,PR,DC-DC,MEIC?,,No info
+,GH,,,750W,C,2016,,ATX,ATX 2.x,Full,Semi,G,LLC,SR,DC-DC,CWT,GPS,
+,P-G,,-,650W,C*,2022,,ATX,ATX 2.x,Full,No,G,DF,SR,DC-DC,MEIC?,,No conclusive information. Worldwide?
+,,,(US),650W,C*,2022,,ATX,ATX 2.x,Full,No,G,DF,SR,DC-DC,CE Link,PCFB-0650H-FA or PCK000B,"No conclusive information. Made in Vietnam, variant is likely only for the US/NA market."
+,P-GM,,Rev. 1 (Explosive),750/850W,F,2020,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,MEIC,MN-P850-2121,Widespread failures due to explosive FETs from bad board design. See serial number range in notes for affected units.
+,,,Rev. 2 (Fixed),750/850W,B-,2021,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,MEIC,MN-P850-2121,"No external visual difference, PCB underwent slight revision, poor 3.3v transient response."
+,,,-,1000W,C*,2021,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,MEIC,MN-P1KO-2141,"Allegedly not affected by the bad FET design, however, no proper testing exists to confirm this."
+,P-SS,,,550/650W,C*,2024,,ATX,ATX 2.x,230V,No,S,LLC,SR,DC-DC,XHY,2401,"Not enough extensive testing; platform is unknown but looks similar to the Cougar GEC, which uses a costdown 2008 platform."
+,PW,,,400W,E,2018,,ATX,ATX 2.x,Full,No,N,DF,PR,GR,MEIC,MN-PXXX-6016,
+,Ultra Durable,UD-GM,-,750/850W,B+,2022,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,MEIC,MN-P850-2121,"Updated version of the P-GM. Decent overall performance, but component quality leaves a bit to be desired (especially the fan.)"
+,,,,1000W,C+*,2022,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,MEIC,MN-P1KO-2141,Seemingly discontinued for the UD1000GM PG5.
+,,,A,750/850W,C+*,2024,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,MEIC?,,"Oblong, more restrictive fan grille over the base UD-GM, 0 RPM ""Smart Fan"" button. Renders show it to be on a different platform from UD-GMs."
+,,,A-PG5,850W,C+*,2024,,ATX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,MEIC?,,
+,,,"PG5
+(""Rev 1.0"")",750/850W,C+*,2022,,ATX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,MEIC,,
+,,,,1000W,C+,2022,,ATX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,MEIC,MN-P1KO-2141,"Numerous minor issues, failed ATX 3.0 transient response testing, poor build quality."
+,,,,1300W,B*,2023,,ATX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,MEIC,GP-UD1300GM PG5,
+,,,"PG5 V2
+(""Rev 2.0"")",850W,C+*,2023,,ATX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,MEIC,~UD-GM,"See here. Very limited information, but rifle bearing Yate Loon fans are still in use (and the curve is configured to let them get very loud.)"
+,,,,1000W,C+*,2023,,ATX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,MEIC,MN-P1KO-2141,Cheaper MOSFETs from the rev. 1 PG5. Similar pattern w/ transient response as the rev. 1 UD-GM PG5.
+,,,,1300W,B*,2023,,ATX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,MEIC,,
+,,UD-PM AI TOP,,1600W,A*,2024,,ATX,ATX 3.x,Full,Full,P,LLC,SR,DC-DC,XHY,Custom?,"Need more data before tiering, but the platform is definitely not an off-the-shelf model. Claims to be ""AI ready"" (whatever that means.)"
+,,,,,,,,,,,,,,,,,,
+High Power,Astro,GD-II,,1050-1350W,B*,2015,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,High Power,NO-800,
+,,Lite,,650/750W,C+,2015,,ATX,ATX 2.x,Full,Semi,G,LLC,SR,DC-DC,High Power,NO-771,
+,,PT,,1050/1200W,B*,2018,,ATX,ATX 2.x,Full,Full,P,LLC,SR,DC-DC,High Power,NO-800,
+,ECO II,Bronze,,400-700W,E,2017,,ATX,ATX 2.x,230V,No,B,DF,PR,GR,High Power,HPE-BR-A12S,
+,,White,,450W,E,2017,,ATX,ATX 2.x,230V,No,W,DF,PR,GR,High Power,HPE-A12S,
+,Elite 230V Bronze (Elite BR),,,750/850W,C*,2019,,ATX,ATX 2.x,230V,No,B,DF,SR,DC-DC,High Power,NO-823B,
+,Element,Bronze II,,600/700W,E,2020,,ATX,ATX 2.x,230V,No,B,DF,PR,GR,High Power,HPG-BR-H12S,
+,,BR-DD (HP1-M),,650/750W,C*,2022,,ATX,ATX 2.x,230V,No,B,DF,SR,DC-DC,High Power,HP1-MBR-H12S,Updated Element BR without an actual 80+ certification for the Turkish market?
+,,BR Revo,,750/850W,C*,2023,,ATX,ATX 3.x,230V,No,B,DF,SR,DC-DC,High Power,HP1-N2BR-H12S,Appears to be targeted primarily at the Turkish market.
+,,HPQ Bronze,,500W,E,2015,,ATX,ATX 2.x,230V,No,B,DF,PR,GR,High Power,HPQ-BR-F12S,Europe only
+,,HPQ ST,,500W,E,2015,,ATX,ATX 2.x,230V,No,W,DF,PR,GR,High Power,HPQ-ST-F12S,Europe only
+,,Smart,,650/750W,E,2013,,ATX,ATX 2.x,230V,Semi,B,DF,PR,GR,High Power,NO-761,
+,OEM,Super Gold ATX 3.0 (S2),,750/850W,B+,2023,,ATX,ATX 3.x,Full,No,G,LLC,SR,DC-DC,High Power,NO-832D,Costdown of the Thermaltake Toughpower GF3 ARGB platform; non-modular with Chinese caps and a rifle bearing fan.
+,,Super Gold (GD-F12S),,600-850W,B+,2019,,ATX,ATX 2.x,Full,No,G,LLC,SR,DC-DC,High Power,NO-817A,"Sometimes referred to as the ""Super Gold"", Costdown Performance GD using 85c bulk capacitor from base platform."
+,,Super Bronze (BR-F12S),,400-700W,E,2019,,ATX,ATX 2.x,Full,No,B,DF,PR,GR,High Power,Element Bronze II,
+,,White Label,,400-700W,E,2019,,ATX,ATX 2.x,Full,No,W,DF,PR,GR,High Power,Element II,
+,Performance,,FS ATX 3.1,850/1000W,B+,2024,,ATX,ATX 3.x,Full,No,G,LLC,SR,DC-DC,High Power,NO-832D,
+,,,GD ATX 3.0,750/850W,B*,2023,,ATX,ATX 3.x,Full,Semi,G,LLC,SR,DC-DC,High Power,NO-832D?,
+,,,GD,600-800W,B+,2019,,ATX,ATX 2.x,Full,No,G,LLC,SR,DC-DC,High Power,NO-817,
+,RockSolid PRO,,,1650W,A*,2023,,ATX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,High Power,NO-819,Tier is speculative because of potentially unreliable OTP in units based on the same platform.
+,Simplicity,,HPG,600/700W,E,2015,,ATX,ATX 2.x,230V,No,W,DF,PR,GR,High Power,HPG-ST-H12S,
+,,,HPG - Red LED,600/700W,E,2015,,ATX,ATX 2.x,230V,No,W,DF,PR,GR,High Power,HPG-ST-H12S,"Simplicity HPG, just with a red LED 120mm fan."
+,Super,,GD,750/850W,B*,2019,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,High Power,NO-781,
+,,,GD+,750/850W,B+,2020,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,High Power,NO-810G,Globe Fan FDB fan.
+,,,,1050W,B+,2020,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,High Power,NO-815,Double ball bearing fan.
+,,,GD 3.0,1000/1300W,A,2022,,ATX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,High Power,NO-826B,
+,,,,,,,,,,,,,,,,,,
+Huntkey,GS,,Prime,700/750/800W,C*,2021,,ATX,ATX 2.x,230V,No,B,LLC,SSR,DC-DC,Huntkey?,,Not conclusive. Treat as -100W from advertised.
+,,,New,500-700W,E,2021,,ATX,ATX 2.x,230V,No,W,DF,PR,GR,Huntkey?,,
+,,,Old,450/550W,F,2014,,ATX,ATX 2.x,230V,No,N,DF,PR,DMA,Huntkey,,Doesn't claim necessary protections. No real 80+ certification label on the unit.
+,GX,,Pro,650-950W,F,2019,,ATX,ATX 2.x,230V,No,B,LLC,SR,DC-DC,Huntkey,,"OCP on the minor rails are set way too high to the point it's dysfunctional, insanely mediocre electrical performance, sleeve bearing fan."
+,MVP,Gold,,850/950/1000W,B+,2018,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,Seasonic,Focus Gold,No performance data or internal shots available from professional reviewers. 3 year warranty.
+,,K Gold,Old,650-1200W,F,2020,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,Huntkey,,Doesn't claim SCP according to this review.
+,,,New (ATX 3.1),750/850W,C*,2024,,ATX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,Huntkey,,Official listing on Amazon shows internal shots that are highly identical to the Old K Gold.
+,,Platinum,-,750/850W,A,2017,,ATX,ATX 2.x,Full,Full,P,LLC,SR,DC-DC,Seasonic,Focus Platinum,
+,,,X,1200W,F,2022,,ATX,ATX 2.x,Full,Full,P,LLC,SR,DC-DC,Huntkey,HK-1K255PP,"Malfunctioning OCP on 3.3V, and transient response on 3.3V is out of spec, questionable choices of components."
+,WD,,-K,600-900W,C-,2017,,ATX,ATX 2.x,Full,No,G,LLC,SR,DC-DC,Huntkey,HK750-51PP,"Naming scheme is +50W from the advertised 12V wattage. Numerous minor issues, very loud, and OCP is set way too high on the minor rails."
+,,,-P,650/750W,C*,2021,,ATX,ATX 2.x,Full,No,P,LLC,SR,DC-DC,Huntkey,,"Extremely similar to the old K Gold, made for Platinum efficiency, treat as -50W from advertised."
+,,,,,,,,,,,,,,,,,,
+InWin,A-series,,,450/550/650W,E,2019,,ATX,ATX 2.x,230V,No,W,DF,PR,GR,High Power?,,Actual +12V capacity is ~5-10% lower than advertised wattage.
+,A1 Plus,,,650W,C,2019,,ATX,ATX 2.x,Full,No,G,LLC,SR,DC-DC,Andyson,F8,Included with the InWin A1 Plus case; not available on its own.
+,CB Platinum,,,1050/1250W,B*,2018,,ATX,ATX 2.x,Full,Full,P,LLC,SR,DC-DC,High Power,NO-800,"Dual ball bearing fan, no direct reviews"
+,CS Gold SFX,,,700W,C*,2018,,SFX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,High Power,NO-797,"""Fluid bearing fan."" No performance data, but similar design to the Silverstone SX-G."
+,C Platinum,,,750/900W,C,2016,,ATX,ATX 2.x,Full,Full,P,LLC,SR,DC-DC,InWin,Custom,"OTP either not present or set too high per Aris' review. Multi-rail 12V OCP is negated by being set high (>490W), but OPP is functional."
+,Force F1,,,500/600W,C,2017,,ATX,ATX 2.x,Full,No,B,DF,SR,DC-DC,High Power,NO-790,500W variant's +12V output is rated for 480W. Rifle-bearing fan (PY-1225M12S)
+,PB (Premium Basic) Gold,,,750/850W,C+,2019,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,High Power,NO-810A,"Sleeve bearing fan, no OTP supported/claimed."
+,PF Gold,,,550/650/750W,B+,2020,,ATX,ATX 2.x,Full,No,G,LLC,SR,DC-DC,High Power,NO-817,Same design as the OEM HP1-J-GD-F12S with a rifle bearing fan.
+,PF II Gold,,,750/850W,B*,2023,,ATX,ATX 3.x,Full,No,G,LLC,SR,DC-DC,High Power?,NO-832?,"No direct reviews, advertises sleeve-bearing fan (most likely actually rifle, though.)"
+,P Gold,,-,650/750/850W,B-,2021,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,High Power,NO-810F,OTP is claimed but has been hit-or-miss on NO-810 units and not present on the P125. Tier is based on other NO-810 units until tested.
+,,,-,1050/1250W,C+,2021,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,High Power,NO-815,OTP either not present or set too high per Aris' review. Out-of-spec 3.3V transient response (7%).
+,VE Gold ATX 3.1,,,750-1250W,A*,2024,,ATX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,High Power,NO-832/NO-826?,Need more information.
+,,,,,,,,,,,,,,,,,,
+Kolink,Classic Power,,,400-700W,C-,2019,,ATX,ATX 2.x,230V,No,B,DF,SR,DC-DC,SANR,S-800D,"Actual 12V line output is 50 watts less than the model name (despite being DC-DC), numerous minute issues; overall suboptimal quality."
+,Core,,,300/400/500W,F,2021,,ATX,ATX 2.x,230V,No,W,DF,PR,GR,SANR?,,"Extremely low 12V line output relative to total capacity. The ""1000W"" model has only 750W available to the +12V line."
+,,,,600-1000W,F,2021,,ATX,ATX 2.x,230V,No,W,DF,PR,GR,SANR?,,
+,Continuum,,V1,850W,B+,2018,,ATX,ATX 2.x,Full,Full,P,LLC,SR,DC-DC,High Power,NO-781A,
+,,,,1050/1200W,C-,2018,,ATX,ATX 2.x,Full,Full,P,DF,SR,DC-DC,High Power,NO-763,Protections need serious tuning; abundant amount of minute issues
+,,,V1 (1500W),1500W,A-,2018,,ATX,ATX 2.x,Full,Full,P,LLC,SR,DC-DC,Enhance,,"Power cord isn't available unless bought with the unit, extremely noisy, missing tiny quality of life features."
+,,,V2,1050/1200W,B*,2019,,ATX,ATX 2.x,Full,Full,P,LLC,SR,DC-DC,High Power,NO-800,Not enough conclusive data.
+,Enclave,,,500/600/700W,B-,2019,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,Golden Field,ATX-3100,
+,Regulator,,,750-1200W,B+*,2023,,ATX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,SANR,S-MZ,Platform is well reviewed but nothing regarding electrical performance or protections data are out.
+,,,,,,,,,,,,,,,,,,
+LEPA,G-MA,,,1600W,B,2012,,ATX,ATX 2.x,Full,Full,G,PSR,SR,DC-DC,Enermax,Upgraded Platimax 1200,"Only included on the list because Enermax is still selling this unit on their Refurbished store and on Jawa as of 2025. Listed as ""G-MA-B."""
+,,,,,,,,,,,,,,,,,,
+Lian Li,PE,,,550W,C+,2016,,SFX-L,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,Enhance,Silverstone SX600G-like,"Low quality sleeve bearing fan, and only a 2 year manufacturer warranty."
+,,,,750W,B-,2016,,SFX-L,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,Enhance,No match (Custom?),"Low quality sleeve bearing fan, 85C caps, and only a 2 year manufacturer warranty."
+,Edge,,EG Gold,750-1200W,A,2024,,Other,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,Helly,ATX-0800GLV,German bulk caps; dual-chamber L-shape design; modular inputs on the main PCB. 1000W and up models come with a USB/fan hub.
+,,,Platinum,850/1000/1300W,A,2024,,Other,ATX 3.x,Full,Full,P,LLC,SR,DC-DC,Helly,EPS-0100(LL),German bulk caps; dual-chamber L-shape design; platform is an EPS-0100 modified to put the modular inputs on the main PCB.
+,SP,,,750W,B,2021,,SFX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,Helly,SFX-0200,Doesn't see the same problem as the 850W variant because of its lower capacity.
+,,,,850W,F,2022,,SFX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,Helly,SFX-0200,Fatal design flaw that causes an X cap to melt under 100VAC; potential fire hazard. Two samples also died during LTT Labs testing.
+,,,,,,,,,,,,,,,,,,
+Mars Gaming,MPB-P,,,1000W,F,2024,,ATX,ATX 3.x,230V,Full,G,DF,SSR,DC-DC,Soeyi,WT-CM6800U-DTD,"Extremely poor electrical performance which leads to severe out of ATX compliance, very abnormal implementation. Refer to here."
+,MP,,-B,550-850W,E,2019,,ATX,ATX 2.x,230V,No,B,DF,SSR,DC-DC,Soeyi,WT-CM6800U-DTD,Platform confirmed through overhead and internal shots provided by the manufacturer.
+,,,-BSI,550-850W,E,2019,,ATX,ATX 2.x,230V,No,B,DF,SSR,DC-DC,Soeyi,WT-CM6800U-DTD,"SI model, however it appears to be identical to the MP-B."
+,,,,,,,,,,,,,,,,,,
+Montech,AP,,,450-750W,E,2022,,ATX,ATX 2.x,Full,No,W,DF,PR,GR,HKC,ATX-13,"Either dual sourced, or XWY replaced HKC in later production."
+,,,,450-750W,E,2025,,ATX,ATX 2.x,Full,No,W,DF,PR,GR,XWY,A02 (ATX-13 clone?),
+,APX,,,550/650/750W,C-,2024,,ATX,ATX 2.x,Full,No,W,DF,SR,DC-DC,XWY,A11 (HKC ATX-41B clone),
+,Alpha X,,,500-700W,C-,2019,,ATX,ATX 2.x,Full,No,B,DF,SSR,DC-DC,CWT,GPN,"Platform is GPN (or at least very similar), even though the model number indicates it to be GPK."
+,Beta,,,550/650W,E,2020,,ATX,ATX 2.x,Full,No,B,DF,PR,GR,CWT,GPM,
+,Century,,Mini (SFX),650/750W,C,2021,,SFX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,CWT,CSI,"Two samples no longer operated after protections testing per LTT Labs, which is not ideal, but all protections did function."
+,,,Gold,550/650W,B,2020,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,CWT,GPX,
+,,,,850W,C+,2020,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,CWT,GPX,A few samples of the base platform died when subjected to sub-90VAC stress tests per JonnyGuru. Proceed with caution under 120VAC.
+,,,G5 Gold ATX 3.0,750/850W,B+,2023,,ATX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,CWT,GPX ATX 3.0,
+,,,II Gold ATX 3.1,850W,A-,2025,,ATX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,XWY,A04 (HKC ATX-23B clone),"OCP is set high on 3.3V and 5VSB, 5VSB voltage regulation >3% at 4.87%, mediocre excursion response in the 200% test. High inrush current."
+,,,,1050/1200W,A,2025,,ATX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,XWY,A08 (HKC ATX-33 clone),"Good performance and noise profile. High inrush current. OPP and OCP on the minor rails need tuning. Functional, but set high."
+,Gamma,,-,550-750W,C+,2019,,ATX,ATX 2.x,Full,No,G,LLC,SR,DC-DC,CWT,GPS,OTP isn't claimed despite the fact that the supervisor IC might support it
+,,,II,550-750W,C+,2020,,ATX,ATX 2.x,Full,No,G,LLC,SR,DC-DC,CWT,GPS,"OTP isn't claimed despite the fact that the supervisor IC might support it, nearly identical internally to the original Gamma"
+,Titan,,Gold,750-1200W,A+,2023,,ATX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,CWT,CSZ,
+,,,Platinum (PLA),750-1200W,A-,2024,,ATX,ATX 3.x,Full,Full,P,LLC,SR,DC-DC,Seasonic,Vertex PX,"Very good build quality and efficiency, but overall performance is dwarfed by the CWT-built Titan Gold."
+,,,,,,,,,,,,,,,,,,
+MSI,MAG,A-BE,,550/650/750W,C,2024,,ATX,ATX 2.x,Full,Semi,B,DF,SSR,DC-DC,CWT,CSB,Semi-modular A-BN. See internal shots here.
+,,A-BN,-,550/650W,C,2021,,ATX,ATX 2.x,Full,No,B,DF,SSR,DC-DC,CWT,CSB,Capacitors and fans appear to be variable based on region/batch.
+,,,PCIE5,750W,C,2024,,ATX,ATX 2.x,Full,No,B,DF,SSR,DC-DC,CWT,CSB,"A-BN with 300W 12VHPWR connection. Claims sleeve bearing, unknown quality fan. Does not claim ATX 3.0 compliance."
+,,A-BNL,230V,550/650W,F,2025,,ATX,ATX 2.x,230V,No,B,DF,PR,DC-DC,Unknown,,130mV+ of ripple on all rails (out of spec) at only 60% load; failed to meet even 80+ Bronze. See Rear Shot and Output Specification Label.
+,,,Full Range,550/650W,C-,2025,,ATX,ATX 2.x,Full,No,B,DF,SSR,DC-DC,HEDY,CSB clone?,"Single-rail. See review. Poor transient response on 3.3V, rifle bearing fan. OTP isn't claimed or tested, but is supported by the supervisor IC."
+,,A-DN,,500/600W,E,2023,,ATX,ATX 2.x,Full,No,W,DF,PR,GR,HEDY,,"3 year warranty, inconclusive on platform until further notice."
+,,A-GL,-,650W,B,2023,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,CWT,GPX,
+,,,PCIE5,750/850W,B,2023,,ATX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,CWT,GPX ATX 3.0,"Solid electrical performance, let down by poorly tuned protections, mediocre transient response, and a low quality fan."
+,,,,1000/1250W,B+,2023,,ATX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,CWT,CSZ costdown,5V OCP malfunctioned under high temps; CSZ costdown with Chinese caps and inexpensive bridge rectifiers per Aris' testing.
+,,,PCIE5 II,750/850W,B*,2025,,ATX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,CWT,GPX ATX 3.0*,Sticker on unit is slightly different w/ yellow corner accents. All dimensions and specs are otherwise the same.
+,,,,1000W,B+*,2025,,ATX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,CWT,CSZ costdown*,Sticker on unit is slightly different w/ yellow corner accents. All dimensions and specs are otherwise the same.
+,,A-GLS PCIE5,,650/750W,A-,2025,,ATX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,Huntkey,HK850-59PP,Minor rails' OCP is set lower compared to the CWT-built high-wattage models. 650W is noisier than the 750W on account of using a DBB fan.
+,,,,850/1000W,A-,2025,,ATX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,CWT,Custom,Extremely quiet operation; however OCP is set high on the minor rails.
+,,A-GN PCIE5,,750/850W,C+*,2024,,ATX,ATX 3.x,Full,No,G,LLC,SR,DC-DC,CWT,GPW?,"Need better internal shots to confirm platform, sleeve bearing fan according to specifications."
+,MEG,,Ai-P PCIE5,1000/1300W,A+,2022,,ATX,ATX 3.x,Full,Full,P,LLC,SR,DC-DC,CWT,CTT,"Interleaved PFC, semi-digital"
+,,,Ai-T PCIE5,1600W,A,2024,,ATX,ATX 3.x,Full,Full,T,LLC,SR,DC-DC,CWT,CTF,Digital primary & 12V; analog minor rails & standby.
+,MPG,A-G,-,1000W,A,2022,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,CWT,CSZ,
+,,,PCIE5,750/850/1000W,A,2022,,ATX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,CWT,CSZ,ATX 3.0 refresh
+,,A-GF,,650/750/850W,A,2020,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,CWT,GPU,Multi-rail functionality effectively negated by per-rail 12V OCP being set especially high. OPP is still functional.
+,,A-GS PCIE5,,850W,A,2025,,ATX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,CWT,CTE,Semi-digital.
+,,,,1000/1250W,A,2025,,ATX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,CWT,CTE,"Only one 8-pin PCIe cable! Dual 12VHPWR. Good performance in pre-production sample, but needs fine-tuning. Semi-digital."
+,,,,,,,,,,,,,,,,,,
+NZXT,C Series,Gold V1 (2019),,650/750/850W,A,2019,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,Seasonic,Focus Gold,Fan grille with islands above the fan hub and for fan mounting holes. 120mm fan
+,,Gold V2 (2022),,650-1000W,A,2022,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,CWT,CSZ,Fan grille without island about the fan hub. 140mm fan
+,,Gold ATX 3.0 (2023),,1200W,A+,2023,,ATX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,CWT,CSZ,
+,,Gold ATX 3.1 (2024),,850/1000/1200W,A+,2024,,ATX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,CWT,CXT,Available in black and white
+,,Platinum,,1500W,A+,2024,,ATX,ATX 3.x,Full,Full,P,LLC,SR,DC-DC,CWT,CTT,"Semi-digital, interleaved PFC, magnetic levitation (maglev) bearing fan"
+,,Bronze,V1 (2021),550/650/750W,C+,2021,,ATX,ATX 2.x,Full,Semi,B,DF,SSR,DC-DC,CWT,CSB-A,
+,,,V2 (2023),750W,C+,2023,,ATX,ATX 2.x,Full,No,B,DF,SSR,DC-DC,CWT,CSB-A,"Same platform as the original C Bronze with slight downgrades in terms of hardware, upgraded fan. See teardown here."
+,E Series,,,500/650/850W,A,2019,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,Seasonic,Upgraded Focus Gold,Added MCU and secondary supervisor IC.
+,"S
+(H1 Case Included PSU)",,v1,650W,A*,2020,,SFX-L,ATX 2.X,Full,Full,G,LLC,SR,DC-DC,Seasonic,Focus SGX,
+,,,"""v1.5"" (v1 Fixed)",650W,B*,2021,,SFX-L,ATX 2.X,Full,Full,G,LLC,SR,DC-DC,High Power,NO-804,
+,,,v2,750W,B-*,2022,,SFX,ATX 2.X,Full,Full,G,LLC,SR,DC-DC,CWT,CSI,"Two samples (same platform) no longer operated after protections testing per LTT Labs, which is not ideal, but all protections did function."
+,,,,,,,,,,,,,,,,,,
+"PCCooler/
+CPS",KF,,,450-750W,F,2024,,ATX,ATX 2.x,230V,No,W,DF,PR,GR,Helly?,ATX-0200 or clone,"Terrible electrical performance under crossloads (effect of Group Regulation), and overall poor performance otherwise."
+,KG,,,550/650/750W,C*,2024,,ATX,ATX 3.x,Full,No,B,DF,SSR,DC-DC,Andyson,P37,
+,YK,,,550-1000W,C*,2024,,ATX,ATX 3.x,Full,No,B,DF,SSR,DC-DC,Andyson,P37,
+,YN,,,750/850/1000W,A,2024,,ATX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,Andyson,P32,
+,YS,,,850/1000/1200W,A*,2024,,ATX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,Seasonic,Vertex PX costdown or GX?,"Not conclusive on platform, electrically very good though."
+,,,,,,,,,,,,,,,,,,
+Ocypus,Beta,,P-ND,400-700W,E,2025,,ATX,ATX 2.x,230V,No,N,DF,PR,GR,Unknown,Andyson M5 clone?,"Only very basic protections claimed, OCP not claimed for any rail."
+,Delta,,P-BD,650/750/850W,C*,2025,,ATX,ATX 3.x,Full,No,B,DF,SSR,DC-DC,Andyson,P37,
+,Gamma,,P-WD,550-850W,C-*,2025,,ATX,ATX 2.x,230V,No,W,DF,PR,DC-DC,Guang Hai,GH359,
+,Iota,,P-GF,750-1200W,A*,2025,,ATX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,Andyson,P32A,
+,,,,,,,,,,,,,,,,,,
+Phanteks,AMP,-,,550-1000W,A-,2019,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,Seasonic,Focus GX,Transient response on the 3.3V rail is either failing or near failing. Fan profile is quite aggressive. White models available.
+,,BH,,650/750W,C-*,2024,,ATX,ATX 3.x,Full,No,B,DF,SR,DMA,Helly,ATX-0600,Eastern exclusive market?
+,,GH,Gold,750/850W,B,2024,,ATX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,Helly,ATX-0500GB,
+,,,Platinum,1000W,A,2023,,ATX,ATX 3.x,Full,Full,P,LLC,SR,DC-DC,Helly,EPS-0100,
+,,,,1200W,B+,2025,,ATX,ATX 3.x,Full,Full,P,LLC,SR,DC-DC,Helly,EPS-0100,"Overall good performance (A tier), uses a YL rifle-bearing fan."
+,,V2,,1000W,A,2024,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,Seasonic,Focus GX,A refreshed AMP 1000W with a 12+4 cable. White variant is available.
+,Revolt,,-,1000/1200W,A-*,2023,,ATX,ATX 3.x,Full,Full,P,LLC,SR,DC-DC,Seasonic,Vertex PX,"1000W model fails 100ms power excursions on 115V @ 40°c. Black and white models available, 12 year warranty. Cables sold separately (why?)"
+,,,,1600W,A*,2023,,ATX,ATX 3.x,Full,Full,T,LLC,SR,DC-DC,Seasonic,Prime Titanium high-wattage,"Both white and black models available. 12 year warranty, cables sold separately (why?)"
+,,,Pro,850/1000W,A,2018,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,Seasonic,Focus,Little to no performance data.
+,,,X,1200W,A-,2019,,ATX,ATX 2.x,Full,Full,P,LLC,SR,DC-DC,Seasonic,Prime Platinum,Dual system. Load regulation on 12V could be better.
+,Revolt SFX,,Gold,650/750W,B-,2022,,SFX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,Seasonic,SGX 2021,White variants available.
+,,,Platinum,750W,B-,2023,,SFX,ATX 3.x,Full,Full,P,LLC,SR,DC-DC,Seasonic,SPX,Modular board protudes from the unit
+,,,,850W,B-,2024,,SFX,ATX 3.x,Full,Full,P,LLC,SR,DC-DC,High Power,,
+,,,,,,,,,,,,,,,,,,
+"Powerspec
+(Micro Center)",CW,Non-Mod.,Bronze,650W,E*,2024,,ATX,ATX 2.x,Full,No,B,DF,PR,GR,CWT,GPM,"Model name matches platform code, need more info to confirm."
+,,Semi-Mod.,Bronze,650W,C*,2023,,ATX,ATX 2.x,Full,Semi,B,DF,SSR,DC-DC,CWT,CSB,"Similar to MSI A-BE, Model name matches platform code, need more info to confirm."
+,,,Gold,650W,B-*,2024,,ATX,ATX 2.x,Full,Semi,G,LLC,SR,DC-DC,CWT,GPW,"Model name matches platform code, need more info to confirm."
+,,Full Mod.,Gold,650W,B*,2024,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,CWT,GPX,"Model name matches platform code, need more info to confirm."
+,PS1,GFM,,750/850W,B+,2023,,ATX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,High Power,NO-832D,
+,PS,BF,,550/650W,E,2010,,ATX,ATX 2.x,Full,No,B,DF,PR,GR,High Power,Element Smart,Still produced according to MC stock. Check your manufacturing date.
+,,BSM,,650W,E,2011,,ATX,ATX 2.x,Full,Semi,B,DF,PR,GR,High Power,Element Smart,
+,,,,750W,C*,2011,,ATX,ATX 2.x,Full,Semi,B,DF,PR,DC-DC,High Power,,
+,,GFM,,650/750W,B*,2011,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,High Power,Astro Lite HPM,
+,,GSM,,650W,B*,2011,,ATX,ATX 2.x,Full,Semi,G,LLC,SR,DC-DC,High Power,Astro Lite HPM,
+,,WF,,430/500/650W,E,2008,,ATX,ATX 2.x,Full,No,W,DF,PR,GR,High Power,,500W seemingly still manufactured according to MC stock. Check your manufacturing date.
+,,X,GFM,750W,B*,2020,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,High Power,NO-817A?,
+,,,,850W,B-*,2020,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,High Power,NO-810A,"Missing inrush protection components, questionable quality BOK fan."
+,,,GFM RGB,750/850W,C,2018,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,High Power,NO-810A,"Malfunctioning/missing OTP, no inrush protection, poor quality fan, hold-up time not within ATX spec, poor 3.3V transient response."
+,,,,,,,,,,,,,,,,,,
+Raidmax,Cobra,Non-Modular,,800W,C*,2019,,ATX,ATX 2.x,Full,No,G,DF,SSR,DC-DC,Andyson,C8,"Unit experienced a platform swap or is double-sourced. Internal shots are detailed; new platform appears to be an improvement, but there are no other known units on the same platform from which to draw any data points or conclusions. HKC appears to be the OEM. Proceed with caution."
+,,,,,C*,2024,,ATX,ATX 2.x,Full,No,G,DF,SR,DC-DC,HKC?,,
+,,Fully-Modular,,600/800W,C*,2019,,ATX,ATX 2.x,Full,No,G,DF,SSR,DC-DC,Andyson,Q8,
+,,ATX 3.1 Non-Modular,,650/750/850W,C,2024,,ATX,ATX 3.x,Full,No,G,DF,SSR,DC-DC,Andyson,P37,"Some degree of false advertising going on. Claims to be LLC resonant with an FDB fan and 105C caps. Internal shots show otherwise. Recommended to proceed with caution. Even though the platform is safe, it's not as good as advertised."
+,,ATX 3.1 Fully-Modular,,650/750/850W,C,2024,,ATX,ATX 3.x,Full,No,G,DF,SSR,DC-DC,Andyson,P37,
+,Genesis,,,900/1000/1200W,A*,2024,,ATX,ATX 3.x,Full,No,G,DF,SSR,DC-DC,Andyson,P32B (modified P32),Internal shots come from Raidmax's website. Need third-party internal shots/reviews due to Raidmax's previous false advertising incidents.
+,Monster,,,700W,B,2016,,ATX,ATX 2.x,Full,Semi,T,LLC,SR,DC-DC,Andyson,N8,
+,Vortex,,White,600/800W,E,2019,,ATX,ATX 2.x,Full,No,W,DF,PR,GR,Andyson,M5?,
+,,,Bronze,500/700W,E,2019,,ATX,ATX 2.x,Full,No,B,DF,PR,GR,Andyson,M5?,
+,,,Gold,600/800W,C*,2019,,ATX,ATX 2.x,Full,No,G,DF,SSR,DC-DC,Andyson,A8?,
+,XTB,,,350-650W,F,2016,,ATX,ATX 2.x,Full,No,N,DF,PR,GR,Andyson?,E5?,PPFC; e-waste
+,,,,,,,,,,,,,,,,,,
+Raijintek,Ampere,,,1200W,B-,2024,,ATX,ATX 3.x,Full,Full,P,LLC,SR,DC-DC,Andyson,P32A (modified P32),OTP is set over >200C (doesn't function as intended). 850/1000W might not be similar to the 1200W.
+,,,,850/1000W,B*,2024,,ATX,ATX 3.x,Full,Full,P,LLC,SR,DC-DC,Andyson,P32A?,Just a guess. No internal shots.
+,Cratos,,,850/1000/1200W,A,2023,,ATX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,SANR,S-MZ,
+,Ermis,,,450/550W,F,2022,,SFX,ATX 2.x,Full,No,B,DF,SR,DC-DC,SANR,,"Low quality sleeve bearing fan, ripple exceeds ATX specification, low quality capacitors, and a 3 year warranty."
+,,,,,,,,,,,,,,,,,,
+Razer,Katana Chroma,,,850/1200W,A,2022,,ATX,ATX 2.x,Full,Full,P,LLC,SR,DC-DC,CWT,CST,"Semi-digital, Razer Chroma integration with other Razer products."
+,,,,,,,,,,,,,,,,,,
+Redragon,Master RGPS PRO ATX 3.1,,,1000/1200W,A-,2024,,ATX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,Helly,ATX-0800GB,
+,Master RGPS ATX 3.1,,,850W,B,2023,,ATX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,Helly,ATX-0500GB,
+,Platinum 1000 ATX 3.0,,,1000W,A-*,2024,,ATX,ATX 3.x,Full,Full,P,LLC,SR,DC-DC,Helly,EPS-0100?,Looks identical to the 1st Player NDGP Platinum externally. Possibly EPS-0100?
+,PSU,,6,750W,B*,2022,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,Helly,ATX-0500 variant?,No internal shots
+,,,7,850W,B*,2022,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,Helly,ATX-0500 variant?,
+,,,13,650W,B*,2022,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,Helly,ATX-0500 variant?,
+,,,14,650W,B,2022,,SFX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,Helly,SFX-0200,
+,,,15,750W,B,2022,,SFX,ATX 2.x,Full,Full,P,LLC,SR,DC-DC,Helly,SFX-0200,
+,RGPS,Bronze,Full Modular,600W,C-,2020,,ATX,ATX 2.x,Full,Full,B,DF,SR,DMA,Helly,ATX-0600,
+,,,Non-Modular,500/600W,C-,2020,,ATX,ATX 2.x,Full,No,B,DF,SR,DMA,Helly,ATX-0600,
+,,Gold,Full Modular,650/750/850W,B-,2024,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,Helly,ATX-0500GB,"1 year warranty according to manufacturer, at least in Russia, which appears to be the main target market for this unit."
+,,,,,,,,,,,,,,,,,,
+Rosewill,CMG,,-,850W,B*,2022,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,Andyson,PAD03?,
+,,,G5,1000/1200W,A*,2023,,ATX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,Andyson,P32,
+,GH Gold (FBM-X3 Case PSU),,,650W,C*,2025,,ATX,ATX 3.x,Full,No,G,LLC,SR,DC-DC,Guang Hai,GH388,Part number GH388-650W. No proper testing exists regarding this unit. Not recommended for purchase or use until proper testing exists.
+,Photon,,,550-850W,C+,2014,,ATX,ATX 2.x,Full,Full,G,LLC,SSR,DC-DC,High Power,Astro Lite,Sleeve bearing fan
+,,,,1050W,C+,2014,,ATX,ATX 2.x,Full,Full,G,DF,SR,DC-DC,High Power,Astro GD HPJ,Doesn't quite exhibit the same behavior in such torture testing as the 1200W model.
+,,,,1200W,E,2014,,ATX,ATX 2.x,Full,Full,G,DF,SR,DC-DC,High Power,Astro GD HPJ,"While the power supply is rated for 40°C, testing done by Aris (who tests at 45°C), shows excessive ripple above the ATX spec at 110%/CL2 load."
+,PMG,,,550/650/750W,C*,2020,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,HKC?,,No info
+,,,,850/1050/1200W,B*,2020,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,High Power?,,
+,Quark,,,550/650/750W,B*,2015,,ATX,ATX 2.x,Full,Full,P,LLC,SR,DC-DC,Enhance,13XX Platinum,No performance data.
+,,,,850/1050/1200W,B+,2015,,ATX,ATX 2.x,Full,Full,P,LLC,SR,DC-DC,Enhance,13XX GT Platinum,"Claims OTP but not tested in Aris' review, B+ until further notice."
+,SMG,,,650/750W,B+,2021,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,High Power,NO-817,
+,,,,850/1050/1200W,B+,2021,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,High Power,NO-815,
+,Tokamak,,,1200/1500W,B,2016,,ATX,ATX 2.x,Full,Full,T,LLC,SR,DC-DC,Enhance,,Very high ripple on the 12V rail for a unit of this caliber.
+,VSB,,,650/750/850W,C,2025,,ATX,ATX 3.x,Full,Semi,B,DF,SR,DC-DC,Andyson,P37,"Internal shots show the unit using the same ""ICB"" (in reality rifle bearing) fan as the SilverStone Triton Rx."
+,VMG,,,750/850W,B,2025,,ATX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,Andyson,P59,Globe Fan FDB fan. Assumed to be quite noisy (>48dBA) based on other units on the same platform. OPP is set way higher than necessary.
+,,,,1000W,B*,2025,,ATX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,Andyson,P59?,Assumed to be based on the same platform as the 750/850W variants. Need internal shots to confirm this before tiering.
+,,,,,,,,,,,,,,,,,,
+SAMA,Armor,,,550-1000W,C,2017,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,SAMA,805AS,
+,Black Diamond,,-,750/850/1000W,B+,2023,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,SAMA,916AS,Nearly identical to the XF.
+,,,V2 (ATX 3.0),750/850/1000W,B+,2023,,ATX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,SAMA,916AS,Black Diamond with a PCIe 5.0 interface.
+,Black Hole,,,750-1200W,E,2023,,ATX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,RSY,NZ01,"Failed JonnyGuru's burn-in test (gave up the ghost), protections badly misconfigured."
+,Forza Titanium,,,800W,B-,2015,,ATX,ATX 2.x,Full,Full,T,LLC,SR,DC-DC,SAMA,790AS,"SAMA increased the power-good signal's hold-up time by a lot, which makes this PSU a possible danger to hardware."
+,G,,,650/750/850W,A-*,2025,,ATX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,RSY,,Need more data/internal shots before being able to confirm if the lower wattage models use the same platform as the 1000W variant.
+,,,,1000W,A-,2025,,ATX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,RSY,A0172,"Poor inrush protection, mediocre load regulation on the minor rails, and poor excursion response in the 200% test. Good performance, otherwise."
+,GT,,,650W,C,2024,,ATX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,RSY,A0141,Electrical performance is mediocre and OCP triggering points are sky high. Recommended only for low-end hardware.
+,,,,750/850W,C*,2024,,ATX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,RSY,,
+,Neview Bronze,,,650W,E,2025,,ATX,ATX 2.x,230V,No,B,DF,PR,GR,SAMA,391AS,"Most likely limited to the Russian/Eastern European market. OCP isn't claimed on any rail, but most likely exists only for the minor rails."
+,P,,,850W,A*,2025,,ATX,ATX 3.x,Full,Full,P,LLC,SR,DC-DC,RSY,,Need more data/internal shots before being able to confirm if the lower wattage models use the same platform as the 1200 and 1000W variants.
+,,,,1000/1200W,A,2025,,ATX,ATX 3.x,Full,Full,P,LLC,SR,DC-DC,RSY,A0173,"The OCP and OPP triggering points, while functional, are set higher than necessary on all rails, and aren't reduced enough under hot conditions."
+,XF,,,750/850/1000W,C,2023,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,SAMA,916MC,"OCP did work, but the PSU died in the process, which is not ideal. Recommended only for low-end hardware. See testing here."
+,XM,,,750W/850W,B+,2024,,ATX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,RSY,XM01,"122mm depth; same platform as Enermax Revolution D.F. 12, but with cheaper components."
+,XP,,,850/1000/1200W,E,2024,,ATX,ATX 3.x,Full,Full,P,LLC,SR,DC-DC,RSY,NZ01,Based on the same platform as the Black Hole; OTP untested; some parts remain unidentifiable; white variant available.
+,,,,,,,,,,,,,,,,,,
+Seasonic,A12,,,500/600/700W,F,2021,,ATX,ATX 2.x,230V,No,W,LLC,PR,DMA,RSY,Costdown S12III,
+,B12 BC,,,550-850W,C,2021,,ATX,ATX 2.x,Full,No,B,LLC,SR,DC-DC,Helly,Costdown ATX-0500GQ,"Costdown of the G12 GC; cheaper components, all Chinese caps, and an even cheaper fan; downgraded to Bronze eff."
+,G12 GC,,Global,550-850W,C+,2021,,ATX,ATX 2.x,Full,No,G,LLC,SR,DC-DC,Helly,ATX-0500GQ,"OTP isn't claimed, IC doesn't support it either"
+,,,China Only,550-850W,B-,2023,,ATX,ATX 2.x,Full,No,G,LLC,SR,DC-DC,Seasonic,Core GC (Focus costdown),Internal shots confirm a costdown Core GC/Focus
+,G12 GM,,,550-850W,C+,2021,,ATX,ATX 2.x,Full,Semi,G,LLC,SR,DC-DC,Helly,ATX-0500GQ,Semi-modular version of the G12 GC (Global)
+,Core,,GC,500/550/650W,B-,2022,,ATX,ATX 2.x,Full,No,G,LLC,SR,DC-DC,Seasonic,Focus Gold costdown,GX but non-modular
+,,,GM,500/550/650W,B-,2022,,ATX,ATX 2.x,Full,Semi,G,LLC,SR,DC-DC,Seasonic,Focus Gold costdown,GX but semi-modular
+,,,GX,500/550/650W,B-,2022,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,Seasonic,Focus Gold costdown,"Sleeve bearing fan, 3.3V rail is subpar in transient testing, fan profile is aggressive and very loud when pushed. Source: Aris"
+,,,GX ATX 3.0,650/750/850W,B-,2024,,ATX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,Seasonic,Focus GX ATX 3.0 costdown,"Good electrical performance and decent component quality, however OCP on the minor rails is set way too high, particularly on 5VSB (over 200%)"
+,S12III,,,500/550/650W,F,2019,,ATX,ATX 2.x,Full,No,B,LLC,PR,DMA,RSY,S12III,"Claims only SCP, OPP, and over/under voltage. OCP not claimed on any rail."
+,Focus,Gold (GM),,450-850W,A,2017,,ATX,ATX 2.x,Full,Semi,G,LLC,SR,DC-DC,Seasonic,Focus Gold,Some units produced before 2018 may experience shutdowns with high transient draw GPUs.
+,,Plus Gold (GX),,550-1000W,A,2017,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,Seasonic,Focus Gold,
+,,Plus Platinum,,550-850W,A,2017,,ATX,ATX 2.x,Full,Full,P,LLC,SR,DC-DC,Seasonic,Focus Platinum,
+,,GM,,500-850W,A,2019,,ATX,ATX 2.x,Full,Semi,G,LLC,SR,DC-DC,Seasonic,Focus Gold,"Minor changes with a ""V3"" model released in 2019."
+,,GX,-,550-1000W,A,2019,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,Seasonic,Focus Gold,
+,,,White,750/850/1000W,A,2021,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,Seasonic,Focus Gold,
+,,,V3 ATX 3.0,750/850/1000W,A*,2023,,ATX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,Seasonic,Focus GX ATX 3.0,Transient response and OTP isn't tested
+,,,V4 ATX 3.1,750/850/1000W,A-,2024,,ATX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,Seasonic,Focus GX ATX 3.1,"Black model has white line accents, compared to V3. Stupidly high inrush current, mediocre transient response, minor rails' OCP needs tuning."
+,,PX,,550-850W,A,2019,,ATX,ATX 2.x,Full,Full,P,LLC,SR,DC-DC,Seasonic,Focus Platinum,
+,,SGX,SFX-L,650/500/450W,A,2019,,SFX-L,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,Seasonic,SGX,SFX-L
+,,,SFX,550/650/750W,B-,2021,,SFX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,Seasonic,SGX 2021,
+,,SPX,,650/750W,B-,2021,,SFX,ATX 2.x,Full,Full,P,LLC,SR,DC-DC,Seasonic,SPX,Malfunctioning OTP per Aris' testing.
+,Prime,Connect,,750W,A,2020,,Other,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,Seasonic,Modified Focus,"Modification of Focus with separate modular piece, extremely similar to the Syncro Connect."
+,,Gold,,650-1200W,A,2016,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,Seasonic,Prime Gold,
+,,Platinum,,650-1200W,A,2016,,ATX,ATX 2.x,Full,Full,P,LLC,SR,DC-DC,Seasonic,Prime Platinum,
+,,Titanium,,650-1000W,A+,2016,,ATX,ATX 2.x,Full,Full,T,LLC,SR,DC-DC,Seasonic,Prime Titanium,
+,,Ultra,Gold,550/650/750W,A,2017,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,Seasonic,Focus Gold,
+,,,,850/1000W,A,2017,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,Seasonic,Prime Gold,
+,,,Platinum,550/650/750W,A,2017,,ATX,ATX 2.x,Full,Full,P,LLC,SR,DC-DC,Seasonic,Focus Platinum,
+,,,,850/1000W,A+,2017,,ATX,ATX 2.x,Full,Full,P,LLC,SR,DC-DC,Seasonic,Prime Platinum,
+,,,Titanium,650-1000W,A+,2017,,ATX,ATX 2.x,Full,Full,T,LLC,SR,DC-DC,Seasonic,Prime Titanium,
+,,Gold (GX),,650/750W,A,2019,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,Seasonic,Focus Gold,
+,,,,850/1000W,A-,2019,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,Seasonic,Prime Gold,
+,,Platinum (PX),,650/750W,A,2019,,ATX,ATX 2.x,Full,Full,P,LLC,SR,DC-DC,Seasonic,Focus Platinum,
+,,,,850-1300W,A-,2019,,ATX,ATX 2.x,Full,Full,P,LLC,SR,DC-DC,Seasonic,Prime Platinum,
+,,,,1600W,A,2023,,ATX,ATX 3.x,Full,Full,P,LLC,SR,DC-DC,Seasonic,Prime Platinum high-wattage,
+,,,,2200W,A*,2024,,ATX,ATX 3.x,230V,Full,P,LLC,SR,DC-DC,Seasonic,Prime Platinum high-wattage?,Will remain speculative until further testing has been conducted.
+,,Titanium (TX),-,650-1000W,A-,2019,,ATX,ATX 2.x,Full,Full,T,LLC,SR,DC-DC,Seasonic,Prime Titanium,
+,,,,1300W,A,2022,,ATX,ATX 2.x,Full,Full,T,LLC,SR,DC-DC,Seasonic,Prime Titanium high-wattage,
+,,,,1600W,A+,2022,,ATX,ATX 2.x,Full,Full,T,LLC,SR,DC-DC,Seasonic,Prime Titanium high-wattage,
+,,,ATX 3.0,1300/1600W,A+,2024,,ATX,ATX 3.x,Full,Full,T,LLC,SR,DC-DC,Seasonic,Prime Titanium high-wattage,
+,,,Noctua,1600W,A+,2024,,ATX,ATX 3.x,Full,Full,T,LLC,SR,DC-DC,Seasonic,Prime Titanium high-wattage,
+,,Airtouch,,850W,A,2018,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,Seasonic,Prime Gold,Basically a Prime Gold with a slightly different exterior appearance and extra fan modes.
+,,SnowSilent,,550W,A,2018,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,Seasonic,Focus Gold,White versions of Focus (yes) Gold / Platinum and Prime Titanium.
+,,,,650W,A,2018,,ATX,ATX 2.x,Full,Full,P,LLC,SR,DC-DC,Seasonic,Focus Platinum,
+,,,,750W,A-,2018,,ATX,ATX 2.x,Full,Full,T,LLC,SR,DC-DC,Seasonic,Prime Titanium,
+,,Fanless,Platinum (PX),450/500W,A-,2022,,ATX,ATX 2.x,Full,Full,P,LLC,SR,DC-DC,Seasonic,Prime Platinum,
+,,,Titanium,600W,A-,2018,,ATX,ATX 2.x,Full,Full,T,LLC,SR,DC-DC,Seasonic,Prime Titanium,
+,,,New Titanium (TX),600/700W,A-,2022,,ATX,ATX 2.x,Full,Full,T,LLC,SR,DC-DC,Seasonic,Vertex PX,
+,Syncro Connect,,,650/750/850W,A,2020,,Other,ATX 2.x,Full,No,G,LLC,SR,DC-DC,Seasonic,Modified Focus Gold,
+,Vertex,,Gold (GX),750-1200W,A-,2022,,ATX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,Seasonic,Vertex GX,ATX 3.0 transient response could be better. 5VSB OCP is set high.
+,,,Platinum (PX),750-1200W,A-,2022,,ATX,ATX 3.x,Full,Full,P,LLC,SR,DC-DC,Seasonic,Vertex PX,
+,,,,,,,,,,,,,,,,,,
+Segotep,GM,,,750/850W,F,2020,,ATX,ATX 3.x,Full,Full,G,DF,SR,DC-DC,Segotep,,Numerous protections malfunctions and terrible electrical performance. See testing here.
+,,,,1250W,E,2021,,ATX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,Segotep,,"Not recommended since no proper testing exists, and numerous issues exist with other Segotep units that were tested."
+,GN,,,650W,E,2019,,ATX,ATX 2.x,Full,No,G,DF,SR,DC-DC,Segotep,Costdown GM?,"Not recommended since no proper testing exists, and numerous issues exist with other Segotep units that were tested."
+,KL-MG (SFX),,,750W,E,2024,,SFX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,Segotep,SMD650,Protections are tuned incorrectly to properly pass all ATX 3.0 transient tests.
+,PM,,W,650W,F,2024,,ATX,ATX 2.x,Full,Full,P,LLC,SR,DC-DC,Segotep,,"EPS cable melted during efficiency testing, so protections were not tested. Possible bad sample. Avoid until further notice. No claimed OTP."
+,,,W (ATX 3.1),750/850W,C+,2024,,ATX,ATX 3.x,Full,Full,P,LLC,SR,DC-DC,Segotep,,"Failed 3.3V transient response (although by 0.02V), 5V OCP needs tuning. Rifle bearing fan. Decent electrical performance. No claimed OTP."
+,U5,,,500W,F,2025,,ATX,ATX 2.x,230V,No,N,DF,PR,GR,Segotep,SMD-800,Lacks proper protections. Allows for fatal voltage drops.
+,U6+,,,650W,F,2025,,ATX,ATX 2.x,230V,No,N,DF,PR,GR,Segotep,SMD-800,Lacks proper protections. Allows for fatal voltage drops.
+,,,,,,,,,,,,,,,,,,
+Sharkoon,Rebel,P10 Silver,,550/650/750W,C,2024,,ATX,ATX 2.x,Full,No,S,DF,SSR,DC-DC,Andyson,P37,"Middling load regulation for the 3.3v & 5VSB rails, 5 year warranty."
+,,,,850W,C-,2024,,ATX,ATX 2.x,Full,No,S,DF,SSR,DC-DC,Andyson,P37,OCP triggering points on the 5V and 5VSB rails allow for excessive ripple beyond the ATX specification. 5 year warranty.
+,,P15 Gold,,650/750W,B-*,2025,,ATX,ATX 3.x,Full,No,G,LLC,SR,DC-DC,Andyson,P59?,Relatively loud at over 40dbA at full load. Rifle bearing fan.
+,,,,850W,B-*,2025,,ATX,ATX 3.x,Full,No,G,LLC,SR,DC-DC,Andyson,P59?,"850W model uses a more powerful fan from the 650/750W models, leading to excessive noise at nearly 50dbA under full load. Rifle bearing fan."
+,,P20,Gold,750/850W,B+,2024,,ATX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,Andyson,P32A,"OOS transient response on 3.3V. The OCP and OPP triggering points are insane, particularly 5VSB OCP, which is set over 200%. 7 year warranty."
+,,,Platinum ATX,1000/1200W,B+,2024,,ATX,ATX 3.x,Full,Full,P,LLC,SR,DC-DC,Andyson,P32A,
+,,,Platinum SFX,750/850/1000W,A-,2024,,SFX,ATX 3.x,Full,Full,P,LLC,SR,DC-DC,High Power,NO-836,The OCP (+12V and 5VSB lines) and OPP triggering points are set way higher than necessary. Mediocre transient response. 7 year warranty.
+,,P30 Gold,,850/1000/1300W,A,2023,,ATX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,High Power,NO-826E,"The OCP, OPP, and OTP triggering points, while functional, are set way higher than necessary. Very high build quality. 10 year warranty."
+,SHP Bronze,,,500/600/700W,E,2020,,ATX,ATX 2.x,Full,No,B,DF,PR,GR,Andyson,M5,
+,SilentStorm,SFX,Bronze,350/450W,E,2015,,SFX,ATX 2.x,Full,No,B,DF,PR,GR,High Power,NO-754,EU/JP only? No stated manufacturer warranty outside of mandated EU 2 year warranty.
+,,,Gold,500W,B,2015,,SFX-L,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,High Power,NO-770,
+,,Cool Zero,,650/750/850W,B,2021,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,High Power,NO-810E,
+,,Icewind,,550/650/750W,C-,2017,,ATX,ATX 2.x,Full,Full,B,DF,PR,DC-DC,High Power,NO-790,
+,WPM Gold Zero,,,550/650/750W,C,2019,,ATX,ATX 2.x,Full,Semi,G,LLC,SR,DC-DC,CWT,GPS,
+,,,,,,,,,,,,,,,,,,
+SilverStone,ATTIS Bronze,,,650/750/850W,F,2024,,ATX,ATX 3.x,Full,No,B,DF,PR,DC-DC,Unknown,,Does not claim OCP. Need a review/teardown before tiering.
+,Decathlon,,DA Gold,1650W,B+,2021,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,High Power,NO-819,"3 year warranty, A+ tier performance."
+,,,,1000W,B,2021,,ATX,ATX 2.x,Full,Semi,G,LLC,SR,DC-DC,CWT,,
+,,,,850W,C+,2021,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,CWT,GPX,"Potential issues with higher-capacity, original revision CWT GPX units under 90VAC burn-in tests. Treat as 230V-only or use a UPS."
+,,,,750W,B,2021,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,CWT,GPX,
+,,,,550/650W,B,2021,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,CWT,GPX,
+,,,DA-R GM,1000W,B+,2023,,ATX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,CWT,CSZ,Also known/listed as DA-R Gold. 1000W only has 3 year warranty despite A tier performance.
+,,,,750-850W,B+,2023,,ATX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,CWT,GPX ATX 3.0,
+,,,DA-R GMA,750/850W,B+,2023,,ATX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,Andyson,P32,Metallic colored Silverstone logo in the center of the fan grille. 3 year warranty.
+,Essential,,ET-G,550/650/750W,B,2018,,ATX,ATX 2.x,Full,No,G,LLC,SR,DC-DC,CWT,GPS,
+,,,ET-HG,550/650/750W,B,2018,,ATX,ATX 2.x,Full,Semi,G,LLC,SR,DC-DC,CWT,GPS,
+,,,ET-MG,500/600/700W,B-,2018,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,Andyson,PAD07,
+,,,ET-B,450-750W,E,2017,,ATX,ATX 2.x,Full,No,B,DF,PR,GR,CWT,GPK,
+,,,ET-ARGB,500W,E,2019,,ATX,ATX 2.x,Full,No,B,DF,PR,GR,CWT,,Actual 12V capacity is 456W. Does not claim OTP. ARGB fan controlled via motherboard header. Hong Hua rifle bearing fan.
+,,,ET,500W,E,2019,,ATX,ATX 2.x,Full,No,B,DF,PR,GR,CWT,,Actual 12V capacity is 456W. Does not claim OTP nor OCP. Assumed to be similar to ET500-ARGB.
+,"Extreme
+(SFX & SFX-L)",Bronze,,350/500W,C-,2024,,SFX,ATX 2.x,Full,No,B,DF,PR,DC-DC,CWT,GPH-M,
+,,R Platinum,SFX,850W,A,2023,,SFX,ATX 3.x,Full,Full,P,LLC,SR,DC-DC,High Power,NO-836,
+,,,SFX-L,1200W,A*,2024,,SFX-L,ATX 3.x,Full,Full,P,LLC,SR,DC-DC,Enhance,,"OTP is not tested, consider it to be B+ until OTP testing exists."
+,,Rz,Gold,550/650W,B*,2024,,SFX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,High Power?,,"12V-2x6 connector on modular panel, but no included cable for it. Can be bought separately. Potentially to only need 150% excursions?"
+,,,Platinum,1000W,A+,2025,,SFX,ATX 3.x,Full,Full,P,LLC,SR,DC-DC,High Power,NO-836,"Excellent overall performance, component, and build quality, quietest SFX unit in its class."
+,FX Platinum (Flex ATX),,,600W,B*,2025,,Other,ATX 3.x,Full,Full,P,LLC,SR,DC-DC,Enhance,,"Flex ATX. Cybenetics report provides decent data, but no noise information and no internal shots. Will need more info before tiering."
+,HELA,R Platinum,HAR-PMA,850W,B+*,2024,,ATX,ATX 3.x,Full,Full,P,LLC,SR,DC-DC,Enhance,,5V & 3.3V are rated at combined 100W (20A each) instead of 120W (22A each) from 850W HA-R PM. OTP/transient response values not tested.
+,,,HAR-PM,750/850W,A,2022,,ATX,ATX 3.x,Full,Full,P,LLC,SR,DC-DC,High Power,NO-818F,
+,,,,1200W,A+,2023,,ATX,ATX 3.x,Full,Full,P,LLC,SR,DC-DC,CWT,CSZ,
+,,,,1300W,A,2023,,ATX,ATX 3.x,Full,Full,P,LLC,SR,DC-DC,High Power,NO-826C,
+,,,,1650W,A*,2024,,ATX,ATX 3.x,Full,Full,P,LLC,SR,DC-DC,Enhance,,
+,,,,2050W,A,2023,,ATX,ATX 3.x,Full,Full,P,LLC,SR,DC-DC,Enhance,,
+,,,,2500W,E,2025,,ATX,ATX 3.x,230V,Full,P,LLC,SR,DC-DC,High Power,NO-843,"Interleaved PFC. Good performance, but OPP & 12V OCP allow the unit to exceed the AC receptacle's current rating. OOS 3.3V transients."
+,,Platinum,HA-PT,2050W,A,2021,,ATX,ATX 2.x,Full,Full,P,LLC,SR,DC-DC,Enhance,,
+,Nightjar,,SFX-L Platinum,450W,A+,2018,,SFX-L,ATX 2.x,Full,Full,P,LLC,SR,DC-DC,Enhance,,Fanless
+,,,ATX Platinum,520W,A,2014,,ATX,ATX 2.x,Full,Full,P,LLC,SR,DC-DC,Seasonic,Platinum Fanless,
+,,,ATX Titanium,600/700W,A-,2021,,ATX,ATX 2.x,Full,Full,T,LLC,SR,DC-DC,Seasonic,Prime Titanium Fanless,
+,SFX-L,,SX-LTI,800W,B,2018,,SFX-L,ATX 2.x,Full,Full,T,LLC,SR,DC-DC,Enhance,,
+,,,SX-LPT,700W,F,2016,,SFX-L,ATX 2.x,Full,Full,P,LLC,SR,DC-DC,High Power,NO-786,"Numerous issues capped off by malfunctioning OPP that either doesn't exist or is set way too high, which caused the unit to explode."
+,,,SX Platinum,1000W,C+,2021,,SFX-L,ATX 2.x,Full,Full,P,LLC,SR,DC-DC,Enhance,,OTP either set over 200C or not present.
+,SFX,SX,,550W,C+,2015,,SFX,ATX 2.x,Full,No,G,ACRF,SR,DC-DC,FSP,FSP-50SGGBA,Protechnic Electric sleeve bearing fan.
+,,SX-B,,300/450W,C,2019,,SFX,ATX 2.x,Full,No,B,DF,SR,DC-DC,FSP,FSP-50SAC,
+,,SX-G,,500/650/700W,B,2017,,SFX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,High Power,NO-797,
+,,,,600W,C-,2015,,SFX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,Enhance,,"Not suitable for use with high ambient temperatures over 40C/~100F, as the fan cannot keep up with the cooling demand."
+,,SX Gold (SX-G New),,750W,B-,2022,,SFX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,CWT,CSI,"Two samples (same platform) no longer operated after protections testing per LTT Labs, which is not ideal, but all protections did function."
+,,SX-PT,,700W,B,2019,,SFX,ATX 2.x,Full,Full,P,LLC,SR,DC-DC,High Power,NO-797,SX-G upgraded to Platinum efficiency.
+,,SX Platinum (SX-PT New),,750W,C+,2021,,SFX,ATX 2.x,Full,Full,P,LLC,SR,DC-DC,Enhance,,"OTP either set over 200C or not present; extremely loud (over 42dbA) under full load, and mediocre performance all around."
+,,SX-LG,,500W,B,2015,,SFX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,High Power,NO-770,
+,,ST-SF-G,,450W,C,2012,,SFX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,Enhance,,
+,,ST-SF V3,,300/450W,C,2017,,SFX,ATX 2.x,Full,No,B,DF,PR,DC-DC,High Power,NO-792,
+,Strider,ST-ES,,400-700W,E,2013,,ATX,ATX 2.x,Full,No,W,DF,PR,GR,CWT,GPM,
+,,,,,E,2013,,ATX,ATX 2.x,Full,No,W,DF,PR,GR,High Power,NO-703,
+,,ST-ES 230V,,400-700W,E,2013,,ATX,ATX 2.x,230V,No,W,DF,PR,GR,CWT,GPM,
+,,,,,E,2013,,ATX,ATX 2.x,230V,No,W,DF,PR,GR,High Power,NO-703,
+,,ST-EF,,550/650/750W,E,2023,,ATX,ATX 2.x,Full,No,W,DF,PR,GR,CWT,GPM,
+,,ST-EFA,,650W,E,2024,,ATX,ATX 2.x,Full,No,W,DF,PR,GR,CWT,GPM,
+,,ST-P,,500/600/700W,E,2022,,ATX,ATX 2.x,230V,No,W,DF,PR,GR,CWT,GPM,Rebrand of the ST-ES 230V
+,,ST-PB,,550/650/750W,E,2019,,ATX,ATX 2.x,Full,Full,B,DF,PR,GR,Enhance,,
+,,STF-G,,550/650W,C*,2015,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,High Power,,
+,,STF-GS V3,,550/650/750W,B*,2015,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,Enhance,,
+,,,,850W,B*,2015,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,High Power,,
+,,,,1500W,B*,2015,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,Enhance,,
+,,ST-PT,,550-850W,B+,2016,,ATX,ATX 2.x,Full,Full,P,LLC,SR,DC-DC,High Power,Astro Lite HPM (NO-771),Good electrical performance let down by no inrush protection; bad power good signal.
+,,,,1000/1200W,B-,2016,,ATX,ATX 2.x,Full,Full,P,LLC,SR,DC-DC,Enhance,,Very poor transient response and ripple on 3.3V.
+,,ST-PTS,,1000W,F,2019,,ATX,ATX 2.x,Full,Full,P,LLC,SR,DC-DC,Enhance,,Malfunctioning OCP and OPP that fails to kick in before the unit's line voltages drop out of spec.
+,,,,1200W,B-,2019,,ATX,ATX 2.x,Full,Full,P,LLC,SR,DC-DC,Enhance,,Bad power good signal.
+,,ST F-TI,,600/700/800W,B,2016,,ATX,ATX 2.x,Full,Full,T,LLC,SR,DC-DC,Enhance,,
+,,ST-TI,,1100-1500W,E,2017,,ATX,ATX 2.x,Full,Full,T,LLC,SR,DC-DC,Enhance,,"Several issues including very poor ripple suppression at seemingly random intervals, OCP is set way too high on all rails, bad power good signal."
+,Triton,,Rx Gold,650W,B-,2025,,ATX,ATX 3.x,Full,No,G,LLC,SR,DC-DC,Andyson,P59,"Claims an ICB fan, actually uses an LLS (rifle) bearing. Extremely loud, in excess of 45dBA under full load."
+,,,,750/850W,B-,2025,,ATX,ATX 3.x,Full,No,G,LLC,SR,DC-DC,Andyson,P59,"Claims an ICB fan, Aris showed a rifle bearing. OPP set high (~150%,) OOS 3.3V transients. Noisy (>50dBA@750W load). Dual EPS on 18AWG cable."
+,,,Rz Gold,650W,B-,2025,,ATX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,Andyson,P59,"Claims an ICB fan, actually uses an LLS (rifle) bearing. Noisy (~40dBA); OPP is set way higher than necessary, as is OCP on 12V, 3.3V, 5VSB."
+,,,,750/850W,B-,2025,,ATX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,Andyson,P59,"Claims an ICB fan, actually uses an LLS (rifle) bearing. Noisy ~40dBA for 750W and in excess of 48dBA for the 850W under full load."
+,,,,1000W,B+,2025,,ATX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,CWT,GPX ATX 3.0 high-wattage,"3-year warranty, has A- performance from a multitude of minor issues."
+,VIVA,Gold,,650/750W,B+,2021,,ATX,ATX 2.x,Full,No,G,LLC,SR,DC-DC,High Power,NO-817,
+,,Bronze,,550/650/750W,C,2021,,ATX,ATX 2.x,Full,No,B,DF,SR,DC-DC,SANR,S-D,Subpar hold-up time.
+,Zeus,,,1650W,A*,2024,,ATX,ATX 3.x,Full,Full,T,LLC,SR,DC-DC,High Power?,,Claims all protections. More information needed.
+,,,,,,,,,,,,,,,,,,
+Super Flower,Combat,DB,,550/650W,C*,2024,,ATX,ATX 2.x,Full,No,B,,,DC-DC,Unknown,,
+,,,,750/850W,C*,2024,,ATX,ATX 3.x,Full,No,B,,,DC-DC,Unknown,,
+,,FG,,650/750/850W,B-,2024,,ATX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,CWT,Upgraded GPX ATX 3.0,"Cybenetics report says 650W and 850W units died in -12V SCP testing, which is no longer used in modern systems. 750W unsubmitted."
+,,SG,,650/750/850W,B-,2024,,ATX,ATX 3.x,Full,Semi,G,LLC,SR,DC-DC,CWT,Upgraded GPX ATX 3.0,Semi-modular/costdown Combat FG. Does not seemingly suffer the same SCP issue with the FG.
+,Legion,GX Pro,,550-850W,B,2021,,ATX,ATX 2.x,Full,Semi,G,LLC,SR,DC-DC,Super Flower,Updated Golden Green,No transient response testing found.
+,,HX,,550/650/750W,C*,2023,,ATX,ATX 2.x,Full,No,G,LLC,SR,DC-DC,Super Flower,Updated Golden Green,"Sleeve bearing fan, only internal shots provided; no performance data to be found."
+,Leadex,Silver,,550/650W,C,2017,,ATX,ATX 2.x,230V,Full,S,LLC,SR,DC-DC,Super Flower,Costdown Leadex II,"Leadex II costdown, single-layer PCB. Sleeve bearing fan. Capacitors aren't of the highest quality."
+,,Gold,,550/650/750W,A-,2013,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,Super Flower,Leadex Gold,"Chinese caps, 20AWG gauges on the EPS/PCIe cables; 5VSB regulation doesn't quite hit A tier specifications."
+,,,,1000/1300W,A-,2013,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,Super Flower,Leadex GT,1300W 5VSB voltage regulation doesn't quite hit A tier performance.
+,,Gold SE,,1000/1300W,A,2013,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,Super Flower,Updated Leadex GT,
+,,Platinum,,550-850W,A,2022,,ATX,ATX 2.x,Full,Full,P,LLC,SR,DC-DC,Super Flower,Leadex Gold,Hold-up time fails to meet the ATX minimum specification.
+,,,,1000/1200W,A,2013,,ATX,ATX 2.x,Full,Full,P,LLC,SR,DC-DC,Super Flower,Leadex GT,1200W hold-up time fails to meet the ATX minimum specification.
+,,,,1600W,A,2015,,ATX,ATX 2.x,Full,Full,P,LLC,SR,DC-DC,Super Flower,Leadex GTX,
+,,,,2000W,A,2015,,ATX,ATX 2.x,230V,Full,P,LLC,SR,DC-DC,Super Flower,Leadex GTX,230V only since 115VAC sockets cannot supply 2kW of power.
+,,Platinum (ATX 3.1),,2800W,A+,2025,,ATX,ATX 3.x,230V,Full,P,LLC,SR,DC-DC,Super Flower,Leadex GTX heavily mod.,"Bridgeless PFC, exceptional electrical performance per Cybenetics' entry & confirmed internal shots per Quasar Zone and Aris."
+,,Platinum SE,,850W,A,2022,,ATX,ATX 2.x,Full,Full,P,LLC,SR,DC-DC,Super Flower,Leadex Platinum,
+,,,,1000/1200W,A,2022,,ATX,ATX 2.x,Full,Full,P,LLC,SR,DC-DC,Super Flower,Updated Leadex GT,
+,,Titanium,,750-1000W,A+,2016,,ATX,ATX 2.x,Full,Full,T,LLC,SR,DC-DC,Super Flower,Leadex GT,
+,,,,1600W,A+,2023,,ATX,ATX 3.x,Full,Full,T,LLC,SR,DC-DC,Super Flower,Leadex GTX,
+,Leadex II,,,750/850/1000W,A,2017,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,Super Flower,Leadex II,
+,Leadex III,ARGB,,550-850W,A-,2020,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,Super Flower,Leadex III,Pro version - black casing instead of white. Pigtail PCIe cables for the 650W. Cost down version of the Pro ARGB.
+,,Gold Up ATX 3.1 (GE),,650-1000W,A,2024,,ATX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,Super Flower,Leadex III upd. to ATX 3.1,"850W has weak 3.3V transient response, but otherwise works well. 1000W seems to lack proper efficiency certifications, but meets gold criteria."
+,,,,1300W,A,2024,,ATX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,Super Flower,Leadex VII XG heavily mod.,Initial testing from 2024 showed 5VSB OCP was set too high leading to failure of the unit. The unit was retested in June 2025 and passed.
+,,HG,,550-850W,A-,2019,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,Super Flower,Leadex III,"Poorly tuned OCP & OPP, 20AWG pigtails on PCIe connectors. 750/850w has a dual 8 pin to 600W 12VHPWR cable available for purchase."
+,,Pro ARGB,,650/750/850W,A-,2020,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,Super Flower,Leadex III,
+,,Super Bronze Pro,,550-850W,B,2021,,ATX,ATX 2.x,Full,Full,B,LLC,SR,DC-DC,Super Flower,Leadex III Bronze (EVGA B3),Limited information.
+,Leadex V,Gold Pro,,750/850/1000W,A-,2022,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,Super Flower,Leadex V,Poorly tuned OCP triggering points and 20AWG gauge for the far-end PCIe connectors. Treat capacity as ~100W lower than advertised.
+,,Platinum Pro,,850/1000W,A-,2022,,ATX,ATX 2.x,Full,Full,P,LLC,SR,DC-DC,Super Flower,Leadex V,Unusually tight OCP triggering points and 20AWG gauge for the far-end PCIe connectors. Treat capacity as ~100W lower than advertised.
+,Leadex VI,Platinum Pro,,850/1000W,A-,2023,,ATX,ATX 3.x,Full,Full,P,LLC,SR,DC-DC,Super Flower,Leadex VI Platinum,OCP on 3.3V rail is not properly implemented.
+,Leadex VII,Gold (XG),,750-1300W,A+,2023,,ATX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,Super Flower,Leadex VII Gold (XG),White variant available at 1kW.
+,,Platinum Pro (XP),,850/1000/1200W,A+,2023,,ATX,ATX 3.x,Full,Full,P,LLC,SR,DC-DC,Super Flower,Leadex VII Platinum (XP),
+,Platinum King,,,450/550/650W,C+,2017,,ATX,ATX 2.x,Full,No,P,LLC,SR,DC-DC,Super Flower,Platinum King,No OTP and OCP (12V) present; low hold-up time (out of spec); poor soldering quality.
+,Zillion,DB Bronze,,550W,E,2024,,ATX,ATX 2.x,230V,No,B,DF,PR,GR,Zhong Yuan,,Sleeve bearing fan. OCP untested.
+,,,,650W,F,2024,,ATX,ATX 2.x,230V,No,B,DF,SR,DC-DC,Zhong Yuan,,"Faulty OCP on +12V, unit experiences a huge voltage drop to 10.92V on +12V. Possible bad sample, avoid until further testing. Sleeve bearing fan."
+,,,,750W,C*,2024,,ATX,ATX 2.x,230V,No,B,DF,SR,DC-DC,Zhong Yuan,,OCP works on +12V. Sleeve bearing fan.
+,,DB Bronze ATX 3.1,,750/850W,C*,2024,,ATX,ATX 3.x,Full,No,B,DF,SR,DC-DC,Zhong Yuan,,Sleeve bearing fan.
+,,DB Silver ATX 3.1,,650/750/850W,C*,2025,,ATX,ATX 3.x,230V,No,S,DF,SSR,DC-DC,Zhong Yuan,,
+,,DW White,,550/650W,E,2024,,ATX,ATX 2.x,230V,No,W,DF,PR,GR,Zhong Yuan,,Group regulated.
+,,FG Gold,-,650W,B-*,2024,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,Zhong Yuan?,,"No warranty statements on US sites, but SF support stated that a 5-year warranty is provided by Newegg in the US."
+,,,,750W,B-*,2024,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,Zhong Yuan?,,
+,,,ATX 3.1,850/1050/1250W,B-*,2024,,ATX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,Zhong Yuan?,,
+,,,,,,,,,,,,,,,,,,
+Thermaltake,Litepower,New (2016+),,350-650W,F,2016,,ATX,ATX 2.x,Full,No,N,DF,PR,GR,Multiple,Unknown,"Unknown number of suppliers. Missing crucial safety protections, very old platforms and very poor build quality."
+,,RGB,,450/550/650W,F,2019,,ATX,ATX 2.x,Full,No,N,DF,PR,GR,HKC,ATX-13,"Missing crucial safety protections, very old platform and very poor build quality."
+,SMART,BX1,Standard,450-750W,E,2018,,ATX,ATX 2.x,Full,No,B,DF,PR,GR,Multiple,"HKC, CWT, CE Link?","3 separate versions dependent upon region, all groupreg. Also a 230V only version. Unrecommendable."
+,,,RGB,550/650W,E,2018,,ATX,ATX 2.x,Full,No,B,DF,PR,GR,HKC,ATX-13,
+,,,,750W,C,2018,,ATX,ATX 2.x,Full,No,B,DF,PR,DC-DC,HKC,ATX-15A,"DC-DC, but 12V capacity is rated awfully low, at what a GR would typically be (672W or 56A)."
+,,,"""DC-DC Ver.""",550-750W,C-*,2024,,ATX,ATX 2.x,Full,No,B,DF,SSR,DC-DC,CE Link,Similar to SMART W3,
+,,BM1,,500/600/700W,E,2018,,ATX,ATX 2.x,230V,Semi,B,DF,PR,GR,"CWT, Andyson",GPM (CWT),
+,,BM2,Ver. A (2019),450-750W,C+,2019,,ATX,ATX 2.x,Full,Semi,B,DF,SSR,DC-DC,CWT,CSB-A,
+,,,Ver. B (2024),450-750W,C-*,2024,,ATX,ATX 2.x,Full,Semi,B,DF,SR,DC-DC,CE Link,Costdown BM3,12V capacity is rated much lower than the CWT CSB-A models.
+,,BX3,,550-750W,C*,2023,,ATX,ATX 2.x,Full,No,B,DF,SR,DC-DC,CE Link,Costdown BM3,
+,,BM3,,650/750/850W,C,2023,,ATX,ATX 3.x,Full,Semi,B,DF,SR,DC-DC,CE Link,PCFB-A-AT3,"Transient response was tested but values were left out. OPP is set very high, but the PSU handled it and shut down safely and properly."
+,,RGB,,500/600/700W,D,2020,,ATX,ATX 2.x,230V,No,W,DF,PR,GR,HKC,,
+,,Pro RGB,,850W,C,2017,,ATX,ATX 2.x,Full,Full,B,DF,SR,DC-DC,High Power,Direct12II Bronze (NO-790),
+,,DPS G,Bronze,500/600/700W,D,2016,,ATX,ATX 2.x,Full,Semi,B,DF,PR,GR,CWT,GPK,
+,,,Gold,650/750W,C+,2016,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,CWT,GPS,
+,,Gold (OEM/SI),,600W,C,2019,,ATX,ATX 2.x,Full,No,G,LLC,SR,DC-DC,CWT,GPS,Costdown GX1 with 85C Chinese caps and a sleeve bearing Yate Loon fan; intended for OEM/SI market.
+,,White Label,,430-700W,F,2018,,ATX,ATX 2.x,Full,No,W,DF,PR,GR,Multiple,,"Black casing, white sticker. Unknown number of suppliers for this unit. Versions that have been tested have malfunctioning OCP, OPP, and SCP."
+,,W3,,500/600/700W,C-*,2024,,ATX,ATX 3.x,Full,No,W,DF,SR,DC-DC,CE Link,Further costdown BM3,May be double-sourced (at least) for other markets.
+,TR2,S,-,350-700W,F,2015,,ATX,ATX 2.x,230V,No,W,DF,PR,GR,Multiple,Unknown,"Very poor build quality and unknown number of suppliers, crucial protections not claimed."
+,,,"""DC-DC Ver.""",500-750W,C-*,2023,,ATX,ATX 2.x,230V,No,W,DF,SR,DC-DC,CE Link,Similar to W3,"Flat black cables, model PS-TRS-[Wattage]NNSAW. Claims DC-DC and all protections. Possibly double-sourced with HKC."
+,,Gold,,450-700W,C+,2015,,ATX,ATX 2.x,Full,No,G,LLC,SR,DC-DC,High Power,Astro Lite HPM (NO-771),
+,Toughpower,Gold,,650/750W,B-,2014,,ATX,ATX 2.x,Full,Semi,G,LLC,SR,DC-DC,CWT,Modified GPS,
+,,"DPS G
+RGB",Gold,650/750W,C+,2016,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,CWT,CSC,
+,,,,850W,C+,2016,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,CWT,CSH,
+,,,Titanium,850/1000W,A,2016,,ATX,ATX 2.x,Full,Full,T,LLC,SR,DC-DC,Enhance,,
+,,,,1250W,A-,2016,,ATX,ATX 2.x,Full,Full,T,LLC,SR,DC-DC,CWT,CST,"5VSB OCP needs tuning (59mV ripple); An EPS cable can fit into a PCIe socket and vice versa, but they're not electrically compatible."
+,,,,1500W,F,2016,,ATX,ATX 2.x,Full,Full,T,LLC,SR,DC-DC,Enhance,,Malfunctioning safety protections
+,,Grand Platinum,,700W,C+,2013,,ATX,ATX 2.x,Full,Semi,P,LLC,SR,DC-DC,High Power,Astro Gold HPA,"No proper transient testing, too old."
+,,,,850-1200W,C+,2016,,ATX,ATX 2.x,Full,Full,P,LLC,SR,DC-DC,Enhance,1300GT Plat,
+,,"Grand
+RGB",Gold,650/750/850W,B+,2017,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,High Power,NO-781,
+,,,Gold Sync Ed.,650/750W,B+,2018,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,High Power,NO-810,
+,,,,850W,B-,2018,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,High Power,NO-810,OTP is set over 200C or doesn't work.
+,,,Platinum,850/1050W,B-,2019,,ATX,ATX 2.x,Full,Full,P,LLC,SR,DC-DC,CWT,CST,OTP doesn't work
+,,,,1200W,C+,2019,,ATX,ATX 2.x,Full,Full,P,LLC,SR,DC-DC,CWT,CST,"OTP works on the 1200W model, however the 5VSB OCP is so out of tune, ripple supression exceeds 200mV."
+,,"iRGB
+Plus",Gold,1000W,A-,2019,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,CWT,GPR,"OPP works, OTP claimed; tested working in other GPR-based units in similar configurations."
+,,,,750/850W,A-,2019,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,CWT,GPR,OTP claimed; tested working in other GPR-based units in similar configurations.
+,,,Platinum,850-1250W,A+,2017,,ATX,ATX 2.x,Full,Full,P,LLC,SR,DC-DC,CWT,CST,
+,,,Titanium,1250W,A,2017,,ATX,ATX 2.x,Full,Full,T,LLC,SR,DC-DC,CWT,CST,
+,,,,1650W,A,2023,,ATX,ATX 3.x,Full,Full,T,LLC,SR,DC-DC,CWT,CTT,
+,,GF,Plus,750/850W,A,2021,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,CWT,GPU,Regional dependent.
+,,,Standard,550-850W,A*,2021,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,CWT,GPU,"Europe, India and Japan model. Lower-wattage variants might be GPX, consider 850W tier A. Inconclusive."
+,,GF1,ARGB,650/750/850W,A+,2021,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,CWT,GPR,
+,,,Premium (2021),650/750/850W,A+,2021,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,CWT,GPR,
+,,,,1000W,A+,2021,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,CWT,GPR,
+,,,,1200W,A,2021,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,CWT,CST,
+,,,Premium (2024),750/850W,B*,2024,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,CE Link,Costdown GF A3,"Limited info; internal shots show it as a costdown GF A3 w/o 12VHPWR, Chinese caps and other cheap components; 140mm depth. Made in VN."
+,,,Snow,650/750/850W,A+,2022,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,CWT,GPR,
+,,GF2 ARGB,,650/750/850W,A-,2021,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,High Power,NO-830,
+,,GF3,ARGB,750/850W,A,2023,,ATX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,High Power,NO-832F,
+,,,"Premium, Original
+(TPD-FCG)",750-1000W,A+,2023,,ATX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,CWT,CSZ,
+,,,,1200W,A+,2023,,ATX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,CWT,CSZ,
+,,,"Premium, Swap
+(TPD-FLG)",850W?,B*,2023,,ATX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,CE Link,Upgraded GF A3,"Made in Vietnam, part number is TPD-(watts)AH3FLG. Not certain on date of swap. This does NOT mean that every unit built after 2023 is the swap - only units bearing the TPD-FLG part number. Appears to be being double-sourced."
+,,,,1200W,A-*,2023,,ATX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,CE Link,PCFG-A-FA (PF1),
+,,,"Premium, Original
+(TPD-FSG)",1350W,A,2023,,ATX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,High Power,NO-826,
+,,,,1650W,B-,2023,,ATX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,High Power,NO-819C,"Very beefy platform, however OTP doesn't work; very loud. Would be tier A- if not for OTP not working."
+,,,Snow,1200W,A-*,2023,,ATX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,CE Link,PCFG-A-FA (PF1),"OPP is tested on this unit, but ATX 3.0/3.1 transient response is not. Load regulation is good, ripple suppression is decent."
+,,GF A3,Global,650/750/850W,B,2023,,ATX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,HKC,ATX-23B,
+,,,,1050/1200W,B,2023,,ATX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,HKC,ATX-33,
+,,,N. Amer.,650-1200W,B-,2024,,ATX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,CE Link,,"Unnanounced OEM swap for North American market. Technically invalid 80 Plus certification, but did qualify for Gold in testing, as advertised."
+,,,Snow,850/1050W,B,2023,,ATX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,CE Link,,
+,,,Hydrangea Blue,1050W,B-,2024,,ATX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,CE Link,,"Limited special edition model for 25th anniversary, no indication of any internal changes"
+,,GT,Version A,650/750/850W,B-*,2024,,ATX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,XWY?,Costdown A07B?,Circular fan grille; no info aside from internal shots from Thermaltake. Likely even more costdown A07B.
+,,,Version B,750/850W,B-*,2024,,ATX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,XWY,A07B,
+,,,,1000/1200W,B*,2024,,ATX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,Unknown,,No info
+,,,Snow,750/850W,B-*,2024,,ATX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,XWY,A07B,
+,,,,1000/1200W,B*,2024,,ATX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,Unknown,,No info
+,,GX1,Non-RGB,500/600/700W,C+,2018,,ATX,ATX 2.x,Full,No,G,LLC,SR,DC-DC,CWT,GPS,
+,,,RGB,500/600/700W,C,2019,,ATX,ATX 2.x,Full,No,G,LLC,SR,DC-DC,HKC,ATX-06,
+,,GX2,Original,500/600/700W,C+,2020,,ATX,ATX 2.x,Full,No,G,LLC,SR,DC-DC,CWT,GPS,"GX1 costdown. If CWT based, 588W on 12V output for 600W."
+,,,Swap,500/600/700W,C-*,2024,,ATX,ATX 2.x,Full,No,G,DF,SR,DC-DC,CE Link,PCZ00-M01B,Unannounced downgrade; seemingly affects North America. 600W unit has 12W less on 12V rail (576W) compared to OG. CWT unit (588W)
+,,GX3,,750W,B-*,2025,,ATX,ATX 3.x,Full,No,G,LLC,SR,DC-DC,CWT,GPW,Europe only? See here.
+,,,,850W,B-*,2024,,ATX,ATX 3.x,Full,No,G,LLC,SR,DC-DC,CE Link,Costdown GF A3 or GT,Not certain on platform
+,,PF3,,750-1200W,A-,2023,,ATX,ATX 3.x,Full,Full,P,LLC,SR,DC-DC,HKC,ATX-40,"Questionable fan quality, two EPS connectors on the same cable. Otherwise qualifies for A tier based on performance."
+,,PF1,Premium,650/750/850W,B+,2020,,ATX,ATX 2.x,Full,Full,P,LLC,SR,DC-DC,HKC,ATX-23,No MOV
+,,,,1050/1200W,A-,2021,,ATX,ATX 2.x,Full,Full,P,LLC,SR,DC-DC,CE Link,PCFG-A-FAD-A,"Quite loud under full load, ~39dbA"
+,,,ARGB,850/1050/1200W,A-,2019,,ATX,ATX 2.x,Full,Full,P,LLC,SR,DC-DC,CWT,CST,"Aggressive fan profile, ~40+ dbA output."
+,,TF1,,1550W,A+,2021,,ATX,ATX 2.x,Full,Full,T,LLC,SR,DC-DC,CWT,CTT,Semi-digital
+,,SFX,Old,450/600W,F,2016,,SFX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,Enhance,,Over 500mV of ripple at 110% load on the +12V line is inexcusable (over 4x the ATX specification limit). Clearly a major design flaw.
+,,,New (Premium),450/550/650W,B*,2021,,SFX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,HKC,,Insufficient protections data to confirm tiering.
+,,,Gold ATX 3.0,450-850W,F,2020,,SFX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,HKC,SFX-03,Multiple inexcusable protections malfunctions despite good electrical performance.
+,,,,1000W,A-,2022,,SFX-L,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,HKC,SFXL-05,OCP is set much higher than necessary on all rails.
+,,,Platinum ATX 3.1,750/850W,B-,2024,,SFX,ATX 3.x,Full,Full,P,LLC,SR,DC-DC,CE Link,,"Single-sided PCB, voltage drops right before protection trip points on the minor rails; however, the protections did engage in time."
+,,,,1000W,F,2024,,SFX,ATX 3.x,Full,Full,P,LLC,SR,DC-DC,CE Link,,Malfunctioning protections that don't engage in time before the minor rails experience a huge voltage drop out of spec.
+,,,,,,,,,,,,,,,,,,
+Thermalright,TR-ABFX,,,500W,C-,2021,,SFX,ATX 2.x,Full,No,B,DF,PR,DC-DC,CWT,GPH-M,
+,TR-AG,,,650W,C*,2023,,ATX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,CWT*,GPX ATX 3.0?,450W 12VHPWR
+,,,,750/850W,C*,2023,,ATX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,CWT*,GPX ATX 3.0?,Internal shots here.
+,,,,1000W,C*,2023,,ATX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,CWT*,CSZ?,Internal shot?
+,TR-KG,,,650/750/850W,B*,2025,,ATX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,HKC,ATX-32 (mod. ATX-33?),Looks like a modified ATX-33 platform for lower wattages. No thorough testing on this platform.
+,TR-TB,,-,650W,C*,2022,,ATX,ATX 2.x,Full,Full,B,DF,SR,DC-DC,SANR,700D A-T (S-TZ rebrand?),"Costdown S-TZ? Platform code marking lists as S-TZ, ClearResult and label only have 700D A-T. 650W lacks 12VHPWR."
+,,,,750W,C*,2022,,ATX,ATX 3.x,Full,Full,B,DF,SR,DC-DC,SANR,700D A-T (S-TZ rebrand?),
+,,,,850W,C*,2023,,ATX,ATX 3.x,Full,Full,B,DF,SSR,DC-DC,SANR,S-850TZ A,No info.
+,,,S,450/550/650W,C*,2022,,ATX,ATX 2.x,Full,No,B,DF,SR,DC-DC,SANR,700D A-T (S-TZ rebrand?),"Costdown S-TZ? Platform code marking shows S-TZ, ClearResult and label state 700D A-T. 450-650W lack 12VHPWR. See here. See here."
+,,,,750W,C*,2022,,ATX,ATX 3.x,Full,No,B,DF,SR,DC-DC,SANR,700D A-T (S-TZ rebrand?),
+,,,,850W,C*,2023,,ATX,ATX 3.x,Full,No,B,DF,SSR,DC-DC,SANR,S-850TZ A,No info.
+,TR-TG,,-,550W,C*,2023,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,SANR,S-750MZ A,Cost-down S-850MZ platform reserved for 500-550w?
+,,,,650-1000W,C*,2023,,ATX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,SANR,S-850MZ A,550-1000W aren't properly reviewed. White variants have a different method of DC-DC conversion from black models.
+,,,,1200W,E,2023,,ATX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,SANR,S-850MZ A-J,"Failed ATX 3.0 12V power excursion testing, malfunctioning OCP on 3.3V. S-MZ platform may not be able to handle high wattages."
+,,,,1350W,C*,2023,,ATX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,SANR,S-1700M A-J,
+,,,FX,550/650W,B,2024,,SFX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,SANR,S-850F A-J,"550W tested, 550/650W TGFX lack 12VHPWR connector. Mediocre ripple & poor inrush current."
+,,,,750/850W,C*,2024,,SFX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,SANR,S-850F A-J,Other wattages untested. See here.
+,,,S,500/550W,C*,2023,,ATX,ATX 2.x,Full,No,G,LLC,SR,DC-DC,SANR,S-750MZ A,Cost-down S-850MZ platform reserved for 500-550w?
+,,,,650/750W,C*,2023,,ATX,ATX 3.x,Full,No,G,LLC,SR,DC-DC,SANR,S-850MZ A,Downrated minor rail DC-DC converters? See official page and images of the product.
+,,,,850W,C*,2023,,ATX,ATX 3.x,Full,No,G,LLC,SR,DC-DC,SANR,S-850MZ A-J,
+,TR-TP,,-,850/1000W,C*,2023,,ATX,ATX 3.x,Full,Full,P,LLC,SR,DC-DC,SANR,S-850MZ AB-J,Requires proper reviews/teardowns. Beefier/more efficient S-850MZ A? See here for a review.
+,,,,1350W,C*,2023,,ATX,ATX 3.x,Full,Full,P,LLC,SR,DC-DC,SANR,S-1700M A,Requires reviews/teardowns. Beefier/more efficient S-1700M A-J?
+,,,,1650W,C*,2023,,ATX,ATX 3.x,Full,Full,P,LLC,SR,DC-DC,SANR,S-1700M A,
+,,,FX,650W,C*,2024,,SFX,ATX 2.x,Full,Full,P,LLC,SR,DC-DC,SANR,S-850SF A,Beefier TGFX? No info.
+,,,,750/850W,C*,2024,,SFX,ATX 3.x,Full,Full,P,LLC,SR,DC-DC,SANR,S-850SF A,Beefier TGFX? No info.
+,TR-SG,,-,650W,C*,2024,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,SANR,S-850MZ A,"SG series may be very similar to TG, but lack reviews and information otherwise. China/Singapore only?"
+,,,,750/850W,C*,2024,,ATX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,SANR,S-850MZ A,
+,,,FX,650W,C*,2024,,SFX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,SANR,S-850SF A-J,
+,,,,850W,C*,2024,,SFX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,SANR,S-850SF A-J,
+,,,S,650W,C*,2024,,ATX,ATX 2.x,Full,No,G,LLC,SR,DC-DC,SANR?,S-850MZ A?,
+,,,,750/850W,C*,2024,,ATX,ATX 3.x,Full,No,G,LLC,SR,DC-DC,SANR?,S-850MZ A?,
+,,,,,,,,,,,,,,,,,,
+Vetroo,GV/G5,,2023 (ATX 3.0),850/1000W,A,2023,,ATX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,Andyson,P32B (modified P32),BE WARY OF ATX 3.1 2024 VARIANT! Poor transient response on 3.3V and load regulation on 5VSB. Very good electrical performance otherwise.
+,,,2024 (ATX 3.1),850/1000W,B+,2024,,ATX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,Jiumeng,JM-880-QT,"Advertised as ATX 3.1. Platform has poor transient response in 200% ATX 3.1 test, weak 3.3V load regulation, and high-set OCP on the minor rails."
+,SFX,,,850W,B*,2025,,SFX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,Jiumeng,JM-SFX800 (GL850 SFX),Limited Cybenetics testing data is available. Need further testing before making any recommendations.
+,,,,,,,,,,,,,,,,,,
+Vida,Lite,,,500/650/750W,F,2024,,ATX,ATX 2.x,230V,No,N,DF,PR,GR,Unknown,,PPFC
+,,,,,,,,,,,,,,,,,,
+Xigmatek,Fury GD,,,1100W,A,2023,,ATX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,Andyson,P32,
+,,,,850W,B+,2023,,ATX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,Andyson,PAD35,Overall really good electrical performance with only the 3.3V rail trailing behind in transients and failing testing. OTP isn't tested.
+,Harrier,,,550/650W,B-,2019,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,Andyson,PAD07,
+,Hera Gold,,,650/750/850W,E,2019,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,Andyson,PAD03,"Both the 12V and 3.3V rail fail in ripple measurements, exceeding the ATX specification. No transient response testing."
+,Hydra M,,,550/650/750W,C,2020,,ATX,ATX 2.x,230V,Full,B,DF,PR,DC-DC,Guang Hai,GH356,
+,LOKI,,,750/850W,F,2024,,ATX,ATX 3.x,Full,No,B,DF,SR,DC-DC,Guang Hai,GH359,"Failed ATX 3.0 power excursion, protections, and 12V transient response. Low-quality components."
+,Maverick S,,,400/500/600W,F,2015,,ATX,ATX 2.x,Full,Semi,B,DF,PR,GR,Andyson,Z8,"2 year warranty, sleeve bearing fan. Miserable electrical performance."
+,THOR,V1,,450/550W,E,2022,,ATX,ATX 2.x,Full,No,B,DF,SSR,DC-DC,ABLE,,Poor electrical performance from an unknown OEM; fails all 12V transient response testing per F14 Lab's testing.
+,,,,650/750W,E,2022,,ATX,ATX 2.x,Full,No,B,DF,SSR,DC-DC,ABLE,,Poor electrical performance from an unknown OEM; fails all 12V transient response testing per F14 Lab's testing.
+,,V2,T,750W,F,2023,,ATX,ATX 2.x,Full,No,B,DF,SSR,DC-DC,Andyson,M5+,No MOV. OCP on the 3.3V rail failed (via rails falling out of ATX specification)
+,,,T-M (Modular),750/850W,C,2023,,ATX,ATX 2.x,Full,Full,B,DF,SSR,DC-DC,Andyson,M5+,Essentially a Thor V2 made for full-modularity; no MOV.
+,,V3 (ATX 3.1),T,750/850W,C-,2024,,ATX,ATX 3.x,Full,No,B,DF,SSR,DC-DC,Andyson,P37,"Claims LLC resonant, internal shots show otherwise. Parts selection is very questionable and transient response on the minor rails failed."
+,,,T-M (Modular),750/850W,C*,2024,,ATX,ATX 3.x,Full,No,B,DF,SSR,DC-DC,Andyson,P37,Presumably the modular variant of the Thor V3.
+,Titan PT,,,1200W,B+,2024,,ATX,ATX 3.x,Full,Full,P,LLC,SR,DC-DC,Andyson,PAD35,
+,Vector P,,,600/700W,B+,2014,,ATX,ATX 2.x,Full,Semi,P,LLC,SR,DC-DC,Andyson,Y8,
+,,,,,,,,,,,,,,,,,,
+Xilence,Gaming,,Bronze,450-850W,E,2020,,ATX,ATX 2.x,230V,No,B,DF,PR,GR,HKC,ATX-13,"Claims to be DC-DC, but internal shots show otherwise; false advertising."
+,,,Gold,650/750/850W,C*,2022,,ATX,ATX 2.x,230V,No,G,LLC,SR,DC-DC,XHY,2203,"Claims meeting 80+ Gold requirements, not certified."
+,Performance,,A (XP-R5),430-730W,E,2014,,ATX,ATX 2.x,230V,No,W,DF,PR,GR,HEC,,
+,,,A+ (XP-R8),430-830W,C-*,2016,,ATX,ATX 2.x,230V,No,B,DF,SSR,DC-DC,XHY,1505,Transient response testing isn't found and platform is relatively unknown.
+,,,A+ III,450/750/850W,C-*,2020,,ATX,ATX 2.x,230V,Semi,B,DF,SSR,DC-DC,XHY,1806,Transient response testing isn't found and platform is relatively unknown.
+,,,C,400/500/600W,E,2015,,ATX,ATX 2.x,230V,No,N,DF,PR,GR,XHY,,Not independently regulated and no 80+ or Cybenetics certification
+,,,X,550-850W,C*,2017,,ATX,ATX 2.x,230V,No,G,LLC,SR,DC-DC,XHY,1908,No direct transient response found on this unit (platform is well reviewed) and protections work well.
+,,,,1050/1250W,C*,2020,,ATX,ATX 2.x,Full,Full,G,LLC,SSR,DC-DC,XHY,1709,"Transient response testing is not available, however platform is well reviewed."
+,Redwing,,R7,350-600W,F,2019,,ATX,ATX 2.x,230V,No,N,DF,PR,GR,HKC,ATX-02?,PPFC and no 80+ certification; e-waste
+,,,,700W,F,2019,,ATX,ATX 2.x,230V,No,N,DF,PR,GR,Unknown,,
+,,,,,,,,,,,,,,,,,,
+Yeyian,Raiden,,Gold,650W,F,2024,,ATX,ATX 3.x,Full,Semi,G,DF,PR,DC-DC,Unknown,,Does not claim certain safety protection circuits which is a major deficiency.
+,,,Bronze,550/650/750W,F,2024,,ATX,ATX 2.x,Full,No,B,DF,PR,GR,Unknown,,Does not claim certain safety protection circuits which is a major deficiency.
+,,,,,,,,,,,,,,,,,,
+Zalman,Acrux,,,750-1200W,B,2017,,ATX,ATX 2.x,Full,Full,P,LLC,SR,DC-DC,Enhance,13XX GT Platinum,
+,EBT,,,650/750W,C+,2016,,ATX,ATX 2.x,Full,Semi,G,LLC,SR,DC-DC,High Power,NO-771,
+,,,,850/1000/1200W,C+,2015,,ATX,ATX 2.x,Full,Full,G,DF,SR,DC-DC,High Power,NO-763,
+,Gigamax,GV,II,550/650/750W,C*,2020,,ATX,ATX 2.x,230V,Full,B,DF,PR,DC-DC,Hui Cheng,,
+,,,II-A,500/600/700W,E,2022,,ATX,ATX 2.x,Full,No,B,DF,PR,GR,Andyson,M5,"Claimed DC-DC, internal shots from 2023 show otherwise. Confirmed GR."
+,,,III (3),550/650/750W,E,2024,,ATX,ATX 3.x,230V,No,S,DF,SSR,DC-DC,Jiumeng,,"No protections testing, performance testing is not extensive. Need further testing to move beyond tier E since Jiumeng is the OEM."
+,GVM,,,850/1000W,C*,2014,,ATX,ATX 2.x,230V,Semi,B,DF,PR,DC-DC,High Power,NO-768,
+,,,,500/600/700W,E,2015,,ATX,ATX 2.x,Full,Semi,B,DF,PR,GR,High Power,NO-782,
+,Megamax,TXII,V1,500/600/700W,E,2020,,ATX,ATX 2.x,230V,No,W,DF,PR,GR,Jiumeng,,Pre production sample used for testing.
+,,,V2,500-800W,E,2021,,ATX,ATX 2.x,230V,No,W,DF,PR,GR,Jiumeng,,
+,,II (GV2SE),,500/600/700W,F,2024,,ATX,ATX 2.x,230V,No,B,DF,PR,DC-DC,Jiumeng,,"12V and 5V OCP malfunction, allowing the unit to have varying issues of OOS voltage drops and/or OOS ripple."
+,,,,800W,C*,2024,,ATX,ATX 2.x,230V,No,B,DF,PR,DC-DC,Jiumeng,,
+,TX,,,500/600/700W,C-,2016,,ATX,ATX 2.x,230V,No,W,DF,SR,DC-DC,Jiumeng,,
+,Teramax,II,-,750-1200W,B*,2023,,ATX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,Jiumeng,AGT,No proper transient testing. Protections weren't tested.
+,,,SE,750/850/1000W,B+,2024,,ATX,ATX 3.x,Full,Full,G,LLC,SR,DC-DC,Jiumeng,JM-880-QT,"1000W has very poor transient response in the 200% ATX 3.1 excursion test, poor regulation on 3.3V, OCP is set way too high on the minor rails."
+,,I,-,750-1200W,B*,2022,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,Jiumeng,AGT,"Load regulation on the minor rails is mediocre, protections need tuning."
+,Wattbitt,,II (XE II),400/500/600W,F,2016,,ATX,ATX 2.x,230V,No,N,DF,PR,GR,Jiumeng,,"PPFC, no voltage switch, 230V only, no 80+, same as the 83+ XE"
+,,,83+ (XE),400/500/600W,F,2015,,ATX,ATX 2.x,230V,No,N,DF,PR,GR,Jiumeng,,"PPFC, no voltage switch, 230V only, no 80+"
+,WattGiga,,,500/600/700W,E,2018,,ATX,ATX 2.x,Full,Semi,B,DF,PR,GR,Jiumeng,,Korean exclusive.
+,WattTera (EBT II),,,700-1200W,B*,2020,,ATX,ATX 2.x,Full,Full,G,LLC,SR,DC-DC,Enhance,ATX-32XX,

@@ -257,6 +257,7 @@ def sortRegion(region):
     addAffiliate("SAMA G750",[750],["https://newegg.io/nc70e665c8"])
     addAffiliate("SAMA G850",[850],["https://newegg.io/nc68f5c9b7"])
     addAffiliate("SAMA G1000",[1000],["https://newegg.io/nc3e5de35d"])
+    addAffiliate("MSI MPG A750GF",[750],["https://us-store.msi.com/PC-Components/Power-Supply/MAG-A750GLS-PCIE5"])
 
     def match_psu(located_psu, psus_rated, threshold=57):
         matches = []

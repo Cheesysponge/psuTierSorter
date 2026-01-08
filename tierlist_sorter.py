@@ -231,6 +231,8 @@ def sortRegion(region):
     addAffiliate("ADATA XPG Core Reactor II",[650,750,850],["https://amzn.to/4gt83PY", "https://amzn.to/4qLs8Yi", "https://amzn.to/3QnXNhH"])
     addAffiliate("MSI MAG A650BN",[650],["https://amzn.to/3Jz9AK8"])
     addAffiliate("MSI MAG A550BN",[550],["https://amzn.to/4nLBdh9"])
+    addAffiliate("MSI MAG A650BE",[650],["https://amzn.to/45uzma2"])
+
     addAffiliate("Thermaltake Smart BM3",[650],["https://amzn.to/410Hooi"])
     addAffiliate("Lian Li EDGE GOLD",[750,1200],["https://newegg.io/nc1f2569ed","https://amzn.to/4k2YXwH"])
     addAffiliate("Lian Li EDGE",[1300],["https://amzn.to/40Q16mf"])
@@ -258,6 +260,8 @@ def sortRegion(region):
     addAffiliate("SAMA G850",[850],["https://newegg.io/nc68f5c9b7"])
     addAffiliate("SAMA G1000",[1000],["https://newegg.io/nc3e5de35d"])
     addAffiliate("MSI MPG A750GF",[750],["https://us-store.msi.com/PC-Components/Power-Supply/MAG-A750GLS-PCIE5"])
+    addAffiliate("SAMA P850",[850],["https://amzn.to/4syQDsI"])
+    addAffiliate("ASRock Steel Legend SL-1000G",[1000],["https://newegg.io/ncd2be754a"])
 
     def match_psu(located_psu, psus_rated, threshold=57):
         matches = []

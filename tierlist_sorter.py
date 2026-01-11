@@ -262,6 +262,8 @@ def sortRegion(region):
     addAffiliate("MSI MPG A750GF",[750],["https://us-store.msi.com/PC-Components/Power-Supply/MAG-A750GLS-PCIE5"])
     addAffiliate("SAMA P850",[850],["https://amzn.to/4syQDsI"])
     addAffiliate("ASRock Steel Legend SL-1000G",[1000],["https://newegg.io/ncd2be754a"])
+    addAffiliate("be quiet! Pure Power 12 M",[850],["https://amzn.to/4pF8Im9"])
+
 
     def match_psu(located_psu, psus_rated, threshold=57):
         matches = []

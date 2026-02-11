@@ -11,11 +11,11 @@ def locateAndSort(region, n):
     count += (n-1)*5
 
 locateAndSort("",6)
-locateAndSort("nl",3)
-locateAndSort("uk",4)
-locateAndSort("ca",4)
-locateAndSort("de",4)
-locateAndSort("au",3)
+# locateAndSort("nl",3)
+# locateAndSort("uk",4)
+# locateAndSort("ca",4)
+# locateAndSort("de",4)
+# locateAndSort("au",3)
 
 
 end = time.time()

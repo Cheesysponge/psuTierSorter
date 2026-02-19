@@ -1,0 +1,152 @@
+/* Minimal custom CSS on top of Tailwind (CDN). Keeps JS-generated table readable + slider styled. */
+
+:root { color-scheme: dark; }
+
+body { background: radial-gradient(1200px 700px at 20% 10%, rgba(99,102,241,.20), transparent 55%),
+                 radial-gradient(900px 600px at 80% 30%, rgba(20,184,166,.14), transparent 60%),
+                 #0b1020; }
+
+a { text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* Table styling for JS-generated tables */
+#tableContainer table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  overflow: hidden;
+  border-radius: 14px;
+  border: 1px solid rgba(148,163,184,.18);
+  background: rgba(15,23,42,.55);
+  box-shadow: 0 10px 30px rgba(0,0,0,.25);
+}
+#tableContainer th, #tableContainer td {
+  padding: 10px 12px;
+  font-size: 13px;
+  line-height: 1.3;
+  border-bottom: 1px solid rgba(148,163,184,.12);
+  color: rgba(226,232,240,.95);
+  vertical-align: middle;
+}
+#tableContainer th {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background: rgba(2,6,23,.85);
+  font-weight: 700;
+  letter-spacing: .02em;
+  text-transform: none;
+}
+#tableContainer tr:nth-child(even) td { background: rgba(2,6,23,.15); }
+#tableContainer tr:hover td { background: rgba(99,102,241,.10); }
+#tableContainer td img { max-height: 28px; max-width: 64px; object-fit: contain; filter: drop-shadow(0 4px 10px rgba(0,0,0,.25)); }
+
+/* Tier badge: we color ONLY the tier cell, not the whole row */
+#tableContainer td:first-child { width: 68px; }
+#tableContainer td:first-child {
+  font-weight: 800;
+  letter-spacing: .02em;
+}
+#tableContainer td:first-child::before {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  margin-right: 8px;
+  vertical-align: middle;
+  background: rgba(148,163,184,.6);
+}
+
+/* Tier dot colors based on row class (tr.className = tier-A/B/C/D + p/m) */
+#tableContainer tr.tier-A td:first-child::before,
+#tableContainer tr.tier-Ap td:first-child::before,
+#tableContainer tr.tier-Am td:first-child::before { background: #22c55e; } /* green */
+#tableContainer tr.tier-B td:first-child::before,
+#tableContainer tr.tier-Bp td:first-child::before,
+#tableContainer tr.tier-Bm td:first-child::before { background: #3b82f6; } /* blue */
+#tableContainer tr.tier-C td:first-child::before,
+#tableContainer tr.tier-Cp td:first-child::before,
+#tableContainer tr.tier-Cm td:first-child::before { background: #f59e0b; } /* amber */
+#tableContainer tr.tier-D td:first-child::before,
+#tableContainer tr.tier-Dp td:first-child::before,
+#tableContainer tr.tier-Dm td:first-child::before { background: #ef4444; } /* red */
+
+/* Stop your old "row background" tier styles if present */
+.tier-A, .tier-Ap, .tier-Am,
+.tier-B, .tier-Bp, .tier-Bm,
+.tier-C, .tier-Cp, .tier-Cm,
+.tier-D, .tier-Dp, .tier-Dm { background: transparent !important; }
+
+/* Tooltip for matched model info (uses td.tier-cell[data-model]) */
+.tier-cell { position: relative; cursor: help; }
+.tier-cell:focus { outline: 2px solid rgba(99,102,241,.55); outline-offset: 2px; border-radius: 6px; }
+.tier-cell:hover::after, .tier-cell:focus::after {
+  content: attr(data-model);
+  position: absolute;
+  left: 0;
+  top: calc(100% + 8px);
+  min-width: 220px;
+  max-width: 420px;
+  white-space: normal;
+  padding: 10px 12px;
+  border-radius: 12px;
+  background: rgba(2,6,23,.92);
+  border: 1px solid rgba(148,163,184,.18);
+  color: rgba(226,232,240,.95);
+  box-shadow: 0 18px 50px rgba(0,0,0,.45);
+  z-index: 50;
+}
+.tier-cell:hover::before, .tier-cell:focus::before {
+  content: "";
+  position: absolute;
+  left: 14px;
+  top: calc(100% + 2px);
+  border: 7px solid transparent;
+  border-bottom-color: rgba(2,6,23,.92);
+  z-index: 51;
+}
+
+/* Tier range slider (Tier Accessor) */
+.tier-range { user-select: none; padding: 10px 6px; }
+.tr-track {
+  position: relative;
+  height: 10px;
+  border-radius: 999px;
+  background: rgba(148,163,184,.18);
+  border: 1px solid rgba(148,163,184,.18);
+  overflow: hidden;
+}
+.tr-fill {
+  position: absolute;
+  height: 100%;
+  left: 0;
+  width: 0;
+  background: linear-gradient(90deg, rgba(99,102,241,.9), rgba(34,197,94,.9));
+  border-radius: 999px;
+}
+.tr-thumb {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 18px;
+  height: 18px;
+  border-radius: 999px;
+  border: 2px solid rgba(226,232,240,.95);
+  background: rgba(2,6,23,.92);
+  box-shadow: 0 10px 24px rgba(0,0,0,.35);
+}
+.tr-thumb:focus { outline: 2px solid rgba(99,102,241,.7); outline-offset: 3px; }
+.tr-ticks { position: relative; height: 10px; margin-top: 10px; opacity: .65; }
+.tr-tick { position: absolute; width: 2px; height: 8px; background: rgba(148,163,184,.35); transform: translateX(-50%); border-radius: 999px; }
+.tr-label { margin-top: 10px; font-size: 12px; color: rgba(226,232,240,.75); }
+.tr-current { font-weight: 700; color: rgba(226,232,240,.95); }
+.tr-sub { margin-left: 8px; opacity: .75; }
+
+/* Mobile menu */
+.mobile-menu { display: none; }
+.mobile-menu.active { display: block; }
+
+/* FAQ accordion compatibility */
+.faq-group-body{display:none;}
+.faq-group-body.open{display:block;}

@@ -1,351 +1,188 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
+<head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
-  <title>PSU Tier Sorter – Find the Best Power Supply for Your PC</title>
-  
-  <meta name="description" content="Free open-source tool that matches power supplies to their tier and price using the SPL PSU Tier List. Great for budget-conscious PC builders." />
-  <meta name="robots" content="index, follow" />
-  
-  <!-- Open Graph for better sharing -->
-  <meta property="og:title" content="PSU Accessor" />
-  <meta property="og:description" content="Search for a specific PSU on SPLs tier list. Open-source and built for PC builders." />
-  <meta property="og:url" content="https://cheesysponge.github.io/psuTierSorter/" />
-  <meta property="og:type" content="website" />
-  <meta name="google-site-verification" content="YUiX2_tDOsXhd2tv0gKAdeHhTj_EFvnUeL6qZ75dOm8" />
-  <!-- Fonts and Icons -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
-    rel="stylesheet"
-  />
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
-  />
-  
-  <!-- Styles -->
-  <link rel="stylesheet" href="website/style.css" />
-  <link rel="shortcut icon" href="images/logo.ico" type="image/x-icon" />
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-TTSEFGP653"></script>
+  <title>PSU Tier Sorter – Tier Accessor</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
   <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-TTSEFGP653');
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ["ui-sans-serif","system-ui","-apple-system","Segoe UI","Roboto","Helvetica","Arial"] }
+        }
+      }
+    }
   </script>
+
+  <link rel="stylesheet" href="website/app.css" />
+  <link rel="icon" href="images/logo.ico" />
+  <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
 </head>
 
-  <body>
-    <nav class="navbar">
-      <div class="container">
-        <div class="logo">
-          <a href="">
-            <img src="images/logo.png" alt="logo" />
-          </a>
-        </div>
-        <input type="text" id="searchBar" placeholder="Search...">
-
-        <div class="main-menu">
-          <ul>
-            <li>
-              <a href="index">Finder</a>
-            </li>
-            <li>
-              <a href="">Tier Accessor</a>
-            </li>
-            <!-- <li>
-              <a href="#">Blog</a>
-            </li>
-            <li>
-              <a class="btn" href="#"> <i class="fas fa-user"></i> Log In </a>
-            </li> -->
-          </ul>
-        </div>
-        <!-- Hamburger Button -->
-        <button class="hamburger-button">
-          <div class="hamburger-line"></div>
-          <div class="hamburger-line"></div>
-          <div class="hamburger-line"></div>
-        </button>
-        <div class="mobile-menu">
-          <ul>
-            <li>
-              <a href="index">Finder</a>
-            </li>
-            <li>
-              <a href="tierAccess">Tier Accessor</a>
-            </li>
-          </ul>
-        </div>
+<body class="min-h-screen text-slate-100 font-sans">
+  <header class="sticky top-0 z-40 border-b border-white/10 bg-slate-950/60 backdrop-blur">
+  <div class="mx-auto max-w-7xl px-4 py-3 flex items-center gap-3">
+    <div class="flex items-center gap-3">
+      <div class="h-9 w-9 rounded-xl bg-white/10 grid place-items-center border border-white/10">
+        <span class="text-sm font-black tracking-tight text-white">PSU</span>
       </div>
+      <div class="leading-tight">
+        <div class="text-sm font-semibold text-white">PSU Tier Sorter</div>
+        <div class="text-[11px] text-slate-300/80">Cheapest good PSUs by tier</div>
+      </div>
+    </div>
+
+    <nav class="hidden md:flex items-center gap-2 ml-6">
+      <a href="index.html" class="px-3 py-2 rounded-xl text-sm text-slate-200 hover:bg-white/10">Finder</a>
+      <a href="tierAccess.html" class="px-3 py-2 rounded-xl text-sm text-slate-200 hover:bg-white/10">Tier Accessor</a>
+      <a href="index.html#faq" class="px-3 py-2 rounded-xl text-sm text-slate-200 hover:bg-white/10">FAQ</a>
     </nav>
 
-    <!-- Video Section -->
-    <section class="video bg-black">
-      <div class="container-sm">
+    <div class="ml-auto flex items-center gap-2">
+      <button class="hamburger-button md:hidden inline-flex items-center justify-center h-10 w-10 rounded-xl border border-white/10 bg-white/5 hover:bg-white/10 text-white" aria-label="Menu">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+    </div>
+  </div>
 
+  <div class="mobile-menu md:hidden border-t border-white/10 bg-slate-950/70">
+    <div class="mx-auto max-w-7xl px-4 py-3 flex flex-col gap-1">
+      <a href="index.html" class="px-3 py-2 rounded-xl text-sm text-slate-200 hover:bg-white/10">Finder</a>
+      <a href="tierAccess.html" class="px-3 py-2 rounded-xl text-sm text-slate-200 hover:bg-white/10">Tier Accessor</a>
+      <a href="index.html#faq" class="px-3 py-2 rounded-xl text-sm text-slate-200 hover:bg-white/10">FAQ</a>
+    </div>
+  </div>
+</header>
 
-        <h2 class="video-heading text-xl text-center">
-          Cheapest PSU for Each Tier Above 
+  <main class="mx-auto max-w-7xl px-4 py-6 space-y-6">
+    <section class="rounded-3xl border border-white/10 bg-white/5 p-6 shadow-[0_20px_60px_rgba(0,0,0,.35)]">
+      <div class="flex flex-col md:flex-row md:items-center gap-4">
+        <div class="flex-1">
+          <h1 class="text-3xl md:text-4xl font-black tracking-tight">Tier Accessor</h1>
+          <p class="mt-2 text-slate-300/90 max-w-3xl">
+            Search the dataset, then use the tier range slider to constrain which tiers are shown.
+          </p>
+        </div>
+        <div class="w-full md:max-w-md">
+          <input id="searchBar" placeholder="Search model / brand / SKU…"
+            class="w-full rounded-2xl border border-white/10 bg-slate-950/40 px-4 py-3 text-sm text-white placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-indigo-400/40" />
+        </div>
+      </div>
+    </section>
 
-                <div style="text-align:center; margin: 1rem;">
-                  <input type="number" id="minWattage" value="300" step="50">
-                  <h9 >  Watts in  
-                  <select id="myDropdown" onchange="getSelectedOption()" class="custom-dropdown">
+    <section class="grid gap-6 lg:grid-cols-[360px_1fr]">
+      <!-- Filters -->
+      <aside class="rounded-3xl border border-white/10 bg-white/5 p-5 shadow-[0_20px_60px_rgba(0,0,0,.30)]">
+        <div class="flex items-center justify-between gap-3">
+          <div>
+            <h2 class="text-sm font-semibold text-white">Filters</h2>
+            <p class="text-xs text-slate-300/80">Tier range + search</p>
+          </div>
+        </div>
+
+        <div class="mt-4 space-y-4">
+          <div class="grid gap-2">
+            <label class="text-xs font-medium text-slate-200">Minimum wattage</label>
+            <div class="flex items-center gap-2">
+              <input id="minWattage" type="number" value="300" min="0" step="50"
+                class="w-full rounded-2xl border border-white/10 bg-slate-950/40 px-4 py-3 text-sm text-white placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-indigo-400/40" />
+              <span class="text-xs text-slate-300/70 w-6 text-center">W</span>
+            </div>
+          </div>
+
+          <div class="grid gap-2">
+            <label class="text-xs font-medium text-slate-200">Region / currency</label>
+            <select id="myDropdown" onchange="getSelectedOption()"
+              class="w-full rounded-2xl border border-white/10 bg-slate-950/40 px-4 py-3 text-sm text-white focus:outline-none focus:ring-2 focus:ring-indigo-400/40">
                     <option value="usa">The United States of America ($ USD)</option>
                     <option value="ca">Canada ($ CAD)</option>
                     <option value="au">Australia ($ AUD)</option>
                     <option value="de">Germany (€ Euro)</option>
                     <option value="nl">Netherlands (€ Euro)</option>
                     <option value="uk">The United Kingdom (£ GBP)</option>
-                  </select></h9>
-                  <br>
+            </select>
+          </div>
 
-                  <label>
-                    <input type="checkbox" id="crap">
-                    Include Low Quality/Confidence PSUs
-                  </label>
-
-
-                  <label>
-                    <input type="checkbox" id="sfxToggle">
-                    SFX Only
-                  </label>
-
-                  <label>
-                  <input type="checkbox" id="importantToggle">
-                    Include More Info               
-                  </label>
-                  <label>
-                  <input type="checkbox" id="whiteToggle">
-                    White(ish) Only               
-                  </label>
-                  <label>
-                    Show top 
-                    <input type="number" id="cheapestCountInput" value="100" min="0" max="1000" step="100"> 
-                  </label>
-                  <div class="tier-range-wrapper">
-                                    <div id="tier-range" class="tier-range"></div>
-                  </div>
-                </div>
-        </h2>
-        
-        <div class="video-heading text-center" id="tableContainer"></div>
-
-      </div>
-    </section>
-    
-    <section class="pricing">
-      <div class="container-sm">
-        <h3 class="pricing-heading text-xl text-center">Tier Meaning</h3>
-        <p class="pricing-subheading text-md text-center">
-          A reference for what each tier is for
-        </p>
-        <div class="pricing-grid">
-          <!-- Pricing Card 1 -->
-
-          <!-- Pricing Card 2 -->
-          <div class="card bg-light">
-            <div class="pricing-card-header">
-              <h4 class="pricing-card-heading text-xl">A-,A,A+</h4>
-              <p class="pricing-card-subheading">
-                High Quality Units.
-              </p>
-              <p class="pricing-card-price">
-                <span class="text-xl">High End</span>
-              </p>
+          <label class="flex items-start gap-3 rounded-2xl border border-white/10 bg-slate-950/30 px-4 py-3">
+            <input id="crap" type="checkbox" class="mt-1" />
+            <div>
+              <div class="text-sm font-semibold text-white">Include low quality / confidence tiers</div>
+              <div class="text-xs text-slate-300/75">Enable tiers like D/E/F and “*” entries.</div>
             </div>
-            <div class="pricing-card-body">
-              <ul>
-                <li><i class="fas fa-check"></i>Minimum 5 year warranty</li>
-                <li><i class="fas fa-check"></i>Undergone high quality testing</li>
-                <li><i class="fas fa-check"></i>Ex: 3090, 4070ti, 5080, 7900xt, etc</li>
-              </ul>
+          </label>
+            <label class="flex items-start gap-3 rounded-2xl border border-white/10 bg-slate-950/30 px-4 py-3">
+              <input id="modularToggle" type="checkbox" class="mt-1" />
+              <div>
+                <div class="text-sm font-semibold text-white">Modular Only</div>
+                <div class="text-xs text-slate-300/75">Full or semi-modular.</div>
+              </div>
+            </label>
+          <label class="flex items-start gap-3 rounded-2xl border border-white/10 bg-slate-950/30 px-4 py-3">
+            <input id="sfxToggle" type="checkbox" class="mt-1" />
+            <div>
+              <div class="text-sm font-semibold text-white">SFX only</div>
+              <div class="text-xs text-slate-300/75">Small form factor.</div>
+            </div>
+          </label>
+
+          <label class="flex items-start gap-3 rounded-2xl border border-white/10 bg-slate-950/30 px-4 py-3">
+            <input id="whiteToggle" type="checkbox" class="mt-1" />
+            <div>
+              <div class="text-sm font-semibold text-white">White(ish) only</div>
+              <div class="text-xs text-slate-300/75">Color contains “White”.</div>
+            </div>
+          </label>
+
+          <label class="flex items-start gap-3 rounded-2xl border border-white/10 bg-slate-950/30 px-4 py-3">
+            <input id="importantToggle" type="checkbox" class="mt-1" />
+            <div>
+              <div class="text-sm font-semibold text-white">Include more info</div>
+              <div class="text-xs text-slate-300/75">Extra columns (image/notes).</div>
+            </div>
+          </label>
+          <div class="grid gap-2">
+            <label class="text-xs font-medium text-slate-200">Show top (per tier)</label>
+            <div class="flex items-center gap-2">
+              <input id="cheapestCountInput" type="number" value="20" min="1" max="1000"
+                class="w-full rounded-2xl border border-white/10 bg-slate-950/40 px-4 py-3 text-sm text-white focus:outline-none focus:ring-2 focus:ring-indigo-400/40" />
+              <span class="text-xs text-slate-300/70 w-12 text-center">each</span>
             </div>
           </div>
 
-                    <div class="card bg-black">
-            <div class="pricing-card-header">
-              <h4 class="pricing-card-heading text-xl">B-,B,B+</h4>
-              <p class="pricing-card-subheading">
-                Decent quality PSU
-              </p>
-              <p class="pricing-card-price">
-                <span class="text-xl">Most Systems</span>
-              </p>
+          <div class="rounded-2xl border border-white/10 bg-slate-950/30 px-4 py-4">
+            <div class="flex items-center justify-between">
+              <div class="text-sm font-semibold text-white">Tier range</div>
+              <!-- <div class="text-xs text-slate-300/70">Drag handles</div> -->
             </div>
-            <div class="pricing-card-body">
-              <ul>
-                <li><i class="fas fa-check"></i>Minimum 3 year warranty(not if -)</li>
-                <li><i class="fas fa-check"></i>Decent third party reviews </li>
-                <li><i class="fas fa-check"></i>Ex: 4060 ti-5070, 9060xt-9070xt, etc</li>
-              </ul>
-            </div>
-          </div>
-                    <div class="card bg-black">
-            <div class="pricing-card-header">
-              <h4 class="pricing-card-heading text-xl">C-,C,C+</h4>
-              <p class="pricing-card-subheading">
-                For people on a tight budget/older PC
-              </p>
-              <p class="pricing-card-price">
-                <span class="text-xl">Budget/Older</span>
-              </p>
-            </div>
-            <div class="pricing-card-body">
-              <ul>
-                <li><i class="fas fa-check"></i>Minimum 3 year warranty(not if -)</li>
-                <li><i class="fas fa-check"></i>Minimum quality worth using for most people </li>
-                <li><i class="fas fa-check"></i>Ex: 2070-4060, rx 5700xt, 6650xt etc</li>
-              </ul>
-            </div>
-          </div>
-          <div class="card bg-light">
-            <div class="pricing-card-header">
-              <h4 class="pricing-heading text-xl">D-,D,D+</h4>
-              <p class="pricing-card-subheading">
-                Very Very Tight Budget
-              </p>
-              <p class="pricing-card-price">
-                <span class="text-xl">iGPU builds only</span>
-              </p>
-            </div>
-            <div class="pricing-card-body">
-              <ul>
-                <li>
-                  <i class="fas fa-check"></i>Minimum 3 year warranty(not if -)
-                </li>
-                <li><i class="fas fa-check"></i>Generally Unrecommended</li>
-                <li>
-                  <i class="fas fa-check"></i>Shouldn't be used with a dedicated GPU
-                </li>
-              </ul>
-            </div>
+            <div id="tier-range" class="mt-3"></div>
+            <div class="mt-2 text-xs text-slate-300/70">Drag handles to constrain tiers.</div>
           </div>
         </div>
-        <p class="pricing-footer text-center">
-          (Tier info from <a href="https://docs.google.com/spreadsheets/d/1akCHL7Vhzk_EhrpIGkz8zTEvYfLDcaSpZRB6Xt6JWkc/edit?gid=931697732#gid=931697732"> SPLs PSU tierlist</a>)
-        </p>
-      </div>
-    </section>
 
-    <!-- FAQ -->
-    <section class="faq bg-light">
-      <div class="container-sm">
-        <h3 class="text-xl text-center">Frequently Asked Questions</h3>
-        <!-- <ul class="faq-menu">
-          <li class="active">All</li>
-          <li>Getting Started</li>
-          <li>Pricing</li>
-        </ul> -->
-        <div class="faq-content">
-          <div class="faq-group">
-            <div class="faq-group-header">
-              <h4 class="text-md">
-                How do you make money?
-              </h4>
-              <i class="fas fa-minus"></i>
-            </div>
-            <div class="faq-group-body open">
-              <p>
-                Most of the links are Amazon Affiliates from SPLs tierlist since their group did the majority of the work gathering the data. I recommend using the links here instead of using PCPP to support us<!-- Currently the only way this makes money is through Amazon & Newegg affiliate links. If you would like to support us, make sure that you buy the power supplies from the links here since it costs you nothing and gives us a little bit of money for each power supply we recommend. (Going through PCPartpicker does not give us money sadly) -->
-              </p>
-            </div>
-          </div>
+      </aside>
 
-          <div class="faq-group">
-            <div class="faq-group-header">
-              <h4 class="text-md">
-                Can I trust the recommendations?
-              </h4>
-              <i class="fas fa-plus"></i>
-            </div>
-            <div class="faq-group-body">
-              <p>
-                The finder scrapes hundreds of powersupplies and compares them to thousands on SPLs PSU tierlist. This is a difficult process and many powersupplies have different variants with the exact same name so I recommend taking these results with a grain of salt.
-              </p>
-            </div>
-          </div>
-
-          <div class="faq-group">
-            <div class="faq-group-header">
-              <h4 class="text-md">
-                Where did you get the tier ratings from and are you allowed to use them?
-              </h4>
-              <i class="fas fa-plus"></i>
-            </div>
-            <div class="faq-group-body">
-              <p>
-                The tier ratings are from <a href="https://docs.google.com/spreadsheets/d/1akCHL7Vhzk_EhrpIGkz8zTEvYfLDcaSpZRB6Xt6JWkc/edit?gid=931697732#gid=931697732"> SPLs PSU tierlist</a> more info about what these rankings mean are found over there.
-                <br>
-                I have been explicitly given permission from SPL himself, with him saying "If you can find a way to aggregate the data without requiring edit access, sure."
-              </p>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer bg-black">
-      <div class="container">
-        <div class="footer-grid">
+      <!-- Results -->
+      <section class="rounded-3xl border border-white/10 bg-white/5 p-5 shadow-[0_20px_60px_rgba(0,0,0,.30)]">
+        <div class="flex items-end justify-between gap-3">
           <div>
-            <a href="index">
-              <img src="images/logo.png" alt="logo" />
-            </a>
-            <!-- <div class="card">
-              <h4>Subscribe to Newsletter</h4>
-              <p class="text-sm">
-                Subscribe now to receive tips on how to take your business to
-                the next level.
-              </p>
-              <form>
-                <input type="email" id="email" placeholder="Enter your email" />
-                <button type="submit" class="btn btn-primary btn-block">
-                  Subscribe
-                </button>
-              </form>
-            </div> -->
-
-          </div>
-          <div>
-            <!-- <h4>Company</h4>
-            <ul>
-              <li><a href="#">About Us</a></li>
-              <li><a href="#">Our Process</a></li>
-              <li><a href="#">Join Our Team</a></li>
-            </ul>
-          </div>
-          <div>
-            <h4>Resources</h4>
-            <ul>
-              <li><a href="#">News</a></li>
-              <li><a href="#">Research</a></li>
-              <li><a href="#">Recent Projects</a></li>
-            </ul>
-          </div> -->
-          <div>
-            <h4>Contact</h4>
-            <ul>
-              <li>
-                <a href="#">cheesysponge</a>
-              </li>
-            </ul>
+            <h2 class="text-sm font-semibold text-white">Results</h2>
+            <p class="text-xs text-slate-300/80">Search applies across all fields; slider limits tiers.</p>
           </div>
         </div>
-      </div>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
 
-    <script src="website/search.js?t=1"></script>
-  </body>
+        <div class="mt-4 overflow-auto rounded-2xl">
+          <div id="tableContainer" class="min-h-[120px]">
+            Loading…
+          </div>
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <script src="website/search.js?t=2"></script>
+</body>
 </html>

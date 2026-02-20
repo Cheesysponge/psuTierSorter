@@ -219,7 +219,7 @@ def sortRegion(region):
     addAffiliate("SAMA GT",[650],["https://amzn.to/3CPjOm9"])
     addAffiliate("MSI MPG A850GS PCIE5",[850],["https://newegg.io/nc2ed2fded"])
     addAffiliate("ADATA XPG CYBERCORE",[1000,1300],["https://www.walmart.com/ip/XPG-CYBERCORE-ATX-Modular-PSU-1000W-80-Plus-Platinum-26-Connectors-Intex-ATX-12V/724286138", "https://www.walmart.com/ip/XPG-CYBERCORE-ATX-Modular-PSU-1300W-80-Plus-Platinum-26-Connectors-Intex-ATX-12V/988283739"])
-    addAffiliate("Silverstone Essential",[550, 750],["https://amzn.to/4aW68Cl", "https://amzn.to/3EtFRzc"])
+    # addAffiliate("Silverstone Essential",[550, 750],["https://amzn.to/4aW68Cl", "https://amzn.to/3EtFRzc"])
     addAffiliate("Lian Li SP750",[750],["https://amzn.to/3WVfuc5"])
     addAffiliate("Cooler Master MWE Gold 850 - V2", [850], ["https://www.amazon.com/dp/B08M9M6DB9"])
     addAffiliate("be quiet! Pure Power 12 M", [750,1200],["https://amzn.to/42Ft9r6","https://amzn.to/40XuKHM"])
@@ -259,7 +259,7 @@ def sortRegion(region):
     addAffiliate("SAMA G750",[750],["https://newegg.io/nc70e665c8"])
     addAffiliate("SAMA G850",[850],["https://newegg.io/nc68f5c9b7"])
     addAffiliate("SAMA G1000",[1000],["https://newegg.io/nc3e5de35d"])
-    addAffiliate("MSI MPG A750GF",[750],["https://us-store.msi.com/PC-Components/Power-Supply/MAG-A750GLS-PCIE5"])
+    # addAffiliate("MSI MPG A750GF",[750],["https://us-store.msi.com/PC-Components/Power-Supply/MAG-A750GLS-PCIE5"])
     addAffiliate("SAMA P850",[850],["https://amzn.to/4syQDsI"])
     addAffiliate("ASRock Steel Legend SL-1000G",[1000],["https://newegg.io/ncd2be754a"])
     addAffiliate("be quiet! Pure Power 12 M",[850],["https://amzn.to/4pF8Im9"])
@@ -317,6 +317,8 @@ def sortRegion(region):
                             score+=10
                         if(located_psu["name"] == "Gigabyte UD750GM" and entry["series1"] == "UD-GM"):
                             score+=10
+                        if(located_psu["name"] == "Asus Prime" and located_psu["efficiency"] == "80+ Bronze"):
+                            break
                         if(located_psu["name"] == "Thermaltake Smart" and entry["series1"] == "White Label"):
                             score+=20
                         if(located_psu["name"] == "ADATA XPG CORE Reactor 850"):

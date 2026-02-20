@@ -5,9 +5,9 @@ start = time.time()
 
 
 
-sortRegion("")
+# sortRegion("")
 # sortRegion("au")
-# sortRegion("de")
+sortRegion("de")
 # sortRegion("uk")
 # sortRegion("ca")
 end = time.time()

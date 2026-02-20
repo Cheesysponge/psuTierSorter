@@ -85,11 +85,14 @@ function applyExcludeCrap(tiers) {
 
 function loadAndFilter() {
   // Read UI inputs
+  document.getElementById('modularToggle').addEventListener('change', loadAndFilter);
+
   const minWattage = parseInt(document.getElementById('minWattage').value, 10) || 0;
   const sfxOnly = document.getElementById('sfxToggle').checked;
   const whitesOnly = document.getElementById('whiteToggle').checked;
   const excludeCrap = !document.getElementById('crap').checked;
   const searchQuery = document.getElementById('searchBar').value.trim().toLowerCase();
+  const modularOnly = document.getElementById('modularToggle').checked;
 
   // 1) Take the tier range from the dual slider (fallback: full range)
   let lowIdx = 0, highIdx = ALL_TIERS.length - 1;
@@ -121,6 +124,8 @@ wantedTiers = wantedTiers.map(normTier);
         const price = parseFloat(row['Price']);
         const tier = row['Tier'];
         const modularField = (row['modularity'] || '').toLowerCase();
+        const isModular = modularField.includes('full') || modularField.includes('semi'); // matches "modular" or "semi-modular"
+
         const isSFX = (row['size'] || '').includes('SFX');
         const isWhite = (row['color'] || '').includes('White');
 
@@ -134,6 +139,7 @@ wantedTiers = wantedTiers.map(normTier);
           !isNaN(price) && price > 0 &&
           wantedTiers.includes(tier) &&
           (!sfxOnly || isSFX) &&
+          (!modularOnly || isModular) &&
           (!whitesOnly || isWhite) &&
           matchesSearch
         );
@@ -210,7 +216,7 @@ function createTableFromData(data) {
     { key: 'Wattage', label: 'Wattage' },
     { key: 'Efficiency', label: '80+ Rating' },
     { key: 'modularity', label: 'Modularity' },
-    { key: 'atxver', label: 'ATX ver.' },
+    { key: 'atxver', label: 'ATX ver.' }
   ];
   }
 

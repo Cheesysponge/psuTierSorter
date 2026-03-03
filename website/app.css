@@ -2,9 +2,9 @@
 
 :root { color-scheme: dark; }
 
-body { background: radial-gradient(1200px 700px at 20% 10%, rgba(99,102,241,.20), transparent 55%),
-                 radial-gradient(900px 600px at 80% 30%, rgba(20,184,166,.14), transparent 60%),
-                 #0b1020; }
+body { background: radial-gradient(1200px 700px at 20% 10%, rgba(12, 12, 66, 0.2), transparent 55%),
+                 radial-gradient(900px 600px at 80% 30%, rgba(1, 37, 33, 0.14), transparent 60%),
+                 #010511; }
 
 a { text-decoration: none; }
 a:hover { text-decoration: underline; }

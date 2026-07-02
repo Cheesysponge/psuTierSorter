@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "PCPartPicker QAPI Capture",
+  "version": "0.1.0",
+  "description": "Passively captures PCPartPicker product QAPI responses you load manually.",
+  "permissions": ["storage"],
+  "host_permissions": ["https://pcpartpicker.com/*", "https://*.pcpartpicker.com/*"],
+  "content_scripts": [
+    {
+      "matches": ["https://pcpartpicker.com/products/*", "https://*.pcpartpicker.com/products/*"],
+      "js": ["injected.js"],
+      "run_at": "document_start",
+      "world": "MAIN"
+    },
+    {
+      "matches": ["https://pcpartpicker.com/products/*", "https://*.pcpartpicker.com/products/*"],
+      "js": ["content.js"],
+      "run_at": "document_start"
+    }
+  ],
+  "action": {
+    "default_title": "PCPP Capture",
+    "default_popup": "popup.html"
+  }
+}

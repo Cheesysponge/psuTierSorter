@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>PSU Tier Sorter – Tier Accessor</title>
+  <title>PSU Tier Sorter - Budget Finder</title>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-TTSEFGP653"></script>
 <script>
@@ -69,37 +69,28 @@
 
   <main class="mx-auto max-w-7xl px-4 py-6 space-y-6">
     <section class="rounded-3xl border border-white/10 bg-white/5 p-6 shadow-[0_20px_60px_rgba(0,0,0,.35)]">
-      <div class="flex flex-col md:flex-row md:items-center gap-4">
-        <div class="flex-1">
-          <h1 class="text-3xl md:text-4xl font-black tracking-tight">Tier Accessor</h1>
-          <p class="mt-2 text-slate-300/90 max-w-3xl">
-            Search the dataset, then use the tier range slider to constrain which tiers are shown.
-          </p>
-        </div>
-        <div class="w-full md:max-w-md">
-          <input id="searchBar" placeholder="Search model / brand / SKU…"
-            class="w-full rounded-2xl border border-white/10 bg-slate-950/40 px-4 py-3 text-sm text-white placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-indigo-400/40" />
-        </div>
-      </div>
+      <h1 class="text-3xl md:text-4xl font-black tracking-tight">Highest Wattage Under Budget</h1>
+      <p class="mt-2 text-slate-300/90 max-w-3xl">
+        Enter a budget to find the highest wattage PSU available in clean A, B, and C tier groups. Plus and minus tiers are grouped together, and starred tiers are excluded.
+      </p>
     </section>
 
     <section class="grid gap-6 lg:grid-cols-[360px_1fr]">
-      <!-- Filters -->
       <aside class="rounded-3xl border border-white/10 bg-white/5 p-5 shadow-[0_20px_60px_rgba(0,0,0,.30)]">
         <div class="flex items-center justify-between gap-3">
           <div>
-            <h2 class="text-sm font-semibold text-white">Filters</h2>
-            <p class="text-xs text-slate-300/80">Tier range + search</p>
+            <h2 class="text-sm font-semibold text-white">Budget</h2>
+            <p class="text-xs text-slate-300/80">One best wattage pick per tier group</p>
           </div>
         </div>
 
         <div class="mt-4 space-y-4">
           <div class="grid gap-2">
-            <label class="text-xs font-medium text-slate-200">Minimum wattage</label>
+            <label class="text-xs font-medium text-slate-200">Maximum price</label>
             <div class="flex items-center gap-2">
-              <input id="minWattage" type="number" value="300" min="0" step="50"
+              <input id="budgetInput" type="number" value="100" min="0" step="5"
                 class="w-full rounded-2xl border border-white/10 bg-slate-950/40 px-4 py-3 text-sm text-white placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-indigo-400/40" />
-              <span class="text-xs text-slate-300/70 w-6 text-center">W</span>
+              <span id="budgetCurrency" class="text-xs text-slate-300/70 w-10 text-center">$</span>
             </div>
           </div>
 
@@ -110,88 +101,74 @@
                     <option value="usa">The United States of America ($ USD)</option>
                     <option value="ca">Canada ($ CAD)</option>
                     <option value="au">Australia ($ AUD)</option>
-                    <option value="de">Germany (€ Euro)</option>
-                    <option value="nl">Netherlands (€ Euro)</option>
-                    <option value="uk">The United Kingdom (£ GBP)</option>
+                    <option value="de">Germany (Euro)</option>
+                    <option value="nl">Netherlands (Euro)</option>
+                    <option value="uk">The United Kingdom (GBP)</option>
             </select>
           </div>
 
-          <label class="flex items-start gap-3 rounded-2xl border border-white/10 bg-slate-950/30 px-4 py-3">
-            <input id="crap" type="checkbox" class="mt-1" />
-            <div>
-              <div class="text-sm font-semibold text-white">Include low quality / confidence tiers</div>
-              <div class="text-xs text-slate-300/75">Enable tiers like D/E/F and “*” entries.</div>
-            </div>
-          </label>
-          <label class="flex items-start gap-3 rounded-2xl border border-white/10 bg-slate-950/30 px-4 py-3">
-            <input id="modularToggle" type="checkbox" class="mt-1" />
-            <div>
-              <div class="text-sm font-semibold text-white">Modular Only</div>
-              <div class="text-xs text-slate-300/75">Full or semi-modular.</div>
-            </div>
-          </label>
-          <label class="flex items-start gap-3 rounded-2xl border border-white/10 bg-slate-950/30 px-4 py-3">
-            <input id="sfxToggle" type="checkbox" class="mt-1" />
-            <div>
-              <div class="text-sm font-semibold text-white">SFX only</div>
-              <div class="text-xs text-slate-300/75">Small form factor.</div>
-            </div>
-          </label>
-
-          <label class="flex items-start gap-3 rounded-2xl border border-white/10 bg-slate-950/30 px-4 py-3">
-            <input id="whiteToggle" type="checkbox" class="mt-1" />
-            <div>
-              <div class="text-sm font-semibold text-white">White(ish) only</div>
-              <div class="text-xs text-slate-300/75">Color contains “White”.</div>
-            </div>
-          </label>
-
-          <label class="flex items-start gap-3 rounded-2xl border border-white/10 bg-slate-950/30 px-4 py-3">
-            <input id="importantToggle" type="checkbox" class="mt-1" />
-            <div>
-              <div class="text-sm font-semibold text-white">Include more info</div>
-              <div class="text-xs text-slate-300/75">Extra columns (image/notes).</div>
-            </div>
-          </label>
           <div class="grid gap-2">
-            <label class="text-xs font-medium text-slate-200">Show top</label>
-            <div class="flex items-center gap-2">
-              <input id="cheapestCountInput" type="number" value="20" min="1" max="1000"
-                class="w-full rounded-2xl border border-white/10 bg-slate-950/40 px-4 py-3 text-sm text-white focus:outline-none focus:ring-2 focus:ring-indigo-400/40" />
-              <span class="text-xs text-slate-300/70 w-12 text-center">each</span>
-            </div>
+            <label class="text-xs font-medium text-slate-200">Options</label>
+
+            <label class="flex items-start gap-3 rounded-2xl border border-white/10 bg-slate-950/30 px-4 py-3">
+              <input id="modularToggle" type="checkbox" class="mt-1" />
+              <div>
+                <div class="text-sm font-semibold text-white">Modular Only</div>
+                <div class="text-xs text-slate-300/75">Full or semi-modular.</div>
+              </div>
+            </label>
+
+            <label class="flex items-start gap-3 rounded-2xl border border-white/10 bg-slate-950/30 px-4 py-3">
+              <input id="sfxToggle" type="checkbox" class="mt-1" />
+              <div>
+                <div class="text-sm font-semibold text-white">SFX only</div>
+                <div class="text-xs text-slate-300/75">Small form factor.</div>
+              </div>
+            </label>
+
+            <label class="flex items-start gap-3 rounded-2xl border border-white/10 bg-slate-950/30 px-4 py-3">
+              <input id="whiteToggle" type="checkbox" class="mt-1" />
+              <div>
+                <div class="text-sm font-semibold text-white">White(ish) only</div>
+                <div class="text-xs text-slate-300/75">Color contains White.</div>
+              </div>
+            </label>
+
+            <label class="flex items-start gap-3 rounded-2xl border border-white/10 bg-slate-950/30 px-4 py-3">
+              <input id="importantToggle" type="checkbox" class="mt-1" />
+              <div>
+                <div class="text-sm font-semibold text-white">Include more info</div>
+                <div class="text-xs text-slate-300/75">Extra columns and images.</div>
+              </div>
+            </label>
           </div>
 
-          <div class="rounded-2xl border border-white/10 bg-slate-950/30 px-4 py-4">
-            <div class="flex items-center justify-between">
-              <div class="text-sm font-semibold text-white">Tier range</div>
-              <!-- <div class="text-xs text-slate-300/70">Drag handles</div> -->
-            </div>
-            <div id="tier-range" class="mt-3"></div>
-            <div class="mt-2 text-xs text-slate-300/70">Drag handles to constrain tiers.</div>
+          <div class="text-xs text-slate-300/70">
+            Ties go to the cheaper unit, then the cleaner matching tier.
           </div>
         </div>
-
       </aside>
 
-      <!-- Results -->
       <section class="rounded-3xl border border-white/10 bg-white/5 p-5 shadow-[0_20px_60px_rgba(0,0,0,.30)]">
         <div class="flex items-end justify-between gap-3">
           <div>
             <h2 class="text-sm font-semibold text-white">Results</h2>
-            <p class="text-xs text-slate-300/80">Search applies across all fields; slider limits tiers.</p>
+            <p class="text-xs text-slate-300/80">A-, A, A+ are shown as A; same for B and C.</p>
+          </div>
+          <div class="text-xs text-slate-300/70">
+            Data loaded from CSV.
           </div>
         </div>
 
         <div class="mt-4 overflow-auto rounded-2xl">
           <div id="tableContainer" class="min-h-[120px]">
-            Loading…
+            Loading...
           </div>
         </div>
       </section>
     </section>
   </main>
 
-  <script src="website/search.js?t=2"></script>
+  <script src="website/budget.js?t=1"></script>
 </body>
 </html>

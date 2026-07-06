@@ -264,6 +264,11 @@ def sortRegion(region):
     addAffiliate("ASRock Steel Legend SL-1000G",[1000],["https://newegg.io/ncd2be754a"])
     addAffiliate("be quiet! Pure Power 12 M",[850],["https://amzn.to/4pF8Im9"])
 
+    addAffiliate("ASRock PRO-650G",[650],["https://newegg.io/nc24426b7d"])
+    addAffiliate("ASRock PRO-750G",[750],["https://newegg.io/ncae091840"])
+    addAffiliate("ASRock PRO-850G",[850],["https://newegg.io/nc8093993b"])
+
+
 
     def match_psu(located_psu, psus_rated, threshold=57):
         matches = []

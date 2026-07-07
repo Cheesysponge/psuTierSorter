@@ -1,34 +1,113 @@
-# PSU Tierlist Sorter
-Some code that takes in formatted powersupply data and find the cheapest ones for each tier based on SPLs PSU tierlist
+# PSU Tier Sorter
+
+PSU Tier Sorter is a static web tool for comparing power supplies by price, wattage, region, and tier. It combines current market listings with SPL's PSU tier list so visitors can quickly find reasonable PSU options without manually cross-checking model names and tier ratings.
+
+The project currently includes three browser pages:
+
+- `index.html` - cheapest PSU results by individual tier, with filters for wattage, region, modularity, size, color, and ATX version.
+- `budget.html` - highest-wattage clean A, B, and C tier options under a selected budget.
+- `tierAccess.html` - searchable tier browser with a tier range selector.
+
+All pages are static HTML/CSS/JavaScript and read from checked-in CSV files.
+
+## Data Sources
+
+The project uses two kinds of data:
+
+- **Tier data**: sourced from SPL's PSU tier list, with permission from SPL to use the data in this project.
+- **Market listing data**: captured from PCPartPicker product-list data and stored locally as CSV files.
+
+PCPartPicker data is not fetched by the live website. The site reads the generated `*.psu_stored.csv` files that are committed with the project.
+
+## Included Regions
+
+The current stored datasets include:
+
+- `psu_stored.csv` - United States
+- `ca.psu_stored.csv` - Canada
+- `au.psu_stored.csv` - Australia
+- `de.psu_stored.csv` - Germany
+- `nl.psu_stored.csv` - Netherlands
+- `uk.psu_stored.csv` - United Kingdom
+
+The website region selector switches between these files.
+
+## How The Matching Works
+
+The Python tooling compares captured PSU listings against the normalized tier-list data. Matching considers:
+
+- model and series names
+- wattage
+- efficiency rating
+- form factor
+- modularity
+- known edge cases for models with confusing names
+
+The generated output is written to `psu_stored.csv` or a region-prefixed equivalent. Each row includes the located product, matched tier-list model, tier, price, wattage, image URL, modularity, color, ATX version, and optional product link.
+
+## Project Structure
+
+```text
+.
+|-- index.html                     # Main cheapest-per-tier finder
+|-- budget.html                    # Budget-based wattage finder
+|-- tierAccess.html                # Searchable tier access page
+|-- website/
+|   |-- app.css                    # Shared site styling
+|   |-- main.js                    # Main finder logic
+|   |-- budget.js                  # Budget finder logic
+|   `-- search.js                  # Tier accessor logic
+|-- pcpp-qapi-capture-extension/   # Optional local capture helper
+|-- tierlist_sorter.py             # Matches captured listings to tier data
+|-- tierlist_extractor.py          # Extracts normalized tier-list rows
+|-- resort.py                      # Small runner for regenerating stored data
+|-- spec_tierlist.csv              # Normalized tier-list source data
+`-- *.psu_stored.csv               # Website-ready regional output files
+```
 
 
-# READ BEFORE USE
-I do not include the data from PCPP because scraping their website is against their TOS, if you would like to you may manually source data(or break their rules and scrape them).
 
-This does not come with the PSU tierlist data, if you would like access to it, go here: https://docs.google.com/spreadsheets/d/1akCHL7Vhzk_EhrpIGkz8zTEvYfLDcaSpZRB6Xt6JWkc/edit?gid=1973454078#gid=1973454078
-I have explicit permission from the creator to use his data for this project.
+## Updating Data
+
+The typical update flow is:
+
+1. Capture or update `psus_located.csv` for the desired region.
+2. Update `spec_tierlist.csv` when the upstream tier list changes.
+3. Run `resort.py` or call `sortRegion()` from `tierlist_sorter.py`.
+4. Review the generated `psu_stored.csv` output before publishing.
+
+For regional output, `sortRegion("ca")` reads `ca.psus_located.csv` and writes `ca.psu_stored.csv`. The same pattern applies to other region prefixes.
+
+## Capture Helper
+
+The `pcpp-qapi-capture-extension` folder contains an unpacked browser extension used during data maintenance. It passively captures PCPartPicker QAPI responses that the browser has already loaded. It does not paginate automatically, replay requests, or make extra PCPartPicker requests.
+
+See `pcpp-qapi-capture-extension/README.md` for install and usage details.
+
+## Accuracy Notes
+
+PSU model matching is inherently imperfect. Many product families reuse very similar names across different platforms, revisions, wattages, and regional variants. The matching code is designed to make conservative, explainable guesses, but results should still be treated as a starting point rather than a final purchasing decision.
+
+Before buying a PSU, verify the exact model, wattage, platform, warranty, and retailer listing.
+
+## Planned Improvements
+
+- Add a manually labeled validation set for common and difficult PSU listings.
+- Report match accuracy and false-positive cases by tier and region.
+- Add confidence scores for matched models.
+- Flag ambiguous matches instead of displaying them as fully verified.
+- Add unit tests for name normalization, wattage extraction, efficiency parsing, and tier matching.
+- Separate data ingestion, matching, validation, and frontend code more cleanly.
 
 
-# Python Functionality
-Without this extra data, this still has the latest(approximately) data of which is the cheapest PSU for each tier
+## Attribution
 
-All of the information is stored in psu_stored.csv so if you would like to process it, you may do that. Most of the functionality of the python is to match the PSUs to the one on the tierlist
+Tier ratings are based on SPL's PSU tier list:
 
-# Website 
+https://docs.google.com/spreadsheets/d/1akCHL7Vhzk_EhrpIGkz8zTEvYfLDcaSpZRB6Xt6JWkc/edit
 
-The PSU Finding Tool website stores a cached version of the cheapest PSUs for each tier for easy access(It scans the psu_stored.csv file).
+The matching, filtering, regional CSV generation, and static web interface are maintained in this repository.
 
-# ⚠️ Warning ⚠️
-This code is trying to do something that is very difficult and it is _far_ from perfect. 
+## License
 
-There are many, many powersupplies with similar names that are vastly different in quality which makes this a difficult task to automate.
-
-An example of this is the Thermaltake Toughpower series which has over 60 PSUs that are all called Thermaltake Toughpower and are ranging from F to A+ in quality
-
-Here is an image of the tierlist showing what I mean:
-
-
-![tierlistImage](https://github.com/user-attachments/assets/001303fc-d744-4aa9-b173-2a8d9ced42d5)
-
-
-This code does its best to make an educated guess based on a limited amount of data.
+This repository is distributed under the terms in `LICENSE`.

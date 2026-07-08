@@ -1,6 +1,7 @@
 from rapidfuzz import fuzz
 import re
 import csv
+from functools import lru_cache
 from urllib.parse import urlparse, urlunparse, parse_qs, urlencode
 def sortRegion(region):
     name = region
@@ -134,21 +135,24 @@ def sortRegion(region):
     for item in located:
         item["normalized"] = normalize_name(item["name"])
 
+    wattage_range_pattern = re.compile(r".*?(\d{3,4})\s*-\s*(\d{3,4})")
+    wattage_pattern = re.compile(r"\d{3,4}")
 
 
+    @lru_cache(maxsize=None)
     def wattage_match(located_watt, tier_wattage_string, tolerance=50):
         # Normalize to ASCII hyphen
         wattage_str = tier_wattage_string.replace("–", "-")
 
         # Handle ranges like 600-1000W
-        range_match = re.match(r".*?(\d{3,4})\s*-\s*(\d{3,4})", wattage_str)
+        range_match = wattage_range_pattern.match(wattage_str)
         if range_match:
             low = int(range_match.group(1))
             high = int(range_match.group(2))
             return low - tolerance <= located_watt <= high + tolerance
 
         # Handle sets like 600/700/800W
-        watts = [int(w) for w in re.findall(r"\d{3,4}", wattage_str)]
+        watts = [int(w) for w in wattage_pattern.findall(wattage_str)]
         return any(abs(located_watt - w) <= tolerance for w in watts)
 
 
@@ -268,22 +272,30 @@ def sortRegion(region):
     addAffiliate("ASRock PRO-750G",[750],["https://newegg.io/ncae091840"])
     addAffiliate("ASRock PRO-850G",[850],["https://newegg.io/nc8093993b"])
 
+    # Cache tier-row values that otherwise get recomputed for every located PSU.
+    for entry in psus_rated:
+        normalized_model = normalize_name(entry["model"])
+        entry["_normalized_model"] = normalized_model
+        entry["_normalized_model_length"] = len(normalized_model)
+        entry["_normalized_series1"] = normalize_name(entry["series1"])
+        entry["_year_int"] = int(entry["year"])
 
 
     def match_psu(located_psu, psus_rated, threshold=57):
         matches = []
+        located_normalized = located_psu["normalized"]
         for entry in psus_rated:
-            model_str = normalize_name(entry["model"])
-            score = fuzz.token_set_ratio(located_psu["normalized"], normalize_name(entry["model"]))
+            model_str = entry["_normalized_model"]
+            score = fuzz.token_set_ratio(located_normalized, model_str)
             if score >= threshold: 
                 # Optionally filter by wattage
                 if wattage_match(located_psu["wattage"], entry["wattages"]):
                     if(entry["efficiency"] in located_psu["efficiency"] and (entry["size"] in located_psu["size"] or (entry["size"] == "Other" or (entry["size"] == "SFX-L")))):
-                        score+=len(normalize_name(entry["model"]))/20-4+(int(entry["year"])-2000)/2
+                        score+=entry["_normalized_model_length"]/20-4+(entry["_year_int"]-2000)/2
 
                         if(entry["modularity"] != located_psu["modularity"]):
                             score-=70
-                        if(entry["brand"].lower() in located_psu["normalized"]):
+                        if(entry["brand"].lower() in located_normalized):
                             score+=10
                         if(str(entry["year"]) in located_psu["name"]):
                             score+=20
@@ -291,7 +303,7 @@ def sortRegion(region):
                             score-=20
                         if("swap" in entry["model"]):
                             score+=10
-                        if(normalize_name(entry["series1"]) in located_psu["normalized"]):
+                        if(entry["_normalized_series1"] in located_normalized):
                             score+=10
                         if entry["series2"] == "II VE" and not ("ve" in model_str):
                             score-=3
@@ -316,7 +328,7 @@ def sortRegion(region):
                         if(("Corsair RM750" == psu['name'] or  "Corsair RM850" == psu['name']) and entry["series"] == 'RM'):
                             score+=50
                         if(located_psu["name"] == "EVGA 600 GD"):
-                            if(int(entry["year"]) > 2019):
+                            if(entry["_year_int"] > 2019):
                                 score-=10
                         if(located_psu["name"] == "Gigabyte UD850GM" and entry["series1"] == "UD-GM"):
                             score+=10
